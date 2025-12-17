@@ -69,7 +69,7 @@ const Buy = () => {
               </div>
             </div>
             <div className="relative">
-              <img src={mallImage} alt="Mall with surrounding land plots" className="rounded-2xl shadow-2xl w-full" />
+              <img alt="Mall with surrounding land plots" className="rounded-2xl shadow-2xl w-full" src="/lovable-uploads/fd2a5ec7-7b3b-43e6-b5a0-11c4c2b338d8.jpg" />
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gold/20 rounded-full blur-3xl" />
             </div>
           </div>
