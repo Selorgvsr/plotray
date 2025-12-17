@@ -310,7 +310,7 @@ const Buy = () => {
               </div>
             </div>
             <div className="relative">
-              <img src={layoutImage} alt="Community layout plan" className="rounded-2xl shadow-2xl w-full bg-white" />
+              <img alt="Community layout plan" className="rounded-2xl shadow-2xl w-full bg-white" src="/lovable-uploads/af8e77b5-1275-4da1-abf3-c1476fb948dd.jpg" />
             </div>
           </div>
         </div>
@@ -395,7 +395,7 @@ const Buy = () => {
               </Button>
             </div>
             <div className="relative">
-              <img alt="Expert guiding site visit" className="rounded-2xl shadow-2xl w-full" src="/lovable-uploads/b5ef9488-7294-4848-b9da-32a9c4f1379b.jpg" />
+              <img src={siteVisitImage} alt="Expert guiding site visit" className="rounded-2xl shadow-2xl w-full" />
             </div>
           </div>
         </div>
