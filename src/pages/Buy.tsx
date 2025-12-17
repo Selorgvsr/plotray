@@ -310,7 +310,7 @@ const Buy = () => {
               </div>
             </div>
             <div className="relative">
-              <img alt="Community layout plan" className="rounded-2xl shadow-2xl w-full bg-white" src="/lovable-uploads/a5087f04-30de-4c03-804f-3c4cc559bc76.jpg" />
+              <img src={layoutImage} alt="Community layout plan" className="rounded-2xl shadow-2xl w-full bg-white" />
             </div>
           </div>
         </div>
@@ -321,7 +321,7 @@ const Buy = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 relative">
-              <img src={gatedImage} alt="Gated community entrance" className="rounded-2xl shadow-2xl w-full" />
+              <img alt="Gated community entrance" className="rounded-2xl shadow-2xl w-full" src="/lovable-uploads/75069692-4b85-4e68-a094-bb54435cd167.jpg" />
               <div className="absolute top-4 left-4 bg-gold text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold">
                 Premium Living
               </div>
