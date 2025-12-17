@@ -170,10 +170,10 @@ const Index = () => {
               <img src={homeInfrastructure} alt="Land connected to infrastructure" className="rounded-2xl shadow-2xl" />
             </div>
             <div className="order-1 lg:order-2 text-white">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6 text-card-foreground">
                 Strong Infrastructure = <span className="text-emerald-200">Strong Returns</span>
               </h2>
-              <div className="space-y-4 text-white/90 text-lg">
+              <div className="space-y-4 text-lg text-popover-foreground">
                 <p className="flex items-start gap-3">
                   <Route className="w-6 h-6 text-emerald-200 flex-shrink-0 mt-1" />
                   Road connectivity boosts accessibility.
