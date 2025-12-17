@@ -395,7 +395,7 @@ const Buy = () => {
               </Button>
             </div>
             <div className="relative">
-              <img src={siteVisitImage} alt="Expert guiding site visit" className="rounded-2xl shadow-2xl w-full" />
+              <img alt="Expert guiding site visit" className="rounded-2xl shadow-2xl w-full" src="/lovable-uploads/b5ef9488-7294-4848-b9da-32a9c4f1379b.jpg" />
             </div>
           </div>
         </div>
