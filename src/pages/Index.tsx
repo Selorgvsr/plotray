@@ -268,7 +268,7 @@ const Index = () => {
               </Link>
             </div>
             <div>
-              <img src={homeSitevisit} alt="Expert guiding investors" className="rounded-2xl shadow-2xl" />
+              <img alt="Expert guiding investors" className="rounded-2xl shadow-2xl" src="/lovable-uploads/f36cdbc6-7b3e-4bec-ac5d-1a6f61f7293a.jpg" />
             </div>
           </div>
         </div>
