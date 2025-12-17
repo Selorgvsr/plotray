@@ -279,7 +279,7 @@ const Index = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <img src={homeSustainable} alt="Green urban development" className="rounded-2xl shadow-2xl" />
+              <img alt="Green urban development" className="rounded-2xl shadow-2xl" src="/lovable-uploads/31398182-9b4b-405b-9322-999e14f38c20.jpg" />
             </div>
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
