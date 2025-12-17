@@ -147,7 +147,7 @@ const Buy = () => {
               </div>
             </div>
             <div className="relative">
-              <img src={verifiedImage} alt="Verified listings dashboard" className="rounded-2xl shadow-2xl w-full" />
+              <img alt="Verified listings dashboard" className="rounded-2xl shadow-2xl w-full" src="/lovable-uploads/ad6711f3-56ad-4f81-a739-e76a174e32b3.jpg" />
             </div>
           </div>
         </div>
@@ -310,7 +310,7 @@ const Buy = () => {
               </div>
             </div>
             <div className="relative">
-              <img alt="Community layout plan" className="rounded-2xl shadow-2xl w-full bg-white" src="/lovable-uploads/af8e77b5-1275-4da1-abf3-c1476fb948dd.jpg" />
+              <img src={layoutImage} alt="Community layout plan" className="rounded-2xl shadow-2xl w-full bg-white" />
             </div>
           </div>
         </div>
