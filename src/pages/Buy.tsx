@@ -15,16 +15,13 @@ import layoutImage from "@/assets/buy-layout.jpg";
 import gatedImage from "@/assets/buy-gated.jpg";
 import siteVisitImage from "@/assets/buy-sitevisit.jpg";
 import ctaImage from "@/assets/buy-cta.jpg";
-
 const Buy = () => {
-  return (
-    <Layout>
+  return <Layout>
       {/* Section 1: Hero - Only Heading */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center" style={{
+        backgroundImage: `url(${heroImage})`
+      }} />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-teal/80" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.3)_100%)]" />
         
@@ -72,11 +69,7 @@ const Buy = () => {
               </div>
             </div>
             <div className="relative">
-              <img 
-                src={mallImage} 
-                alt="Mall with surrounding land plots" 
-                className="rounded-2xl shadow-2xl w-full"
-              />
+              <img src={mallImage} alt="Mall with surrounding land plots" className="rounded-2xl shadow-2xl w-full" />
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gold/20 rounded-full blur-3xl" />
             </div>
           </div>
@@ -88,18 +81,14 @@ const Buy = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 relative">
-              <img 
-                src={urbanZoneImage} 
-                alt="Urban development zone" 
-                className="rounded-2xl shadow-2xl w-full"
-              />
+              <img src={urbanZoneImage} alt="Urban development zone" className="rounded-2xl shadow-2xl w-full" />
               <div className="absolute -top-4 -left-4 w-32 h-32 bg-white/20 rounded-full blur-3xl" />
             </div>
             <div className="order-1 lg:order-2 animate-fade-in">
-              <h2 className="font-heading text-4xl md:text-5xl font-bold mb-8">
+              <h2 className="font-heading text-4xl md:text-5xl font-bold mb-8 text-card-foreground">
                 High-Growth Urban Investment Zones
               </h2>
-              <div className="space-y-4 text-lg text-white/90">
+              <div className="space-y-4 text-lg text-gray-600">
                 <p className="flex items-start gap-3">
                   <TrendingUp className="w-6 h-6 shrink-0 mt-1" />
                   <span>Plotray identifies locations before major price appreciation.</span>
@@ -158,11 +147,7 @@ const Buy = () => {
               </div>
             </div>
             <div className="relative">
-              <img 
-                src={verifiedImage} 
-                alt="Verified listings dashboard" 
-                className="rounded-2xl shadow-2xl w-full"
-              />
+              <img src={verifiedImage} alt="Verified listings dashboard" className="rounded-2xl shadow-2xl w-full" />
             </div>
           </div>
         </div>
@@ -173,11 +158,7 @@ const Buy = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 relative">
-              <img 
-                src={mapImage} 
-                alt="Interactive map interface" 
-                className="rounded-2xl shadow-2xl w-full"
-              />
+              <img src={mapImage} alt="Interactive map interface" className="rounded-2xl shadow-2xl w-full" />
             </div>
             <div className="order-1 lg:order-2 animate-fade-in">
               <h2 className="font-heading text-4xl md:text-5xl font-bold text-primary mb-8">
@@ -252,11 +233,7 @@ const Buy = () => {
               </div>
             </div>
             <div className="relative">
-              <img 
-                src={appreciationImage} 
-                alt="Land appreciation visualization" 
-                className="rounded-2xl shadow-2xl w-full"
-              />
+              <img src={appreciationImage} alt="Land appreciation visualization" className="rounded-2xl shadow-2xl w-full" />
               <div className="absolute -bottom-4 -right-4 w-40 h-40 bg-gold/30 rounded-full blur-3xl" />
             </div>
           </div>
@@ -268,17 +245,13 @@ const Buy = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 relative">
-              <img 
-                src={connectivityImage} 
-                alt="Infrastructure connectivity" 
-                className="rounded-2xl shadow-2xl w-full"
-              />
+              <img src={connectivityImage} alt="Infrastructure connectivity" className="rounded-2xl shadow-2xl w-full" />
             </div>
             <div className="order-1 lg:order-2 animate-fade-in">
-              <h2 className="font-heading text-4xl md:text-5xl font-bold mb-8">
+              <h2 className="font-heading text-4xl md:text-5xl font-bold mb-8 text-card-foreground">
                 Excellent Connectivity Through Major Infrastructure
               </h2>
-              <div className="space-y-4 text-lg text-white/90">
+              <div className="space-y-4 text-lg text-gray-600">
                 <p className="flex items-start gap-3">
                   <Route className="w-6 h-6 shrink-0 mt-1" />
                   <span>Road connectivity boosts accessibility.</span>
@@ -337,11 +310,7 @@ const Buy = () => {
               </div>
             </div>
             <div className="relative">
-              <img 
-                src={layoutImage} 
-                alt="Community layout plan" 
-                className="rounded-2xl shadow-2xl w-full bg-white"
-              />
+              <img src={layoutImage} alt="Community layout plan" className="rounded-2xl shadow-2xl w-full bg-white" />
             </div>
           </div>
         </div>
@@ -352,11 +321,7 @@ const Buy = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 relative">
-              <img 
-                src={gatedImage} 
-                alt="Gated community entrance" 
-                className="rounded-2xl shadow-2xl w-full"
-              />
+              <img src={gatedImage} alt="Gated community entrance" className="rounded-2xl shadow-2xl w-full" />
               <div className="absolute top-4 left-4 bg-gold text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold">
                 Premium Living
               </div>
@@ -430,11 +395,7 @@ const Buy = () => {
               </Button>
             </div>
             <div className="relative">
-              <img 
-                src={siteVisitImage} 
-                alt="Expert guiding site visit" 
-                className="rounded-2xl shadow-2xl w-full"
-              />
+              <img src={siteVisitImage} alt="Expert guiding site visit" className="rounded-2xl shadow-2xl w-full" />
             </div>
           </div>
         </div>
@@ -442,10 +403,9 @@ const Buy = () => {
 
       {/* Section 11: Final CTA */}
       <section className="relative py-24 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${ctaImage})` }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center" style={{
+        backgroundImage: `url(${ctaImage})`
+      }} />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-teal/70" />
         
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
@@ -474,8 +434,6 @@ const Buy = () => {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Buy;
