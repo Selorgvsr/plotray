@@ -55,7 +55,7 @@ const Buy = () => {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                    <span>Plotray focuses on land with high commercial influence.</span>
+                    <span>PLOTRAY focuses on land with high commercial influence.</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-emerald shrink-0 mt-1" />
@@ -91,7 +91,7 @@ const Buy = () => {
               <div className="space-y-4 text-lg text-gray-600">
                 <p className="flex items-start gap-3">
                   <TrendingUp className="w-6 h-6 shrink-0 mt-1" />
-                  <span>Plotray identifies locations before major price appreciation.</span>
+                  <span>PLOTRAY identifies locations before major price appreciation.</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <TrendingUp className="w-6 h-6 shrink-0 mt-1" />
@@ -126,7 +126,7 @@ const Buy = () => {
               <div className="space-y-4 text-lg text-foreground/80">
                 <div className="flex items-start gap-4 p-4 bg-primary/5 rounded-xl">
                   <Shield className="w-8 h-8 text-primary shrink-0" />
-                  <span>All Plotray listings are carefully verified.</span>
+                  <span>All PLOTRAY listings are carefully verified.</span>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-primary/5 rounded-xl">
                   <Shield className="w-8 h-8 text-primary shrink-0" />
@@ -414,7 +414,7 @@ const Buy = () => {
           </h2>
           <div className="max-w-3xl mx-auto space-y-4 text-xl text-white/90 mb-10">
             <p>Infrastructure-backed land delivers returns.</p>
-            <p>Plotray curates future-ready locations.</p>
+            <p>PLOTRAY curates future-ready locations.</p>
             <p>Make informed, confident investments.</p>
             <p className="font-semibold text-gold">Your asset starts here.</p>
           </div>
