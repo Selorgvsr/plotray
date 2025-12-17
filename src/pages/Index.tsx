@@ -103,7 +103,7 @@ const Index = () => {
                 Buy Land Where <span className="text-teal-300">Cities Are Growing</span>
               </h2>
               <div className="space-y-4 text-white/80 text-lg">
-                <p>Plotray curates land near malls, highways, and business hubs.</p>
+                <p>PLOTRAY curates land near malls, highways, and business hubs.</p>
                 <p>City-adjacent locations ensure strong future demand.</p>
                 <p>Infrastructure-backed land delivers higher ROI.</p>
                 <p>Verified listings reduce investment risk.</p>
