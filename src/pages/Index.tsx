@@ -310,7 +310,7 @@ const Index = () => {
       </section>
 
       {/* Section 9: Trusted Platform */}
-      <section className="py-20 bg-plotray-blue">
+      <section className="py-20 bg-plotray-blue bg-red-800">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
