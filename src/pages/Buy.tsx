@@ -147,7 +147,7 @@ const Buy = () => {
               </div>
             </div>
             <div className="relative">
-              <img src={verifiedImage} alt="Verified listings dashboard" className="rounded-2xl shadow-2xl w-full" />
+              <img alt="Verified listings dashboard" className="rounded-2xl shadow-2xl w-full" src="/lovable-uploads/5ef6dfcb-a168-4b38-84b7-28caece999f1.jpg" />
             </div>
           </div>
         </div>
