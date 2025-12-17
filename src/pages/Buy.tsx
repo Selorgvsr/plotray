@@ -116,7 +116,7 @@ const Buy = () => {
       </section>
 
       {/* Section 4: Verified & Transparent */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-accent">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
@@ -202,7 +202,7 @@ const Buy = () => {
       </section>
 
       {/* Section 6: Land as High-Appreciating Asset */}
-      <section className="py-20 bg-gradient-to-br from-gold/20 via-gold/10 to-orange/10">
+      <section className="py-20 bg-gradient-to-br from-gold/20 via-gold/10 to-orange/10 bg-emerald-200">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
@@ -279,7 +279,7 @@ const Buy = () => {
       </section>
 
       {/* Section 8: Internal Layout Infrastructure */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-purple-500">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
