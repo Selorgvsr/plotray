@@ -1,22 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { 
-  TrendingUp, 
-  ShoppingBag, 
-  Handshake, 
-  Route, 
-  Grid3X3, 
-  Users, 
-  Leaf, 
-  Shield, 
-  BarChart3, 
-  ArrowRight,
-  Zap,
-  Droplets,
-  Lock,
-  CheckCircle
-} from "lucide-react";
+import { TrendingUp, ShoppingBag, Handshake, Route, Grid3X3, Users, Leaf, Shield, BarChart3, ArrowRight, Zap, Droplets, Lock, CheckCircle } from "lucide-react";
 
 // Image imports
 import homeHero from "@/assets/home-hero.jpg";
@@ -30,16 +15,13 @@ import homeSustainable from "@/assets/home-sustainable.jpg";
 import homeInvestors from "@/assets/home-investors.jpg";
 import homeBusiness from "@/assets/home-business.jpg";
 import homeCta from "@/assets/home-cta.jpg";
-
 const Index = () => {
-  return (
-    <Layout>
+  return <Layout>
       {/* Section 1: Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${homeHero})` }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center" style={{
+        backgroundImage: `url(${homeHero})`
+      }} />
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/90 via-plotray-blue/70 to-teal/60" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
         
@@ -49,7 +31,9 @@ const Index = () => {
             <span className="text-gold">Future Cities</span>
           </h1>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 animate-fade-in" style={{
+          animationDelay: '0.3s'
+        }}>
             <Link to="/buy">
               <Button variant="hero" size="lg" className="bg-gold hover:bg-gold/90 text-plotray-blue font-semibold text-lg px-8">
                 Buy Land
@@ -100,11 +84,7 @@ const Index = () => {
               </div>
             </div>
             <div className="relative">
-              <img 
-                src={homeAppreciation} 
-                alt="Land appreciation with city skyline" 
-                className="rounded-2xl shadow-2xl"
-              />
+              <img src={homeAppreciation} alt="Land appreciation with city skyline" className="rounded-2xl shadow-2xl" />
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gold/20 rounded-full blur-2xl" />
             </div>
           </div>
@@ -112,15 +92,11 @@ const Index = () => {
       </section>
 
       {/* Section 3: Buy Land Near Expanding Cities */}
-      <section className="py-20 bg-gradient-to-br from-plotray-blue via-plotray-blue/90 to-teal/80">
+      <section className="py-20 bg-gradient-to-br from-plotray-blue via-plotray-blue/90 to-teal/80 bg-popover-foreground">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <img 
-                src={homeBuy} 
-                alt="Modern Indian city expanding" 
-                className="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500"
-              />
+              <img src={homeBuy} alt="Modern Indian city expanding" className="rounded-2xl shadow-2xl hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="order-1 lg:order-2 text-white">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6">
@@ -179,11 +155,7 @@ const Index = () => {
               </Link>
             </div>
             <div className="relative">
-              <img 
-                src={homeSell} 
-                alt="Landowner shaking hands" 
-                className="rounded-2xl shadow-2xl"
-              />
+              <img src={homeSell} alt="Landowner shaking hands" className="rounded-2xl shadow-2xl" />
               <div className="absolute -top-4 -left-4 w-20 h-20 bg-orange-500/20 rounded-full blur-2xl" />
             </div>
           </div>
@@ -195,11 +167,7 @@ const Index = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <img 
-                src={homeInfrastructure} 
-                alt="Land connected to infrastructure" 
-                className="rounded-2xl shadow-2xl"
-              />
+              <img src={homeInfrastructure} alt="Land connected to infrastructure" className="rounded-2xl shadow-2xl" />
             </div>
             <div className="order-1 lg:order-2 text-white">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6">
@@ -240,27 +208,38 @@ const Index = () => {
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <img 
-                src={homeLayout} 
-                alt="Gated plotted community" 
-                className="rounded-2xl shadow-2xl"
-              />
+              <img src={homeLayout} alt="Gated plotted community" className="rounded-2xl shadow-2xl" />
             </div>
             <div className="grid grid-cols-2 gap-6">
-              {[
-                { icon: Route, title: "Internal Roads", desc: "Smooth access throughout" },
-                { icon: Zap, title: "Electricity", desc: "Pre-planned connections" },
-                { icon: Droplets, title: "Water & Drainage", desc: "Complete systems included" },
-                { icon: Leaf, title: "Landscaping", desc: "Enhanced living quality" },
-                { icon: Lock, title: "Security", desc: "Gated communities" },
-                { icon: Grid3X3, title: "Clear Layouts", desc: "Organized plots" },
-              ].map((item, idx) => (
-                <div key={idx} className="bg-card p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-border">
+              {[{
+              icon: Route,
+              title: "Internal Roads",
+              desc: "Smooth access throughout"
+            }, {
+              icon: Zap,
+              title: "Electricity",
+              desc: "Pre-planned connections"
+            }, {
+              icon: Droplets,
+              title: "Water & Drainage",
+              desc: "Complete systems included"
+            }, {
+              icon: Leaf,
+              title: "Landscaping",
+              desc: "Enhanced living quality"
+            }, {
+              icon: Lock,
+              title: "Security",
+              desc: "Gated communities"
+            }, {
+              icon: Grid3X3,
+              title: "Clear Layouts",
+              desc: "Organized plots"
+            }].map((item, idx) => <div key={idx} className="bg-card p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow border border-border">
                   <item.icon className="w-8 h-8 text-teal mb-3" />
                   <h3 className="font-semibold text-foreground mb-1">{item.title}</h3>
                   <p className="text-sm text-muted-foreground">{item.desc}</p>
-                </div>
-              ))}
+                </div>)}
             </div>
           </div>
         </div>
@@ -289,11 +268,7 @@ const Index = () => {
               </Link>
             </div>
             <div>
-              <img 
-                src={homeSitevisit} 
-                alt="Expert guiding investors" 
-                className="rounded-2xl shadow-2xl"
-              />
+              <img src={homeSitevisit} alt="Expert guiding investors" className="rounded-2xl shadow-2xl" />
             </div>
           </div>
         </div>
@@ -304,11 +279,7 @@ const Index = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <img 
-                src={homeSustainable} 
-                alt="Green urban development" 
-                className="rounded-2xl shadow-2xl"
-              />
+              <img src={homeSustainable} alt="Green urban development" className="rounded-2xl shadow-2xl" />
             </div>
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
@@ -368,19 +339,13 @@ const Index = () => {
               
               {/* Trust badges */}
               <div className="flex flex-wrap gap-4 mt-8">
-                {["100+ Properties", "500+ Investors", "10+ Cities"].map((badge, idx) => (
-                  <div key={idx} className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-gold/30">
+                {["100+ Properties", "500+ Investors", "10+ Cities"].map((badge, idx) => <div key={idx} className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-gold/30">
                     <span className="text-gold font-semibold">{badge}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
             <div>
-              <img 
-                src={homeInvestors} 
-                alt="Professional investors analyzing data" 
-                className="rounded-2xl shadow-2xl"
-              />
+              <img src={homeInvestors} alt="Professional investors analyzing data" className="rounded-2xl shadow-2xl" />
             </div>
           </div>
         </div>
@@ -391,11 +356,7 @@ const Index = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <img 
-                src={homeBusiness} 
-                alt="Business dashboard" 
-                className="rounded-2xl shadow-2xl"
-              />
+              <img src={homeBusiness} alt="Business dashboard" className="rounded-2xl shadow-2xl" />
             </div>
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
@@ -433,10 +394,9 @@ const Index = () => {
 
       {/* Section 11: Final CTA */}
       <section className="relative py-24 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${homeCta})` }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center" style={{
+        backgroundImage: `url(${homeCta})`
+      }} />
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/90 via-plotray-blue/80 to-teal/70" />
         
         <div className="container-custom relative z-10 text-center">
@@ -464,8 +424,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Index;
