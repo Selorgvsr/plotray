@@ -147,7 +147,7 @@ const Buy = () => {
               </div>
             </div>
             <div className="relative">
-              <img src={verifiedImage} alt="Verified listings dashboard" className="rounded-2xl shadow-2xl w-full" />
+              <img alt="Verified listings dashboard" className="rounded-2xl shadow-2xl w-full" src="/lovable-uploads/ad6711f3-56ad-4f81-a739-e76a174e32b3.jpg" />
             </div>
           </div>
         </div>
@@ -310,7 +310,7 @@ const Buy = () => {
               </div>
             </div>
             <div className="relative">
-              <img src={layoutImage} alt="Community layout plan" className="rounded-2xl shadow-2xl w-full bg-white" />
+              <img alt="Community layout plan" className="rounded-2xl shadow-2xl w-full bg-white" src="/lovable-uploads/0f771d53-07fa-4b1c-8e47-479da1e9ea3b.jpg" />
             </div>
           </div>
         </div>
@@ -395,7 +395,7 @@ const Buy = () => {
               </Button>
             </div>
             <div className="relative">
-              <img alt="Expert guiding site visit" className="rounded-2xl shadow-2xl w-full" src="/lovable-uploads/ad579163-2e51-43ff-bd17-efa0c3cd688f.jpg" />
+              <img src={siteVisitImage} alt="Expert guiding site visit" className="rounded-2xl shadow-2xl w-full" />
             </div>
           </div>
         </div>
