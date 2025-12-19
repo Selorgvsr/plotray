@@ -2,197 +2,450 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { 
-  Target, 
-  Eye, 
-  Heart, 
-  Users,
   ArrowRight,
   CheckCircle,
-  Award,
-  TrendingUp
+  Building2,
+  LineChart,
+  Leaf,
+  Shield,
+  Users,
+  Sparkles
 } from "lucide-react";
 
-const values = [
-  { icon: Heart, title: "Integrity", desc: "Transparency in every transaction we facilitate." },
-  { icon: TrendingUp, title: "Growth", desc: "Growth-driven thinking for long-term value creation." },
-  { icon: Users, title: "Customer First", desc: "Your success is our primary focus and motivation." },
-  { icon: Award, title: "Excellence", desc: "Commitment to quality in everything we do." },
-];
+// Import images
+import aboutHero from "@/assets/about-hero.jpg";
+import aboutTeam from "@/assets/about-team.jpg";
+import aboutVision from "@/assets/about-vision.jpg";
+import aboutMission from "@/assets/about-mission.jpg";
+import aboutDifferent from "@/assets/about-different.jpg";
+import aboutAsset from "@/assets/about-asset.jpg";
+import aboutEsg from "@/assets/about-esg.jpg";
+import aboutTrust from "@/assets/about-trust.jpg";
+import aboutJourney from "@/assets/about-journey.jpg";
+import aboutCta from "@/assets/about-cta.jpg";
 
-const milestones = [
-  { year: "2020", title: "Founded", desc: "Plotray was established with a vision to transform land investments." },
-  { year: "2021", title: "Expansion", desc: "Expanded operations to 10+ cities across India." },
-  { year: "2022", title: "10,000 Users", desc: "Crossed 10,000 happy investors on our platform." },
-  { year: "2023", title: "₹200Cr+ Transactions", desc: "Facilitated over ₹200 Crore in land transactions." },
+const differentiators = [
+  { icon: Building2, text: "Direct land buying without brokers" },
+  { icon: LineChart, text: "Asset-focused evaluation, not short-term pricing" },
+  { icon: Leaf, text: "ESG-aligned sustainable development" },
+  { icon: Sparkles, text: "Technology-driven insights and tracking" },
+  { icon: Shield, text: "Professional, transparent execution" },
 ];
 
 const About = () => {
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="relative py-20 md:py-28 gradient-hero overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-primary-foreground rounded-full blur-3xl" />
+      {/* Hero Section - Heading Only */}
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src={aboutHero} 
+            alt="Plotray - Redefining Land Ownership" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(220,60%,15%)]/80 via-[hsl(220,60%,20%)]/70 to-[hsl(220,60%,15%)]/80" />
         </div>
         
-        <div className="container-custom relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-6 animate-slide-up">
-              About <span className="text-plotray-gold">Plotray</span>
-            </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/80 animate-slide-up" style={{ animationDelay: "0.1s" }}>
-              Plotray is a digital platform focused on land investments near cities. 
-              We connect people with high-potential land assets built on trust and transparency.
-            </p>
-          </div>
+        <div className="container-custom relative z-10 text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold text-white leading-tight animate-slide-up max-w-5xl mx-auto">
+            Redefining Land Ownership, <span className="text-plotray-gold">Growth</span> & Opportunity
+          </h1>
         </div>
       </section>
 
-      {/* Who We Are */}
+      {/* Section 2: Who We Are */}
       <section className="section-padding bg-background">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-                Who We <span className="text-plotray-teal">Are</span>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+                Who We <span className="text-[hsl(220,60%,40%)]">Are</span>
               </h2>
-              <p className="text-muted-foreground mb-6">
-                Plotray is a digital platform focused on land investments near cities. 
-                We connect people with high-potential land assets through a platform built on trust and transparency.
-              </p>
-              <p className="text-muted-foreground mb-6">
-                Our team comprises experienced real estate professionals, technology experts, 
-                and financial analysts who work together to identify the best land investment opportunities.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="teal" size="lg" asChild>
-                  <Link to="/buy">Explore Properties</Link>
-                </Button>
-                <Button variant="outline" size="lg" asChild>
-                  <Link to="/contact">Contact Us</Link>
-                </Button>
+              <div className="space-y-3 text-muted-foreground">
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  Plotray is a modern land-focused real estate platform.
+                </p>
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  We specialize in buying, managing, and developing land assets.
+                </p>
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  Our approach combines market intelligence with transparency.
+                </p>
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  We work directly with landowners and investors.
+                </p>
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  Every decision is driven by long-term value creation.
+                </p>
               </div>
             </div>
             
-            <div className="grid grid-cols-2 gap-4">
-              <div className="glass-card rounded-2xl p-6 text-center">
-                <div className="text-4xl font-heading font-bold text-plotray-teal mb-2">500+</div>
-                <p className="text-muted-foreground text-sm">Properties Listed</p>
-              </div>
-              <div className="glass-card rounded-2xl p-6 text-center">
-                <div className="text-4xl font-heading font-bold text-plotray-orange mb-2">50+</div>
-                <p className="text-muted-foreground text-sm">Cities Covered</p>
-              </div>
-              <div className="glass-card rounded-2xl p-6 text-center">
-                <div className="text-4xl font-heading font-bold text-plotray-emerald mb-2">10K+</div>
-                <p className="text-muted-foreground text-sm">Happy Investors</p>
-              </div>
-              <div className="glass-card rounded-2xl p-6 text-center">
-                <div className="text-4xl font-heading font-bold text-plotray-purple mb-2">₹200Cr+</div>
-                <p className="text-muted-foreground text-sm">Transactions</p>
-              </div>
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src={aboutTeam} 
+                alt="Plotray Team" 
+                className="w-full h-auto object-cover"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Vision & Mission */}
-      <section className="section-padding bg-muted/50">
+      {/* Section 3: Our Vision */}
+      <section className="section-padding bg-[hsl(220,60%,97%)]">
         <div className="container-custom">
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="glass-card rounded-2xl p-8">
-              <div className="w-14 h-14 rounded-xl gradient-hero flex items-center justify-center mb-4">
-                <Eye className="w-7 h-7 text-primary-foreground" />
-              </div>
-              <h3 className="text-2xl font-heading font-bold text-foreground mb-4">Our Vision</h3>
-              <p className="text-muted-foreground">
-                To simplify land buying and selling across India. Enable smarter investment decisions 
-                through technology and data-driven insights. Create long-term value for every investor 
-                who trusts Plotray.
-              </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src={aboutVision} 
+                alt="Our Vision" 
+                className="w-full h-auto object-cover"
+              />
             </div>
             
-            <div className="glass-card rounded-2xl p-8">
-              <div className="w-14 h-14 rounded-xl gradient-cta flex items-center justify-center mb-4">
-                <Target className="w-7 h-7 text-accent-foreground" />
+            <div className="order-1 lg:order-2">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+                Our Vision for the <span className="text-plotray-gold">Future</span> of Land
+              </h2>
+              <div className="space-y-3 text-muted-foreground">
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-[hsl(220,60%,40%)] mt-1 shrink-0" />
+                  We envision land as a powerful long-term asset.
+                </p>
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-[hsl(220,60%,40%)] mt-1 shrink-0" />
+                  Our goal is to create organized, valuable land ecosystems.
+                </p>
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-[hsl(220,60%,40%)] mt-1 shrink-0" />
+                  We focus on sustainable growth over speculation.
+                </p>
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-[hsl(220,60%,40%)] mt-1 shrink-0" />
+                  Future-ready planning guides every acquisition.
+                </p>
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-[hsl(220,60%,40%)] mt-1 shrink-0" />
+                  Plotray builds land value responsibly.
+                </p>
               </div>
-              <h3 className="text-2xl font-heading font-bold text-foreground mb-4">Our Mission</h3>
-              <p className="text-muted-foreground">
-                To become India's most trusted land investment platform by providing verified listings, 
-                transparent processes, and expert guidance to help every investor make informed decisions 
-                about their land investments.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Our Values */}
-      <section className="section-padding bg-background">
+      {/* Section 4: Our Mission */}
+      <section className="section-padding bg-[hsl(220,60%,15%)]">
         <div className="container-custom">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-              Our <span className="text-plotray-teal">Values</span>
-            </h2>
-            <p className="text-muted-foreground">
-              The principles that guide everything we do at Plotray.
-            </p>
-          </div>
-          
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((value, index) => (
-              <div key={index} className="text-center p-6 glass-card rounded-2xl hover-lift">
-                <div className="w-16 h-16 rounded-2xl gradient-hero flex items-center justify-center mx-auto mb-4">
-                  <value.icon className="w-8 h-8 text-primary-foreground" />
-                </div>
-                <h3 className="text-lg font-heading font-semibold text-foreground mb-2">{value.title}</h3>
-                <p className="text-sm text-muted-foreground">{value.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Journey */}
-      <section className="section-padding bg-muted/50">
-        <div className="container-custom">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-              Our <span className="text-plotray-teal">Journey</span>
-            </h2>
-            <p className="text-muted-foreground">
-              Key milestones in our growth story.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-4 gap-6">
-            {milestones.map((milestone, index) => (
-              <div key={index} className="relative">
-                <div className="text-5xl font-heading font-bold text-plotray-teal/30 mb-2">{milestone.year}</div>
-                <h3 className="text-lg font-heading font-semibold text-foreground mb-2">{milestone.title}</h3>
-                <p className="text-sm text-muted-foreground">{milestone.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="section-padding bg-background">
-        <div className="container-custom">
-          <div className="relative rounded-3xl overflow-hidden gradient-hero p-8 md:p-12 text-center">
-            <div className="relative z-10 max-w-2xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-4">
-                Join Our Growing Community
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
+                Our <span className="text-plotray-gold">Mission</span>
               </h2>
-              <p className="text-primary-foreground/80 mb-8">
-                Be part of the Plotray family and start your land investment journey today.
+              <div className="space-y-3 text-white/80">
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  To simplify land transactions for owners.
+                </p>
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  To create strong land assets for investors.
+                </p>
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  To remove middlemen and inefficiencies.
+                </p>
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  To ensure transparency and legal clarity.
+                </p>
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  To build trust through responsible development.
+                </p>
+              </div>
+            </div>
+            
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src={aboutMission} 
+                alt="Our Mission" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5: What Makes Plotray Different */}
+      <section className="section-padding bg-background">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src={aboutDifferent} 
+                alt="What Makes Plotray Different" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            
+            <div className="order-1 lg:order-2">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+                What Makes Plotray <span className="text-plotray-gold">Different</span>
+              </h2>
+              <div className="space-y-4">
+                {differentiators.map((item, index) => (
+                  <div 
+                    key={index}
+                    className="flex items-center gap-4 p-4 rounded-xl bg-[hsl(220,60%,97%)] hover:bg-[hsl(220,60%,95%)] transition-colors"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[hsl(220,60%,40%)] to-[hsl(220,60%,25%)] flex items-center justify-center shrink-0">
+                      <item.icon className="w-6 h-6 text-white" />
+                    </div>
+                    <span className="text-foreground font-medium">{item.text}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 6: Land as Asset Philosophy */}
+      <section className="section-padding bg-[hsl(220,60%,97%)]">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+                We Treat Land as a <span className="text-[hsl(220,60%,40%)]">Long-Term Asset</span>
+              </h2>
+              <div className="space-y-3 text-muted-foreground">
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
+                  Land appreciates with urban expansion.
+                </p>
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
+                  Scarcity increases its future value.
+                </p>
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
+                  Unlike buildings, land never depreciates.
+                </p>
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
+                  Strategic locations drive wealth creation.
+                </p>
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
+                  Plotray unlocks land's true potential.
+                </p>
+              </div>
+            </div>
+            
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src={aboutAsset} 
+                alt="Land as Asset" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 7: Sustainability & ESG */}
+      <section className="section-padding bg-gradient-to-br from-plotray-emerald/10 to-plotray-teal/10">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src={aboutEsg} 
+                alt="Sustainability & ESG" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            
+            <div className="order-1 lg:order-2">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+                Built on <span className="text-plotray-emerald">Sustainability</span> & ESG Values
+              </h2>
+              <div className="space-y-3 text-muted-foreground">
+                <p className="flex items-start gap-3">
+                  <Leaf className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
+                  We prioritize eco-friendly land planning.
+                </p>
+                <p className="flex items-start gap-3">
+                  <Leaf className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
+                  Solar-ready and green infrastructure layouts.
+                </p>
+                <p className="flex items-start gap-3">
+                  <Leaf className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
+                  Responsible water and resource management.
+                </p>
+                <p className="flex items-start gap-3">
+                  <Leaf className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
+                  Community-centric development approach.
+                </p>
+                <p className="flex items-start gap-3">
+                  <Leaf className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
+                  Governance ensures compliance and trust.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 8: Trusted Partner */}
+      <section className="section-padding bg-background">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+                A Trusted Partner for <span className="text-plotray-gold">Landowners</span> & Investors
+              </h2>
+              <div className="space-y-3 text-muted-foreground">
+                <p className="flex items-start gap-3">
+                  <Users className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  Landowners trust us for fair, direct deals.
+                </p>
+                <p className="flex items-start gap-3">
+                  <Users className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  Investors rely on our asset evaluation.
+                </p>
+                <p className="flex items-start gap-3">
+                  <Users className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  Clear documentation ensures peace of mind.
+                </p>
+                <p className="flex items-start gap-3">
+                  <Users className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  Professional teams manage every stage.
+                </p>
+                <p className="flex items-start gap-3">
+                  <Users className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  Trust is the foundation of Plotray.
+                </p>
+              </div>
+            </div>
+            
+            <div className="rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src={aboutTrust} 
+                alt="Trusted Partner" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 9: Our Journey */}
+      <section className="section-padding bg-[hsl(220,60%,15%)]">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-2xl">
+              <img 
+                src={aboutJourney} 
+                alt="Our Journey" 
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            
+            <div className="order-1 lg:order-2">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-6">
+                Building the <span className="text-plotray-gold">Future</span> of Land Investment
+              </h2>
+              <div className="space-y-3 text-white/80">
+                <p className="flex items-start gap-3">
+                  <ArrowRight className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  Plotray continues expanding strategic land assets.
+                </p>
+                <p className="flex items-start gap-3">
+                  <ArrowRight className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  We focus on growth corridors and emerging cities.
+                </p>
+                <p className="flex items-start gap-3">
+                  <ArrowRight className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  Innovation drives smarter land decisions.
+                </p>
+                <p className="flex items-start gap-3">
+                  <ArrowRight className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  Sustainability guides long-term planning.
+                </p>
+                <p className="flex items-start gap-3">
+                  <ArrowRight className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  The journey is just beginning.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 10: CTA */}
+      <section className="relative py-20 md:py-28 overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src={aboutCta} 
+            alt="Join Plotray" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[hsl(220,60%,15%)]/90 to-[hsl(220,60%,20%)]/80" />
+        </div>
+        
+        <div className="container-custom relative z-10">
+          <div className="max-w-2xl">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6">
+              Be Part of the <span className="text-plotray-gold">Plotray</span> Growth Story
+            </h2>
+            <div className="space-y-3 text-white/80 mb-8">
+              <p className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                Whether selling land or building assets, we help.
               </p>
-              <Button variant="hero" size="lg" asChild>
+              <p className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                Join a platform built on trust and intelligence.
+              </p>
+              <p className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                Create value with responsible land ownership.
+              </p>
+              <p className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                Experience transparency and professionalism.
+              </p>
+              <p className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                Welcome to the future of land.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-plotray-gold to-[hsl(38,85%,55%)] text-[hsl(220,60%,15%)] font-bold hover:from-[hsl(38,85%,55%)] hover:to-plotray-gold transition-all duration-300"
+                asChild
+              >
                 <Link to="/buy">
-                  Get Started
-                  <ArrowRight className="w-5 h-5" />
+                  Explore Land Assets
+                  <ArrowRight className="w-5 h-5 ml-2" />
+                </Link>
+              </Button>
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="border-white/30 text-white hover:bg-white/10"
+                asChild
+              >
+                <Link to="/contact">
+                  Contact Us
                 </Link>
               </Button>
             </div>
