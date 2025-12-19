@@ -75,9 +75,7 @@ const Sustainability = () => {
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
                 Smart Water & Resource Management
               </h2>
-              <p className="text-muted-foreground leading-relaxed">
-                Plotray promotes efficient water usage in layouts. Stormwater systems support groundwater recharge. Planned drainage prevents soil erosion. Resource management improves long-term land value. Sustainable land lasts longer.
-              </p>
+              <p className="text-muted-foreground leading-relaxed">PLOTRAY promotes efficient water usage in layouts. Stormwater systems support groundwater recharge. Planned drainage prevents soil erosion. Resource management improves long-term land value. Sustainable land lasts longer.</p>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <img src={waterImage} alt="Water and resource management" className="w-full h-[350px] object-cover" />
