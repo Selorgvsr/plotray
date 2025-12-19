@@ -82,18 +82,10 @@ const ExpandableSection = ({
                 isExpanded ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
               }`}
             >
-              <div className="pt-6 mt-4 border-t border-border/30 space-y-3">
-                {expandedContent.map((line, index) => (
-                  <div
-                    key={index}
-                    className="flex items-start gap-3 pl-4 border-l-2 border-orange-400/60 py-2 hover:border-orange-500 hover:bg-orange-50/30 transition-all duration-300 rounded-r-lg animate-fade-in"
-                    style={{ animationDelay: `${index * 60}ms` }}
-                  >
-                    <p className="text-foreground/70 leading-relaxed text-base">
-                      {line}
-                    </p>
-                  </div>
-                ))}
+              <div className="pt-6 mt-4 border-t border-border/30">
+                <p className="text-foreground/75 leading-loose text-base animate-fade-in">
+                  {expandedContent.join(" ")}
+                </p>
               </div>
             </div>
 
