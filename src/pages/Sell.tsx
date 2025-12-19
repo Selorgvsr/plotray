@@ -60,11 +60,19 @@ const ExpandableSection = ({
               {heading}
             </h2>
             
-            <div className="space-y-3">
+            <div className="space-y-4">
               {content.map((line, index) => (
-                <p key={index} className="text-muted-foreground text-lg leading-relaxed">
-                  {line}
-                </p>
+                <div 
+                  key={index} 
+                  className="flex items-start gap-4 p-4 rounded-xl bg-white/60 backdrop-blur-sm border border-border/30 shadow-sm hover:shadow-md hover:bg-white/80 transition-all duration-300 group"
+                >
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 to-amber-500 flex items-center justify-center text-white font-bold text-sm shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    {index + 1}
+                  </div>
+                  <p className="text-foreground/80 text-lg leading-relaxed pt-1">
+                    {line}
+                  </p>
+                </div>
               ))}
             </div>
 
