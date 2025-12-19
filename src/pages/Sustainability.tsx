@@ -13,16 +13,13 @@ import greenImage from "@/assets/sustainability-green.jpg";
 import esgImage from "@/assets/sustainability-esg.jpg";
 import urbanImage from "@/assets/sustainability-urban.jpg";
 import ctaImage from "@/assets/sustainability-cta.jpg";
-
 const Sustainability = () => {
-  return (
-    <Layout>
+  return <Layout>
       {/* Hero Section - Heading Only */}
       <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center" style={{
+        backgroundImage: `url(${heroImage})`
+      }} />
         <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
         
         <div className="container-custom relative z-10 h-full flex items-center justify-center">
@@ -41,15 +38,11 @@ const Sustainability = () => {
                 Responsible Land Development Practices
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Plotray believes in responsible and planned land development. We focus on organized layouts instead of unplanned expansion. Sustainable planning protects land value and the environment. Balanced growth ensures long-term usability. Responsible development benefits both investors and communities.
+                PLOTRAY believes in responsible and planned land development. We focus on organized layouts instead of unplanned expansion. Sustainable planning protects land value and the environment. Balanced growth ensures long-term usability. Responsible development benefits both investors and communities.
               </p>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl">
-              <img 
-                src={responsibleImage} 
-                alt="Responsible land development" 
-                className="w-full h-[350px] object-cover"
-              />
+              <img src={responsibleImage} alt="Responsible land development" className="w-full h-[350px] object-cover" />
             </div>
           </div>
         </div>
@@ -60,11 +53,7 @@ const Sustainability = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-xl">
-              <img 
-                src={layoutImage} 
-                alt="Eco-friendly layout planning" 
-                className="w-full h-[350px] object-cover"
-              />
+              <img src={layoutImage} alt="Eco-friendly layout planning" className="w-full h-[350px] object-cover" />
             </div>
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
@@ -91,11 +80,7 @@ const Sustainability = () => {
               </p>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl">
-              <img 
-                src={waterImage} 
-                alt="Water and resource management" 
-                className="w-full h-[350px] object-cover"
-              />
+              <img src={waterImage} alt="Water and resource management" className="w-full h-[350px] object-cover" />
             </div>
           </div>
         </div>
@@ -106,11 +91,7 @@ const Sustainability = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-xl">
-              <img 
-                src={solarImage} 
-                alt="Solar-powered infrastructure" 
-                className="w-full h-[350px] object-cover"
-              />
+              <img src={solarImage} alt="Solar-powered infrastructure" className="w-full h-[350px] object-cover" />
             </div>
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
@@ -137,11 +118,7 @@ const Sustainability = () => {
               </p>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl">
-              <img 
-                src={greenImage} 
-                alt="Green spaces and landscaping" 
-                className="w-full h-[350px] object-cover"
-              />
+              <img src={greenImage} alt="Green spaces and landscaping" className="w-full h-[350px] object-cover" />
             </div>
           </div>
         </div>
@@ -152,11 +129,7 @@ const Sustainability = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-xl">
-              <img 
-                src={esgImage} 
-                alt="ESG principles" 
-                className="w-full h-[350px] object-cover"
-              />
+              <img src={esgImage} alt="ESG principles" className="w-full h-[350px] object-cover" />
             </div>
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
@@ -183,11 +156,7 @@ const Sustainability = () => {
               </p>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl">
-              <img 
-                src={urbanImage} 
-                alt="Sustainable urban expansion" 
-                className="w-full h-[350px] object-cover"
-              />
+              <img src={urbanImage} alt="Sustainable urban expansion" className="w-full h-[350px] object-cover" />
             </div>
           </div>
         </div>
@@ -195,10 +164,9 @@ const Sustainability = () => {
 
       {/* Section 9: CTA */}
       <section className="relative py-20 md:py-28 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${ctaImage})` }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center" style={{
+        backgroundImage: `url(${ctaImage})`
+      }} />
         <div className="absolute inset-0 bg-gradient-to-r from-plotray-emerald/90 to-plotray-teal/80" />
         
         <div className="container-custom relative z-10">
@@ -216,11 +184,7 @@ const Sustainability = () => {
               Sustainability protects long-term investments. Eco-planned land holds value over decades. Plotray combines growth with responsibility. Choose land that aligns with future needs. Build wealth the sustainable way.
             </p>
             
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-plotray-gold to-yellow-500 hover:from-yellow-500 hover:to-plotray-gold text-plotray-navy font-semibold rounded-full px-8 shadow-lg hover:shadow-xl transition-all duration-300"
-              asChild
-            >
+            <Button size="lg" className="bg-gradient-to-r from-plotray-gold to-yellow-500 hover:from-yellow-500 hover:to-plotray-gold text-plotray-navy font-semibold rounded-full px-8 shadow-lg hover:shadow-xl transition-all duration-300" asChild>
               <Link to="/contact">
                 Start Your Journey
                 <ArrowRight className="w-5 h-5 ml-2" />
@@ -229,8 +193,6 @@ const Sustainability = () => {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Sustainability;
