@@ -1,16 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { 
-  ArrowRight,
-  CheckCircle,
-  Building2,
-  LineChart,
-  Leaf,
-  Shield,
-  Users,
-  Sparkles
-} from "lucide-react";
+import { ArrowRight, CheckCircle, Building2, LineChart, Leaf, Shield, Users, Sparkles } from "lucide-react";
 
 // Import images
 import aboutHero from "@/assets/about-hero.jpg";
@@ -23,26 +14,28 @@ import aboutEsg from "@/assets/about-esg.jpg";
 import aboutTrust from "@/assets/about-trust.jpg";
 import aboutJourney from "@/assets/about-journey.jpg";
 import aboutCta from "@/assets/about-cta.jpg";
-
-const differentiators = [
-  { icon: Building2, text: "Direct land buying without brokers" },
-  { icon: LineChart, text: "Asset-focused evaluation, not short-term pricing" },
-  { icon: Leaf, text: "ESG-aligned sustainable development" },
-  { icon: Sparkles, text: "Technology-driven insights and tracking" },
-  { icon: Shield, text: "Professional, transparent execution" },
-];
-
+const differentiators = [{
+  icon: Building2,
+  text: "Direct land buying without brokers"
+}, {
+  icon: LineChart,
+  text: "Asset-focused evaluation, not short-term pricing"
+}, {
+  icon: Leaf,
+  text: "ESG-aligned sustainable development"
+}, {
+  icon: Sparkles,
+  text: "Technology-driven insights and tracking"
+}, {
+  icon: Shield,
+  text: "Professional, transparent execution"
+}];
 const About = () => {
-  return (
-    <Layout>
+  return <Layout>
       {/* Hero Section - Heading Only */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src={aboutHero} 
-            alt="Plotray - Redefining Land Ownership" 
-            className="w-full h-full object-cover"
-          />
+          <img src={aboutHero} alt="Plotray - Redefining Land Ownership" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(220,60%,15%)]/80 via-[hsl(220,60%,20%)]/70 to-[hsl(220,60%,15%)]/80" />
         </div>
         
@@ -64,7 +57,7 @@ const About = () => {
               <div className="space-y-3 text-muted-foreground">
                 <p className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
-                  Plotray is a modern land-focused real estate platform.
+                  Plotray is a modern land-focused real estate Company.
                 </p>
                 <p className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
@@ -86,11 +79,7 @@ const About = () => {
             </div>
             
             <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src={aboutTeam} 
-                alt="Plotray Team" 
-                className="w-full h-auto object-cover"
-              />
+              <img src={aboutTeam} alt="Plotray Team" className="w-full h-auto object-cover" />
             </div>
           </div>
         </div>
@@ -101,11 +90,7 @@ const About = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src={aboutVision} 
-                alt="Our Vision" 
-                className="w-full h-auto object-cover"
-              />
+              <img src={aboutVision} alt="Our Vision" className="w-full h-auto object-cover" />
             </div>
             
             <div className="order-1 lg:order-2">
@@ -172,11 +157,7 @@ const About = () => {
             </div>
             
             <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src={aboutMission} 
-                alt="Our Mission" 
-                className="w-full h-auto object-cover"
-              />
+              <img src={aboutMission} alt="Our Mission" className="w-full h-auto object-cover" />
             </div>
           </div>
         </div>
@@ -187,11 +168,7 @@ const About = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src={aboutDifferent} 
-                alt="What Makes Plotray Different" 
-                className="w-full h-auto object-cover"
-              />
+              <img src={aboutDifferent} alt="What Makes Plotray Different" className="w-full h-auto object-cover" />
             </div>
             
             <div className="order-1 lg:order-2">
@@ -199,18 +176,14 @@ const About = () => {
                 What Makes Plotray <span className="text-plotray-gold">Different</span>
               </h2>
               <div className="space-y-4">
-                {differentiators.map((item, index) => (
-                  <div 
-                    key={index}
-                    className="flex items-center gap-4 p-4 rounded-xl bg-[hsl(220,60%,97%)] hover:bg-[hsl(220,60%,95%)] transition-colors"
-                    style={{ animationDelay: `${index * 0.1}s` }}
-                  >
+                {differentiators.map((item, index) => <div key={index} className="flex items-center gap-4 p-4 rounded-xl bg-[hsl(220,60%,97%)] hover:bg-[hsl(220,60%,95%)] transition-colors" style={{
+                animationDelay: `${index * 0.1}s`
+              }}>
                     <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[hsl(220,60%,40%)] to-[hsl(220,60%,25%)] flex items-center justify-center shrink-0">
                       <item.icon className="w-6 h-6 text-white" />
                     </div>
                     <span className="text-foreground font-medium">{item.text}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
           </div>
@@ -250,11 +223,7 @@ const About = () => {
             </div>
             
             <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src={aboutAsset} 
-                alt="Land as Asset" 
-                className="w-full h-auto object-cover"
-              />
+              <img src={aboutAsset} alt="Land as Asset" className="w-full h-auto object-cover" />
             </div>
           </div>
         </div>
@@ -265,11 +234,7 @@ const About = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src={aboutEsg} 
-                alt="Sustainability & ESG" 
-                className="w-full h-auto object-cover"
-              />
+              <img src={aboutEsg} alt="Sustainability & ESG" className="w-full h-auto object-cover" />
             </div>
             
             <div className="order-1 lg:order-2">
@@ -336,11 +301,7 @@ const About = () => {
             </div>
             
             <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src={aboutTrust} 
-                alt="Trusted Partner" 
-                className="w-full h-auto object-cover"
-              />
+              <img src={aboutTrust} alt="Trusted Partner" className="w-full h-auto object-cover" />
             </div>
           </div>
         </div>
@@ -351,11 +312,7 @@ const About = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src={aboutJourney} 
-                alt="Our Journey" 
-                className="w-full h-auto object-cover"
-              />
+              <img src={aboutJourney} alt="Our Journey" className="w-full h-auto object-cover" />
             </div>
             
             <div className="order-1 lg:order-2">
@@ -392,11 +349,7 @@ const About = () => {
       {/* Section 10: CTA */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src={aboutCta} 
-            alt="Join Plotray" 
-            className="w-full h-full object-cover"
-          />
+          <img src={aboutCta} alt="Join Plotray" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-[hsl(220,60%,15%)]/90 to-[hsl(220,60%,20%)]/80" />
         </div>
         
@@ -428,22 +381,13 @@ const About = () => {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-plotray-gold to-[hsl(38,85%,55%)] text-[hsl(220,60%,15%)] font-bold hover:from-[hsl(38,85%,55%)] hover:to-plotray-gold transition-all duration-300"
-                asChild
-              >
+              <Button size="lg" className="bg-gradient-to-r from-plotray-gold to-[hsl(38,85%,55%)] text-[hsl(220,60%,15%)] font-bold hover:from-[hsl(38,85%,55%)] hover:to-plotray-gold transition-all duration-300" asChild>
                 <Link to="/buy">
                   Explore Land Assets
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="border-white/30 text-white hover:bg-white/10"
-                asChild
-              >
+              <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10" asChild>
                 <Link to="/contact">
                   Contact Us
                 </Link>
@@ -452,8 +396,6 @@ const About = () => {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default About;
