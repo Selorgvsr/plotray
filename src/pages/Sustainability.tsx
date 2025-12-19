@@ -148,7 +148,7 @@ const Sustainability = () => {
                 Supporting Sustainable Urban Expansion
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                Plotray aligns with responsible city growth. We focus on expansion that supports infrastructure. Avoiding overcrowding preserves land quality. Planned growth increases long-term appreciation. Sustainable cities create sustainable assets.
+                PLOTRAY aligns with responsible city growth. We focus on expansion that supports infrastructure. Avoiding overcrowding preserves land quality. Planned growth increases long-term appreciation. Sustainable cities create sustainable assets.
               </p>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl">
