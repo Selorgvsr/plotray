@@ -133,9 +133,7 @@ const Sustainability = () => {
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
                 Built on Strong ESG Principles
               </h2>
-              <p className="text-muted-foreground leading-relaxed">
-                Plotray aligns projects with ESG standards. Environmental care protects land ecosystems. Social planning supports future communities. Governance ensures transparency and compliance. Strong ESG builds investor and buyer confidence.
-              </p>
+              <p className="text-muted-foreground leading-relaxed">PLOTRAY aligns projects with ESG standards. Environmental care protects land ecosystems. Social planning supports future communities. Governance ensures transparency and compliance. Strong ESG builds investor and buyer confidence.</p>
             </div>
           </div>
         </div>
