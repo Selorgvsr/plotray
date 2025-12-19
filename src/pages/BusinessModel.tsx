@@ -1,7 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Globe, Users, Zap, BarChart3, TrendingUp } from "lucide-react";
 
 // Import images
 import businessHero from "@/assets/business-hero.jpg";
@@ -34,29 +34,82 @@ const BusinessModel = () => {
       </section>
 
       {/* Section 2: Digital Platform at the Core */}
-      <section className="section-padding bg-background">
-        <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="section-padding bg-gradient-to-br from-[hsl(220,30%,98%)] via-background to-[hsl(220,40%,96%)] relative overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[hsl(220,80%,50%)]/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-72 h-72 bg-[hsl(45,90%,45%)]/5 rounded-full blur-3xl" />
+        
+        <div className="container-custom relative z-10">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6 tracking-wide">
-                Digital Platform at the <span className="text-[hsl(220,80%,50%)]">Core</span>
+              {/* Badge */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[hsl(220,80%,50%)]/10 border border-[hsl(220,80%,50%)]/20 mb-6">
+                <Globe className="w-4 h-4 text-[hsl(220,80%,50%)]" />
+                <span className="text-sm font-medium text-[hsl(220,80%,50%)]">Technology Driven</span>
+              </div>
+              
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-8 tracking-wide leading-tight">
+                Digital Platform at the <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(220,80%,50%)] to-[hsl(220,70%,60%)]">Core</span>
               </h2>
-              <div className="space-y-4 text-muted-foreground leading-relaxed">
-                <p>Plottray operates as a technology-driven land platform.</p>
-                <p>Our digital ecosystem connects buyers, sellers, and projects.</p>
-                <p>Automation improves efficiency and scalability.</p>
-                <p>Data-driven insights enhance decision-making.</p>
-                <p>Technology enables consistent revenue growth.</p>
+              
+              {/* Feature cards */}
+              <div className="space-y-4">
+                {[
+                  { icon: Globe, text: "Plottray operates as a technology-driven land platform.", color: "hsl(220,80%,50%)" },
+                  { icon: Users, text: "Our digital ecosystem connects buyers, sellers, and projects.", color: "hsl(175,70%,40%)" },
+                  { icon: Zap, text: "Automation improves efficiency and scalability.", color: "hsl(45,90%,45%)" },
+                  { icon: BarChart3, text: "Data-driven insights enhance decision-making.", color: "hsl(220,80%,50%)" },
+                  { icon: TrendingUp, text: "Technology enables consistent revenue growth.", color: "hsl(145,60%,40%)" },
+                ].map((item, index) => (
+                  <div 
+                    key={index}
+                    className="flex items-start gap-4 p-4 rounded-xl bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md hover:border-[hsl(220,80%,50%)]/30 transition-all duration-300 group"
+                  >
+                    <div 
+                      className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110"
+                      style={{ backgroundColor: `${item.color}15` }}
+                    >
+                      <item.icon className="w-5 h-5" style={{ color: item.color }} />
+                    </div>
+                    <p className="text-muted-foreground leading-relaxed pt-2">{item.text}</p>
+                  </div>
+                ))}
               </div>
             </div>
+            
             <div className="order-1 lg:order-2">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img 
-                  src={businessPlatform} 
-                  alt="Digital Platform Dashboard" 
-                  className="w-full h-auto"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220,70%,15%)]/20 to-transparent" />
+              <div className="relative">
+                {/* Glow effect */}
+                <div className="absolute -inset-4 bg-gradient-to-r from-[hsl(220,80%,50%)]/20 to-[hsl(45,90%,45%)]/20 rounded-3xl blur-2xl" />
+                
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20">
+                  <img 
+                    src={businessPlatform} 
+                    alt="Digital Platform Dashboard" 
+                    className="w-full h-auto"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220,70%,15%)]/30 via-transparent to-transparent" />
+                  
+                  {/* Floating stats card */}
+                  <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-white/90 backdrop-blur-md shadow-lg border border-white/50">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className="text-xs text-muted-foreground">Platform Efficiency</p>
+                        <p className="text-xl font-bold text-[hsl(220,80%,50%)]">98.5%</p>
+                      </div>
+                      <div className="h-10 w-px bg-border" />
+                      <div>
+                        <p className="text-xs text-muted-foreground">Active Users</p>
+                        <p className="text-xl font-bold text-[hsl(145,60%,40%)]">10K+</p>
+                      </div>
+                      <div className="h-10 w-px bg-border" />
+                      <div>
+                        <p className="text-xs text-muted-foreground">Data Points</p>
+                        <p className="text-xl font-bold text-[hsl(45,90%,45%)]">5M+</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
