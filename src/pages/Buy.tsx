@@ -15,6 +15,7 @@ import layoutImage from "@/assets/buy-layout.jpg";
 import gatedImage from "@/assets/buy-gated.jpg";
 import siteVisitImage from "@/assets/buy-sitevisit.jpg";
 import ctaImage from "@/assets/buy-cta.jpg";
+
 const Buy = () => {
   return <Layout>
       {/* Section 1: Hero - Only Heading */}
@@ -35,7 +36,163 @@ const Buy = () => {
         </div>
       </section>
 
-      {/* Section 2: Prime Land Near Malls */}
+      {/* Section 2: Land as High-Appreciating Asset */}
+      <section className="py-20 bg-gradient-to-br from-gold/20 via-gold/10 to-orange/10 bg-emerald-200">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-fade-in">
+              <h2 className="font-heading text-4xl md:text-5xl font-bold text-primary mb-8">
+                Land is a High-Appreciating Asset by Location Advantage
+              </h2>
+              <div className="space-y-4 text-lg text-foreground/80">
+                <p className="flex items-start gap-3">
+                  <BarChart3 className="w-6 h-6 text-gold shrink-0 mt-1" />
+                  <span>Land consistently appreciates over time.</span>
+                </p>
+                <p className="flex items-start gap-3">
+                  <BarChart3 className="w-6 h-6 text-gold shrink-0 mt-1" />
+                  <span>Location determines growth potential.</span>
+                </p>
+                <p className="flex items-start gap-3">
+                  <BarChart3 className="w-6 h-6 text-gold shrink-0 mt-1" />
+                  <span>City-adjacent land outperforms most assets.</span>
+                </p>
+                <p className="flex items-start gap-3">
+                  <BarChart3 className="w-6 h-6 text-gold shrink-0 mt-1" />
+                  <span>Unlike buildings, land does not depreciate.</span>
+                </p>
+                <p className="flex items-start gap-3 font-semibold text-primary">
+                  <BarChart3 className="w-6 h-6 text-gold shrink-0 mt-1" />
+                  <span>A stable path to wealth creation.</span>
+                </p>
+              </div>
+            </div>
+            <div className="relative">
+              <img src={appreciationImage} alt="Land appreciation visualization" className="rounded-2xl shadow-2xl w-full" />
+              <div className="absolute -bottom-4 -right-4 w-40 h-40 bg-gold/30 rounded-full blur-3xl" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3: External Infrastructure Connectivity */}
+      <section className="py-20 bg-emerald text-white">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1 relative">
+              <img src={connectivityImage} alt="Infrastructure connectivity" className="rounded-2xl shadow-2xl w-full" />
+            </div>
+            <div className="order-1 lg:order-2 animate-fade-in">
+              <h2 className="font-heading text-4xl md:text-5xl font-bold mb-8 text-card-foreground">
+                Excellent Connectivity Through Major Infrastructure
+              </h2>
+              <div className="space-y-4 text-lg text-gray-600">
+                <p className="flex items-start gap-3">
+                  <Route className="w-6 h-6 shrink-0 mt-1" />
+                  <span>Road connectivity boosts accessibility.</span>
+                </p>
+                <p className="flex items-start gap-3">
+                  <Route className="w-6 h-6 shrink-0 mt-1" />
+                  <span>Airports support business expansion.</span>
+                </p>
+                <p className="flex items-start gap-3">
+                  <Route className="w-6 h-6 shrink-0 mt-1" />
+                  <span>Rail and metro increase demand.</span>
+                </p>
+                <p className="flex items-start gap-3">
+                  <Route className="w-6 h-6 shrink-0 mt-1" />
+                  <span>Infrastructure drives faster appreciation.</span>
+                </p>
+                <p className="flex items-start gap-3 font-semibold">
+                  <Route className="w-6 h-6 shrink-0 mt-1" />
+                  <span>Connectivity defines land success.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4: Internal Layout Infrastructure */}
+      <section className="py-20 bg-purple-500">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-fade-in">
+              <h2 className="font-heading text-4xl md:text-5xl font-bold text-primary mb-8">
+                Well-Planned Layouts with Modern Infrastructure
+              </h2>
+              <div className="space-y-4 text-lg text-foreground/80">
+                <div className="flex items-start gap-4 p-4 bg-emerald/5 rounded-xl border-l-4 border-emerald">
+                  <Grid3X3 className="w-6 h-6 text-emerald shrink-0 mt-1" />
+                  <span>Internal roads ensure smooth movement.</span>
+                </div>
+                <div className="flex items-start gap-4 p-4 bg-emerald/5 rounded-xl border-l-4 border-emerald">
+                  <Grid3X3 className="w-6 h-6 text-emerald shrink-0 mt-1" />
+                  <span>Electricity and water connections are planned.</span>
+                </div>
+                <div className="flex items-start gap-4 p-4 bg-emerald/5 rounded-xl border-l-4 border-emerald">
+                  <Grid3X3 className="w-6 h-6 text-emerald shrink-0 mt-1" />
+                  <span>Stormwater drainage supports sustainability.</span>
+                </div>
+                <div className="flex items-start gap-4 p-4 bg-emerald/5 rounded-xl border-l-4 border-emerald">
+                  <Grid3X3 className="w-6 h-6 text-emerald shrink-0 mt-1" />
+                  <span>Landscaping enhances value and appeal.</span>
+                </div>
+                <div className="flex items-start gap-4 p-4 bg-emerald/10 rounded-xl border-l-4 border-emerald">
+                  <Grid3X3 className="w-6 h-6 text-emerald shrink-0 mt-1" />
+                  <span className="font-semibold">Infrastructure strengthens investment quality.</span>
+                </div>
+              </div>
+            </div>
+            <div className="relative">
+              <img alt="Community layout plan" className="rounded-2xl shadow-2xl w-full bg-white" src="/lovable-uploads/0f771d53-07fa-4b1c-8e47-479da1e9ea3b.jpg" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5: Gated Communities & Security */}
+      <section className="py-20 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1 relative">
+              <img alt="Gated community entrance" className="rounded-2xl shadow-2xl w-full" src="/lovable-uploads/75069692-4b85-4e68-a094-bb54435cd167.jpg" />
+              <div className="absolute top-4 left-4 bg-gold text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold">
+                Premium Living
+              </div>
+            </div>
+            <div className="order-1 lg:order-2 animate-fade-in">
+              <h2 className="font-heading text-4xl md:text-5xl font-bold text-primary mb-8">
+                Secure Gated Communities with Modern Living
+              </h2>
+              <div className="space-y-4 text-lg text-foreground/80">
+                <p className="flex items-start gap-3">
+                  <Lock className="w-6 h-6 text-gold shrink-0 mt-1" />
+                  <span>Gated layouts improve safety.</span>
+                </p>
+                <p className="flex items-start gap-3">
+                  <Lock className="w-6 h-6 text-gold shrink-0 mt-1" />
+                  <span>Controlled access attracts premium buyers.</span>
+                </p>
+                <p className="flex items-start gap-3">
+                  <Lock className="w-6 h-6 text-gold shrink-0 mt-1" />
+                  <span>Organized communities boost demand.</span>
+                </p>
+                <p className="flex items-start gap-3">
+                  <Lock className="w-6 h-6 text-gold shrink-0 mt-1" />
+                  <span>Security adds long-term value.</span>
+                </p>
+                <p className="flex items-start gap-3 font-semibold text-primary">
+                  <Lock className="w-6 h-6 text-gold shrink-0 mt-1" />
+                  <span>Future-ready land investments.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 6: Prime Land Near Malls */}
       <section className="py-20 bg-sky-100">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -76,7 +233,7 @@ const Buy = () => {
         </div>
       </section>
 
-      {/* Section 3: High-Growth Urban Investment Zones */}
+      {/* Section 7: High-Growth Urban Investment Zones */}
       <section className="py-20 bg-gradient-to-br from-teal to-emerald text-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -115,7 +272,7 @@ const Buy = () => {
         </div>
       </section>
 
-      {/* Section 4: Verified & Transparent */}
+      {/* Section 8: Verified & Transparent */}
       <section className="py-20 bg-accent">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -153,7 +310,7 @@ const Buy = () => {
         </div>
       </section>
 
-      {/* Section 5: Smart Search & Maps */}
+      {/* Section 9: Smart Search & Maps */}
       <section className="py-20 bg-teal/10">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -195,162 +352,6 @@ const Buy = () => {
                   </div>
                   <span className="text-lg font-semibold text-emerald">Smarter tools enable better decisions.</span>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 6: Land as High-Appreciating Asset */}
-      <section className="py-20 bg-gradient-to-br from-gold/20 via-gold/10 to-orange/10 bg-emerald-200">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in">
-              <h2 className="font-heading text-4xl md:text-5xl font-bold text-primary mb-8">
-                Land is a High-Appreciating Asset by Location Advantage
-              </h2>
-              <div className="space-y-4 text-lg text-foreground/80">
-                <p className="flex items-start gap-3">
-                  <BarChart3 className="w-6 h-6 text-gold shrink-0 mt-1" />
-                  <span>Land consistently appreciates over time.</span>
-                </p>
-                <p className="flex items-start gap-3">
-                  <BarChart3 className="w-6 h-6 text-gold shrink-0 mt-1" />
-                  <span>Location determines growth potential.</span>
-                </p>
-                <p className="flex items-start gap-3">
-                  <BarChart3 className="w-6 h-6 text-gold shrink-0 mt-1" />
-                  <span>City-adjacent land outperforms most assets.</span>
-                </p>
-                <p className="flex items-start gap-3">
-                  <BarChart3 className="w-6 h-6 text-gold shrink-0 mt-1" />
-                  <span>Unlike buildings, land does not depreciate.</span>
-                </p>
-                <p className="flex items-start gap-3 font-semibold text-primary">
-                  <BarChart3 className="w-6 h-6 text-gold shrink-0 mt-1" />
-                  <span>A stable path to wealth creation.</span>
-                </p>
-              </div>
-            </div>
-            <div className="relative">
-              <img src={appreciationImage} alt="Land appreciation visualization" className="rounded-2xl shadow-2xl w-full" />
-              <div className="absolute -bottom-4 -right-4 w-40 h-40 bg-gold/30 rounded-full blur-3xl" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 7: External Infrastructure Connectivity */}
-      <section className="py-20 bg-emerald text-white">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1 relative">
-              <img src={connectivityImage} alt="Infrastructure connectivity" className="rounded-2xl shadow-2xl w-full" />
-            </div>
-            <div className="order-1 lg:order-2 animate-fade-in">
-              <h2 className="font-heading text-4xl md:text-5xl font-bold mb-8 text-card-foreground">
-                Excellent Connectivity Through Major Infrastructure
-              </h2>
-              <div className="space-y-4 text-lg text-gray-600">
-                <p className="flex items-start gap-3">
-                  <Route className="w-6 h-6 shrink-0 mt-1" />
-                  <span>Road connectivity boosts accessibility.</span>
-                </p>
-                <p className="flex items-start gap-3">
-                  <Route className="w-6 h-6 shrink-0 mt-1" />
-                  <span>Airports support business expansion.</span>
-                </p>
-                <p className="flex items-start gap-3">
-                  <Route className="w-6 h-6 shrink-0 mt-1" />
-                  <span>Rail and metro increase demand.</span>
-                </p>
-                <p className="flex items-start gap-3">
-                  <Route className="w-6 h-6 shrink-0 mt-1" />
-                  <span>Infrastructure drives faster appreciation.</span>
-                </p>
-                <p className="flex items-start gap-3 font-semibold">
-                  <Route className="w-6 h-6 shrink-0 mt-1" />
-                  <span>Connectivity defines land success.</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 8: Internal Layout Infrastructure */}
-      <section className="py-20 bg-purple-500">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in">
-              <h2 className="font-heading text-4xl md:text-5xl font-bold text-primary mb-8">
-                Well-Planned Layouts with Modern Infrastructure
-              </h2>
-              <div className="space-y-4 text-lg text-foreground/80">
-                <div className="flex items-start gap-4 p-4 bg-emerald/5 rounded-xl border-l-4 border-emerald">
-                  <Grid3X3 className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                  <span>Internal roads ensure smooth movement.</span>
-                </div>
-                <div className="flex items-start gap-4 p-4 bg-emerald/5 rounded-xl border-l-4 border-emerald">
-                  <Grid3X3 className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                  <span>Electricity and water connections are planned.</span>
-                </div>
-                <div className="flex items-start gap-4 p-4 bg-emerald/5 rounded-xl border-l-4 border-emerald">
-                  <Grid3X3 className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                  <span>Stormwater drainage supports sustainability.</span>
-                </div>
-                <div className="flex items-start gap-4 p-4 bg-emerald/5 rounded-xl border-l-4 border-emerald">
-                  <Grid3X3 className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                  <span>Landscaping enhances value and appeal.</span>
-                </div>
-                <div className="flex items-start gap-4 p-4 bg-emerald/10 rounded-xl border-l-4 border-emerald">
-                  <Grid3X3 className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                  <span className="font-semibold">Infrastructure strengthens investment quality.</span>
-                </div>
-              </div>
-            </div>
-            <div className="relative">
-              <img alt="Community layout plan" className="rounded-2xl shadow-2xl w-full bg-white" src="/lovable-uploads/0f771d53-07fa-4b1c-8e47-479da1e9ea3b.jpg" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 9: Gated Communities & Security */}
-      <section className="py-20 bg-muted">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1 relative">
-              <img alt="Gated community entrance" className="rounded-2xl shadow-2xl w-full" src="/lovable-uploads/75069692-4b85-4e68-a094-bb54435cd167.jpg" />
-              <div className="absolute top-4 left-4 bg-gold text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold">
-                Premium Living
-              </div>
-            </div>
-            <div className="order-1 lg:order-2 animate-fade-in">
-              <h2 className="font-heading text-4xl md:text-5xl font-bold text-primary mb-8">
-                Secure Gated Communities with Modern Living
-              </h2>
-              <div className="space-y-4 text-lg text-foreground/80">
-                <p className="flex items-start gap-3">
-                  <Lock className="w-6 h-6 text-gold shrink-0 mt-1" />
-                  <span>Gated layouts improve safety.</span>
-                </p>
-                <p className="flex items-start gap-3">
-                  <Lock className="w-6 h-6 text-gold shrink-0 mt-1" />
-                  <span>Controlled access attracts premium buyers.</span>
-                </p>
-                <p className="flex items-start gap-3">
-                  <Lock className="w-6 h-6 text-gold shrink-0 mt-1" />
-                  <span>Organized communities boost demand.</span>
-                </p>
-                <p className="flex items-start gap-3">
-                  <Lock className="w-6 h-6 text-gold shrink-0 mt-1" />
-                  <span>Security adds long-term value.</span>
-                </p>
-                <p className="flex items-start gap-3 font-semibold text-primary">
-                  <Lock className="w-6 h-6 text-gold shrink-0 mt-1" />
-                  <span>Future-ready land investments.</span>
-                </p>
               </div>
             </div>
           </div>
