@@ -1,172 +1,231 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { 
-  Leaf, 
-  Recycle, 
-  Users, 
-  TreePine,
-  ArrowRight,
-  CheckCircle,
-  Globe,
-  Building
-} from "lucide-react";
+import { Leaf, ArrowRight } from "lucide-react";
 
-const practices = [
-  { icon: TreePine, title: "Eco-Friendly Planning", desc: "Projects designed with environmental considerations in mind." },
-  { icon: Recycle, title: "Sustainable Growth", desc: "Balanced urban expansion that preserves natural resources." },
-  { icon: Users, title: "Community Focus", desc: "Development that benefits local communities and ecosystems." },
-  { icon: Building, title: "Green Infrastructure", desc: "Promoting sustainable building practices in our projects." },
-];
-
-const commitments = [
-  "Green spaces preserved in all project layouts",
-  "Water conservation measures implemented",
-  "Support for local biodiversity",
-  "Eco-friendly construction guidelines",
-  "Community welfare initiatives",
-  "Transparent environmental reporting",
-];
+// Import images
+import heroImage from "@/assets/sustainability-hero.jpg";
+import responsibleImage from "@/assets/sustainability-responsible.jpg";
+import layoutImage from "@/assets/sustainability-layout.jpg";
+import waterImage from "@/assets/sustainability-water.jpg";
+import solarImage from "@/assets/sustainability-solar.jpg";
+import greenImage from "@/assets/sustainability-green.jpg";
+import esgImage from "@/assets/sustainability-esg.jpg";
+import urbanImage from "@/assets/sustainability-urban.jpg";
+import ctaImage from "@/assets/sustainability-cta.jpg";
 
 const Sustainability = () => {
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="relative py-20 md:py-28 overflow-hidden gradient-success">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-primary-foreground rounded-full blur-3xl" />
+      {/* Hero Section - Heading Only */}
+      <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
+        
+        <div className="container-custom relative z-10 h-full flex items-center justify-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white text-center leading-tight max-w-4xl animate-slide-up">
+            Building Sustainable Land for Future Generations
+          </h1>
         </div>
+      </section>
+
+      {/* Section 2: Responsible Land Development */}
+      <section className="section-padding bg-background">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+                Responsible Land Development Practices
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Plotray believes in responsible and planned land development. We focus on organized layouts instead of unplanned expansion. Sustainable planning protects land value and the environment. Balanced growth ensures long-term usability. Responsible development benefits both investors and communities.
+              </p>
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src={responsibleImage} 
+                alt="Responsible land development" 
+                className="w-full h-[350px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3: Eco-Friendly Layout Planning */}
+      <section className="section-padding bg-plotray-emerald/5">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src={layoutImage} 
+                alt="Eco-friendly layout planning" 
+                className="w-full h-[350px] object-cover"
+              />
+            </div>
+            <div className="order-1 lg:order-2">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+                Eco-Friendly Layout & Infrastructure Planning
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Our plotted layouts support natural land flow. Stormwater drainage reduces waterlogging. Green landscaping improves air quality. Proper road planning minimizes environmental impact. Sustainability starts with smart design.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4: Water & Resource Management */}
+      <section className="section-padding bg-background">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+                Smart Water & Resource Management
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Plotray promotes efficient water usage in layouts. Stormwater systems support groundwater recharge. Planned drainage prevents soil erosion. Resource management improves long-term land value. Sustainable land lasts longer.
+              </p>
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src={waterImage} 
+                alt="Water and resource management" 
+                className="w-full h-[350px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5: Renewable Energy Integration (Solar) */}
+      <section className="section-padding bg-plotray-emerald/5">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src={solarImage} 
+                alt="Solar-powered infrastructure" 
+                className="w-full h-[350px] object-cover"
+              />
+            </div>
+            <div className="order-1 lg:order-2">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+                Solar-Powered Infrastructure for Sustainable Living
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Solar energy reduces long-term infrastructure costs. Layouts support solar streetlights and common-area panels. Renewable energy lowers carbon footprint. Energy-efficient planning attracts future buyers. Clean energy strengthens sustainable land value.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 6: Green Spaces & Landscaping */}
+      <section className="section-padding bg-background">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+                Green Spaces That Enhance Living & Value
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Green spaces create healthier environments. Landscaping improves visual appeal and comfort. Trees reduce heat and pollution. Well-planned greenery attracts future residents. Nature and investment grow together.
+              </p>
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src={greenImage} 
+                alt="Green spaces and landscaping" 
+                className="w-full h-[350px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 7: ESG Commitment */}
+      <section className="section-padding bg-plotray-emerald/5">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src={esgImage} 
+                alt="ESG principles" 
+                className="w-full h-[350px] object-cover"
+              />
+            </div>
+            <div className="order-1 lg:order-2">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+                Built on Strong ESG Principles
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Plotray aligns projects with ESG standards. Environmental care protects land ecosystems. Social planning supports future communities. Governance ensures transparency and compliance. Strong ESG builds investor and buyer confidence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 8: Sustainable Urban Expansion */}
+      <section className="section-padding bg-background">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+                Supporting Sustainable Urban Expansion
+              </h2>
+              <p className="text-muted-foreground leading-relaxed">
+                Plotray aligns with responsible city growth. We focus on expansion that supports infrastructure. Avoiding overcrowding preserves land quality. Planned growth increases long-term appreciation. Sustainable cities create sustainable assets.
+              </p>
+            </div>
+            <div className="rounded-2xl overflow-hidden shadow-xl">
+              <img 
+                src={urbanImage} 
+                alt="Sustainable urban expansion" 
+                className="w-full h-[350px] object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 9: CTA */}
+      <section className="relative py-20 md:py-28 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${ctaImage})` }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-plotray-emerald/90 to-plotray-teal/80" />
         
         <div className="container-custom relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 backdrop-blur-sm mb-6">
+          <div className="max-w-2xl">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm mb-6">
               <Leaf className="w-4 h-4 text-plotray-gold" />
-              <span className="text-sm font-medium text-primary-foreground">Our Commitment to the Planet</span>
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-6 animate-slide-up">
-              Sustainable <span className="text-plotray-gold">Development</span>
-            </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/80 animate-slide-up" style={{ animationDelay: "0.1s" }}>
-              Responsible land development practices that balance growth with environmental stewardship.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Approach */}
-      <section className="section-padding bg-background">
-        <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-                Our <span className="text-plotray-emerald">Approach</span>
-              </h2>
-              <p className="text-muted-foreground mb-6">
-                At Plotray, we believe in responsible land development that doesn't compromise 
-                the environment. Our approach balances urban growth with ecological preservation.
-              </p>
-              <p className="text-muted-foreground mb-6">
-                We work with partners who share our vision for sustainable development, 
-                ensuring that every project meets environmental guidelines while delivering 
-                value to investors.
-              </p>
-              
-              <Button variant="teal" size="lg" asChild>
-                <Link to="/projects">
-                  Explore Sustainable Projects
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-              </Button>
+              <span className="text-sm font-medium text-white">Sustainable Future</span>
             </div>
             
-            <div className="glass-card rounded-2xl p-8 bg-gradient-to-br from-plotray-emerald/10 to-plotray-teal/10">
-              <Globe className="w-16 h-16 text-plotray-emerald mx-auto mb-6" />
-              <h3 className="text-2xl font-heading font-bold text-foreground text-center mb-4">
-                Environmental Impact
-              </h3>
-              <div className="space-y-4">
-                <div className="flex justify-between p-3 bg-background rounded-lg">
-                  <span className="text-muted-foreground">Green Spaces Preserved</span>
-                  <span className="font-semibold text-plotray-emerald">30%+</span>
-                </div>
-                <div className="flex justify-between p-3 bg-background rounded-lg">
-                  <span className="text-muted-foreground">Water Conservation</span>
-                  <span className="font-semibold text-plotray-emerald">40%</span>
-                </div>
-                <div className="flex justify-between p-3 bg-background rounded-lg">
-                  <span className="text-muted-foreground">Carbon Neutral Goal</span>
-                  <span className="font-semibold text-plotray-emerald">2030</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Practices */}
-      <section className="section-padding bg-muted/50">
-        <div className="container-custom">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-              Sustainable <span className="text-plotray-emerald">Practices</span>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6">
+              Invest in Land That Respects the Future
             </h2>
-            <p className="text-muted-foreground">
-              Our commitment to environmental responsibility in every project.
-            </p>
-          </div>
-          
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {practices.map((practice, index) => (
-              <div key={index} className="text-center p-6 glass-card rounded-2xl hover-lift">
-                <div className="w-16 h-16 rounded-2xl gradient-success flex items-center justify-center mx-auto mb-4">
-                  <practice.icon className="w-8 h-8 text-primary-foreground" />
-                </div>
-                <h3 className="text-lg font-heading font-semibold text-foreground mb-2">{practice.title}</h3>
-                <p className="text-sm text-muted-foreground">{practice.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Commitments */}
-      <section className="section-padding bg-background">
-        <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="glass-card rounded-2xl p-8">
-              <h3 className="text-xl font-heading font-semibold text-foreground mb-6">Our Commitments</h3>
-              <div className="space-y-4">
-                {commitments.map((commitment, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-plotray-emerald flex-shrink-0" />
-                    <span className="text-foreground">{commitment}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
             
-            <div>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-                Building a <span className="text-plotray-emerald">Greener Future</span>
-              </h2>
-              <p className="text-muted-foreground mb-6">
-                Every project we undertake is evaluated for its environmental impact. 
-                We work to minimize disruption to local ecosystems while creating 
-                valuable investment opportunities.
-              </p>
-              <p className="text-muted-foreground mb-6">
-                Our sustainability initiatives extend beyond individual projects to 
-                include community education, partnership with environmental organizations, 
-                and advocacy for responsible development practices.
-              </p>
-              
-              <Button variant="teal" size="lg" asChild>
-                <Link to="/contact">
-                  Partner With Us
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-              </Button>
-            </div>
+            <p className="text-lg text-white/90 mb-8 leading-relaxed">
+              Sustainability protects long-term investments. Eco-planned land holds value over decades. Plotray combines growth with responsibility. Choose land that aligns with future needs. Build wealth the sustainable way.
+            </p>
+            
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-plotray-gold to-yellow-500 hover:from-yellow-500 hover:to-plotray-gold text-plotray-navy font-semibold rounded-full px-8 shadow-lg hover:shadow-xl transition-all duration-300"
+              asChild
+            >
+              <Link to="/contact">
+                Start Your Journey
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
