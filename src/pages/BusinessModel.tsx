@@ -58,7 +58,7 @@ const BusinessModel = () => {
               <div className="space-y-4">
                 {[{
                 icon: Globe,
-                text: "Plottray operates as a technology-driven land platform.",
+                text: "PLOTRAY operates as a technology-driven land platform.",
                 color: "hsl(220,80%,50%)"
               }, {
                 icon: Users,
@@ -161,7 +161,7 @@ const BusinessModel = () => {
               <div className="space-y-4">
                 {[{
                 icon: MapPin,
-                text: "Plottray acquires land in high-growth zones.",
+                text: "PLOTRAY acquires land in high-growth zones.",
                 color: "hsl(45,90%,45%)"
               }, {
                 icon: Target,
@@ -215,7 +215,7 @@ const BusinessModel = () => {
               <div className="space-y-4">
                 {[{
                 icon: Handshake,
-                text: "Plottray partners with developers and landowners.",
+                text: "PLOTRAY partners with developers and landowners.",
                 color: "hsl(175,70%,40%)"
               }, {
                 icon: Users,
@@ -372,7 +372,7 @@ const BusinessModel = () => {
               <div className="space-y-4">
                 {[{
                 icon: Rocket,
-                text: "Plottray's model supports scalable expansion.",
+                text: "PLOTRAY's model supports scalable expansion.",
                 color: "hsl(220,80%,50%)"
               }, {
                 icon: MapPinned,
