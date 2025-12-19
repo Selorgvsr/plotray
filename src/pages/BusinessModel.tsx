@@ -1,33 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { 
-  ArrowRight, 
-  Globe, 
-  Users, 
-  Zap, 
-  BarChart3, 
-  TrendingUp,
-  MapPin,
-  Target,
-  DollarSign,
-  Building2,
-  Handshake,
-  FileCheck,
-  Clock,
-  Landmark,
-  LineChart,
-  Timer,
-  Rocket,
-  MapPinned,
-  Settings,
-  Leaf,
-  RefreshCw,
-  Shield,
-  CheckCircle,
-  Star,
-  Award
-} from "lucide-react";
+import { ArrowRight, Globe, Users, Zap, BarChart3, TrendingUp, MapPin, Target, DollarSign, Building2, Handshake, FileCheck, Clock, Landmark, LineChart, Timer, Rocket, MapPinned, Settings, Leaf, RefreshCw, Shield, CheckCircle, Star, Award } from "lucide-react";
 
 // Import images
 import businessHero from "@/assets/business-hero.jpg";
@@ -37,18 +11,12 @@ import businessPartnership from "@/assets/business-partnership.jpg";
 import businessGrowth from "@/assets/business-growth.jpg";
 import businessScalable from "@/assets/business-scalable.jpg";
 import businessCta from "@/assets/business-cta.jpg";
-
 const BusinessModel = () => {
-  return (
-    <Layout>
+  return <Layout>
       {/* Section 1: Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src={businessHero} 
-            alt="Scalable Revenue Model" 
-            className="w-full h-full object-cover"
-          />
+          <img src={businessHero} alt="Scalable Revenue Model" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-[hsl(220,70%,15%)]/80 via-[hsl(220,70%,20%)]/60 to-[hsl(220,70%,15%)]/80" />
         </div>
         
@@ -88,26 +56,36 @@ const BusinessModel = () => {
               </h2>
               
               <div className="space-y-4">
-                {[
-                  { icon: Globe, text: "Plottray operates as a technology-driven land platform.", color: "hsl(220,80%,50%)" },
-                  { icon: Users, text: "Our digital ecosystem connects buyers, sellers, and projects.", color: "hsl(175,70%,40%)" },
-                  { icon: Zap, text: "Automation improves efficiency and scalability.", color: "hsl(45,90%,45%)" },
-                  { icon: BarChart3, text: "Data-driven insights enhance decision-making.", color: "hsl(220,80%,50%)" },
-                  { icon: TrendingUp, text: "Technology enables consistent revenue growth.", color: "hsl(145,60%,40%)" },
-                ].map((item, index) => (
-                  <div 
-                    key={index}
-                    className="flex items-start gap-4 p-4 rounded-xl bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md hover:border-[hsl(220,80%,50%)]/30 transition-all duration-300 group"
-                  >
-                    <div 
-                      className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110"
-                      style={{ backgroundColor: `${item.color}15` }}
-                    >
-                      <item.icon className="w-5 h-5" style={{ color: item.color }} />
+                {[{
+                icon: Globe,
+                text: "Plottray operates as a technology-driven land platform.",
+                color: "hsl(220,80%,50%)"
+              }, {
+                icon: Users,
+                text: "Our digital ecosystem connects buyers, sellers, and projects.",
+                color: "hsl(175,70%,40%)"
+              }, {
+                icon: Zap,
+                text: "Automation improves efficiency and scalability.",
+                color: "hsl(45,90%,45%)"
+              }, {
+                icon: BarChart3,
+                text: "Data-driven insights enhance decision-making.",
+                color: "hsl(220,80%,50%)"
+              }, {
+                icon: TrendingUp,
+                text: "Technology enables consistent revenue growth.",
+                color: "hsl(145,60%,40%)"
+              }].map((item, index) => <div key={index} className="flex items-start gap-4 p-4 rounded-xl bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md hover:border-[hsl(220,80%,50%)]/30 transition-all duration-300 group">
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110" style={{
+                  backgroundColor: `${item.color}15`
+                }}>
+                      <item.icon className="w-5 h-5" style={{
+                    color: item.color
+                  }} />
                     </div>
                     <p className="text-muted-foreground leading-relaxed pt-2">{item.text}</p>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
             
@@ -116,11 +94,7 @@ const BusinessModel = () => {
                 <div className="absolute -inset-4 bg-gradient-to-r from-[hsl(220,80%,50%)]/20 to-[hsl(45,90%,45%)]/20 rounded-3xl blur-2xl" />
                 
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20">
-                  <img 
-                    src={businessPlatform} 
-                    alt="Digital Platform Dashboard" 
-                    className="w-full h-auto"
-                  />
+                  <img src={businessPlatform} alt="Digital Platform Dashboard" className="w-full h-auto" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220,70%,15%)]/30 via-transparent to-transparent" />
                   
                   <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-white/90 backdrop-blur-md shadow-lg border border-white/50">
@@ -149,7 +123,7 @@ const BusinessModel = () => {
       </section>
 
       {/* Section 3: Land Acquisition & Strategic Resale */}
-      <section className="section-padding bg-gradient-to-bl from-[hsl(45,30%,97%)] via-background to-[hsl(45,40%,96%)] relative overflow-hidden">
+      <section className="section-padding bg-gradient-to-bl from-[hsl(45,30%,97%)] via-background to-[hsl(45,40%,96%)] relative overflow-hidden bg-accent">
         <div className="absolute top-0 left-0 w-80 h-80 bg-[hsl(45,90%,45%)]/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-[hsl(145,60%,40%)]/5 rounded-full blur-3xl" />
         
@@ -160,11 +134,7 @@ const BusinessModel = () => {
                 <div className="absolute -inset-4 bg-gradient-to-r from-[hsl(45,90%,45%)]/20 to-[hsl(145,60%,40%)]/20 rounded-3xl blur-2xl" />
                 
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20">
-                  <img 
-                    src={businessAcquisition} 
-                    alt="Land Acquisition" 
-                    className="w-full h-auto"
-                  />
+                  <img src={businessAcquisition} alt="Land Acquisition" className="w-full h-auto" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220,70%,15%)]/30 via-transparent to-transparent" />
                   
                   {/* Floating badge */}
@@ -189,26 +159,36 @@ const BusinessModel = () => {
               </h2>
               
               <div className="space-y-4">
-                {[
-                  { icon: MapPin, text: "Plottray acquires land in high-growth zones.", color: "hsl(45,90%,45%)" },
-                  { icon: Target, text: "Strategic holding improves asset value.", color: "hsl(220,80%,50%)" },
-                  { icon: DollarSign, text: "Resale is aligned with market demand.", color: "hsl(145,60%,40%)" },
-                  { icon: Building2, text: "Location-driven appreciation increases margins.", color: "hsl(45,90%,45%)" },
-                  { icon: TrendingUp, text: "Land growth fuels sustainable revenue.", color: "hsl(175,70%,40%)" },
-                ].map((item, index) => (
-                  <div 
-                    key={index}
-                    className="flex items-start gap-4 p-4 rounded-xl bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md hover:border-[hsl(45,90%,45%)]/30 transition-all duration-300 group"
-                  >
-                    <div 
-                      className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110"
-                      style={{ backgroundColor: `${item.color}15` }}
-                    >
-                      <item.icon className="w-5 h-5" style={{ color: item.color }} />
+                {[{
+                icon: MapPin,
+                text: "Plottray acquires land in high-growth zones.",
+                color: "hsl(45,90%,45%)"
+              }, {
+                icon: Target,
+                text: "Strategic holding improves asset value.",
+                color: "hsl(220,80%,50%)"
+              }, {
+                icon: DollarSign,
+                text: "Resale is aligned with market demand.",
+                color: "hsl(145,60%,40%)"
+              }, {
+                icon: Building2,
+                text: "Location-driven appreciation increases margins.",
+                color: "hsl(45,90%,45%)"
+              }, {
+                icon: TrendingUp,
+                text: "Land growth fuels sustainable revenue.",
+                color: "hsl(175,70%,40%)"
+              }].map((item, index) => <div key={index} className="flex items-start gap-4 p-4 rounded-xl bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md hover:border-[hsl(45,90%,45%)]/30 transition-all duration-300 group">
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110" style={{
+                  backgroundColor: `${item.color}15`
+                }}>
+                      <item.icon className="w-5 h-5" style={{
+                    color: item.color
+                  }} />
                     </div>
                     <p className="text-muted-foreground leading-relaxed pt-2">{item.text}</p>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
           </div>
@@ -233,26 +213,36 @@ const BusinessModel = () => {
               </h2>
               
               <div className="space-y-4">
-                {[
-                  { icon: Handshake, text: "Plottray partners with developers and landowners.", color: "hsl(175,70%,40%)" },
-                  { icon: Users, text: "Joint development creates mutual value.", color: "hsl(220,80%,50%)" },
-                  { icon: FileCheck, text: "Revenue is generated through structured agreements.", color: "hsl(45,90%,45%)" },
-                  { icon: Building2, text: "Projects near cities attract strong demand.", color: "hsl(175,70%,40%)" },
-                  { icon: TrendingUp, text: "Partnerships expand revenue channels.", color: "hsl(145,60%,40%)" },
-                ].map((item, index) => (
-                  <div 
-                    key={index}
-                    className="flex items-start gap-4 p-4 rounded-xl bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md hover:border-[hsl(175,70%,40%)]/30 transition-all duration-300 group"
-                  >
-                    <div 
-                      className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110"
-                      style={{ backgroundColor: `${item.color}15` }}
-                    >
-                      <item.icon className="w-5 h-5" style={{ color: item.color }} />
+                {[{
+                icon: Handshake,
+                text: "Plottray partners with developers and landowners.",
+                color: "hsl(175,70%,40%)"
+              }, {
+                icon: Users,
+                text: "Joint development creates mutual value.",
+                color: "hsl(220,80%,50%)"
+              }, {
+                icon: FileCheck,
+                text: "Revenue is generated through structured agreements.",
+                color: "hsl(45,90%,45%)"
+              }, {
+                icon: Building2,
+                text: "Projects near cities attract strong demand.",
+                color: "hsl(175,70%,40%)"
+              }, {
+                icon: TrendingUp,
+                text: "Partnerships expand revenue channels.",
+                color: "hsl(145,60%,40%)"
+              }].map((item, index) => <div key={index} className="flex items-start gap-4 p-4 rounded-xl bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md hover:border-[hsl(175,70%,40%)]/30 transition-all duration-300 group">
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110" style={{
+                  backgroundColor: `${item.color}15`
+                }}>
+                      <item.icon className="w-5 h-5" style={{
+                    color: item.color
+                  }} />
                     </div>
                     <p className="text-muted-foreground leading-relaxed pt-2">{item.text}</p>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
             
@@ -261,11 +251,7 @@ const BusinessModel = () => {
                 <div className="absolute -inset-4 bg-gradient-to-r from-[hsl(175,70%,40%)]/20 to-[hsl(220,80%,50%)]/20 rounded-3xl blur-2xl" />
                 
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20">
-                  <img 
-                    src={businessPartnership} 
-                    alt="Project Partnerships" 
-                    className="w-full h-auto"
-                  />
+                  <img src={businessPartnership} alt="Project Partnerships" className="w-full h-auto" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220,70%,15%)]/30 via-transparent to-transparent" />
                   
                   <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-white/90 backdrop-blur-md shadow-lg border border-white/50">
@@ -305,11 +291,7 @@ const BusinessModel = () => {
                 <div className="absolute -inset-4 bg-gradient-to-r from-[hsl(145,60%,40%)]/20 to-[hsl(45,90%,45%)]/20 rounded-3xl blur-2xl" />
                 
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20">
-                  <img 
-                    src={businessGrowth} 
-                    alt="Asset Growth Strategy" 
-                    className="w-full h-auto"
-                  />
+                  <img src={businessGrowth} alt="Asset Growth Strategy" className="w-full h-auto" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220,70%,15%)]/30 via-transparent to-transparent" />
                   
                   {/* Growth indicator */}
@@ -334,26 +316,36 @@ const BusinessModel = () => {
               </h2>
               
               <div className="space-y-4">
-                {[
-                  { icon: Landmark, text: "Land assets are held with a growth vision.", color: "hsl(145,60%,40%)" },
-                  { icon: Building2, text: "Infrastructure expansion increases asset worth.", color: "hsl(220,80%,50%)" },
-                  { icon: LineChart, text: "Time-based appreciation builds strong returns.", color: "hsl(45,90%,45%)" },
-                  { icon: Target, text: "Strategic exits maximize value.", color: "hsl(145,60%,40%)" },
-                  { icon: Timer, text: "Patience drives profitability.", color: "hsl(175,70%,40%)" },
-                ].map((item, index) => (
-                  <div 
-                    key={index}
-                    className="flex items-start gap-4 p-4 rounded-xl bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md hover:border-[hsl(145,60%,40%)]/30 transition-all duration-300 group"
-                  >
-                    <div 
-                      className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110"
-                      style={{ backgroundColor: `${item.color}15` }}
-                    >
-                      <item.icon className="w-5 h-5" style={{ color: item.color }} />
+                {[{
+                icon: Landmark,
+                text: "Land assets are held with a growth vision.",
+                color: "hsl(145,60%,40%)"
+              }, {
+                icon: Building2,
+                text: "Infrastructure expansion increases asset worth.",
+                color: "hsl(220,80%,50%)"
+              }, {
+                icon: LineChart,
+                text: "Time-based appreciation builds strong returns.",
+                color: "hsl(45,90%,45%)"
+              }, {
+                icon: Target,
+                text: "Strategic exits maximize value.",
+                color: "hsl(145,60%,40%)"
+              }, {
+                icon: Timer,
+                text: "Patience drives profitability.",
+                color: "hsl(175,70%,40%)"
+              }].map((item, index) => <div key={index} className="flex items-start gap-4 p-4 rounded-xl bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md hover:border-[hsl(145,60%,40%)]/30 transition-all duration-300 group">
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110" style={{
+                  backgroundColor: `${item.color}15`
+                }}>
+                      <item.icon className="w-5 h-5" style={{
+                    color: item.color
+                  }} />
                     </div>
                     <p className="text-muted-foreground leading-relaxed pt-2">{item.text}</p>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
           </div>
@@ -378,26 +370,36 @@ const BusinessModel = () => {
               </h2>
               
               <div className="space-y-4">
-                {[
-                  { icon: Rocket, text: "Plottray's model supports scalable expansion.", color: "hsl(220,80%,50%)" },
-                  { icon: MapPinned, text: "New locations add incremental revenue.", color: "hsl(175,70%,40%)" },
-                  { icon: Settings, text: "Technology reduces operational friction.", color: "hsl(45,90%,45%)" },
-                  { icon: Leaf, text: "Sustainability ensures long-term stability.", color: "hsl(145,60%,40%)" },
-                  { icon: RefreshCw, text: "A repeatable model supports growth.", color: "hsl(220,80%,50%)" },
-                ].map((item, index) => (
-                  <div 
-                    key={index}
-                    className="flex items-start gap-4 p-4 rounded-xl bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md hover:border-[hsl(175,70%,40%)]/30 transition-all duration-300 group"
-                  >
-                    <div 
-                      className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110"
-                      style={{ backgroundColor: `${item.color}15` }}
-                    >
-                      <item.icon className="w-5 h-5" style={{ color: item.color }} />
+                {[{
+                icon: Rocket,
+                text: "Plottray's model supports scalable expansion.",
+                color: "hsl(220,80%,50%)"
+              }, {
+                icon: MapPinned,
+                text: "New locations add incremental revenue.",
+                color: "hsl(175,70%,40%)"
+              }, {
+                icon: Settings,
+                text: "Technology reduces operational friction.",
+                color: "hsl(45,90%,45%)"
+              }, {
+                icon: Leaf,
+                text: "Sustainability ensures long-term stability.",
+                color: "hsl(145,60%,40%)"
+              }, {
+                icon: RefreshCw,
+                text: "A repeatable model supports growth.",
+                color: "hsl(220,80%,50%)"
+              }].map((item, index) => <div key={index} className="flex items-start gap-4 p-4 rounded-xl bg-background/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md hover:border-[hsl(175,70%,40%)]/30 transition-all duration-300 group">
+                    <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110" style={{
+                  backgroundColor: `${item.color}15`
+                }}>
+                      <item.icon className="w-5 h-5" style={{
+                    color: item.color
+                  }} />
                     </div>
                     <p className="text-muted-foreground leading-relaxed pt-2">{item.text}</p>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
             
@@ -406,11 +408,7 @@ const BusinessModel = () => {
                 <div className="absolute -inset-4 bg-gradient-to-r from-[hsl(175,70%,40%)]/20 to-[hsl(220,80%,50%)]/20 rounded-3xl blur-2xl" />
                 
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/20">
-                  <img 
-                    src={businessScalable} 
-                    alt="Scalable Revenue" 
-                    className="w-full h-auto"
-                  />
+                  <img src={businessScalable} alt="Scalable Revenue" className="w-full h-auto" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220,70%,15%)]/30 via-transparent to-transparent" />
                   
                   <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-white/90 backdrop-blur-md shadow-lg border border-white/50">
@@ -441,11 +439,7 @@ const BusinessModel = () => {
       {/* Section 7: CTA - Built for Investors & Partners */}
       <section className="relative py-24 md:py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src={businessCta} 
-            alt="Investor Partnership" 
-            className="w-full h-full object-cover"
-          />
+          <img src={businessCta} alt="Investor Partnership" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-[hsl(220,70%,12%)]/95 via-[hsl(220,70%,15%)]/90 to-[hsl(220,70%,12%)]/95" />
         </div>
         
@@ -468,25 +462,32 @@ const BusinessModel = () => {
             </h2>
             
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
-              {[
-                { icon: Shield, text: "Growth with discipline", color: "hsl(220,80%,60%)" },
-                { icon: CheckCircle, text: "Clear revenue streams", color: "hsl(145,60%,50%)" },
-                { icon: Star, text: "Strong partnerships", color: "hsl(45,90%,60%)" },
-                { icon: Rocket, text: "Scalable design", color: "hsl(175,70%,50%)" },
-              ].map((item, index) => (
-                <div 
-                  key={index}
-                  className="flex flex-col items-center gap-3 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300"
-                >
-                  <div 
-                    className="w-12 h-12 rounded-full flex items-center justify-center"
-                    style={{ backgroundColor: `${item.color}20` }}
-                  >
-                    <item.icon className="w-6 h-6" style={{ color: item.color }} />
+              {[{
+              icon: Shield,
+              text: "Growth with discipline",
+              color: "hsl(220,80%,60%)"
+            }, {
+              icon: CheckCircle,
+              text: "Clear revenue streams",
+              color: "hsl(145,60%,50%)"
+            }, {
+              icon: Star,
+              text: "Strong partnerships",
+              color: "hsl(45,90%,60%)"
+            }, {
+              icon: Rocket,
+              text: "Scalable design",
+              color: "hsl(175,70%,50%)"
+            }].map((item, index) => <div key={index} className="flex flex-col items-center gap-3 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-all duration-300">
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center" style={{
+                backgroundColor: `${item.color}20`
+              }}>
+                    <item.icon className="w-6 h-6" style={{
+                  color: item.color
+                }} />
                   </div>
                   <p className="text-white/80 text-sm font-medium">{item.text}</p>
-                </div>
-              ))}
+                </div>)}
             </div>
             
             <p className="text-2xl font-heading font-semibold text-[hsl(45,90%,60%)] mb-10">
@@ -494,29 +495,19 @@ const BusinessModel = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-[hsl(45,90%,45%)] to-[hsl(45,80%,55%)] text-[hsl(220,70%,15%)] hover:from-[hsl(45,90%,50%)] hover:to-[hsl(45,80%,60%)] font-semibold shadow-lg shadow-[hsl(45,90%,45%)]/25 px-8"
-                asChild
-              >
+              <Button size="lg" className="bg-gradient-to-r from-[hsl(45,90%,45%)] to-[hsl(45,80%,55%)] text-[hsl(220,70%,15%)] hover:from-[hsl(45,90%,50%)] hover:to-[hsl(45,80%,60%)] font-semibold shadow-lg shadow-[hsl(45,90%,45%)]/25 px-8" asChild>
                 <Link to="/contact">
                   Partner With Us
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-8"
-              >
+              <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-8">
                 Download Investor Deck
               </Button>
             </div>
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default BusinessModel;
