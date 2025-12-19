@@ -177,7 +177,7 @@ const Sustainability = () => {
             </h2>
             
             <p className="text-lg text-white/90 mb-8 leading-relaxed">
-              Sustainability protects long-term investments. Eco-planned land holds value over decades. Plotray combines growth with responsibility. Choose land that aligns with future needs. Build wealth the sustainable way.
+              Sustainability protects long-term investments. Eco-planned land holds value over decades. PLOTRAY combines growth with responsibility. Choose land that aligns with future needs. Build wealth the sustainable way.
             </p>
             
             <Button size="lg" className="bg-gradient-to-r from-plotray-gold to-yellow-500 hover:from-yellow-500 hover:to-plotray-gold text-plotray-navy font-semibold rounded-full px-8 shadow-lg hover:shadow-xl transition-all duration-300" asChild>
