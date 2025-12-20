@@ -59,8 +59,8 @@ export const Footer = () => {
             <Link to="/" className="flex items-center gap-2 mb-4">
               <img alt="PLOTRAY - Land Investment Platform" className="h-28 md:h-36 w-auto object-contain" src="/lovable-uploads/72807e45-e980-4ed9-8a95-b530f16b43c2.png" />
               <span className="text-2xl md:text-3xl font-heading font-bold">
-                <span className="text-emerald-500">PLOT</span>
-                <span className="text-orange-500">RAY</span>
+                <span className="text-lime-950">PLOT</span>
+                <span className="text-orange-800">RAY</span>
               </span>
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6 max-w-sm">
