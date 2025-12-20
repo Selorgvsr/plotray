@@ -10,9 +10,6 @@ const footerLinks = {
   }, {
     name: "Business Revenue Model",
     path: "/business-model"
-  }, {
-    name: "Careers",
-    path: "#"
   }],
   services: [{
     name: "Buy Land",
@@ -31,13 +28,10 @@ const footerLinks = {
     name: "Contact Us",
     path: "/contact"
   }, {
-    name: "FAQs",
-    path: "#"
-  }, {
-    name: "Help Center",
-    path: "#"
-  }, {
     name: "Privacy Policy",
+    path: "#"
+  }, {
+    name: "Terms & Conditions",
     path: "#"
   }]
 };
