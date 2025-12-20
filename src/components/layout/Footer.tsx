@@ -56,8 +56,12 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Brand Section */}
           <div className="lg:col-span-2">
-            <Link to="/" className="flex items-center mb-4">
+            <Link to="/" className="flex items-center gap-2 mb-4">
               <img alt="PLOTRAY - Land Investment Platform" className="h-28 md:h-36 w-auto object-contain" src="/lovable-uploads/72807e45-e980-4ed9-8a95-b530f16b43c2.png" />
+              <span className="text-2xl md:text-3xl font-heading font-bold">
+                <span className="text-emerald-500">PLOT</span>
+                <span className="text-orange-500">RAY</span>
+              </span>
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6 max-w-sm">
               PLOTRAY is your trusted partner for strategic land investments near growing cities. We connect buyers with premium land opportunities.
