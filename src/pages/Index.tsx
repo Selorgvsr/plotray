@@ -15,7 +15,6 @@ import homeSustainable from "@/assets/home-sustainable.jpg";
 import homeInvestors from "@/assets/home-investors.jpg";
 import homeBusiness from "@/assets/home-business.jpg";
 import homeCta from "@/assets/home-cta.jpg";
-import kilambakkamBanner from "@/assets/kilambakkam-banner.jpg";
 const Index = () => {
   return <Layout>
       {/* Section 1: Hero Section */}
@@ -53,50 +52,6 @@ const Index = () => {
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
       </section>
 
-      {/* Kilambakkam Villa Plot Banner */}
-      <section className="relative py-16 md:py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{
-          backgroundImage: `url(${kilambakkamBanner})`
-        }} />
-        <div className="absolute inset-0 bg-gradient-to-r from-plotray-blue/85 via-plotray-blue/70 to-transparent" />
-        
-        <div className="container-custom relative z-10">
-          <div className="max-w-2xl">
-            <span className="inline-block bg-gold/90 text-plotray-blue font-semibold px-4 py-2 rounded-full text-sm mb-6 animate-fade-in">
-              🏡 Premium Villa Plots Available
-            </span>
-            
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-4 animate-fade-in leading-tight">
-              Book Your <span className="text-gold">Villa Plot</span>
-            </h2>
-            
-            <div className="flex items-center gap-3 mb-4 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              <span className="bg-emerald text-white font-bold px-4 py-2 rounded-lg text-xl md:text-2xl">
-                KILAMBAKKAM
-              </span>
-            </div>
-            
-            <p className="text-xl md:text-2xl text-white/90 mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              Near to Kilambakkam Bus Terminus
-            </p>
-            
-            <div className="flex flex-wrap gap-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              <Link to="/contact">
-                <Button variant="hero" size="lg" className="bg-gold hover:bg-gold/90 text-plotray-blue font-semibold">
-                  Book Now
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
-              </Link>
-              <Link to="/buy">
-                <Button variant="outline" size="lg" className="border-white/40 text-white hover:bg-white/10">
-                  View Details
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Section 2: Why Land is the Smartest Asset */}
       <section className="py-20 bg-gradient-to-br from-gold/20 via-gold/10 to-background">
         <div className="container-custom">
@@ -111,7 +66,7 @@ const Index = () => {
                   Land consistently grows in value over time.
                 </p>
                 <p className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 text-gold flex-shrink-0 mt-1 text-plotray-indigo" />
                   Location drives appreciation more than any other factor.
                 </p>
                 <p className="flex items-start gap-3">
