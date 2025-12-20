@@ -13,7 +13,7 @@ import {
 
 const contactInfo = [
   { icon: Phone, label: "Phone", value: "+91 9444126240", href: "tel:+919444126240" },
-  { icon: Mail, label: "Email", value: "contact@plotray.com", href: "mailto:contact@plotray.com" },
+  { icon: Mail, label: "Email", value: "shekar@plotray.com", href: "mailto:shekar@plotray.com" },
   { icon: MapPin, label: "Address", value: "123 Business Park, Chennai, India", href: "#" },
   { icon: Clock, label: "Working Hours", value: "Mon - Sat: 9AM - 6PM", href: "#" },
 ];
