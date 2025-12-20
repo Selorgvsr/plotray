@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { MapPin, Mail, Phone, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Mail, Phone, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import plotrayLogo from "@/assets/plotray-logo.png";
 const footerLinks = {
   company: [{
     name: "About Us",
@@ -55,13 +56,12 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Brand Section */}
           <div className="lg:col-span-2">
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-primary-foreground/10 flex items-center justify-center">
-                <MapPin className="w-5 h-5 text-primary-foreground" />
-              </div>
-              <span className="text-xl font-heading font-bold">
-                Plot<span className="text-plotray-teal">ray</span>
-              </span>
+            <Link to="/" className="flex items-center mb-4">
+              <img 
+                src={plotrayLogo} 
+                alt="PLOTRAY - Land Investment Platform" 
+                className="h-16 w-auto object-contain"
+              />
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6 max-w-sm">
               PLOTRAY is your trusted partner for strategic land investments near growing cities. We connect buyers with premium land opportunities.
