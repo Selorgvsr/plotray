@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, MapPin, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import plotrayLogo from "@/assets/plotray-logo.png";
+
 const navLinks = [{
   name: "Home",
   path: "/"
@@ -22,6 +24,7 @@ const navLinks = [{
   name: "Contact",
   path: "/contact"
 }];
+
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -29,13 +32,12 @@ export const Navbar = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-xl gradient-hero flex items-center justify-center">
-              <MapPin className="w-5 h-5 text-primary-foreground" />
-            </div>
-            <span className="text-xl font-heading font-bold text-foreground">
-              Plot<span className="text-plotray-teal text-2xl font-serif">ray</span>
-            </span>
+          <Link to="/" className="flex items-center group">
+            <img 
+              src={plotrayLogo} 
+              alt="PLOTRAY - Land Investment Platform" 
+              className="h-12 md:h-14 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
