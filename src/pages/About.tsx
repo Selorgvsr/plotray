@@ -125,7 +125,7 @@ const About = () => {
                 </p>
                 <p className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[hsl(220,60%,40%)] mt-1 shrink-0" />
-                  Plotray builds land value responsibly.
+                  PLOTRAY builds land value responsibly.
                 </p>
               </div>
             </div>
