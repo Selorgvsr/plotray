@@ -30,8 +30,12 @@ export const Navbar = () => {
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center group">
+          <Link to="/" className="flex items-center gap-2 group">
             <img alt="PLOTRAY - Land Investment Platform" className="h-20 md:h-28 w-auto object-contain" src="/lovable-uploads/93891e69-e7a2-435b-83be-8cc7fca3240a.png" />
+            <span className="text-2xl md:text-3xl font-heading font-bold">
+              <span className="text-emerald-500">PLOT</span>
+              <span className="text-orange-500">RAY</span>
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
