@@ -36,7 +36,7 @@ export const Navbar = () => {
             <img 
               src={plotrayLogo} 
               alt="PLOTRAY - Land Investment Platform" 
-              className="h-12 md:h-14 w-auto object-contain"
+              className="h-16 md:h-20 w-auto object-contain"
             />
           </Link>
 

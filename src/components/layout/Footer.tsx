@@ -60,7 +60,7 @@ export const Footer = () => {
               <img 
                 src={plotrayLogo} 
                 alt="PLOTRAY - Land Investment Platform" 
-                className="h-16 w-auto object-contain"
+                className="h-20 md:h-24 w-auto object-contain"
               />
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6 max-w-sm">
