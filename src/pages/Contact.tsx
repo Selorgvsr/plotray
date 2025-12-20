@@ -1,33 +1,38 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Clock,
-  Send,
-  MessageSquare,
-  Users,
-  Headphones
-} from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Send, MessageSquare, Users, Headphones } from "lucide-react";
 import contactHeroImg from "@/assets/contact-hero.jpg";
-
-const contactInfo = [
-  { icon: Phone, label: "Phone", value: "+91 9444126240", href: "tel:+919444126240" },
-  { icon: Mail, label: "Email", value: "shekar@plotray.com", href: "mailto:shekar@plotray.com" },
-  
-  { icon: Clock, label: "Working Hours", value: "Mon - Sat: 9AM - 6PM", href: "#" },
-];
-
-const supportOptions = [
-  { icon: MessageSquare, title: "Sales Inquiry", desc: "Talk to our sales team about properties and investments." },
-  { icon: Users, title: "Partnership", desc: "Explore business partnership opportunities with Plotray." },
-  { icon: Headphones, title: "Customer Support", desc: "Get help with your existing account or transactions." },
-];
-
+const contactInfo = [{
+  icon: Phone,
+  label: "Phone",
+  value: "+91 9444126240",
+  href: "tel:+919444126240"
+}, {
+  icon: Mail,
+  label: "Email",
+  value: "shekar@plotray.com",
+  href: "mailto:shekar@plotray.com"
+}, {
+  icon: Clock,
+  label: "Working Hours",
+  value: "Mon - Sat: 9AM - 6PM",
+  href: "#"
+}];
+const supportOptions = [{
+  icon: MessageSquare,
+  title: "Sales Inquiry",
+  desc: "Talk to our sales team about properties and investments."
+}, {
+  icon: Users,
+  title: "Partnership",
+  desc: "Explore business partnership opportunities with Plotray."
+}, {
+  icon: Headphones,
+  title: "Customer Support",
+  desc: "Get help with your existing account or transactions."
+}];
 const Contact = () => {
-  return (
-    <Layout>
+  return <Layout>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -38,7 +43,7 @@ const Contact = () => {
         <div className="container-custom relative z-10 text-center pt-20">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-8 animate-fade-in leading-tight">
             Get in Touch with<br />
-            <span className="text-gold">Plotray</span>
+            <span className="text-gold">PLOTRAY</span>
           </h1>
         </div>
         
@@ -58,38 +63,22 @@ const Contact = () => {
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">First Name</label>
-                    <input
-                      type="text"
-                      placeholder="John"
-                      className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all"
-                    />
+                    <input type="text" placeholder="John" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" />
                   </div>
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">Last Name</label>
-                    <input
-                      type="text"
-                      placeholder="Doe"
-                      className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all"
-                    />
+                    <input type="text" placeholder="Doe" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" />
                   </div>
                 </div>
                 
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">Email</label>
-                  <input
-                    type="email"
-                    placeholder="john@example.com"
-                    className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all"
-                  />
+                  <input type="email" placeholder="john@example.com" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" />
                 </div>
                 
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">Phone</label>
-                  <input
-                    type="tel"
-                    placeholder="+91 98765 43210"
-                    className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all"
-                  />
+                  <input type="tel" placeholder="+91 98765 43210" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" />
                 </div>
                 
                 <div>
@@ -106,11 +95,7 @@ const Contact = () => {
                 
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">Message</label>
-                  <textarea
-                    rows={4}
-                    placeholder="How can we help you?"
-                    className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all resize-none"
-                  />
+                  <textarea rows={4} placeholder="How can we help you?" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all resize-none" />
                 </div>
                 
                 <Button variant="hero" size="lg" className="w-full">
@@ -131,12 +116,7 @@ const Contact = () => {
               </div>
               
               <div className="grid sm:grid-cols-2 gap-4">
-                {contactInfo.map((info, index) => (
-                  <a
-                    key={index}
-                    href={info.href}
-                    className="glass-card rounded-xl p-4 hover-lift group"
-                  >
+                {contactInfo.map((info, index) => <a key={index} href={info.href} className="glass-card rounded-xl p-4 hover-lift group">
                     <div className="flex items-start gap-4">
                       <div className="w-12 h-12 rounded-lg gradient-hero flex items-center justify-center flex-shrink-0">
                         <info.icon className="w-6 h-6 text-primary-foreground" />
@@ -146,15 +126,13 @@ const Contact = () => {
                         <p className="font-medium text-foreground group-hover:text-plotray-teal transition-colors">{info.value}</p>
                       </div>
                     </div>
-                  </a>
-                ))}
+                  </a>)}
               </div>
               
               {/* Support Options */}
               <div className="space-y-4">
                 <h3 className="text-lg font-heading font-semibold text-foreground">How can we help?</h3>
-                {supportOptions.map((option, index) => (
-                  <div key={index} className="flex items-start gap-4 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors cursor-pointer">
+                {supportOptions.map((option, index) => <div key={index} className="flex items-start gap-4 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors cursor-pointer">
                     <div className="w-10 h-10 rounded-lg bg-plotray-teal/20 flex items-center justify-center flex-shrink-0">
                       <option.icon className="w-5 h-5 text-plotray-teal" />
                     </div>
@@ -162,8 +140,7 @@ const Contact = () => {
                       <h4 className="font-medium text-foreground">{option.title}</h4>
                       <p className="text-sm text-muted-foreground">{option.desc}</p>
                     </div>
-                  </div>
-                ))}
+                  </div>)}
               </div>
               
               {/* Map Placeholder */}
@@ -177,8 +154,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Contact;
