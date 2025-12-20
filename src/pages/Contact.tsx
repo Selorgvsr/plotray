@@ -41,10 +41,13 @@ const Contact = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/80 via-plotray-blue/60 to-teal/50" />
         
         <div className="container-custom relative z-10 text-center pt-20">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-8 animate-fade-in leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 animate-fade-in leading-tight">
             Get in Touch with<br />
             <span className="text-gold">PLOTRAY</span>
           </h1>
+          <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto animate-fade-in">
+            Struggling with low-ROI investments? Buy/sell land with Plotray today.
+          </p>
         </div>
         
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
