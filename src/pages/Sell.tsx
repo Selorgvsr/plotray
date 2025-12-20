@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Handshake, MapPin, ClipboardList, Scale, Shield, Heart, Send, ArrowRight } from "lucide-react";
@@ -101,6 +102,7 @@ const CTAExpandable = () => {
     </div>;
 };
 const Sell = () => {
+  const navigate = useNavigate();
   const sections = [{
     heading: "PLOTRAY Buys Land—No Middlemen",
     content: ["PLOTRAY purchases land directly from property owners.", "There are no brokers, agents, or third-party delays.", "You deal directly with a professional buying team.", "This ensures faster decisions and clear communication.", "A simple and transparent selling experience."],
@@ -201,7 +203,11 @@ const Sell = () => {
             <CTAExpandable />
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button size="lg" className="bg-amber-400 hover:bg-amber-500 text-primary font-bold text-lg px-10 py-6 rounded-full animate-pulse">
+              <Button 
+                size="lg" 
+                className="bg-amber-400 hover:bg-amber-500 text-primary font-bold text-lg px-10 py-6 rounded-full animate-pulse"
+                onClick={() => navigate("/contact")}
+              >
                 Submit Land Details
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
