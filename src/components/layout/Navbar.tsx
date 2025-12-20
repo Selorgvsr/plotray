@@ -34,7 +34,7 @@ export const Navbar = () => {
             <img alt="PLOTRAY - Land Investment Platform" className="h-16 md:h-22 w-auto object-contain" src="/lovable-uploads/93891e69-e7a2-435b-83be-8cc7fca3240a.png" />
             <span className="text-2xl md:text-3xl font-heading font-bold">
               <span className="text-lime-950">PLOT</span>
-              <span className="text-orange-500">RAY</span>
+              <span className="text-orange-700">RAY</span>
             </span>
           </Link>
 
