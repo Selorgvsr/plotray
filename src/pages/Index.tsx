@@ -15,6 +15,7 @@ import homeSustainable from "@/assets/home-sustainable.jpg";
 import homeInvestors from "@/assets/home-investors.jpg";
 import homeBusiness from "@/assets/home-business.jpg";
 import homeCta from "@/assets/home-cta.jpg";
+import kilambakkamBanner from "@/assets/kilambakkam-villa-banner.png";
 const Index = () => {
   return <Layout>
       {/* Section 1: Hero Section */}
@@ -50,6 +51,41 @@ const Index = () => {
         
         {/* Animated glow effect */}
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+      </section>
+
+      {/* Kilambakkam Villa Plot Banner */}
+      <section className="relative w-full overflow-hidden">
+        <div className="relative w-full">
+          <img 
+            src={kilambakkamBanner} 
+            alt="Book Your Villa Plot in Kilambakkam - Near to Kilambakkam Bus Terminus" 
+            className="w-full h-auto object-cover"
+          />
+          {/* Subtle overlay for depth */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
+          
+          {/* CTA Button positioned at bottom */}
+          <div className="absolute bottom-8 md:bottom-12 left-1/2 transform -translate-x-1/2 flex gap-4">
+            <Link to="/contact">
+              <Button 
+                size="lg" 
+                className="bg-gold hover:bg-gold/90 text-plotray-blue font-bold text-base md:text-lg px-6 md:px-10 py-3 md:py-6 shadow-2xl hover:shadow-gold/40 transition-all duration-300 hover:scale-105"
+              >
+                Book Now
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </Link>
+            <Link to="/projects">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="bg-white/90 hover:bg-white text-plotray-blue border-white font-semibold text-base md:text-lg px-6 md:px-10 py-3 md:py-6 shadow-2xl transition-all duration-300 hover:scale-105"
+              >
+                View Details
+              </Button>
+            </Link>
+          </div>
+        </div>
       </section>
 
       {/* Section 2: Why Land is the Smartest Asset */}
