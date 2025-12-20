@@ -34,7 +34,9 @@ const About = () => {
   return <Layout>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${aboutHero})` }} />
+        <div className="absolute inset-0 bg-cover bg-center" style={{
+        backgroundImage: `url(${aboutHero})`
+      }} />
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/90 via-plotray-blue/70 to-teal/60" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
         
@@ -43,7 +45,9 @@ const About = () => {
             Redefining Land Ownership,<br />
             <span className="text-gold">Growth & Opportunity</span>
           </h1>
-          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <p style={{
+          animationDelay: '0.2s'
+        }} className="text-lg md:text-xl max-w-2xl mx-auto animate-fade-in font-serif text-emerald-400">
             Wake up to 3X portfolio growth, financial freedom, and generational wealth from your PLOTRAY land.
           </p>
         </div>
