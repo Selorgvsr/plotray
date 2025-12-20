@@ -53,28 +53,54 @@ const Index = () => {
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
       </section>
 
-      {/* Kilambakkam Villa Plot Banner */}
-      <section className="relative w-full overflow-hidden">
-        <div className="relative w-full">
-          <img 
-            src={kilambakkamBanner} 
-            alt="Book Your Villa Plot in Kilambakkam - Near to Kilambakkam Bus Terminus" 
-            className="w-full h-auto object-cover"
-          />
-          {/* Subtle overlay for depth */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
-          
-          {/* CTA Button positioned at bottom */}
-          <div className="absolute bottom-8 md:bottom-12 left-1/2 transform -translate-x-1/2">
-            <Link to="/contact">
-              <Button 
-                size="lg" 
-                className="bg-gold hover:bg-gold/90 text-plotray-blue font-bold text-base md:text-lg px-6 md:px-10 py-3 md:py-6 shadow-2xl hover:shadow-gold/40 transition-all duration-300 hover:scale-105"
-              >
-                Book Now
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-            </Link>
+      {/* Ad Banner Card Sliding Section */}
+      <section className="relative w-full py-12 md:py-16 bg-gradient-to-br from-muted/50 via-background to-muted/30 overflow-hidden">
+        <div className="container-custom">
+          <div className="relative">
+            {/* Animated Sliding Banner Card */}
+            <div className="animate-[slideInFromRight_1s_ease-out_forwards] opacity-0" style={{ animationFillMode: 'forwards' }}>
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 group cursor-pointer transform hover:scale-[1.02]">
+                {/* Banner Image */}
+                <div className="relative aspect-[21/9] md:aspect-[3/1]">
+                  <img 
+                    src={kilambakkamBanner} 
+                    alt="Book Your Villa Plot in Kilambakkam - Near to Kilambakkam Bus Terminus" 
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                </div>
+                
+                {/* Card Content Overlay */}
+                <div className="absolute inset-0 flex flex-col justify-center p-6 md:p-12">
+                  <div className="max-w-xl">
+                    <span className="inline-block px-3 py-1 bg-gold/90 text-plotray-blue text-xs md:text-sm font-semibold rounded-full mb-4 animate-pulse">
+                      Featured Project
+                    </span>
+                    <h3 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-3 leading-tight">
+                      Villa Plots in Kilambakkam
+                    </h3>
+                    <p className="text-white/80 text-sm md:text-lg mb-6 max-w-md">
+                      Premium plots near Kilambakkam Bus Terminus. Excellent connectivity & appreciation potential.
+                    </p>
+                    <Link to="/contact">
+                      <Button 
+                        size="lg" 
+                        className="bg-gold hover:bg-gold/90 text-plotray-blue font-bold text-base md:text-lg px-6 md:px-10 py-3 md:py-6 shadow-2xl hover:shadow-gold/40 transition-all duration-300 hover:scale-105"
+                      >
+                        Book Now
+                        <ArrowRight className="ml-2 w-5 h-5" />
+                      </Button>
+                    </Link>
+                  </div>
+                </div>
+
+                {/* Decorative Elements */}
+                <div className="absolute top-4 right-4 w-20 h-20 border-2 border-gold/30 rounded-full animate-ping opacity-20" />
+                <div className="absolute bottom-4 right-8 w-12 h-12 bg-gold/20 rounded-full blur-xl" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
