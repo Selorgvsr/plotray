@@ -53,12 +53,12 @@ const Projects = () => {
         <div className="container-custom relative z-10 text-center pt-20">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 animate-fade-in leading-tight">
             Curated Land<br />
-            <span className="text-gold">Projects</span>
+            
           </h1>
           
           <p style={{
           animationDelay: '0.2s'
-        }} className="text-lg md:text-xl max-w-2xl mx-auto mb-8 animate-fade-in text-primary-foreground">
+        }} className="text-lg max-w-2xl mx-auto mb-8 animate-fade-in text-primary-foreground md:text-2xl">
             Investing in land brings financial peace and lasting growth.
           </p>
           
