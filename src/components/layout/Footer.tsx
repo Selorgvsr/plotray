@@ -1,37 +1,61 @@
 import { Link } from "react-router-dom";
 import { MapPin, Mail, Phone, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
-
 const footerLinks = {
-  company: [
-    { name: "About Us", path: "/about" },
-    { name: "Sustainability", path: "/sustainability" },
-    { name: "Business Revenue Model", path: "/business-model" },
-    { name: "Careers", path: "#" },
-  ],
-  services: [
-    { name: "Buy Land", path: "/buy" },
-    { name: "Sell Land", path: "/sell" },
-    { name: "Land Assets", path: "/landasset" },
-    { name: "Projects", path: "/projects" },
-  ],
-  support: [
-    { name: "Contact Us", path: "/contact" },
-    { name: "FAQs", path: "#" },
-    { name: "Help Center", path: "#" },
-    { name: "Privacy Policy", path: "#" },
-  ],
+  company: [{
+    name: "About Us",
+    path: "/about"
+  }, {
+    name: "Sustainability",
+    path: "/sustainability"
+  }, {
+    name: "Business Revenue Model",
+    path: "/business-model"
+  }, {
+    name: "Careers",
+    path: "#"
+  }],
+  services: [{
+    name: "Buy Land",
+    path: "/buy"
+  }, {
+    name: "Sell Land",
+    path: "/sell"
+  }, {
+    name: "Land Assets",
+    path: "/landasset"
+  }, {
+    name: "Projects",
+    path: "/projects"
+  }],
+  support: [{
+    name: "Contact Us",
+    path: "/contact"
+  }, {
+    name: "FAQs",
+    path: "#"
+  }, {
+    name: "Help Center",
+    path: "#"
+  }, {
+    name: "Privacy Policy",
+    path: "#"
+  }]
 };
-
-const socialLinks = [
-  { icon: Facebook, href: "#" },
-  { icon: Twitter, href: "#" },
-  { icon: Linkedin, href: "#" },
-  { icon: Instagram, href: "#" },
-];
-
+const socialLinks = [{
+  icon: Facebook,
+  href: "#"
+}, {
+  icon: Twitter,
+  href: "#"
+}, {
+  icon: Linkedin,
+  href: "#"
+}, {
+  icon: Instagram,
+  href: "#"
+}];
 export const Footer = () => {
-  return (
-    <footer className="bg-primary text-primary-foreground">
+  return <footer className="bg-primary text-primary-foreground">
       <div className="container-custom section-padding">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
@@ -50,15 +74,9 @@ export const Footer = () => {
               We connect buyers with premium land opportunities and help sellers reach genuine investors.
             </p>
             <div className="flex items-center gap-3">
-              {socialLinks.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.href}
-                  className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
-                >
+              {socialLinks.map((social, index) => <a key={index} href={social.href} className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors">
                   <social.icon className="w-4 h-4" />
-                </a>
-              ))}
+                </a>)}
             </div>
           </div>
 
@@ -66,48 +84,33 @@ export const Footer = () => {
           <div>
             <h4 className="font-heading font-semibold mb-4">Company</h4>
             <ul className="space-y-3">
-              {footerLinks.company.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    to={link.path}
-                    className="text-primary-foreground/70 text-sm hover:text-primary-foreground transition-colors"
-                  >
+              {footerLinks.company.map(link => <li key={link.name}>
+                  <Link to={link.path} className="text-primary-foreground/70 text-sm hover:text-primary-foreground transition-colors">
                     {link.name}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
           <div>
             <h4 className="font-heading font-semibold mb-4">Services</h4>
             <ul className="space-y-3">
-              {footerLinks.services.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    to={link.path}
-                    className="text-primary-foreground/70 text-sm hover:text-primary-foreground transition-colors"
-                  >
+              {footerLinks.services.map(link => <li key={link.name}>
+                  <Link to={link.path} className="text-primary-foreground/70 text-sm hover:text-primary-foreground transition-colors">
                     {link.name}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
 
           <div>
             <h4 className="font-heading font-semibold mb-4">Support</h4>
             <ul className="space-y-3">
-              {footerLinks.support.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    to={link.path}
-                    className="text-primary-foreground/70 text-sm hover:text-primary-foreground transition-colors"
-                  >
+              {footerLinks.support.map(link => <li key={link.name}>
+                  <Link to={link.path} className="text-primary-foreground/70 text-sm hover:text-primary-foreground transition-colors">
                     {link.name}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
         </div>
@@ -122,7 +125,7 @@ export const Footer = () => {
               </a>
               <a href="tel:+911234567890" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
                 <Phone className="w-4 h-4" />
-                +91 123 456 7890
+                +91 9444126240   
               </a>
             </div>
             <p className="text-sm text-primary-foreground/50">
@@ -131,6 +134,5 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
