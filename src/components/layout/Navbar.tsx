@@ -34,7 +34,7 @@ export const Navbar = () => {
               <MapPin className="w-5 h-5 text-primary-foreground" />
             </div>
             <span className="text-xl font-heading font-bold text-foreground">
-              Plot<span className="text-plotray-teal">ray</span>
+              Plot<span className="text-plotray-teal text-2xl font-serif">ray</span>
             </span>
           </Link>
 
