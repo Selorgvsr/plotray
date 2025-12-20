@@ -56,7 +56,9 @@ const Projects = () => {
             <span className="text-gold">Projects</span>
           </h1>
           
-          <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <p style={{
+          animationDelay: '0.2s'
+        }} className="text-lg md:text-xl max-w-2xl mx-auto mb-8 animate-fade-in text-primary-foreground">
             Investing in land brings financial peace and lasting growth.
           </p>
           
