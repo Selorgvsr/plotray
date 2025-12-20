@@ -51,7 +51,7 @@ const socialLinks = [{
 }];
 export const Footer = () => {
   return <footer className="bg-primary text-primary-foreground">
-      <div className="container-custom section-padding">
+      <div className="container-custom section-padding bg-secondary">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Brand Section */}
