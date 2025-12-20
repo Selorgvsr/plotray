@@ -51,12 +51,16 @@ const Projects = () => {
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/80 via-plotray-blue/60 to-teal/50" />
         <div className="container-custom relative z-10 text-center pt-20">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-8 animate-fade-in leading-tight">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 animate-fade-in leading-tight">
             Curated Land<br />
             <span className="text-gold">Projects</span>
           </h1>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 animate-fade-in" style={{
+          <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            Investing in land brings financial peace and lasting growth.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 animate-fade-in" style={{
           animationDelay: '0.3s'
         }}>
             <Button variant="hero" size="lg" className="bg-gold hover:bg-gold/90 text-plotray-blue font-semibold text-lg px-8">
