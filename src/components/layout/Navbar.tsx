@@ -4,7 +4,6 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import plotrayLogo from "@/assets/plotray-logo-2.png";
-
 const navLinks = [{
   name: "Home",
   path: "/"
@@ -24,7 +23,6 @@ const navLinks = [{
   name: "Contact",
   path: "/contact"
 }];
-
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -33,11 +31,7 @@ export const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center group">
-            <img 
-              src={plotrayLogo} 
-              alt="PLOTRAY - Land Investment Platform" 
-              className="h-20 md:h-28 w-auto object-contain"
-            />
+            <img alt="PLOTRAY - Land Investment Platform" className="h-20 md:h-28 w-auto object-contain" src="/lovable-uploads/93891e69-e7a2-435b-83be-8cc7fca3240a.png" />
           </Link>
 
           {/* Desktop Navigation */}
