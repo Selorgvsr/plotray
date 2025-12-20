@@ -1,54 +1,48 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { 
-  Building2, 
-  MapPin, 
-  TrendingUp, 
-  ArrowRight,
-  CheckCircle,
-  Shield,
-  Route,
-  Layers
-} from "lucide-react";
-
-const projects = [
-  {
-    name: "Green Valley Township",
-    location: "Near Chennai Outer Ring Road",
-    plots: 120,
-    size: "1200-2400 sq ft",
-    growth: "+22%",
-    status: "Active",
-  },
-  {
-    name: "Metro Edge Plots",
-    location: "Bengaluru Metro Corridor",
-    plots: 85,
-    size: "1000-1800 sq ft",
-    growth: "+18%",
-    status: "Active",
-  },
-  {
-    name: "Highway Heights",
-    location: "Hyderabad ORR Junction",
-    plots: 95,
-    size: "1500-3000 sq ft",
-    growth: "+15%",
-    status: "Launching",
-  },
-];
-
-const highlights = [
-  { icon: Route, title: "Road Access", desc: "Well-planned road access and layouts" },
-  { icon: Layers, title: "Infrastructure", desc: "Essential infrastructure included" },
-  { icon: Shield, title: "Clear Approvals", desc: "Clear demarcation and approvals" },
-  { icon: CheckCircle, title: "Transparency", desc: "Transparency in every detail" },
-];
-
+import { Building2, MapPin, TrendingUp, ArrowRight, CheckCircle, Shield, Route, Layers } from "lucide-react";
+const projects = [{
+  name: "Green Valley Township",
+  location: "Near Chennai Outer Ring Road",
+  plots: 120,
+  size: "1200-2400 sq ft",
+  growth: "+22%",
+  status: "Active"
+}, {
+  name: "Metro Edge Plots",
+  location: "Bengaluru Metro Corridor",
+  plots: 85,
+  size: "1000-1800 sq ft",
+  growth: "+18%",
+  status: "Active"
+}, {
+  name: "Highway Heights",
+  location: "Hyderabad ORR Junction",
+  plots: 95,
+  size: "1500-3000 sq ft",
+  growth: "+15%",
+  status: "Launching"
+}];
+const highlights = [{
+  icon: Route,
+  title: "Road Access",
+  desc: "Well-planned road access and layouts"
+}, {
+  icon: Layers,
+  title: "Infrastructure",
+  desc: "Essential infrastructure included"
+}, {
+  icon: Shield,
+  title: "Clear Approvals",
+  desc: "Clear demarcation and approvals"
+}, {
+  icon: CheckCircle,
+  title: "Transparency",
+  desc: "Transparency in every detail"
+}];
 const Projects = () => {
-  return (
-    <Layout>
+  return <Layout>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/90 via-plotray-blue/70 to-teal/60" />
@@ -60,7 +54,9 @@ const Projects = () => {
             <span className="text-gold">Projects</span>
           </h1>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 animate-fade-in" style={{
+          animationDelay: '0.3s'
+        }}>
             <Button variant="hero" size="lg" className="bg-gold hover:bg-gold/90 text-plotray-blue font-semibold text-lg px-8">
               <Building2 className="w-5 h-5 mr-2" />
               Explore Projects
@@ -88,8 +84,7 @@ const Projects = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project, index) => (
-              <div key={index} className="glass-card rounded-2xl overflow-hidden hover-lift group">
+            {projects.map((project, index) => <div key={index} className="glass-card rounded-2xl overflow-hidden hover-lift group">
                 <div className="h-48 gradient-success relative">
                   <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-primary-foreground/20 backdrop-blur-sm text-primary-foreground text-sm font-medium">
                     {project.status}
@@ -125,95 +120,16 @@ const Projects = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
 
       {/* Project Highlights */}
-      <section className="section-padding bg-muted/50">
-        <div className="container-custom">
-          <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-              Project <span className="text-plotray-teal">Highlights</span>
-            </h2>
-            <p className="text-muted-foreground">
-              Each project is designed for long-term use with essential features and clear approvals.
-            </p>
-          </div>
-          
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {highlights.map((highlight, index) => (
-              <div key={index} className="text-center p-6 glass-card rounded-2xl">
-                <div className="w-16 h-16 rounded-2xl gradient-success flex items-center justify-center mx-auto mb-4">
-                  <highlight.icon className="w-8 h-8 text-primary-foreground" />
-                </div>
-                <h3 className="text-lg font-heading font-semibold text-foreground mb-2">{highlight.title}</h3>
-                <p className="text-sm text-muted-foreground">{highlight.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Growth & ROI Potential */}
-      <section className="section-padding bg-background">
-        <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="glass-card rounded-2xl p-8">
-              <h3 className="text-xl font-heading font-semibold text-foreground mb-6">ROI Comparison</h3>
-              
-              <div className="space-y-6">
-                {[
-                  { label: "Plotray Projects", value: 85, color: "bg-plotray-emerald" },
-                  { label: "Traditional Real Estate", value: 60, color: "bg-plotray-teal" },
-                  { label: "Fixed Deposits", value: 30, color: "bg-muted-foreground" },
-                ].map((item, index) => (
-                  <div key={index}>
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-sm text-foreground">{item.label}</span>
-                      <span className="text-sm font-semibold text-foreground">{item.value}%</span>
-                    </div>
-                    <div className="h-3 bg-muted rounded-full overflow-hidden">
-                      <div 
-                        className={`h-full ${item.color} rounded-full transition-all duration-1000`}
-                        style={{ width: `${item.value}%` }}
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
-              
-              <p className="text-xs text-muted-foreground mt-6">*Based on 5-year average returns</p>
-            </div>
-            
-            <div>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-                Growth & ROI <span className="text-plotray-emerald">Potential</span>
-              </h2>
-              <p className="text-muted-foreground mb-6">
-                Urban expansion increases land demand. Projects benefit from surrounding development. 
-                Plotray highlights ROI-focused insights for informed investments.
-              </p>
-              
-              <div className="space-y-4 mb-8">
-                {["Projects near expanding city zones", "Strong infrastructure development", "High appreciation potential", "Verified legal documentation"].map((item, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <CheckCircle className="w-5 h-5 text-plotray-emerald flex-shrink-0" />
-                    <span className="text-foreground">{item}</span>
-                  </div>
-                ))}
-              </div>
-              
-              <Button variant="teal" size="lg">
-                Calculate Your ROI
-                <ArrowRight className="w-5 h-5" />
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* CTA Section */}
       <section className="section-padding bg-muted/50">
@@ -243,8 +159,6 @@ const Projects = () => {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Projects;
