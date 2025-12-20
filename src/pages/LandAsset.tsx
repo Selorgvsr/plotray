@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 
 // Image imports
-import landassetHero from "@/assets/landasset-hero.jpg";
+import landassetHero from "@/assets/landasset-hero-new.jpg";
 import landassetWealth from "@/assets/landasset-wealth.jpg";
 import landassetAnalytics from "@/assets/landasset-analytics.jpg";
 import landassetLocation from "@/assets/landasset-location.jpg";
