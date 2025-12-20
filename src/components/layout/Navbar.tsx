@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import plotrayLogo from "@/assets/plotray-logo.png";
+import plotrayLogo from "@/assets/plotray-logo-2.png";
 
 const navLinks = [{
   name: "Home",
@@ -36,7 +36,7 @@ export const Navbar = () => {
             <img 
               src={plotrayLogo} 
               alt="PLOTRAY - Land Investment Platform" 
-              className="h-16 md:h-20 w-auto object-contain"
+              className="h-20 md:h-28 w-auto object-contain"
             />
           </Link>
 

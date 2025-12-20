@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
-import plotrayLogo from "@/assets/plotray-logo.png";
+import plotrayLogo from "@/assets/plotray-logo-2.png";
 const footerLinks = {
   company: [{
     name: "About Us",
@@ -60,7 +60,7 @@ export const Footer = () => {
               <img 
                 src={plotrayLogo} 
                 alt="PLOTRAY - Land Investment Platform" 
-                className="h-20 md:h-24 w-auto object-contain"
+                className="h-28 md:h-36 w-auto object-contain"
               />
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6 max-w-sm">
