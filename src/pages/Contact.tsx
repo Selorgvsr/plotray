@@ -10,6 +10,7 @@ import {
   Users,
   Headphones
 } from "lucide-react";
+import contactHeroImg from "@/assets/contact-hero.jpg";
 
 const contactInfo = [
   { icon: Phone, label: "Phone", value: "+91 9444126240", href: "tel:+919444126240" },
@@ -29,8 +30,10 @@ const Contact = () => {
     <Layout>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/90 via-plotray-blue/70 to-teal/60" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
+        <div className="absolute inset-0">
+          <img src={contactHeroImg} alt="Contact Plotray" className="w-full h-full object-cover" />
+        </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/80 via-plotray-blue/60 to-teal/50" />
         
         <div className="container-custom relative z-10 text-center pt-20">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-8 animate-fade-in leading-tight">
