@@ -32,8 +32,8 @@ const footerLinks = {
     name: "Privacy Policy",
     path: "#"
   }, {
-    name: "Terms & Conditions",
-    path: "#"
+  name: "Terms & Conditions",
+    path: "/terms"
   }]
 };
 const socialLinks = [{
