@@ -47,7 +47,7 @@ const About = () => {
           </h1>
           <p style={{
           animationDelay: '0.2s'
-        }} className="text-lg md:text-xl max-w-2xl mx-auto animate-fade-in font-serif text-emerald-400">
+        }} className="text-lg max-w-2xl mx-auto animate-fade-in font-serif text-primary-foreground md:text-2xl">
             Wake up to 3X portfolio growth, financial freedom, and generational wealth from your PLOTRAY land.
           </p>
         </div>
