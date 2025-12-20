@@ -1,161 +1,98 @@
 import { Layout } from "@/components/layout/Layout";
-import { Mail, Phone, Shield, Lock, User, Calendar, Database, Eye, Trash2, Settings, Baby, FileText } from "lucide-react";
+import { Mail, Phone, Shield, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-const privacySections = [
+const privacyData = [
   {
     id: "1",
-    title: "Information We Collect",
-    icon: User,
-    content: (
-      <div className="space-y-4">
-        <div>
-          <h4 className="font-semibold text-foreground mb-2">Personal Data:</h4>
-          <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-            <li>Name, email, phone (contact forms)</li>
-            <li>Land details (plots, documents for BUY/SELL)</li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="font-semibold text-foreground mb-2">Usage Data:</h4>
-          <ul className="list-disc list-inside space-y-1 text-muted-foreground">
-            <li>IP address, browser type, pages visited</li>
-            <li>Location data (for land verification)</li>
-          </ul>
-        </div>
-        <p className="text-muted-foreground font-medium">
-          <strong>No Sensitive Data:</strong> No PAN/Aadhaar unless a transaction is required.
-        </p>
-      </div>
-    ),
+    title: "1. Information We Collect",
+    content: [
+      "Personal Data: Name, email, phone (contact forms)",
+      "Land details (plots, documents for BUY/SELL)",
+      "Usage Data: IP address, browser type, pages visited",
+      "Location data (for land verification)",
+      "No Sensitive Data: No PAN/Aadhaar unless a transaction is required.",
+    ],
   },
   {
     id: "2",
-    title: "How We Use Your Data",
-    icon: Database,
-    content: (
-      <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-        <li>Process BUY/SELL inquiries & offers</li>
-        <li>Verify land titles & locations</li>
-        <li>Send updates (opt-out anytime)</li>
-        <li>Improve platform (analytics)</li>
-        <li>Legal compliance (RERA reporting)</li>
-      </ul>
-    ),
+    title: "2. How We Use Your Data",
+    content: [
+      "Process BUY/SELL inquiries & offers",
+      "Verify land titles & locations",
+      "Send updates (opt-out anytime)",
+      "Improve platform (analytics)",
+      "Legal compliance (RERA reporting)",
+    ],
   },
   {
     id: "3",
-    title: "Data Sharing & Disclosure",
-    icon: Eye,
-    content: (
-      <div className="space-y-3">
-        <p className="text-muted-foreground font-medium">
-          <strong>Never sold.</strong> Shared only with:
-        </p>
-        <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-          <li>Payment gateways (Razorpay/UPI)</li>
-          <li>Legal verification partners</li>
-          <li>Government (tax/RERA audits)</li>
-        </ul>
-        <p className="text-muted-foreground font-medium">No third-party marketing.</p>
-      </div>
-    ),
+    title: "3. Data Sharing & Disclosure",
+    content: [
+      "Never sold. Shared only with:",
+      "Payment gateways (Razorpay/UPI)",
+      "Legal verification partners",
+      "Government (tax/RERA audits)",
+      "No third-party marketing.",
+    ],
   },
   {
     id: "4",
-    title: "Cookies & Tracking",
-    icon: Settings,
-    content: (
-      <div className="space-y-2">
-        <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-          <li>Essential cookies (session management)</li>
-          <li>Analytics (Google Analytics - anonymized)</li>
-          <li>Manage preferences via browser settings</li>
-        </ul>
-        <p className="text-muted-foreground font-medium">No targeted ads on our site.</p>
-      </div>
-    ),
+    title: "4. Cookies & Tracking",
+    content: [
+      "Essential cookies (session management)",
+      "Analytics (Google Analytics - anonymized)",
+      "Manage preferences via browser settings",
+      "No targeted ads on our site.",
+    ],
   },
   {
     id: "5",
-    title: "Data Storage & Security",
-    icon: Lock,
-    content: (
-      <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-        <li>Stored on secure AWS India servers (Mumbai)</li>
-        <li>Encrypted at rest/transit (AES-256)</li>
-        <li>Access limited to authorized staff</li>
-        <li>Regular security audits</li>
-      </ul>
-    ),
+    title: "5. Data Storage & Security",
+    content: [
+      "Stored on secure AWS India servers (Mumbai)",
+      "Encrypted at rest/transit (AES-256)",
+      "Access limited to authorized staff",
+      "Regular security audits.",
+    ],
   },
   {
     id: "6",
-    title: "Your Rights (DPDP Act 2023)",
-    icon: Shield,
-    content: (
-      <div className="space-y-3">
-        <div className="grid gap-3">
-          <div className="flex items-start gap-3">
-            <span className="font-semibold text-primary">Access:</span>
-            <span className="text-muted-foreground">Request your data copy</span>
-          </div>
-          <div className="flex items-start gap-3">
-            <span className="font-semibold text-primary">Correction:</span>
-            <span className="text-muted-foreground">Update inaccurate info</span>
-          </div>
-          <div className="flex items-start gap-3">
-            <span className="font-semibold text-primary">Deletion:</span>
-            <span className="text-muted-foreground">Right to be forgotten (30 days)</span>
-          </div>
-          <div className="flex items-start gap-3">
-            <span className="font-semibold text-primary">Opt-Out:</span>
-            <span className="text-muted-foreground">Unsubscribe emails anytime</span>
-          </div>
-        </div>
-        <p className="text-muted-foreground mt-4">
-          Email <a href="mailto:shekar@plotray.com" className="text-primary hover:underline">shekar@plotray.com</a> to exercise rights.
-        </p>
-      </div>
-    ),
+    title: "6. Your Rights (DPDP Act 2023)",
+    content: [
+      "Access: Request your data copy",
+      "Correction: Update inaccurate info",
+      "Deletion: Right to be forgotten (30 days)",
+      "Opt-Out: Unsubscribe emails anytime",
+      "Email shekar@plotray.com to exercise rights.",
+    ],
   },
   {
     id: "7",
-    title: "Data Retention",
-    icon: Calendar,
-    content: (
-      <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-        <li>Inquiries: 2 years</li>
-        <li>Transactions: 10 years (legal requirement)</li>
-        <li>Inactive accounts: Deleted after 12 months</li>
-      </ul>
-    ),
+    title: "7. Data Retention",
+    content: [
+      "Inquiries: 2 years",
+      "Transactions: 10 years (legal requirement)",
+      "Inactive accounts: Deleted after 12 months",
+    ],
   },
   {
     id: "8",
-    title: "Children's Privacy",
-    icon: Baby,
-    content: (
-      <p className="text-muted-foreground">
-        No services for under 18. Parents can request deletion.
-      </p>
-    ),
+    title: "8. Children's Privacy",
+    content: [
+      "No services for under 18.",
+      "Parents can request deletion.",
+    ],
   },
   {
     id: "9",
-    title: "Changes to Policy",
-    icon: FileText,
-    content: (
-      <p className="text-muted-foreground">
-        Updates posted here. Major changes emailed. Continued use = acceptance.
-      </p>
-    ),
+    title: "9. Changes to Policy",
+    content: [
+      "Updates posted here.",
+      "Major changes emailed.",
+      "Continued use = acceptance.",
+    ],
   },
 ];
 
@@ -163,96 +100,107 @@ const Privacy = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 bg-gradient-to-br from-primary/5 via-background to-secondary/5">
+      <section className="relative bg-primary text-primary-foreground py-16 md:py-24">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-6">
-              <Lock className="w-4 h-4" />
-              <span className="text-sm font-medium">DPDP Act 2023 & IT Rules 2021 Compliant</span>
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <Shield className="w-8 h-8 text-accent" />
+                <span className="px-3 py-1 bg-accent/20 text-accent rounded-full text-sm font-medium">
+                  DPDP Act 2023 & IT Rules 2021 Compliant
+                </span>
+              </div>
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4">
+                Privacy Policy
+              </h1>
+              <p className="text-primary-foreground/70 text-lg">
+                Last Updated: December 20, 2025
+              </p>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6">
-              Privacy Policy
-            </h1>
-            <p className="text-lg text-muted-foreground mb-4">
-              Last Updated: December 20, 2025
-            </p>
-            <p className="text-xl text-foreground/80 mb-8">
-              Your data security is our priority.
-            </p>
-            <Button variant="outline" className="gap-2">
-              <Mail className="w-4 h-4" />
-              Contact Data Team
+            <Button
+              variant="outline"
+              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 w-fit"
+              onClick={() => window.print()}
+            >
+              <Download className="w-4 h-4 mr-2" />
+              Download PDF
             </Button>
           </div>
         </div>
       </section>
 
-      {/* Privacy Sections */}
-      <section className="py-16 md:py-24 bg-background">
-        <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <Accordion type="single" collapsible className="space-y-4">
-              {privacySections.map((section) => (
+      {/* Privacy Content */}
+      <section className="section-padding bg-background">
+        <div className="container-custom max-w-4xl">
+          <div className="bg-card rounded-2xl border border-border p-6 md:p-10 mb-8">
+            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+              Your data security is our priority. Compliant with the DPDP Act 2023 & IT Rules 2021.
+            </p>
+
+            {/* Accordion Sections */}
+            <Accordion
+              type="multiple"
+              className="space-y-4"
+              defaultValue={["1", "2", "3", "4", "5", "6", "7", "8", "9"]}
+            >
+              {privacyData.map((section) => (
                 <AccordionItem
                   key={section.id}
                   value={section.id}
-                  className="border border-border rounded-xl px-6 bg-card shadow-sm"
+                  className="border border-border rounded-xl px-6 data-[state=open]:bg-muted/30"
                 >
-                  <AccordionTrigger className="hover:no-underline py-5">
-                    <div className="flex items-center gap-4">
-                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                        <section.icon className="w-5 h-5 text-primary" />
-                      </div>
-                      <span className="text-lg font-semibold text-foreground">
-                        {section.id}. {section.title}
-                      </span>
-                    </div>
+                  <AccordionTrigger className="text-lg font-heading font-semibold text-primary hover:no-underline py-5">
+                    {section.title}
                   </AccordionTrigger>
-                  <AccordionContent className="pb-6 pt-2 pl-14">
-                    {section.content}
+                  <AccordionContent className="pb-5">
+                    <ul className="space-y-3">
+                      {section.content.map((item, index) => (
+                        <li
+                          key={index}
+                          className="flex items-start gap-3 text-muted-foreground"
+                        >
+                          <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
                   </AccordionContent>
                 </AccordionItem>
               ))}
             </Accordion>
           </div>
-        </div>
-      </section>
 
-      {/* Contact CTA */}
-      <section className="py-16 md:py-24 bg-muted/30">
-        <div className="container-custom">
-          <div className="max-w-2xl mx-auto text-center">
-            <Shield className="w-12 h-12 text-primary mx-auto mb-6" />
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-4">
+          {/* Contact CTA */}
+          <div className="bg-primary rounded-2xl p-8 md:p-10 text-center">
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-primary-foreground mb-4">
               Questions About Your Data?
             </h2>
-            <p className="text-muted-foreground mb-8">
+            <p className="text-primary-foreground/70 mb-6">
               We're here to help you understand and exercise your privacy rights.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="mailto:shekar@plotray.com">
-                <Button className="gap-2">
-                  <Mail className="w-4 h-4" />
-                  shekar@plotray.com
-                </Button>
+              <a
+                href="mailto:shekar@plotray.com"
+                className="flex items-center gap-2 text-primary-foreground hover:text-accent transition-colors"
+              >
+                <Mail className="w-5 h-5" />
+                shekar@plotray.com
               </a>
-              <a href="tel:+919444126240">
-                <Button variant="outline" className="gap-2">
-                  <Phone className="w-4 h-4" />
-                  +91 9444126240
-                </Button>
+              <span className="hidden sm:block text-primary-foreground/30">|</span>
+              <a
+                href="tel:+919444126240"
+                className="flex items-center gap-2 text-primary-foreground hover:text-accent transition-colors"
+              >
+                <Phone className="w-5 h-5" />
+                +91 9444126240
               </a>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Footer Note */}
-      <section className="py-8 bg-primary text-primary-foreground">
-        <div className="container-custom">
-          <p className="text-center text-sm">
+          {/* Footer Note */}
+          <div className="text-center mt-8 text-sm text-muted-foreground">
             © 2025 Plotray. Chennai, India. DPDP Compliant.
-          </p>
+          </div>
         </div>
       </section>
     </Layout>
