@@ -134,33 +134,7 @@ const Projects = () => {
       
 
       {/* CTA Section */}
-      <section className="section-padding bg-muted/50">
-        <div className="container-custom">
-          <div className="relative rounded-3xl overflow-hidden gradient-success p-8 md:p-12 lg:p-16 text-center">
-            <div className="absolute inset-0 opacity-20">
-              <div className="absolute top-0 right-0 w-96 h-96 bg-primary-foreground rounded-full blur-3xl" />
-            </div>
-            <div className="relative z-10 max-w-2xl mx-auto">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-4">
-                Explore Project Opportunities
-              </h2>
-              <p className="text-primary-foreground/80 mb-8">
-                Browse projects aligned with your goals. Access complete project information 
-                and get expert assistance when needed.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="hero" size="lg">
-                  View All Projects
-                  <ArrowRight className="w-5 h-5" />
-                </Button>
-                <Button variant="hero-outline" size="lg" asChild>
-                  <Link to="/contact">Schedule Site Visit</Link>
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </Layout>;
 };
 export default Projects;
