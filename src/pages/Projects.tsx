@@ -73,8 +73,7 @@ const Projects = () => {
       <section className="section-padding bg-background">
         <div className="container-custom">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">
-              Projects Near Malls & <span className="text-plotray-teal">Cities</span>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">Projects<span className="text-plotray-teal">Cities</span>
             </h2>
             <p className="text-muted-foreground">
               Location drives long-term value. Projects are near commercial hubs and city centers 
