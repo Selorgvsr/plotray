@@ -64,7 +64,7 @@ export const Footer = () => {
               </span>
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6 max-w-sm">
-              Plotray is your trusted partner for strategic land investments near growing cities. We connect buyers with premium land opportunities.
+              PLOTRAY is your trusted partner for strategic land investments near growing cities. We connect buyers with premium land opportunities.
             </p>
             <div className="flex items-center gap-3">
               {socialLinks.map((social, index) => <a key={index} href={social.href} className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors">
