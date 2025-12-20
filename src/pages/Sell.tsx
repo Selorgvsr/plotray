@@ -87,12 +87,10 @@ const CTAExpandable = () => {
   const expandedContent = ["Submitting land details initiates a quick evaluation process.", "Priority locations receive faster responses from the team.", "The submission process is simple and digital-friendly.", "No complex forms or lengthy documentation is required initially.", "PLOTRAY reviews each submission professionally.", "Sellers receive timely updates without delays.", "Early submission improves acquisition speed.", "Opportunities are assessed efficiently."];
   return <div className="space-y-4">
       <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isExpanded ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"}`}>
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 space-y-3">
-          {expandedContent.map((line, index) => <p key={index} className="text-white/90 leading-relaxed animate-fade-in" style={{
-          animationDelay: `${index * 50}ms`
-        }}>
-              {line}
-            </p>)}
+        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
+          <p className="text-white/90 leading-relaxed animate-fade-in">
+            {expandedContent.join(" ")}
+          </p>
         </div>
       </div>
 
