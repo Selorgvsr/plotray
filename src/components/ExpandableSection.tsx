@@ -42,22 +42,21 @@ export const ExpandableSection = ({ items }: ExpandableSectionProps) => {
         )}
       >
         <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 border border-blue-100 shadow-lg">
-          <ul className="space-y-3">
+          <div className="space-y-3">
             {items.map((item, index) => (
-              <li
+              <p
                 key={index}
-                className="flex items-start gap-3 text-foreground/80"
+                className="text-foreground/80 leading-relaxed"
                 style={{
                   animation: isExpanded
                     ? `fadeSlideIn 0.3s ease-out ${index * 0.05}s both`
                     : "none",
                 }}
               >
-                <span className="text-blue-500 font-bold mt-0.5">•</span>
-                <span>{item.text}</span>
-              </li>
+                {item.text}
+              </p>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
 
