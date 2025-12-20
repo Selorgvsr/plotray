@@ -30,7 +30,7 @@ const footerLinks = {
     path: "/contact"
   }, {
     name: "Privacy Policy",
-    path: "#"
+    path: "/privacy"
   }, {
   name: "Terms & Conditions",
     path: "/terms"
