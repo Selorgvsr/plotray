@@ -66,7 +66,7 @@ const About = () => {
               <div className="space-y-3 text-muted-foreground">
                 <p className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
-                  Plotray is a modern land-focused real estate Company.
+                  PLOTRAY is a modern land-focused real estate Company.
                 </p>
                 <p className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
