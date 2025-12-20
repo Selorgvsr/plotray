@@ -46,7 +46,7 @@ const Contact = () => {
             <span className="text-gold">PLOTRAY</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto animate-fade-in">
-            Struggling with low-ROI investments? Buy/sell land with Plotray today.
+            Struggling with low-ROI investments? Buy/sell land with PLOTRAY today.
           </p>
         </div>
         
