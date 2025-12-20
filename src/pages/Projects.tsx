@@ -52,7 +52,7 @@ const Projects = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/80 via-plotray-blue/60 to-teal/50" />
         <div className="container-custom relative z-10 text-center pt-20">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 animate-fade-in leading-tight">
-            Curated Land<br />
+            ​Invest in Villa Plot     <br />
             
           </h1>
           
