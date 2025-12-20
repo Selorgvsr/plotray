@@ -65,7 +65,7 @@ const Index = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
           
           {/* CTA Button positioned at bottom */}
-          <div className="absolute bottom-8 md:bottom-12 left-1/2 transform -translate-x-1/2 flex gap-4">
+          <div className="absolute bottom-8 md:bottom-12 left-1/2 transform -translate-x-1/2">
             <Link to="/contact">
               <Button 
                 size="lg" 
@@ -73,15 +73,6 @@ const Index = () => {
               >
                 Book Now
                 <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-            </Link>
-            <Link to="/projects">
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="bg-white/90 hover:bg-white text-plotray-blue border-white font-semibold text-base md:text-lg px-6 md:px-10 py-3 md:py-6 shadow-2xl transition-all duration-300 hover:scale-105"
-              >
-                View Details
               </Button>
             </Link>
           </div>
