@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle, Building2, LineChart, Leaf, Shield, Users, Sparkles } from "lucide-react";
 
 // Import images
-import aboutHero from "@/assets/about-hero.jpg";
+import aboutHero from "@/assets/about-hero-new.jpg";
 import aboutTeam from "@/assets/about-team.jpg";
 import aboutVision from "@/assets/about-vision.jpg";
 import aboutMission from "@/assets/about-mission.jpg";
