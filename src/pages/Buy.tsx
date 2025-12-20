@@ -87,22 +87,22 @@ const expandableContent = {
 
 const Buy = () => {
   return <Layout>
-      {/* Section 1: Hero - Only Heading */}
-      <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+      {/* Section 1: Hero */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center" style={{
-        backgroundImage: `url(${heroImage})`
-      }} />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-teal/80" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.3)_100%)]" />
+          backgroundImage: `url(${heroImage})`
+        }} />
+        <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/90 via-plotray-blue/70 to-teal/60" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
         
-        {/* Animated city glow effect */}
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gold/20 to-transparent animate-pulse" />
-        
-        <div className="relative z-10 text-center px-4">
-          <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold text-white drop-shadow-2xl animate-fade-in">
-            Buy Land Where Cities Are Expanding
+        <div className="container-custom relative z-10 text-center pt-20">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-8 animate-fade-in leading-tight">
+            Buy Land Where<br />
+            <span className="text-gold">Cities Are Expanding</span>
           </h1>
         </div>
+        
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
       </section>
 
       {/* Section 2: Land as High-Appreciating Asset */}

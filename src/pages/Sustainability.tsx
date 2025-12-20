@@ -15,18 +15,20 @@ import urbanImage from "@/assets/sustainability-urban.jpg";
 import ctaImage from "@/assets/sustainability-cta.jpg";
 const Sustainability = () => {
   return <Layout>
-      {/* Hero Section - Heading Only */}
-      <section className="relative h-[70vh] min-h-[500px] overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{
-        backgroundImage: `url(${heroImage})`
-      }} />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroImage})` }} />
+        <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/90 via-plotray-blue/70 to-teal/60" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
         
-        <div className="container-custom relative z-10 h-full flex items-center justify-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white text-center leading-tight max-w-4xl animate-slide-up">
-            Building Sustainable Land for Future Generations
+        <div className="container-custom relative z-10 text-center pt-20">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-8 animate-fade-in leading-tight">
+            Building Sustainable Land for<br />
+            <span className="text-gold">Future Generations</span>
           </h1>
         </div>
+        
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
       </section>
 
       {/* Section 2: Responsible Land Development */}
