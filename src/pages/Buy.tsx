@@ -2,6 +2,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ShoppingBag, TrendingUp, Shield, Map, BarChart3, Route, Grid3X3, Lock, Users, ArrowRight, CheckCircle } from "lucide-react";
+import { ExpandableSection } from "@/components/ExpandableSection";
 
 // Import all section images
 import heroImage from "@/assets/buy-hero.jpg";
@@ -15,6 +16,74 @@ import layoutImage from "@/assets/buy-layout.jpg";
 import gatedImage from "@/assets/buy-gated.jpg";
 import siteVisitImage from "@/assets/buy-sitevisit.jpg";
 import ctaImage from "@/assets/buy-cta.jpg";
+
+// Expandable content for each section
+const expandableContent = {
+  section1: [
+    { text: "Land value increases as cities expand outward." },
+    { text: "Limited supply makes land a scarce asset." },
+    { text: "Strategic locations outperform traditional investments." },
+    { text: "Land requires minimal maintenance over time." },
+    { text: "Appreciation is driven by demand, not depreciation." },
+    { text: "Location-led growth creates lasting wealth." },
+  ],
+  section2: [
+    { text: "Strong road networks improve daily accessibility." },
+    { text: "Air connectivity attracts commercial development." },
+    { text: "Rail and metro reduce commute dependency." },
+    { text: "Infrastructure projects accelerate land value growth." },
+    { text: "Connected land attracts investors and end users." },
+    { text: "Connectivity strengthens long-term demand." },
+  ],
+  section3: [
+    { text: "Planned layouts reduce future development issues." },
+    { text: "Utility planning avoids costly modifications." },
+    { text: "Drainage systems protect land integrity." },
+    { text: "Green landscaping improves visual appeal." },
+    { text: "Infrastructure readiness boosts buyer confidence." },
+    { text: "Well-planned land attracts premium demand." },
+  ],
+  section4: [
+    { text: "Gated access enhances resident confidence." },
+    { text: "Security features attract family buyers." },
+    { text: "Organized layouts improve lifestyle appeal." },
+    { text: "Premium communities retain value longer." },
+    { text: "Future development aligns with modern living." },
+    { text: "Security-driven planning increases resale value." },
+  ],
+  section5: [
+    { text: "Commercial zones create constant activity." },
+    { text: "Retail growth improves surrounding land value." },
+    { text: "Rental demand increases near malls." },
+    { text: "Commercial proximity attracts investors quickly." },
+    { text: "Footfall-driven areas appreciate faster." },
+    { text: "Commerce-backed land remains in demand." },
+  ],
+  section6: [
+    { text: "Early identification delivers a pricing advantage." },
+    { text: "Government projects accelerate appreciation." },
+    { text: "Urban planning attracts future population growth." },
+    { text: "Infrastructure readiness boosts ROI potential." },
+    { text: "Growth zones evolve into prime zones." },
+    { text: "Timing defines investment success." },
+  ],
+  section7: [
+    { text: "Verification removes legal uncertainty." },
+    { text: "Clear titles protect long-term ownership." },
+    { text: "Access routes are validated in advance." },
+    { text: "Buyers avoid hidden complications." },
+    { text: "Transparency builds lasting trust." },
+    { text: "Clarity improves confident decision-making." },
+  ],
+  section8: [
+    { text: "Interactive maps reduce location confusion." },
+    { text: "Filters save time during comparison." },
+    { text: "Nearby infrastructure is clearly visible." },
+    { text: "Visual tools improve evaluation accuracy." },
+    { text: "Buyers shortlist faster and smarter." },
+    { text: "Technology enhances land discovery." },
+  ],
+};
 
 const Buy = () => {
   return <Layout>
@@ -66,6 +135,7 @@ const Buy = () => {
                   <span>A stable path to wealth creation.</span>
                 </p>
               </div>
+              <ExpandableSection items={expandableContent.section1} />
             </div>
             <div className="relative">
               <img src={appreciationImage} alt="Land appreciation visualization" className="rounded-2xl shadow-2xl w-full" />
@@ -108,6 +178,7 @@ const Buy = () => {
                   <span>Connectivity defines land success.</span>
                 </p>
               </div>
+              <ExpandableSection items={expandableContent.section2} />
             </div>
           </div>
         </div>
@@ -143,6 +214,7 @@ const Buy = () => {
                   <span className="font-semibold">Infrastructure strengthens investment quality.</span>
                 </div>
               </div>
+              <ExpandableSection items={expandableContent.section3} />
             </div>
             <div className="relative">
               <img alt="Community layout plan" className="rounded-2xl shadow-2xl w-full bg-white" src="/lovable-uploads/0f771d53-07fa-4b1c-8e47-479da1e9ea3b.jpg" />
@@ -187,6 +259,7 @@ const Buy = () => {
                   <span>Future-ready land investments.</span>
                 </p>
               </div>
+              <ExpandableSection items={expandableContent.section4} />
             </div>
           </div>
         </div>
@@ -224,6 +297,7 @@ const Buy = () => {
                   </li>
                 </ul>
               </div>
+              <ExpandableSection items={expandableContent.section5} />
             </div>
             <div className="relative">
               <img alt="Mall with surrounding land plots" className="rounded-2xl shadow-2xl w-full" src="/lovable-uploads/fd2a5ec7-7b3b-43e6-b5a0-11c4c2b338d8.jpg" />
@@ -267,6 +341,7 @@ const Buy = () => {
                   <span>Invest ahead of the curve.</span>
                 </p>
               </div>
+              <ExpandableSection items={expandableContent.section6} />
             </div>
           </div>
         </div>
@@ -302,6 +377,7 @@ const Buy = () => {
                   <span className="font-semibold text-emerald">Trust begins with clarity.</span>
                 </div>
               </div>
+              <ExpandableSection items={expandableContent.section7} />
             </div>
             <div className="relative">
               <img alt="Verified listings dashboard" className="rounded-2xl shadow-2xl w-full" src="/lovable-uploads/ad6711f3-56ad-4f81-a739-e76a174e32b3.jpg" />
@@ -353,6 +429,7 @@ const Buy = () => {
                   <span className="text-lg font-semibold text-emerald">Smarter tools enable better decisions.</span>
                 </div>
               </div>
+              <ExpandableSection items={expandableContent.section8} />
             </div>
           </div>
         </div>
