@@ -28,25 +28,18 @@ const Contact = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative py-20 md:py-28 gradient-hero overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-primary-foreground rounded-full blur-3xl" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-plotray-teal rounded-full blur-3xl" />
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/90 via-plotray-blue/70 to-teal/60" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
+        
+        <div className="container-custom relative z-10 text-center pt-20">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-8 animate-fade-in leading-tight">
+            Get in Touch with<br />
+            <span className="text-gold">Plotray</span>
+          </h1>
         </div>
         
-        <div className="container-custom relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-6 animate-slide-up">
-              Get in Touch with
-              <br />
-              <span className="text-plotray-gold">Plotray</span>
-            </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 animate-slide-up" style={{ animationDelay: "0.1s" }}>
-              We assist buyers, sellers, and investors. Clear communication is our priority. 
-              Reach out for land-related queries.
-            </p>
-          </div>
-        </div>
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
       </section>
 
       {/* Contact Form & Info */}

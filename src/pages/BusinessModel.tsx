@@ -14,28 +14,19 @@ import businessCta from "@/assets/business-cta.jpg";
 const BusinessModel = () => {
   return <Layout>
       {/* Section 1: Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={businessHero} alt="Scalable Revenue Model" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-b from-[hsl(220,70%,15%)]/80 via-[hsl(220,70%,20%)]/60 to-[hsl(220,70%,15%)]/80" />
-        </div>
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${businessHero})` }} />
+        <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/90 via-plotray-blue/70 to-teal/60" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
         
-        {/* Animated particles */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-[hsl(45,90%,60%)] rounded-full animate-pulse" />
-          <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-[hsl(220,80%,60%)] rounded-full animate-pulse delay-100" />
-          <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-[hsl(175,70%,50%)] rounded-full animate-pulse delay-200" />
-        </div>
-        
-        <div className="container-custom relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-8">
-            <TrendingUp className="w-5 h-5 text-[hsl(45,90%,60%)]" />
-            <span className="text-sm font-medium text-white">Investor Ready • Growth Focused</span>
-          </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold text-white leading-tight max-w-5xl mx-auto animate-fade-in tracking-wide">
-            A Scalable Revenue Model Built on <span className="text-transparent bg-clip-text bg-gradient-to-r from-[hsl(45,90%,60%)] to-[hsl(45,80%,70%)]">Land Growth</span>
+        <div className="container-custom relative z-10 text-center pt-20">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-8 animate-fade-in leading-tight">
+            A Scalable Revenue Model<br />
+            <span className="text-gold">Built on Land Growth</span>
           </h1>
         </div>
+        
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
       </section>
 
       {/* Section 2: Digital Platform at the Core */}
