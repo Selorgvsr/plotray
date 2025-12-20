@@ -32,7 +32,7 @@ const footerLinks = {
     name: "Privacy Policy",
     path: "/privacy"
   }, {
-  name: "Terms & Conditions",
+    name: "Terms & Conditions",
     path: "/terms"
   }]
 };
@@ -57,11 +57,7 @@ export const Footer = () => {
           {/* Brand Section */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center mb-4">
-              <img 
-                src={plotrayLogo} 
-                alt="PLOTRAY - Land Investment Platform" 
-                className="h-28 md:h-36 w-auto object-contain"
-              />
+              <img alt="PLOTRAY - Land Investment Platform" className="h-28 md:h-36 w-auto object-contain" src="/lovable-uploads/72807e45-e980-4ed9-8a95-b530f16b43c2.png" />
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-6 max-w-sm">
               PLOTRAY is your trusted partner for strategic land investments near growing cities. We connect buyers with premium land opportunities.
