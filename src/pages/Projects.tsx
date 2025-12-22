@@ -9,7 +9,6 @@ import projectSlide1 from "@/assets/project-slide-1.png";
 import projectSlide2 from "@/assets/project-slide-2.png";
 import projectSlide3 from "@/assets/project-slide-3.png";
 import projectSlide4 from "@/assets/project-slide-4.png";
-
 const projects = [{
   name: "Green Valley Township",
   location: "Near Chennai Outer Ring Road",
@@ -18,14 +17,19 @@ const projects = [{
   growth: "+22%",
   status: "Active"
 }];
-
-const projectSlides = [
-  { image: projectSlide1, title: "Premium Villa Plots" },
-  { image: projectSlide2, title: "Amenities" },
-  { image: projectSlide3, title: "Location Advantages" },
-  { image: projectSlide4, title: "Location Map" },
-];
-
+const projectSlides = [{
+  image: projectSlide1,
+  title: "Premium Villa Plots"
+}, {
+  image: projectSlide2,
+  title: "Amenities"
+}, {
+  image: projectSlide3,
+  title: "Location Advantages"
+}, {
+  image: projectSlide4,
+  title: "Location Map"
+}];
 const highlights = [{
   icon: Route,
   title: "Road Access",
@@ -43,30 +47,24 @@ const highlights = [{
   title: "Transparency",
   desc: "Transparency in every detail"
 }];
-
 const Projects = () => {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
-
   const handleOpenSheet = () => {
     setCurrentSlide(0);
     setIsSheetOpen(true);
   };
-
   const handleNextSlide = () => {
     if (currentSlide < projectSlides.length - 1) {
       setCurrentSlide(currentSlide + 1);
     }
   };
-
   const handlePrevSlide = () => {
     if (currentSlide > 0) {
       setCurrentSlide(currentSlide - 1);
     }
   };
-
-  return (
-    <Layout>
+  return <Layout>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -78,17 +76,18 @@ const Projects = () => {
             ​Invest in Villa Plot <br />
           </h1>
           
-          <p style={{ animationDelay: '0.2s' }} className="text-lg max-w-2xl mx-auto mb-8 animate-fade-in text-primary-foreground md:text-2xl">
+          <p style={{
+          animationDelay: '0.2s'
+        }} className="text-lg max-w-2xl mx-auto mb-8 animate-fade-in text-primary-foreground md:text-2xl">
             Investing in land brings financial peace and lasting growth.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-            <Button 
-              variant="hero" 
-              size="lg" 
-              className="bg-gold hover:bg-gold/90 text-plotray-blue font-semibold text-lg px-8"
-              onClick={() => document.getElementById('projects-section')?.scrollIntoView({ behavior: 'smooth' })}
-            >
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 animate-fade-in" style={{
+          animationDelay: '0.3s'
+        }}>
+            <Button variant="hero" size="lg" className="bg-gold hover:bg-gold/90 text-plotray-blue font-semibold text-lg px-8" onClick={() => document.getElementById('projects-section')?.scrollIntoView({
+            behavior: 'smooth'
+          })}>
               <Building2 className="w-5 h-5 mr-2" />
               Explore Projects
             </Button>
@@ -109,8 +108,7 @@ const Projects = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project, index) => (
-              <div key={index} className="glass-card rounded-2xl overflow-hidden hover-lift group">
+            {projects.map((project, index) => <div key={index} className="glass-card rounded-2xl overflow-hidden hover-lift group">
                 <div className="h-48 gradient-success relative">
                   <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-primary-foreground/20 backdrop-blur-sm text-primary-foreground text-sm font-medium">
                     {project.status}
@@ -124,16 +122,7 @@ const Projects = () => {
                     {project.location}
                   </div>
                   
-                  <div className="grid grid-cols-2 gap-4 mb-4">
-                    <div>
-                      <p className="text-xs text-muted-foreground">Plots Available</p>
-                      <p className="font-semibold text-foreground">{project.plots}</p>
-                    </div>
-                    <div>
-                      <p className="text-xs text-muted-foreground">Plot Size</p>
-                      <p className="font-semibold text-foreground">{project.size}</p>
-                    </div>
-                  </div>
+                  
                   
                   <div className="flex items-center justify-between pt-4 border-t border-border">
                     <div className="flex items-center gap-1 text-plotray-emerald">
@@ -146,8 +135,7 @@ const Projects = () => {
                     </Button>
                   </div>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -173,53 +161,28 @@ const Projects = () => {
 
             {/* Slide Content */}
             <div className="flex-1 overflow-auto relative">
-              <div 
-                className="flex transition-transform duration-500 ease-out h-full"
-                style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-              >
-                {projectSlides.map((slide, index) => (
-                  <div key={index} className="min-w-full h-full flex items-center justify-center p-4">
-                    <img 
-                      src={slide.image} 
-                      alt={slide.title} 
-                      className="max-w-full max-h-full object-contain rounded-lg shadow-lg"
-                    />
-                  </div>
-                ))}
+              <div className="flex transition-transform duration-500 ease-out h-full" style={{
+              transform: `translateX(-${currentSlide * 100}%)`
+            }}>
+                {projectSlides.map((slide, index) => <div key={index} className="min-w-full h-full flex items-center justify-center p-4">
+                    <img src={slide.image} alt={slide.title} className="max-w-full max-h-full object-contain rounded-lg shadow-lg" />
+                  </div>)}
               </div>
             </div>
 
             {/* Navigation */}
             <div className="flex items-center justify-between p-4 border-t border-border bg-background">
-              <Button 
-                variant="outline" 
-                onClick={handlePrevSlide} 
-                disabled={currentSlide === 0}
-                className="gap-2"
-              >
+              <Button variant="outline" onClick={handlePrevSlide} disabled={currentSlide === 0} className="gap-2">
                 <ChevronLeft className="w-4 h-4" />
                 Previous
               </Button>
               
               {/* Dots indicator */}
               <div className="flex gap-2">
-                {projectSlides.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentSlide(index)}
-                    className={`w-2.5 h-2.5 rounded-full transition-colors ${
-                      index === currentSlide ? 'bg-primary' : 'bg-muted-foreground/30'
-                    }`}
-                  />
-                ))}
+                {projectSlides.map((_, index) => <button key={index} onClick={() => setCurrentSlide(index)} className={`w-2.5 h-2.5 rounded-full transition-colors ${index === currentSlide ? 'bg-primary' : 'bg-muted-foreground/30'}`} />)}
               </div>
               
-              <Button 
-                variant="outline" 
-                onClick={handleNextSlide} 
-                disabled={currentSlide === projectSlides.length - 1}
-                className="gap-2"
-              >
+              <Button variant="outline" onClick={handleNextSlide} disabled={currentSlide === projectSlides.length - 1} className="gap-2">
                 Next
                 <ChevronRight className="w-4 h-4" />
               </Button>
@@ -227,8 +190,6 @@ const Projects = () => {
           </div>
         </SheetContent>
       </Sheet>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default Projects;
