@@ -9,7 +9,7 @@ import projectSlide1 from "@/assets/project-slide-1.png";
 import projectSlide2 from "@/assets/project-slide-2.png";
 import projectSlide3 from "@/assets/project-slide-3.png";
 import projectSlide4 from "@/assets/project-slide-4.png";
-import projectCardImage from "@/assets/project-card-image.jpg";
+import projectCardImage from "@/assets/kilambakkam-aerial.png";
 const projects = [{
   name: "Green Valley Township",
   location: "Near Kilambakkam Bus Terminus",
