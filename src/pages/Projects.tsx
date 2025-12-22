@@ -10,20 +10,6 @@ const projects = [{
   size: "1200-2400 sq ft",
   growth: "+22%",
   status: "Active"
-}, {
-  name: "Metro Edge Plots",
-  location: "Bengaluru Metro Corridor",
-  plots: 85,
-  size: "1000-1800 sq ft",
-  growth: "+18%",
-  status: "Active"
-}, {
-  name: "Highway Heights",
-  location: "Hyderabad ORR Junction",
-  plots: 95,
-  size: "1500-3000 sq ft",
-  growth: "+15%",
-  status: "Launching"
 }];
 const highlights = [{
   icon: Route,
