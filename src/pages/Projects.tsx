@@ -119,7 +119,7 @@ const Projects = () => {
                   <Building2 className="absolute bottom-4 left-4 w-10 h-10 text-primary-foreground opacity-80" />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-heading font-bold text-foreground mb-2">{project.name}</h3>
+                  <h3 className="font-heading font-bold text-foreground mb-2 text-2xl">{project.name}</h3>
                   <div className="flex items-center gap-2 text-muted-foreground text-sm mb-4">
                     <MapPin className="w-4 h-4" />
                     {project.location}
