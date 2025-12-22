@@ -9,6 +9,7 @@ import projectSlide1 from "@/assets/project-slide-1.png";
 import projectSlide2 from "@/assets/project-slide-2.png";
 import projectSlide3 from "@/assets/project-slide-3.png";
 import projectSlide4 from "@/assets/project-slide-4.png";
+import projectCardImage from "@/assets/project-card-image.jpg";
 const projects = [{
   name: "Green Valley Township",
   location: "Near Kilambakkam Bus Terminus",
@@ -109,7 +110,9 @@ const Projects = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => <div key={index} className="glass-card rounded-2xl overflow-hidden hover-lift group">
-                <div className="h-48 gradient-success relative">
+                <div className="h-48 relative overflow-hidden">
+                  <img src={projectCardImage} alt={project.name} className="w-full h-full object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                   <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-primary-foreground/20 backdrop-blur-sm text-primary-foreground text-sm font-medium">
                     {project.status}
                   </div>
