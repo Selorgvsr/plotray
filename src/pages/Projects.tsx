@@ -110,7 +110,7 @@ const Projects = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => <div key={index} className="glass-card rounded-2xl overflow-hidden hover-lift group">
-                <div className="h-72 md:h-80 relative overflow-hidden">
+                <div className="aspect-[16/9] md:aspect-[21/9] relative overflow-hidden">
                   <img src={projectCardImage} alt={project.name} className="w-full h-full object-cover" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                   <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-primary-foreground/20 backdrop-blur-sm text-primary-foreground text-sm font-medium">
