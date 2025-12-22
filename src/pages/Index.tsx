@@ -15,7 +15,7 @@ import homeSustainable from "@/assets/home-sustainable.jpg";
 import homeInvestors from "@/assets/home-investors.jpg";
 import homeBusiness from "@/assets/home-business.jpg";
 import homeCta from "@/assets/home-cta.jpg";
-import kilambakkamBanner from "@/assets/kilambakkam-villa-banner.png";
+import kilambakkamBanner from "@/assets/kilambakkam-villa-banner.jpg";
 const Index = () => {
   return <Layout>
       {/* Section 1: Hero Section */}
