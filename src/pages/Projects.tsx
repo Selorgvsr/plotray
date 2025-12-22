@@ -120,7 +120,7 @@ const Projects = () => {
                 </div>
                 <div className="p-6">
                   <h3 className="font-heading font-bold text-foreground mb-2 text-2xl">{project.name}</h3>
-                  <div className="flex items-center gap-2 text-muted-foreground text-sm mb-4">
+                  <div className="flex items-center gap-2 mb-4 text-[plotray-deep-blue] text-sidebar-primary">
                     <MapPin className="w-4 h-4" />
                     {project.location}
                   </div>
