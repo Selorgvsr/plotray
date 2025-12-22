@@ -11,7 +11,7 @@ import projectSlide3 from "@/assets/project-slide-3.png";
 import projectSlide4 from "@/assets/project-slide-4.png";
 const projects = [{
   name: "Green Valley Township",
-  location: "Near Chennai Outer Ring Road",
+  location: "Near Kilambakkam Bus Terminus",
   plots: 120,
   size: "1200-2400 sq ft",
   growth: "+22%",
