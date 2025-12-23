@@ -13,7 +13,7 @@ import aboutAsset from "@/assets/about-asset.jpg";
 import aboutEsg from "@/assets/about-esg.jpg";
 import aboutTrust from "@/assets/about-trust.jpg";
 import aboutJourney from "@/assets/about-journey.jpg";
-import aboutCta from "@/assets/about-cta.jpg";
+import aboutCta from "@/assets/about-cta-new.jpg";
 const differentiators = [{
   icon: Building2,
   text: "Direct land buying without brokers"
