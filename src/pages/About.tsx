@@ -123,9 +123,9 @@ const About = () => {
                   <CheckCircle className="w-5 h-5 text-[hsl(220,60%,40%)] mt-1 shrink-0" />
                   Future-ready planning guides every acquisition.
                 </p>
-                <p className="flex items-start gap-3">PLOTRAY
-builds land value responsibly.<CheckCircle className="w-5 h-5 text-[hsl(220,60%,40%)] mt-1 shrink-0" />
-                  <span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> builds land value responsibly.
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-[hsl(220,60%,40%)] mt-1 shrink-0" />
+                  <span><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> builds land value responsibly.</span>
                 </p>
               </div>
             </div>
@@ -224,9 +224,9 @@ builds land value responsibly.<CheckCircle className="w-5 h-5 text-[hsl(220,60%,
                   <CheckCircle className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
                   Strategic locations drive wealth creation.
                 </p>
-                <p className="flex items-start gap-3">PLOTRAY
-unlocks land's true potential.<CheckCircle className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
-                  <span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> unlocks land's true potential.
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
+                  <span><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> unlocks land's true potential.</span>
                 </p>
               </div>
             </div>
@@ -302,10 +302,9 @@ unlocks land's true potential.<CheckCircle className="w-5 h-5 text-plotray-emera
                   <Users className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                   Professional teams manage every stage.
                 </p>
-                <p className="flex items-start gap-3">Trust is the foundation of
-PLOTRAY
-.<Users className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
-                  Trust is the foundation of <span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span>.
+                <p className="flex items-start gap-3">
+                  <Users className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  <span>Trust is the foundation of <span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span>.</span>
                 </p>
               </div>
             </div>
