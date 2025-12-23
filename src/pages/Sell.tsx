@@ -14,9 +14,9 @@ import sellTrust from "@/assets/sell-trust.jpg";
 import sellStressfree from "@/assets/sell-stressfree.jpg";
 import sellCta from "@/assets/sell-cta.jpg";
 interface ExpandableSectionProps {
-  heading: string;
-  content: string[];
-  expandedContent: string[];
+  heading: React.ReactNode;
+  content: React.ReactNode[];
+  expandedContent: React.ReactNode[];
   image: string;
   imageAlt: string;
   icon: React.ReactNode;
@@ -85,7 +85,7 @@ const ExpandableSection = ({
 };
 const CTAExpandable = () => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const expandedContent = ["Submitting land details initiates a quick evaluation process.", "Priority locations receive faster responses from the team.", "The submission process is simple and digital-friendly.", "No complex forms or lengthy documentation is required initially.", "PLOTRAY reviews each submission professionally.", "Sellers receive timely updates without delays.", "Early submission improves acquisition speed.", "Opportunities are assessed efficiently."];
+  const expandedContent = ["Submitting land details initiates a quick evaluation process.", "Priority locations receive faster responses from the team.", "The submission process is simple and digital-friendly.", "No complex forms or lengthy documentation is required initially.", <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> reviews each submission professionally.</>, "Sellers receive timely updates without delays.", "Early submission improves acquisition speed.", "Opportunities are assessed efficiently."];
   return <div className="space-y-4">
       <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isExpanded ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"}`}>
         <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
@@ -104,17 +104,17 @@ const CTAExpandable = () => {
 const Sell = () => {
   const navigate = useNavigate();
   const sections = [{
-    heading: "PLOTRAY Buys Land—No Middlemen",
-    content: ["PLOTRAY purchases land directly from property owners.", "There are no brokers, agents, or third-party delays.", "You deal directly with a professional buying team.", "This ensures faster decisions and clear communication.", "A simple and transparent selling experience."],
-    expandedContent: ["PLOTRAY operates on a direct land acquisition model designed to eliminate complexity.", "By removing brokers and intermediaries, sellers experience faster communication.", "Every discussion happens directly with a professional acquisition team.", "This approach avoids commission deductions and unnecessary negotiations.", "Sellers receive clear responses without repeated follow-ups.", "The process is structured for speed and transparency.", "Direct buying ensures smoother decision-making and trust.", "Efficiency and clarity define every interaction."],
+    heading: <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> Buys Land—No Middlemen</>,
+    content: [<><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> purchases land directly from property owners.</>, "There are no brokers, agents, or third-party delays.", "You deal directly with a professional buying team.", "This ensures faster decisions and clear communication.", "A simple and transparent selling experience."],
+    expandedContent: [<><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> operates on a direct land acquisition model designed to eliminate complexity.</>, "By removing brokers and intermediaries, sellers experience faster communication.", "Every discussion happens directly with a professional acquisition team.", "This approach avoids commission deductions and unnecessary negotiations.", "Sellers receive clear responses without repeated follow-ups.", "The process is structured for speed and transparency.", "Direct buying ensures smoother decision-making and trust.", "Efficiency and clarity define every interaction."],
     image: sellDirect,
     imageAlt: "Direct land transaction",
     icon: <Handshake className="h-6 w-6" />,
     bgClass: "bg-gradient-to-br from-orange-50 to-amber-50"
   }, {
     heading: "We Buy Land in High-Growth Locations",
-    content: ["PLOTRAY focuses on land near cities, malls, and highways.", "Urban expansion increases strategic value.", "We actively acquire land in developing zones.", "Well-connected locations receive faster approvals.", "If your land is near growth areas, we are interested."],
-    expandedContent: ["Land located near expanding cities gains strategic importance over time.", "Infrastructure growth naturally increases demand in surrounding areas.", "PLOTRAY prioritizes locations close to highways, malls, and urban development.", "These zones attract long-term planning and commercial interest.", "Connectivity plays a key role in faster acquisition decisions.", "Growth corridors align with future expansion strategies.", "Well-positioned land receives priority evaluation.", "Location-driven demand ensures stronger value."],
+    content: [<><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> focuses on land near cities, malls, and highways.</>, "Urban expansion increases strategic value.", "We actively acquire land in developing zones.", "Well-connected locations receive faster approvals.", "If your land is near growth areas, we are interested."],
+    expandedContent: ["Land located near expanding cities gains strategic importance over time.", "Infrastructure growth naturally increases demand in surrounding areas.", <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> prioritizes locations close to highways, malls, and urban development.</>, "These zones attract long-term planning and commercial interest.", "Connectivity plays a key role in faster acquisition decisions.", "Growth corridors align with future expansion strategies.", "Well-positioned land receives priority evaluation.", "Location-driven demand ensures stronger value."],
     image: sellGrowth,
     imageAlt: "High-growth urban location",
     icon: <MapPin className="h-6 w-6" />,
@@ -193,7 +193,7 @@ const Sell = () => {
             </h2>
             
             <div className="space-y-3 text-white/90 text-lg max-w-2xl mx-auto">
-              <p>PLOTRAY is actively acquiring land assets.</p>
+              <p><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> is actively acquiring land assets.</p>
               <p>Early submissions receive quicker evaluations.</p>
               <p>If your land is near a growing city, we want it.</p>
               <p>The process takes only a few minutes.</p>
