@@ -129,16 +129,16 @@ const Sell = () => {
     bgClass: "bg-white"
   }, {
     heading: "Get a Fair Value for Your Land",
-    content: ["PLOTRAY offers pricing based on real market data.", "We consider location, connectivity, and future growth.", "No undervaluation or hidden deductions.", "Transparent evaluation builds seller confidence.", "You receive a fair and realistic offer."],
-    expandedContent: ["Pricing is determined using real market indicators and location strength.", "PLOTRAY evaluates accessibility, infrastructure, and growth potential.", "This ensures sellers receive realistic and balanced offers.", "There are no hidden deductions or last-minute changes.", "Every valuation is explained clearly to the seller.", "Fair pricing builds long-term confidence and trust.", "The goal is mutual value, not pressure.", "Transparency defines the offer process."],
+    content: [<span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> offers pricing based on real market data.", "We consider location, connectivity, and future growth.", "No undervaluation or hidden deductions.", "Transparent evaluation builds seller confidence.", "You receive a fair and realistic offer."],
+    expandedContent: ["Pricing is determined using real market indicators and location strength.", "<span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> evaluates accessibility, infrastructure, and growth potential.", "This ensures sellers receive realistic and balanced offers.", "There are no hidden deductions or last-minute changes.", "Every valuation is explained clearly to the seller.", "Fair pricing builds long-term confidence and trust.", "The goal is mutual value, not pressure.", "Transparency defines the offer process."],
     image: sellPricing,
     imageAlt: "Fair land valuation",
     icon: <Scale className="h-6 w-6" />,
     bgClass: "bg-gradient-to-br from-amber-50 to-yellow-50"
   }, {
     heading: "A Trusted & Transparent Buyer",
-    content: ["PLOTRAY follows clear legal and documentation processes.", "All terms are explained upfront.", "No last-minute changes or confusion.", "Professional handling ensures peace of mind.", "Trust and clarity are our foundation."],
-    expandedContent: ["PLOTRAY follows a clear and professional documentation framework.", "All legal steps are explained before moving forward.", "There are no unclear clauses or unexpected conditions.", "Every agreement is handled with proper compliance.", "Sellers are informed at each stage of the transaction.", "Professional coordination ensures smooth execution.", "Trust is built through clarity and consistency.", "Peace of mind is always prioritized."],
+    content: ["<span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> follows clear legal and documentation processes.", "All terms are explained upfront.", "No last-minute changes or confusion.", "Professional handling ensures peace of mind.", "Trust and clarity are our foundation."],
+    expandedContent: ["<span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> follows a clear and professional documentation framework.", "All legal steps are explained before moving forward.", "There are no unclear clauses or unexpected conditions.", "Every agreement is handled with proper compliance.", "Sellers are informed at each stage of the transaction.", "Professional coordination ensures smooth execution.", "Trust is built through clarity and consistency.", "Peace of mind is always prioritized."],
     image: sellTrust,
     imageAlt: "Trusted documentation",
     icon: <Shield className="h-6 w-6" />,
@@ -146,7 +146,7 @@ const Sell = () => {
   }, {
     heading: "Sell Without Pressure or Uncertainty",
     content: ["No repeated buyer calls or negotiations.", "One clear discussion with PLOTRAY's team.", "Quick decisions reduce waiting stress.", "You stay informed at every stage.", "A smooth and worry-free selling journey."],
-    expandedContent: ["Selling land often comes with stress and uncertainty.", "PLOTRAY removes this by offering a single clear discussion.", "There are no repeated calls or forced negotiations.", "Decisions are made efficiently without prolonged waiting.", "Sellers remain informed throughout the process.", "Clear timelines reduce mental pressure.", "The experience stays calm and professional.", "Confidence replaces confusion."],
+    expandedContent: ["Selling land often comes with stress and uncertainty.", "<span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> removes this by offering a single clear discussion.", "There are no repeated calls or forced negotiations.", "Decisions are made efficiently without prolonged waiting.", "Sellers remain informed throughout the process.", "Clear timelines reduce mental pressure.", "The experience stays calm and professional.", "Confidence replaces confusion."],
     image: sellStressfree,
     imageAlt: "Stress-free selling",
     icon: <Heart className="h-6 w-6" />,
@@ -164,7 +164,7 @@ const Sell = () => {
         <div className="container-custom relative z-10 text-center pt-20">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-8 animate-fade-in leading-tight">
             Sell Your Land Directly to<br />
-            <span className="text-gold">PLOTRAY—Fast & Fair</span>
+            <span className="text-gold"><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span>—Fast & Fair</span>
           </h1>
         </div>
         
