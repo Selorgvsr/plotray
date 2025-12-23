@@ -33,8 +33,8 @@ export const Navbar = () => {
           <Link to="/" className="flex items-center gap-2 group">
             <img alt="PLOTRAY - Land Investment Platform" className="h-24 md:h-28 w-auto object-contain" src="/lovable-uploads/Gemini_Generated_Image_694q4y694q4y694q-removebg-preview.png" />
             <span className="text-2xl md:text-3xl font-heading font-bold">
-              <span className="text-green-800">PLOT</span>
-              <span className="text-orange-700">RAY</span>
+              <span className="text-green-800 text-4xl font-extrabold">PLOT</span>
+              <span className="text-orange-700 text-4xl font-extrabold">RAY</span>
             </span>
           </Link>
 
