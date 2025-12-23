@@ -48,7 +48,7 @@ const About = () => {
           <p style={{
           animationDelay: '0.2s'
         }} className="text-lg max-w-2xl mx-auto animate-fade-in font-serif text-primary-foreground md:text-2xl">
-            Wake up to 3X portfolio growth, financial freedom, and generational wealth from your PLOTRAY land.
+            Wake up to 3X portfolio growth, financial freedom, and generational wealth from your <span className="text-[#166534] font-bold">PLOT</span><span className="text-[#C2410C] font-bold">RAY</span> land.
           </p>
         </div>
         
@@ -66,7 +66,7 @@ const About = () => {
               <div className="space-y-3 text-muted-foreground">
                 <p className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
-                  PLOTRAY is a modern land-focused real estate Company.
+                  <span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> is a modern land-focused real estate Company.
                 </p>
                 <p className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
@@ -88,7 +88,7 @@ const About = () => {
             </div>
             
             <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img src={aboutTeam} alt="Plotray Team" className="w-full h-auto object-cover" />
+              <img src={aboutTeam} alt="PLOTRAY Team" className="w-full h-auto object-cover" />
             </div>
           </div>
         </div>
@@ -125,7 +125,7 @@ const About = () => {
                 </p>
                 <p className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[hsl(220,60%,40%)] mt-1 shrink-0" />
-                  PLOTRAY builds land value responsibly.
+                  <span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> builds land value responsibly.
                 </p>
               </div>
             </div>
@@ -172,17 +172,17 @@ const About = () => {
         </div>
       </section>
 
-      {/* Section 5: What Makes Plotray Different */}
+      {/* Section 5: What Makes PLOTRAY Different */}
       <section className="section-padding bg-background">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-2xl">
-              <img src={aboutDifferent} alt="What Makes Plotray Different" className="w-full h-auto object-cover" />
+              <img src={aboutDifferent} alt="What Makes PLOTRAY Different" className="w-full h-auto object-cover" />
             </div>
             
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
-                What Makes PLOTRAY <span className="text-plotray-gold">Different</span>
+                What Makes <span className="text-[#166534]">PLOT</span><span className="text-[#C2410C]">RAY</span> <span className="text-plotray-gold">Different</span>
               </h2>
               <div className="space-y-4">
                 {differentiators.map((item, index) => <div key={index} className="flex items-center gap-4 p-4 rounded-xl bg-[hsl(220,60%,97%)] hover:bg-[hsl(220,60%,95%)] transition-colors" style={{
@@ -226,7 +226,7 @@ const About = () => {
                 </p>
                 <p className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
-                  Plotray unlocks land's true potential.
+                  <span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> unlocks land's true potential.
                 </p>
               </div>
             </div>
@@ -304,7 +304,7 @@ const About = () => {
                 </p>
                 <p className="flex items-start gap-3">
                   <Users className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
-                  Trust is the foundation of Plotray.
+                  Trust is the foundation of <span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span>.
                 </p>
               </div>
             </div>
@@ -331,7 +331,7 @@ const About = () => {
               <div className="space-y-3 text-white/80">
                 <p className="flex items-start gap-3">
                   <ArrowRight className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
-                  Plotray continues expanding strategic land assets.
+                  <span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> continues expanding strategic land assets.
                 </p>
                 <p className="flex items-start gap-3">
                   <ArrowRight className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
@@ -358,7 +358,7 @@ const About = () => {
       {/* Section 10: CTA */}
       <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0">
-          <img src={aboutCta} alt="Join Plotray" className="w-full h-full object-cover" />
+          <img src={aboutCta} alt="Join PLOTRAY" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-[hsl(220,60%,15%)]/90 to-[hsl(220,60%,20%)]/80" />
         </div>
         

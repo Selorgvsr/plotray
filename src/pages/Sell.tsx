@@ -145,7 +145,7 @@ const Sell = () => {
     bgClass: "bg-gradient-to-br from-blue-50 to-sky-50"
   }, {
     heading: "Sell Without Pressure or Uncertainty",
-    content: ["No repeated buyer calls or negotiations.", "One clear discussion with Plotray's team.", "Quick decisions reduce waiting stress.", "You stay informed at every stage.", "A smooth and worry-free selling journey."],
+    content: ["No repeated buyer calls or negotiations.", "One clear discussion with PLOTRAY's team.", "Quick decisions reduce waiting stress.", "You stay informed at every stage.", "A smooth and worry-free selling journey."],
     expandedContent: ["Selling land often comes with stress and uncertainty.", "PLOTRAY removes this by offering a single clear discussion.", "There are no repeated calls or forced negotiations.", "Decisions are made efficiently without prolonged waiting.", "Sellers remain informed throughout the process.", "Clear timelines reduce mental pressure.", "The experience stays calm and professional.", "Confidence replaces confusion."],
     image: sellStressfree,
     imageAlt: "Stress-free selling",

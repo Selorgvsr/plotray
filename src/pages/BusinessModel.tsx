@@ -482,7 +482,7 @@ const BusinessModel = () => {
             </div>
             
             <p className="text-2xl font-heading font-semibold text-[hsl(45,90%,60%)] mb-10">
-              Grow with Plotray.
+              Grow with <span className="text-[#166534]">PLOT</span><span className="text-[#C2410C]">RAY</span>.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -25,7 +25,7 @@ const supportOptions = [{
 }, {
   icon: Users,
   title: "Partnership",
-  desc: "Explore business partnership opportunities with Plotray."
+  desc: "Explore business partnership opportunities with PLOTRAY."
 }, {
   icon: Headphones,
   title: "Customer Support",
@@ -36,7 +36,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={contactHeroImg} alt="Contact Plotray" className="w-full h-full object-cover" />
+          <img src={contactHeroImg} alt="Contact PLOTRAY" className="w-full h-full object-cover" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/80 via-plotray-blue/60 to-teal/50" />
         
