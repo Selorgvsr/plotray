@@ -25,7 +25,7 @@ const supportOptions = [{
 }, {
   icon: Users,
   title: "Partnership",
-  desc: "Explore business partnership opportunities with Plotray."
+  desc: <>Explore business partnership opportunities with <span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span>.</>
 }, {
   icon: Headphones,
   title: "Customer Support",
@@ -43,10 +43,10 @@ const Contact = () => {
         <div className="container-custom relative z-10 text-center pt-20">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold mb-6 animate-fade-in leading-tight text-card-foreground">
             Get in Touch with<br />
-            <span className="text-gold">PLOTRAY</span>
+            <span className="text-gold"><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span></span>
           </h1>
           <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto animate-fade-in">
-            Struggling with low-ROI investments? Buy/sell land with PLOTRAY today.
+            Struggling with low-ROI investments? Buy/sell land with <span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> today.
           </p>
         </div>
         

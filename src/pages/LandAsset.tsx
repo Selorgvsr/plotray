@@ -26,8 +26,8 @@ import landassetCta from "@/assets/landasset-cta.jpg";
 
 interface ExpandableSectionProps {
   heading: string;
-  content: string[];
-  expandedContent: string;
+  content: React.ReactNode[];
+  expandedContent: React.ReactNode;
   image: string;
   imageAlt: string;
   icon: React.ReactNode;
@@ -120,7 +120,7 @@ const ExpandableSection = ({
 
 const CTAExpandable = () => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const expandedContent = "Building a land portfolio requires strategic planning. Early entry increases appreciation potential. Asset-worthy land grows with infrastructure. Expert insights reduce investment risk. Clear data supports confident decisions. Long-term focus ensures stability. PLOTRAY supports asset planning. Wealth begins with the right land.";
+  const expandedContent = <>Building a land portfolio requires strategic planning. Early entry increases appreciation potential. Asset-worthy land grows with infrastructure. Expert insights reduce investment risk. Clear data supports confident decisions. Long-term focus ensures stability. <span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> supports asset planning. Wealth begins with the right land.</>;
   
   return (
     <div className="space-y-4">
@@ -172,13 +172,13 @@ const LandAsset = () => {
     {
       heading: "Monitor Appreciation & Market Trends",
       content: [
-        "PLOTRAY helps track land value changes over time.",
+        <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> helps track land value changes over time.</>,
         "See nearby developments influencing growth.",
         "Understand price movement clearly.",
         "Better insights support smarter decisions.",
         "Stay informed about your asset's performance."
       ],
-      expandedContent: "Tracking land performance helps investors plan strategically. Market movements become easier to understand with clear data. Nearby infrastructure directly impacts appreciation rates. PLOTRAY visualizes these changes in a simple format. Historical trends support future planning decisions. Data-driven insights reduce uncertainty. Clear analytics strengthen asset confidence. Informed investors make stronger choices.",
+      expandedContent: <>Tracking land performance helps investors plan strategically. Market movements become easier to understand with clear data. Nearby infrastructure directly impacts appreciation rates. <span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> visualizes these changes in a simple format. Historical trends support future planning decisions. Data-driven insights reduce uncertainty. Clear analytics strengthen asset confidence. Informed investors make stronger choices.</>,
       image: landassetAnalytics,
       imageAlt: "Land analytics dashboard",
       icon: <BarChart3 className="h-6 w-6" />,
@@ -188,7 +188,7 @@ const LandAsset = () => {
       heading: "Location Defines Asset Strength",
       content: [
         "Connectivity drives land appreciation.",
-        "PLOTRAY evaluates access to highways, malls, and cities.",
+        <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> evaluates access to highways, malls, and cities.</>,
         "Higher location scores attract buyers and investors.",
         "Future infrastructure boosts asset value.",
         "Make location-based decisions with confidence."
@@ -206,7 +206,7 @@ const LandAsset = () => {
         "Clear titles increase buyer trust.",
         "Proper zoning improves resale potential.",
         "Documentation strengthens asset security.",
-        "PLOTRAY emphasizes transparency and clarity."
+        <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> emphasizes transparency and clarity.</>
       ],
       expandedContent: "Legal clarity forms the foundation of a strong land asset. Clear titles reduce future disputes and uncertainty. Proper zoning ensures planned usability. Verified documentation improves resale confidence. Transparent records attract serious buyers. Legal security protects long-term wealth. Confidence begins with clarity. Strong documentation strengthens asset value.",
       image: landassetLegal,
@@ -298,7 +298,7 @@ const LandAsset = () => {
             <div className="space-y-3 text-white/90 text-lg max-w-2xl mx-auto">
               <p>Strategic land ownership creates lasting value.</p>
               <p>Early investments deliver stronger growth.</p>
-              <p>PLOTRAY helps identify asset-worthy land.</p>
+              <p><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> helps identify asset-worthy land.</p>
               <p>Make informed decisions with expert insights.</p>
               <p>Turn land into long-term wealth today.</p>
             </div>

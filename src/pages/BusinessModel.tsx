@@ -49,7 +49,7 @@ const BusinessModel = () => {
               <div className="space-y-4">
                 {[{
                 icon: Globe,
-                text: "PLOTRAY operates as a technology-driven land platform.",
+                text: <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> operates as a technology-driven land platform.</>,
                 color: "hsl(220,80%,50%)"
               }, {
                 icon: Users,
@@ -152,7 +152,7 @@ const BusinessModel = () => {
               <div className="space-y-4">
                 {[{
                 icon: MapPin,
-                text: "PLOTRAY acquires land in high-growth zones.",
+                text: <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> acquires land in high-growth zones.</>,
                 color: "hsl(45,90%,45%)"
               }, {
                 icon: Target,
@@ -206,7 +206,7 @@ const BusinessModel = () => {
               <div className="space-y-4">
                 {[{
                 icon: Handshake,
-                text: "PLOTRAY partners with developers and landowners.",
+                text: <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> partners with developers and landowners.</>,
                 color: "hsl(175,70%,40%)"
               }, {
                 icon: Users,
@@ -363,7 +363,7 @@ const BusinessModel = () => {
               <div className="space-y-4">
                 {[{
                 icon: Rocket,
-                text: "PLOTRAY's model supports scalable expansion.",
+                text: <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span>'s model supports scalable expansion.</>,
                 color: "hsl(220,80%,50%)"
               }, {
                 icon: MapPinned,
