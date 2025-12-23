@@ -25,7 +25,7 @@ const supportOptions = [{
 }, {
   icon: Users,
   title: "Partnership",
-  desc: "Explore business partnership opportunities with PLOTRAY."
+  desc: "Explore business partnership opportunities with Plotray."
 }, {
   icon: Headphones,
   title: "Customer Support",
@@ -36,7 +36,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={contactHeroImg} alt="Contact PLOTRAY" className="w-full h-full object-cover" />
+          <img src={contactHeroImg} alt="Contact Plotray" className="w-full h-full object-cover" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/80 via-plotray-blue/60 to-teal/50" />
         
@@ -147,12 +147,7 @@ const Contact = () => {
               </div>
               
               {/* Map Placeholder */}
-              <div className="glass-card rounded-2xl p-4 h-48 flex items-center justify-center bg-muted/50">
-                <div className="text-center">
-                  <MapPin className="w-10 h-10 text-muted-foreground mx-auto mb-2" />
-                  <p className="text-muted-foreground">Map Integration</p>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
