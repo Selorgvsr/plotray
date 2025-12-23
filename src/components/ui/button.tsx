@@ -11,7 +11,7 @@ const buttonVariants = cva("inline-flex items-center justify-center gap-2 whites
       secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 hover:shadow-lg",
       ghost: "hover:bg-muted hover:text-foreground",
       link: "text-primary underline-offset-4 hover:underline",
-      hero: "gradient-cta text-accent-foreground hover:shadow-[0_0_40px_rgba(234,138,52,0.3)] hover:-translate-y-1",
+      hero: "gradient-cta text-white hover:shadow-[0_0_40px_rgba(234,138,52,0.3)] hover:-translate-y-1",
       "hero-outline": "border-2 border-primary-foreground/30 bg-primary-foreground/10 text-primary-foreground backdrop-blur-sm hover:bg-primary-foreground/20 hover:border-primary-foreground/50",
       teal: "bg-secondary text-secondary-foreground hover:bg-secondary/90 hover:shadow-[0_0_30px_rgba(13,148,136,0.3)]",
       premium: "gradient-premium text-accent-foreground hover:shadow-lg hover:-translate-y-1"
