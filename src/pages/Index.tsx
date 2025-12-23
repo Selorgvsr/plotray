@@ -219,7 +219,7 @@ Future Cities<br />
             </div>
             <div className="order-1 lg:order-2 text-white">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6 text-card-foreground">
-                Strong Infrastructure = <span className="text-green-500">Strong Returns</span>
+                Strong Infrastructure <span className="text-green-500">Strong Returns</span>
               </h2>
               <div className="space-y-4 text-lg text-popover-foreground">
                 <p className="flex items-start gap-3">
