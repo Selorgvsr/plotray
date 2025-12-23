@@ -40,7 +40,7 @@ export const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-1">
-            {navLinks.map(link => <Link key={link.path} to={link.path} className={cn("px-5 py-2.5 rounded-lg text-lg font-semibold transition-all duration-200", location.pathname === link.path ? "bg-primary/10 text-primary" : "text-muted-foreground hover:text-foreground hover:bg-muted")}>
+            {navLinks.map(link => <Link key={link.path} to={link.path} className={cn("px-5 py-2.5 rounded-lg text-lg font-semibold transition-all duration-200", location.pathname === link.path ? "bg-primary/10 text-primary" : "text-foreground/80 hover:text-foreground hover:bg-muted")}>
                 {link.name}
               </Link>)}
           </div>
