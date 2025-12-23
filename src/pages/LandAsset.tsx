@@ -206,7 +206,7 @@ const LandAsset = () => {
         "Clear titles increase buyer trust.",
         "Proper zoning improves resale potential.",
         "Documentation strengthens asset security.",
-        <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> emphasizes transparency and clarity.</>
+        <><span style={{ display: 'inline-block' }}><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span></span> emphasizes transparency and clarity.</>
       ],
       expandedContent: "Legal clarity forms the foundation of a strong land asset. Clear titles reduce future disputes and uncertainty. Proper zoning ensures planned usability. Verified documentation improves resale confidence. Transparent records attract serious buyers. Legal security protects long-term wealth. Confidence begins with clarity. Strong documentation strengthens asset value.",
       image: landassetLegal,
