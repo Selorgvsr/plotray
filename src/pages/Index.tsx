@@ -42,7 +42,7 @@ const Index = () => {
               </Button>
             </Link>
             <Link to="/sell">
-            <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 text-lg px-8">
+            <Button variant="outline" size="lg" className="bg-plotray-blue/80 border-white/30 text-white hover:bg-plotray-blue/90 text-lg px-8">
               Sell Land to <span className="inline-flex"><span className="text-[#166534] font-bold">PLOT</span><span className="text-[#C2410C] font-bold">RAY</span></span>
             </Button>
             </Link>
