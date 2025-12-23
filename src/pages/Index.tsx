@@ -27,8 +27,8 @@ const Index = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
         
         <div className="container-custom relative z-10 text-center pt-20">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-8 animate-fade-in leading-tight">Where Smart Land Meet
-Future Cities<br />
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-8 animate-fade-in leading-tight">Where Smart Land Meet Future Cities
+          <br />
             <span className="text-gold">Future Cities</span>
           </h1>
           
@@ -219,7 +219,7 @@ Future Cities<br />
             </div>
             <div className="order-1 lg:order-2 text-white">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6 text-card-foreground">
-                Strong Infrastructure <span className="text-green-500">Strong Returns</span>
+                Strong Infrastructure = <span className="text-green-500">Strong Returns</span>
               </h2>
               <div className="space-y-4 text-lg text-popover-foreground">
                 <p className="flex items-start gap-3">
