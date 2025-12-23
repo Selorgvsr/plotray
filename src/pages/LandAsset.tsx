@@ -188,7 +188,7 @@ const LandAsset = () => {
       heading: "Location Defines Asset Strength",
       content: [
         "Connectivity drives land appreciation.",
-        <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> evaluates access to highways, malls, and cities.</>,
+        <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span>{" "}evaluates access to highways, malls, and cities.</>,
         "Higher location scores attract buyers and investors.",
         "Future infrastructure boosts asset value.",
         "Make location-based decisions with confidence."
