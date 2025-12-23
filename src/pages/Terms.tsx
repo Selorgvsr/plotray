@@ -5,7 +5,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 const termsData = [{
   id: "1",
   title: "1. Acceptance of Terms",
-  content: ["Plotray operates under Indian laws (IT Act 2000, RERA 2016).", "Using our platform means you accept these terms fully.", "We may update terms—check regularly."]
+  content: ["PLOTRAY operates under Indian laws (IT Act 2000, RERA 2016).", "Using our platform means you accept these terms fully.", "We may update terms—check regularly."]
 }, {
   id: "2",
   title: "2. Services Provided",
@@ -25,7 +25,7 @@ const termsData = [{
 }, {
   id: "6",
   title: "6. Limitation of Liability",
-  content: ["Plotray is not liable for market losses or title disputes.", "Max liability: transaction value.", "Force majeure (delays, disputes) exempt."]
+  content: ["PLOTRAY is not liable for market losses or title disputes.", "Max liability: transaction value.", "Force majeure (delays, disputes) exempt."]
 }, {
   id: "7",
   title: "7. Governing Law",
@@ -110,7 +110,7 @@ const Terms = () => {
 
           {/* Footer Note */}
           <div className="text-center mt-8 text-sm text-muted-foreground">
-            © 2025 Plotray. Chennai, India. RERA Registered.
+            © 2025 <span className="text-[#166534] font-bold">PLOT</span><span className="text-[#C2410C] font-bold">RAY</span>. Chennai, India. RERA Registered.
           </div>
         </div>
       </section>

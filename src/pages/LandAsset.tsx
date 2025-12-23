@@ -120,7 +120,7 @@ const ExpandableSection = ({
 
 const CTAExpandable = () => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const expandedContent = "Building a land portfolio requires strategic planning. Early entry increases appreciation potential. Asset-worthy land grows with infrastructure. Expert insights reduce investment risk. Clear data supports confident decisions. Long-term focus ensures stability. Plotray supports asset planning. Wealth begins with the right land.";
+  const expandedContent = "Building a land portfolio requires strategic planning. Early entry increases appreciation potential. Asset-worthy land grows with infrastructure. Expert insights reduce investment risk. Clear data supports confident decisions. Long-term focus ensures stability. PLOTRAY supports asset planning. Wealth begins with the right land.";
   
   return (
     <div className="space-y-4">
@@ -172,7 +172,7 @@ const LandAsset = () => {
     {
       heading: "Monitor Appreciation & Market Trends",
       content: [
-        "Plotray helps track land value changes over time.",
+        "PLOTRAY helps track land value changes over time.",
         "See nearby developments influencing growth.",
         "Understand price movement clearly.",
         "Better insights support smarter decisions.",
@@ -206,7 +206,7 @@ const LandAsset = () => {
         "Clear titles increase buyer trust.",
         "Proper zoning improves resale potential.",
         "Documentation strengthens asset security.",
-        "Plotray emphasizes transparency and clarity."
+        "PLOTRAY emphasizes transparency and clarity."
       ],
       expandedContent: "Legal clarity forms the foundation of a strong land asset. Clear titles reduce future disputes and uncertainty. Proper zoning ensures planned usability. Verified documentation improves resale confidence. Transparent records attract serious buyers. Legal security protects long-term wealth. Confidence begins with clarity. Strong documentation strengthens asset value.",
       image: landassetLegal,
@@ -298,7 +298,7 @@ const LandAsset = () => {
             <div className="space-y-3 text-white/90 text-lg max-w-2xl mx-auto">
               <p>Strategic land ownership creates lasting value.</p>
               <p>Early investments deliver stronger growth.</p>
-              <p>Plotray helps identify asset-worthy land.</p>
+              <p>PLOTRAY helps identify asset-worthy land.</p>
               <p>Make informed decisions with expert insights.</p>
               <p>Turn land into long-term wealth today.</p>
             </div>

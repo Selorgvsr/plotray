@@ -42,9 +42,9 @@ const Index = () => {
               </Button>
             </Link>
             <Link to="/sell">
-              <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 text-lg px-8">
-                Sell Land to Plotray
-              </Button>
+            <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 text-lg px-8">
+              Sell Land to <span className="text-[#166534] font-bold">PLOT</span><span className="text-[#C2410C] font-bold">RAY</span>
+            </Button>
             </Link>
           </div>
         </div>
@@ -151,7 +151,7 @@ const Index = () => {
                 Buy Land Where <span className="text-teal-300">Cities Are Growing</span>
               </h2>
               <div className="space-y-4 text-white/80 text-lg">
-                <p>PLOTRAY curates land near malls, highways, and business hubs.</p>
+                <p><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> curates land near malls, highways, and business hubs.</p>
                 <p>City-adjacent locations ensure strong future demand.</p>
                 <p>Infrastructure-backed land delivers higher ROI.</p>
                 <p>Verified listings reduce investment risk.</p>
@@ -168,13 +168,13 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Section 4: Sell Your Land Directly to Plotray */}
+      {/* Section 4: Sell Your Land Directly to PLOTRAY */}
       <section className="py-20 bg-background">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
-                Sell Your Land <span className="text-orange-500">Directly</span> to PLOTRAY
+                Sell Your Land <span className="text-orange-500">Directly</span> to <span className="text-[#166534]">PLOT</span><span className="text-[#C2410C]">RAY</span>
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg">
                 <p className="flex items-start gap-3">
@@ -465,7 +465,7 @@ const Index = () => {
             </Link>
             <Link to="/sell">
               <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 text-lg px-8">
-                Sell Your Land to Plotray
+                Sell Your Land to <span className="text-[#166534] font-bold">PLOT</span><span className="text-[#C2410C] font-bold">RAY</span>
               </Button>
             </Link>
           </div>
