@@ -172,7 +172,7 @@ const LandAsset = () => {
     {
       heading: "Monitor Appreciation & Market Trends",
       content: [
-        <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span>{" "}helps track land value changes over time.</>,
+        <><span style={{ display: 'inline-block' }}><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span></span>{" "}helps track land value changes over time.</>,
         "See nearby developments influencing growth.",
         "Understand price movement clearly.",
         "Better insights support smarter decisions.",
