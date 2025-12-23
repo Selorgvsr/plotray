@@ -368,7 +368,7 @@ const About = () => {
         <div className="container-custom relative z-10">
           <div className="max-w-2xl">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6">
-              Be Part of the <span className="text-plotray-gold">PLOTRAY</span> Growth Story
+              Be Part of the <span className="inline-flex"><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span></span> Growth Story
             </h2>
             <div className="space-y-3 text-white/80 mb-8">
               <p className="flex items-start gap-3">
