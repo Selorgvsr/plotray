@@ -361,7 +361,7 @@ const Buy = () => {
               <div className="space-y-4 text-lg text-foreground/80">
                 <div className="flex items-start gap-4 p-4 bg-primary/5 rounded-xl">
                   <Shield className="w-8 h-8 text-primary shrink-0" />
-                  <span>All PLOTRAY listings are carefully verified.</span>
+                  <span>All <span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> listings are carefully verified.</span>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-primary/5 rounded-xl">
                   <Shield className="w-8 h-8 text-primary shrink-0" />
