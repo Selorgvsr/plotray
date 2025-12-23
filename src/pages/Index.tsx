@@ -27,8 +27,8 @@ const Index = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
         
         <div className="container-custom relative z-10 text-center pt-20">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-8 animate-fade-in leading-tight">
-            Where Smart Land Meets<br />
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-8 animate-fade-in leading-tight">Where Smart Land Meet
+Future Cities<br />
             <span className="text-gold">Future Cities</span>
           </h1>
           
@@ -58,15 +58,13 @@ const Index = () => {
         <div className="container-custom">
           <div className="relative">
             {/* Animated Sliding Banner Card */}
-            <div className="animate-[slideInFromRight_1s_ease-out_forwards] opacity-0" style={{ animationFillMode: 'forwards' }}>
+            <div className="animate-[slideInFromRight_1s_ease-out_forwards] opacity-0" style={{
+            animationFillMode: 'forwards'
+          }}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 group cursor-pointer transform hover:scale-[1.02]">
                 {/* Banner Image */}
                 <div className="relative aspect-[21/9] md:aspect-[3/1]">
-                  <img 
-                    src={kilambakkamBanner} 
-                    alt="Book Your Villa Plot in Kilambakkam - Near to Kilambakkam Bus Terminus" 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
+                  <img src={kilambakkamBanner} alt="Book Your Villa Plot in Kilambakkam - Near to Kilambakkam Bus Terminus" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   {/* Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
@@ -85,10 +83,7 @@ const Index = () => {
                       Premium plots near Kilambakkam Bus Terminus. Excellent connectivity & appreciation potential.
                     </p>
                     <Link to="/contact">
-                      <Button 
-                        size="lg" 
-                        className="bg-gold hover:bg-gold/90 text-plotray-blue font-bold text-base md:text-lg px-6 md:px-10 py-3 md:py-6 shadow-2xl hover:shadow-gold/40 transition-all duration-300 hover:scale-105"
-                      >
+                      <Button size="lg" className="bg-gold hover:bg-gold/90 text-plotray-blue font-bold text-base md:text-lg px-6 md:px-10 py-3 md:py-6 shadow-2xl hover:shadow-gold/40 transition-all duration-300 hover:scale-105">
                         Book Now
                         <ArrowRight className="ml-2 w-5 h-5" />
                       </Button>
