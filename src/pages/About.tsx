@@ -329,8 +329,8 @@ const About = () => {
                 Building the <span className="text-plotray-gold">Future</span> of Land Investment
               </h2>
               <div className="space-y-3 text-white/80">
-                <p className="flex items-start gap-3">
-                  <ArrowRight className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                <p className="flex items-start gap-3">PLOTRAY
+continues expanding strategic land assets.<ArrowRight className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                   <span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> continues expanding strategic land assets.
                 </p>
                 <p className="flex items-start gap-3">
