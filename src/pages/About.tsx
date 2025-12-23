@@ -64,8 +64,8 @@ const About = () => {
                 Who We <span className="text-[hsl(220,60%,40%)]">Are</span>
               </h2>
               <div className="space-y-3 text-muted-foreground">
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                <p className="flex items-start gap-3">PLOTRAY
+is a modern land-focused real estate Company.<CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                   <span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> is a modern land-focused real estate Company.
                 </p>
                 <p className="flex items-start gap-3">
