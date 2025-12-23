@@ -31,7 +31,7 @@ export const Navbar = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <img alt="PLOTRAY - Land Investment Platform" className="h-24 md:h-28 w-auto object-contain mt-0.5" src="/lovable-uploads/Gemini_Generated_Image_694q4y694q4y694q-removebg-preview.png" />
+            <img alt="PLOTRAY - Land Investment Platform" className="h-24 md:h-28 w-auto object-contain mt-3" src="/lovable-uploads/Gemini_Generated_Image_694q4y694q4y694q-removebg-preview.png" />
             <span className="text-2xl md:text-3xl font-heading font-bold">
               <span className="text-[#166534] text-4xl font-extrabold">PLOT</span>
               <span className="text-[#C2410C] text-4xl font-extrabold">RAY</span>
