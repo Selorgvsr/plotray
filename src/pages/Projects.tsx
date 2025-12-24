@@ -3,7 +3,7 @@ import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Building2, MapPin, TrendingUp, ArrowRight, CheckCircle, Shield, Route, Layers, ChevronLeft, ChevronRight, X } from "lucide-react";
-import { Sheet, SheetContent } from "@/components/ui/sheet";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import projectsHeroImg from "@/assets/projects-hero.jpg";
 import projectSlide1 from "@/assets/project-slide-1.png";
 import projectSlide2 from "@/assets/project-slide-2.png";
@@ -141,9 +141,9 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* Project Details Sheet */}
-      <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-        <SheetContent side="right" className="w-full sm:max-w-2xl lg:max-w-4xl p-0 overflow-hidden">
+      {/* Project Details Dialog */}
+      <Dialog open={isSheetOpen} onOpenChange={setIsSheetOpen}>
+        <DialogContent className="w-full max-w-2xl lg:max-w-4xl p-0 overflow-hidden max-h-[90vh]">
           <div className="relative h-full flex flex-col">
             {/* Header */}
             <div className="flex items-center justify-between p-4 border-b border-border bg-background">
@@ -189,8 +189,8 @@ const Projects = () => {
               </Button>
             </div>
           </div>
-        </SheetContent>
-      </Sheet>
+        </DialogContent>
+      </Dialog>
     </Layout>;
 };
 export default Projects;
