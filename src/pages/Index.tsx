@@ -383,13 +383,7 @@ const Index = () => {
               </div>
               
               {/* Trust badges */}
-              <div className="flex flex-wrap gap-4 mt-8">
-                {["100+ Properties", "500+ Investors", "10+ Cities"].map((badge, idx) => (
-                  <span key={idx} className="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium">
-                    {badge}
-                  </span>
-                ))}
-              </div>
+              
             </div>
             <div>
               <img src={homeInvestors} alt="Professional investors analyzing data" className="rounded-2xl shadow-2xl" />
