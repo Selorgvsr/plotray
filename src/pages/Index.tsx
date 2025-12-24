@@ -27,15 +27,30 @@ const Index = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
         
         <div className="container-custom relative z-10 text-center pt-20">
-          <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-8 animate-fade-in leading-tight lg:text-4xl">We support 'Financial Peace' on Land Investment
- 
- Our Plots in Prime Locations  
-Clear Legal Title  
-Statutory Approval from Government  
-Investment in our Prime Land is always Appreciating
-          <br />
+          <div className="animate-fade-in">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-8 leading-tight">
+              We support '<span className="text-gold bg-gold/20 px-2 py-1 rounded">Financial Peace</span>' on Land Investment
+            </h1>
             
-          </h1>
+            <div className="max-w-3xl mx-auto space-y-3 text-left md:text-center">
+              <p className="text-lg md:text-xl font-medium text-emerald-300 flex items-center justify-center gap-2">
+                <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                Our Plots in Prime Locations
+              </p>
+              <p className="text-lg md:text-xl font-medium text-sky-300 flex items-center justify-center gap-2">
+                <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                Clear Legal Title
+              </p>
+              <p className="text-lg md:text-xl font-medium text-orange-300 flex items-center justify-center gap-2">
+                <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                Statutory Approval from Government
+              </p>
+              <p className="text-lg md:text-xl font-medium text-pink-300 flex items-center justify-center gap-2">
+                <CheckCircle className="w-5 h-5 flex-shrink-0" />
+                Investment in our Prime Land is always Appreciating
+              </p>
+            </div>
+          </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 animate-fade-in" style={{
           animationDelay: '0.3s'
