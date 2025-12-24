@@ -81,7 +81,7 @@ const Index = () => {
                     </h3>
                     <p className="text-white/80 text-sm md:text-lg mb-6 max-w-md">Premium plots near Kilambakkam Bus Terminus Excellent connectivity & appreciation potential</p>
                     <Link to="/contact">
-                      <Button size="lg" className="bg-gold hover:bg-gold/90 text-plotray-blue font-bold text-base md:text-lg px-6 md:px-10 py-3 md:py-6 shadow-2xl hover:shadow-gold/40 transition-all duration-300 hover:scale-105">
+                      <Button size="lg" className="bg-[#f97316] hover:bg-[#f97316]/90 text-[#ffffff] font-bold text-base md:text-lg px-6 md:px-10 py-3 md:py-6 shadow-2xl hover:shadow-[#f97316]/40 transition-all duration-300 hover:scale-105">
                         Book Now
                         <ArrowRight className="ml-2 w-5 h-5" />
                       </Button>
