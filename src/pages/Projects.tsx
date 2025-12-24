@@ -69,7 +69,7 @@ const Projects = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={projectsHeroImg} alt="PLOTRAY Projects" className="w-full h-full object-cover" />
+          <img alt="PLOTRAY Projects" className="w-full h-full object-cover" src="/lovable-uploads/f5b07c18-af7b-460b-988e-ae4512daee05.jpg" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/80 via-plotray-blue/60 to-teal/50" />
         <div className="container-custom relative z-10 text-center pt-20">
