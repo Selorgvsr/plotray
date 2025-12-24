@@ -447,7 +447,7 @@ const Index = () => {
             Build Wealth with Land That<br />
             <span className="text-gold">Grows with Cities</span>
           </h2>
-          <p className="text-white/80 text-lg max-w-2xl mx-auto mb-8">Struggling with low-ROI investments? Buy/sell land with PLOTRAY today</p>
+          
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/buy">
