@@ -190,7 +190,7 @@ const LandAsset = () => {
             Your Land Is More Than Property—<br />
             <span className="text-gold">It's a Growing Asset</span>
           </h1>
-          <p className="text-xl md:text-2xl lg:text-3xl text-white/90 font-semibold tracking-wide">3X PORTFOLIO, FINANCIAL FREEDOM, FUTURE SECURED</p>
+          <p className="text-xl md:text-2xl lg:text-3xl text-white/90 font-semibold tracking-wide">3X PORTFOLIO, FINANCIAL FREEDOM, KID'S FUTURE SECURED</p>
         </div>
         
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
