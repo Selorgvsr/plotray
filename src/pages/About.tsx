@@ -64,19 +64,23 @@ const About = () => {
               <div className="space-y-3 text-muted-foreground">
                 <p className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
-                  <span><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span>PLOTRAY is a modern land-focused real estate Company</span>
+                  <span><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> is a modern land-focused real estate Company</span>
                 </p>
-                <p className="flex items-start gap-3">We specialize in buying, managing, and developing land assets<CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
-                  We specialize in buying, managing, and developing land assets.
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  <span>We specialize in buying, managing, and developing land assets</span>
                 </p>
-                <p className="flex items-start gap-3">Our approach combines market intelligence with transparency<CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
-                  Our approach combines market intelligence with transparency.
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  <span>Our approach combines market intelligence with transparency</span>
                 </p>
-                <p className="flex items-start gap-3">We work directly with landowners and investors<CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
-                  We work directly with landowners and investors.
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  <span>We work directly with landowners and investors</span>
                 </p>
-                <p className="flex items-start gap-3">Every decision is driven by long-term value creation<CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
-                  Every decision is driven by long-term value creation.
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                  <span>Every decision is driven by long-term value creation</span>
                 </p>
               </div>
             </div>
