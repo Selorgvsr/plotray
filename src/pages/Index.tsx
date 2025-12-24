@@ -409,17 +409,21 @@ const Index = () => {
                 A Scalable <span className="text-plotray-blue">Land Investment</span> Platform
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg">
-                <p className="flex items-start gap-3">Direct land acquisition and resale<ShoppingBag className="w-6 h-6 text-plotray-blue flex-shrink-0 mt-1" />
-                  Direct land acquisition and resale.
+                <p className="flex items-start gap-3">
+                  <ShoppingBag className="w-6 h-6 text-plotray-blue flex-shrink-0 mt-1" />
+                  Direct land acquisition and resale
                 </p>
-                <p className="flex items-start gap-3">Project partnerships and advisory<Handshake className="w-6 h-6 text-plotray-blue flex-shrink-0 mt-1" />
-                  Project partnerships and advisory.
+                <p className="flex items-start gap-3">
+                  <Handshake className="w-6 h-6 text-plotray-blue flex-shrink-0 mt-1" />
+                  Project partnerships and advisory
                 </p>
-                <p className="flex items-start gap-3">Technology-driven scalability<Zap className="w-6 h-6 text-plotray-blue flex-shrink-0 mt-1" />
-                  Technology-driven scalability.
+                <p className="flex items-start gap-3">
+                  <Zap className="w-6 h-6 text-plotray-blue flex-shrink-0 mt-1" />
+                  Technology-driven scalability
                 </p>
-                <p className="flex items-start gap-3">Sustainable revenue streams<BarChart3 className="w-6 h-6 text-plotray-blue flex-shrink-0 mt-1" />
-                  Sustainable revenue streams.
+                <p className="flex items-start gap-3">
+                  <BarChart3 className="w-6 h-6 text-plotray-blue flex-shrink-0 mt-1" />
+                  Sustainable revenue streams
                 </p>
                 <p className="font-semibold text-foreground">Designed for long-term growth</p>
               </div>
