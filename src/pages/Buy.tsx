@@ -19,90 +19,129 @@ import ctaImage from "@/assets/buy-cta.jpg";
 
 // Expandable content for each section
 const expandableContent = {
-  section1: [
-    { text: "Land value increases as cities expand outward." },
-    { text: "Limited supply makes land a scarce asset." },
-    { text: "Strategic locations outperform traditional investments." },
-    { text: "Land requires minimal maintenance over time." },
-    { text: "Appreciation is driven by demand, not depreciation." },
-    { text: "Location-led growth creates lasting wealth." },
-  ],
-  section2: [
-    { text: "Strong road networks improve daily accessibility." },
-    { text: "Air connectivity attracts commercial development." },
-    { text: "Rail and metro reduce commute dependency." },
-    { text: "Infrastructure projects accelerate land value growth." },
-    { text: "Connected land attracts investors and end users." },
-    { text: "Connectivity strengthens long-term demand." },
-  ],
-  section3: [
-    { text: "Planned layouts reduce future development issues." },
-    { text: "Utility planning avoids costly modifications." },
-    { text: "Drainage systems protect land integrity." },
-    { text: "Green landscaping improves visual appeal." },
-    { text: "Infrastructure readiness boosts buyer confidence." },
-    { text: "Well-planned land attracts premium demand." },
-  ],
-  section4: [
-    { text: "Gated access enhances resident confidence." },
-    { text: "Security features attract family buyers." },
-    { text: "Organized layouts improve lifestyle appeal." },
-    { text: "Premium communities retain value longer." },
-    { text: "Future development aligns with modern living." },
-    { text: "Security-driven planning increases resale value." },
-  ],
-  section5: [
-    { text: "Commercial zones create constant activity." },
-    { text: "Retail growth improves surrounding land value." },
-    { text: "Rental demand increases near malls." },
-    { text: "Commercial proximity attracts investors quickly." },
-    { text: "Footfall-driven areas appreciate faster." },
-    { text: "Commerce-backed land remains in demand." },
-  ],
-  section6: [
-    { text: "Early identification delivers a pricing advantage." },
-    { text: "Government projects accelerate appreciation." },
-    { text: "Urban planning attracts future population growth." },
-    { text: "Infrastructure readiness boosts ROI potential." },
-    { text: "Growth zones evolve into prime zones." },
-    { text: "Timing defines investment success." },
-  ],
-  section7: [
-    { text: "Verification removes legal uncertainty." },
-    { text: "Clear titles protect long-term ownership." },
-    { text: "Access routes are validated in advance." },
-    { text: "Buyers avoid hidden complications." },
-    { text: "Transparency builds lasting trust." },
-    { text: "Clarity improves confident decision-making." },
-  ],
-  section8: [
-    { text: "Interactive maps reduce location confusion." },
-    { text: "Filters save time during comparison." },
-    { text: "Nearby infrastructure is clearly visible." },
-    { text: "Visual tools improve evaluation accuracy." },
-    { text: "Buyers shortlist faster and smarter." },
-    { text: "Technology enhances land discovery." },
-  ],
+  section1: [{
+    text: "Land value increases as cities expand outward."
+  }, {
+    text: "Limited supply makes land a scarce asset."
+  }, {
+    text: "Strategic locations outperform traditional investments."
+  }, {
+    text: "Land requires minimal maintenance over time."
+  }, {
+    text: "Appreciation is driven by demand, not depreciation."
+  }, {
+    text: "Location-led growth creates lasting wealth."
+  }],
+  section2: [{
+    text: "Strong road networks improve daily accessibility."
+  }, {
+    text: "Air connectivity attracts commercial development."
+  }, {
+    text: "Rail and metro reduce commute dependency."
+  }, {
+    text: "Infrastructure projects accelerate land value growth."
+  }, {
+    text: "Connected land attracts investors and end users."
+  }, {
+    text: "Connectivity strengthens long-term demand."
+  }],
+  section3: [{
+    text: "Planned layouts reduce future development issues."
+  }, {
+    text: "Utility planning avoids costly modifications."
+  }, {
+    text: "Drainage systems protect land integrity."
+  }, {
+    text: "Green landscaping improves visual appeal."
+  }, {
+    text: "Infrastructure readiness boosts buyer confidence."
+  }, {
+    text: "Well-planned land attracts premium demand."
+  }],
+  section4: [{
+    text: "Gated access enhances resident confidence."
+  }, {
+    text: "Security features attract family buyers."
+  }, {
+    text: "Organized layouts improve lifestyle appeal."
+  }, {
+    text: "Premium communities retain value longer."
+  }, {
+    text: "Future development aligns with modern living."
+  }, {
+    text: "Security-driven planning increases resale value."
+  }],
+  section5: [{
+    text: "Commercial zones create constant activity."
+  }, {
+    text: "Retail growth improves surrounding land value."
+  }, {
+    text: "Rental demand increases near malls."
+  }, {
+    text: "Commercial proximity attracts investors quickly."
+  }, {
+    text: "Footfall-driven areas appreciate faster."
+  }, {
+    text: "Commerce-backed land remains in demand."
+  }],
+  section6: [{
+    text: "Early identification delivers a pricing advantage."
+  }, {
+    text: "Government projects accelerate appreciation."
+  }, {
+    text: "Urban planning attracts future population growth."
+  }, {
+    text: "Infrastructure readiness boosts ROI potential."
+  }, {
+    text: "Growth zones evolve into prime zones."
+  }, {
+    text: "Timing defines investment success."
+  }],
+  section7: [{
+    text: "Verification removes legal uncertainty."
+  }, {
+    text: "Clear titles protect long-term ownership."
+  }, {
+    text: "Access routes are validated in advance."
+  }, {
+    text: "Buyers avoid hidden complications."
+  }, {
+    text: "Transparency builds lasting trust."
+  }, {
+    text: "Clarity improves confident decision-making."
+  }],
+  section8: [{
+    text: "Interactive maps reduce location confusion."
+  }, {
+    text: "Filters save time during comparison."
+  }, {
+    text: "Nearby infrastructure is clearly visible."
+  }, {
+    text: "Visual tools improve evaluation accuracy."
+  }, {
+    text: "Buyers shortlist faster and smarter."
+  }, {
+    text: "Technology enhances land discovery."
+  }]
 };
-
 const Buy = () => {
   return <Layout>
       {/* Section 1: Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center" style={{
-          backgroundImage: `url(${heroImage})`
-        }} />
+        backgroundImage: `url(${heroImage})`
+      }} />
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/90 via-plotray-blue/70 to-teal/60" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
         
         <div className="container-custom relative z-10 text-center pt-20">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 animate-fade-in leading-tight">
             Buy Land Where<br />
-            <span className="text-gold">Cities Are Expanding</span>
+            <span className="text-gold">Cities Expand</span>
           </h1>
-          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            Own appreciating land that builds wealth without construction stress.
-          </p>
+          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto animate-fade-in" style={{
+          animationDelay: '0.2s'
+        }}>Own appreciating land that builds wealth without construction stress</p>
         </div>
         
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
@@ -119,23 +158,23 @@ const Buy = () => {
               <div className="space-y-4 text-lg text-foreground/80">
                 <p className="flex items-start gap-3">
                   <BarChart3 className="w-6 h-6 text-gold shrink-0 mt-1" />
-                  <span>Land consistently appreciates over time.</span>
+                  <span>Land consistently appreciates over time</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <BarChart3 className="w-6 h-6 text-gold shrink-0 mt-1" />
-                  <span>Location determines growth potential.</span>
+                  <span>Location determines growth potential</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <BarChart3 className="w-6 h-6 text-gold shrink-0 mt-1" />
-                  <span>City-adjacent land outperforms most assets.</span>
+                  <span>City-adjacent land outperforms most assets</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <BarChart3 className="w-6 h-6 text-gold shrink-0 mt-1" />
-                  <span>Unlike buildings, land does not depreciate.</span>
+                  <span>Unlike buildings, land does not depreciate</span>
                 </p>
                 <p className="flex items-start gap-3 font-semibold text-primary">
                   <BarChart3 className="w-6 h-6 text-gold shrink-0 mt-1" />
-                  <span>A stable path to wealth creation.</span>
+                  <span>A stable path to wealth creation</span>
                 </p>
               </div>
               <ExpandableSection items={expandableContent.section1} />
@@ -162,23 +201,23 @@ const Buy = () => {
               <div className="space-y-4 text-lg text-gray-600">
                 <p className="flex items-start gap-3">
                   <Route className="w-6 h-6 shrink-0 mt-1" />
-                  <span>Road connectivity boosts accessibility.</span>
+                  <span>Road connectivity boosts accessibility</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <Route className="w-6 h-6 shrink-0 mt-1" />
-                  <span>Airports support business expansion.</span>
+                  <span>Airports support business expansion</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <Route className="w-6 h-6 shrink-0 mt-1" />
-                  <span>Rail and metro increase demand.</span>
+                  <span>Rail and metro increase demand</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <Route className="w-6 h-6 shrink-0 mt-1" />
-                  <span>Infrastructure drives faster appreciation.</span>
+                  <span>Infrastructure drives faster appreciation</span>
                 </p>
                 <p className="flex items-start gap-3 font-semibold">
                   <Route className="w-6 h-6 shrink-0 mt-1" />
-                  <span>Connectivity defines land success.</span>
+                  <span>Connectivity defines land success</span>
                 </p>
               </div>
               <ExpandableSection items={expandableContent.section2} />
@@ -198,23 +237,23 @@ const Buy = () => {
               <div className="space-y-4 text-lg text-foreground/80">
                 <div className="flex items-start gap-4 p-4 bg-emerald/5 rounded-xl border-l-4 border-emerald">
                   <Grid3X3 className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                  <span>Internal roads ensure smooth movement.</span>
+                  <span>Internal roads ensure smooth movement</span>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-emerald/5 rounded-xl border-l-4 border-emerald">
                   <Grid3X3 className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                  <span>Electricity and water connections are planned.</span>
+                  <span>Electricity and water connections are planned</span>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-emerald/5 rounded-xl border-l-4 border-emerald">
                   <Grid3X3 className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                  <span>Stormwater drainage supports sustainability.</span>
+                  <span>Stormwater drainage supports sustainability</span>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-emerald/5 rounded-xl border-l-4 border-emerald">
                   <Grid3X3 className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                  <span>Landscaping enhances value and appeal.</span>
+                  <span>Landscaping enhances value and appeal</span>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-emerald/10 rounded-xl border-l-4 border-emerald">
                   <Grid3X3 className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                  <span className="font-semibold">Infrastructure strengthens investment quality.</span>
+                  <span className="font-semibold">Infrastructure strengthens investment quality</span>
                 </div>
               </div>
               <ExpandableSection items={expandableContent.section3} />
@@ -243,23 +282,23 @@ const Buy = () => {
               <div className="space-y-4 text-lg text-foreground/80">
                 <p className="flex items-start gap-3">
                   <Lock className="w-6 h-6 text-gold shrink-0 mt-1" />
-                  <span>Gated layouts improve safety.</span>
+                  <span>Gated layouts improve safety</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <Lock className="w-6 h-6 text-gold shrink-0 mt-1" />
-                  <span>Controlled access attracts premium buyers.</span>
+                  <span>Controlled access attracts premium buyers</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <Lock className="w-6 h-6 text-gold shrink-0 mt-1" />
-                  <span>Organized communities boost demand.</span>
+                  <span>Organized communities boost demand</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <Lock className="w-6 h-6 text-gold shrink-0 mt-1" />
-                  <span>Security adds long-term value.</span>
+                  <span>Security adds long-term value</span>
                 </p>
                 <p className="flex items-start gap-3 font-semibold text-primary">
                   <Lock className="w-6 h-6 text-gold shrink-0 mt-1" />
-                  <span>Future-ready land investments.</span>
+                  <span>Future-ready land investments</span>
                 </p>
               </div>
               <ExpandableSection items={expandableContent.section4} />
@@ -280,23 +319,23 @@ const Buy = () => {
                 <ul className="space-y-4 text-lg text-foreground/80">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                    <span>Land near malls and commercial hubs attracts continuous demand.</span>
+                    <span>Land near malls and commercial hubs attracts continuous demand</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                    <span>These locations benefit from strong footfall and retail growth.</span>
+                    <span>These locations benefit from strong footfall and retail growth</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                    <span><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> focuses on land with high commercial influence.</span>
+                    <span><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span>PLOTRAY focuses on land with high commercial influence</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                    <span>Such areas offer better resale and rental potential.</span>
+                    <span>Such areas offer better resale and rental potential</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                    <span>Proximity to commerce drives long-term value.</span>
+                    <span>Proximity to commerce drives long-term value</span>
                   </li>
                 </ul>
               </div>
@@ -325,15 +364,15 @@ const Buy = () => {
               <div className="space-y-4 text-lg text-gray-600">
                 <p className="flex items-start gap-3">
                   <TrendingUp className="w-6 h-6 shrink-0 mt-1" />
-                  <span><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> identifies locations before major price appreciation.</span>
+                  <span><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span>PLOTRAY identifies locations before major price appreciation</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <TrendingUp className="w-6 h-6 shrink-0 mt-1" />
-                  <span>Infrastructure expansion fuels rapid growth.</span>
+                  <span>Infrastructure expansion fuels rapid growth</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <TrendingUp className="w-6 h-6 shrink-0 mt-1" />
-                  <span>Early-stage urban zones offer higher ROI.</span>
+                  <span>Early-stage urban zones offer higher ROI</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <TrendingUp className="w-6 h-6 shrink-0 mt-1" />
@@ -361,7 +400,11 @@ const Buy = () => {
               <div className="space-y-4 text-lg text-foreground/80">
                 <div className="flex items-start gap-4 p-4 bg-primary/5 rounded-xl">
                   <Shield className="w-8 h-8 text-primary shrink-0" />
-                  <span>All <span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> listings are carefully verified.</span>
+                  <span>All <span style={{
+                    color: '#166534'
+                  }}>PLOT</span><span style={{
+                    color: '#C2410C'
+                  }}>RAY</span> listings are carefully verified.</span>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-primary/5 rounded-xl">
                   <Shield className="w-8 h-8 text-primary shrink-0" />
