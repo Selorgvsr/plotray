@@ -218,15 +218,15 @@ const LandAsset = () => {
             </h2>
             
             <div className="space-y-3 text-white/90 text-lg max-w-2xl mx-auto">
-              <p>Strategic land ownership creates lasting value.</p>
-              <p>Early investments deliver stronger growth.</p>
+              <p>Strategic land ownership creates lasting value</p>
+              <p>Early investments deliver stronger growth</p>
               <p><span style={{
                 color: '#166534'
               }}>PLOT</span><span style={{
                 color: '#C2410C'
-              }}>RAY</span> helps identify asset-worthy land.</p>
-              <p>Make informed decisions with expert insights.</p>
-              <p>Turn land into long-term wealth today.</p>
+              }}>RAY</span>PLOTRAY helps identify asset-worthy land</p>
+              <p>Make informed decisions with expert insights</p>
+              <p>Turn land into long-term wealth today</p>
             </div>
 
             <CTAExpandable />
