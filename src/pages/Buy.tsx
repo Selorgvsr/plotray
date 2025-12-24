@@ -135,29 +135,45 @@ const Buy = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
         
         <div className="container-custom relative z-10 text-center pt-20">
-          <div className="space-y-4 animate-fade-in text-left max-w-2xl mx-auto">
-            <p className="text-xl md:text-2xl font-heading font-bold text-white">
-              Investment in Land Asset
-            </p>
-            <p className="text-xl md:text-2xl font-heading font-bold text-white">
-              Land Asset always gives High Returns
-            </p>
+          <div className="space-y-6 animate-fade-in text-center max-w-4xl mx-auto">
+            <h1 className="text-3xl md:text-5xl font-heading font-bold text-white mb-8 leading-tight">
+              We support &apos;Financial Peace&apos; on Land Investment
+            </h1>
             
-            <p className="text-xl md:text-2xl font-heading font-bold text-white pt-4">
-              We support 'Financial Peace' on Land Investment
-            </p>
-            <p className="text-xl md:text-2xl font-heading font-bold text-white">
-              Our Plots in Prime Locations
-            </p>
-            <p className="text-xl md:text-2xl font-heading font-bold text-white">
-              Clear Legal Title
-            </p>
-            <p className="text-xl md:text-2xl font-heading font-bold text-white">
-              Statutory Approval from Government
-            </p>
-            <p className="text-xl md:text-2xl font-heading font-bold text-white">
-              Investment in our Prime Land is always Appreciating
-            </p>
+            <div className="space-y-4 flex flex-col items-center">
+              <p className="flex items-center gap-3 ml-12">
+                <span className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
+                  <CheckCircle className="w-5 h-5 text-white" />
+                </span>
+                <span className="bg-[#1E52F1] text-white font-semibold text-lg md:text-xl px-6 py-3 rounded-full">
+                  Our Plots in Prime Locations
+                </span>
+              </p>
+              <p className="flex items-center gap-3 ml-24">
+                <span className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
+                  <CheckCircle className="w-5 h-5 text-white" />
+                </span>
+                <span className="bg-[#1E52F1] text-white font-semibold text-lg md:text-xl px-6 py-3 rounded-full">
+                  Clear Legal Title
+                </span>
+              </p>
+              <p className="flex items-center gap-3 ml-6">
+                <span className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
+                  <CheckCircle className="w-5 h-5 text-white" />
+                </span>
+                <span className="bg-[#1E52F1] text-white font-semibold text-lg md:text-xl px-6 py-3 rounded-full">
+                  Statutory Approval from Government
+                </span>
+              </p>
+              <p className="flex items-center gap-3">
+                <span className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
+                  <CheckCircle className="w-5 h-5 text-white" />
+                </span>
+                <span className="bg-[#1E52F1] text-white font-semibold text-lg md:text-xl px-6 py-3 rounded-full">
+                  Investment in our Prime Land is always Appreciating
+                </span>
+              </p>
+            </div>
           </div>
           
         </div>
