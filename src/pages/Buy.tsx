@@ -139,7 +139,6 @@ const Buy = () => {
 
 
 
-
           <br />
             <span className="text-gold">Cities Expand</span>
           </h1>
