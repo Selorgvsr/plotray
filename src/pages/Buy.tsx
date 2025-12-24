@@ -376,11 +376,11 @@ const Buy = () => {
                 </p>
                 <p className="flex items-start gap-3">
                   <TrendingUp className="w-6 h-6 shrink-0 mt-1" />
-                  <span>Strategic city planning increases demand.</span>
+                  <span>Strategic city planning increases demand</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <TrendingUp className="w-6 h-6 shrink-0 mt-1" />
-                  <span>Invest ahead of the curve.</span>
+                  <span>Invest ahead of the curve</span>
                 </p>
               </div>
               <ExpandableSection items={expandableContent.section6} />
@@ -400,7 +400,7 @@ const Buy = () => {
               <div className="space-y-4 text-lg text-foreground/80">
                 <div className="flex items-start gap-4 p-4 bg-primary/5 rounded-xl">
                   <Shield className="w-8 h-8 text-primary shrink-0" />
-                  <span>All <span style={{
+                  <span>All PLOTRAY listings are carefully verified<span style={{
                     color: '#166534'
                   }}>PLOT</span><span style={{
                     color: '#C2410C'
@@ -408,15 +408,15 @@ const Buy = () => {
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-primary/5 rounded-xl">
                   <Shield className="w-8 h-8 text-primary shrink-0" />
-                  <span>Clear documentation reduces buyer risk.</span>
+                  <span>Clear documentation reduces buyer risk</span>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-primary/5 rounded-xl">
                   <Shield className="w-8 h-8 text-primary shrink-0" />
-                  <span>Location and access details are transparent.</span>
+                  <span>Location and access details are transparent</span>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-primary/5 rounded-xl">
                   <Shield className="w-8 h-8 text-primary shrink-0" />
-                  <span>Buyers know exactly what they are investing in.</span>
+                  <span>Buyers know exactly what they are investing in</span>
                 </div>
                 <div className="flex items-start gap-4 p-4 bg-emerald/10 rounded-xl border border-emerald/30">
                   <Shield className="w-8 h-8 text-emerald shrink-0" />
@@ -448,25 +448,25 @@ const Buy = () => {
                   <div className="w-12 h-12 bg-teal/20 rounded-full flex items-center justify-center">
                     <Map className="w-6 h-6 text-teal" />
                   </div>
-                  <span className="text-lg">Advanced filters simplify land discovery.</span>
+                  <span className="text-lg">Advanced filters simplify land discovery</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-teal/20 rounded-full flex items-center justify-center">
                     <Map className="w-6 h-6 text-teal" />
                   </div>
-                  <span className="text-lg">Maps show exact plot locations.</span>
+                  <span className="text-lg">Maps show exact plot locations</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-teal/20 rounded-full flex items-center justify-center">
                     <Map className="w-6 h-6 text-teal" />
                   </div>
-                  <span className="text-lg">View nearby landmarks instantly.</span>
+                  <span className="text-lg">View nearby landmarks instantly</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-teal/20 rounded-full flex items-center justify-center">
                     <Map className="w-6 h-6 text-teal" />
                   </div>
-                  <span className="text-lg">Compare multiple plots visually.</span>
+                  <span className="text-lg">Compare multiple plots visually</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-emerald/20 rounded-full flex items-center justify-center">
@@ -492,23 +492,23 @@ const Buy = () => {
               <div className="space-y-4 text-lg text-foreground/80 mb-8">
                 <p className="flex items-start gap-3">
                   <Users className="w-6 h-6 text-primary shrink-0 mt-1" />
-                  <span>Visit land before investing.</span>
+                  <span>Visit land before investing</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <Users className="w-6 h-6 text-primary shrink-0 mt-1" />
-                  <span>Understand surroundings firsthand.</span>
+                  <span>Understand surroundings firsthand</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <Users className="w-6 h-6 text-primary shrink-0 mt-1" />
-                  <span>Experts explain growth potential.</span>
+                  <span>Experts explain growth potential</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <Users className="w-6 h-6 text-primary shrink-0 mt-1" />
-                  <span>No obligation, complete clarity.</span>
+                  <span>No obligation, complete clarity</span>
                 </p>
                 <p className="flex items-start gap-3 font-semibold text-primary">
                   <Users className="w-6 h-6 text-primary shrink-0 mt-1" />
-                  <span>Confidence through experience.</span>
+                  <span>Confidence through experience</span>
                 </p>
               </div>
               <Button size="lg" variant="premium" asChild>
@@ -537,10 +537,10 @@ const Buy = () => {
             Choose Land That Grows with the City
           </h2>
           <div className="max-w-3xl mx-auto space-y-4 text-xl text-white/90 mb-10">
-            <p>Infrastructure-backed land delivers returns.</p>
-            <p>PLOTRAY curates future-ready locations.</p>
-            <p>Make informed, confident investments.</p>
-            <p className="font-semibold text-gold">Your asset starts here.</p>
+            <p>Infrastructure-backed land delivers returns</p>
+            <p>PLOTRAY curates future-ready locations</p>
+            <p>Make informed, confident investments</p>
+            <p className="font-semibold text-gold">Your asset starts here</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="premium" className="text-lg px-8" asChild>
