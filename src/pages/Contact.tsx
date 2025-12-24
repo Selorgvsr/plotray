@@ -123,10 +123,7 @@ const Contact = () => {
             <div className="space-y-8">
               <div>
                 <h2 className="text-2xl font-heading font-bold text-foreground mb-2">Talk to Our Experts</h2>
-                <p className="text-muted-foreground">
-                  Get personalized guidance from experts. Discuss your requirements in detail 
-                  and make informed decisions with support at every step.
-                </p>
+                <p className="text-muted-foreground">Get personalized guidance from experts. Discuss your requirements in detail and make informed decisions with support at every step</p>
               </div>
               
               <div className="grid sm:grid-cols-2 gap-4">
