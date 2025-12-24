@@ -32,21 +32,21 @@ const Index = () => {
               We support '<span className="text-gold bg-gold/20 px-2 py-1 rounded">Financial Peace</span>' on Land Investment
             </h1>
             
-            <div className="max-w-3xl mx-auto space-y-3 text-left md:text-center">
-              <p className="text-lg md:text-xl font-medium text-emerald-300 flex items-center justify-center gap-2">
-                <CheckCircle className="w-5 h-5 flex-shrink-0" />
+            <div className="max-w-4xl mx-auto space-y-4 text-left md:text-center">
+              <p className="text-xl md:text-2xl lg:text-3xl font-medium text-emerald-300 flex items-center justify-center gap-3">
+                <CheckCircle className="w-6 h-6 md:w-7 md:h-7 flex-shrink-0" />
                 Our Plots in Prime Locations
               </p>
-              <p className="text-lg md:text-xl font-medium text-sky-300 flex items-center justify-center gap-2">
-                <CheckCircle className="w-5 h-5 flex-shrink-0" />
+              <p className="text-xl md:text-2xl lg:text-3xl font-medium text-sky-300 flex items-center justify-center gap-3">
+                <CheckCircle className="w-6 h-6 md:w-7 md:h-7 flex-shrink-0" />
                 Clear Legal Title
               </p>
-              <p className="text-lg md:text-xl font-medium text-orange-300 flex items-center justify-center gap-2">
-                <CheckCircle className="w-5 h-5 flex-shrink-0" />
+              <p className="text-xl md:text-2xl lg:text-3xl font-medium text-orange-300 flex items-center justify-center gap-3">
+                <CheckCircle className="w-6 h-6 md:w-7 md:h-7 flex-shrink-0" />
                 Statutory Approval from Government
               </p>
-              <p className="text-lg md:text-xl font-medium text-pink-300 flex items-center justify-center gap-2">
-                <CheckCircle className="w-5 h-5 flex-shrink-0" />
+              <p className="text-xl md:text-2xl lg:text-3xl font-medium text-pink-300 flex items-center justify-center gap-3">
+                <CheckCircle className="w-6 h-6 md:w-7 md:h-7 flex-shrink-0" />
                 Investment in our Prime Land is always Appreciating
               </p>
             </div>
