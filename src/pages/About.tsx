@@ -232,24 +232,19 @@ const About = () => {
                 Built on <span className="text-plotray-emerald">Sustainability</span> & ESG Values
               </h2>
               <div className="space-y-3 text-muted-foreground">
-                <p className="flex items-start gap-3">
-                  <Leaf className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
+                <p className="flex items-start gap-3">We prioritize eco-friendly land planning<Leaf className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
                   We prioritize eco-friendly land planning.
                 </p>
-                <p className="flex items-start gap-3">
-                  <Leaf className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
+                <p className="flex items-start gap-3">Solar-ready and green infrastructure layouts<Leaf className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
                   Solar-ready and green infrastructure layouts.
                 </p>
-                <p className="flex items-start gap-3">
-                  <Leaf className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
+                <p className="flex items-start gap-3">Responsible water and resource management<Leaf className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
                   Responsible water and resource management.
                 </p>
-                <p className="flex items-start gap-3">
-                  <Leaf className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
+                <p className="flex items-start gap-3">Community-centric development approach<Leaf className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
                   Community-centric development approach.
                 </p>
-                <p className="flex items-start gap-3">
-                  <Leaf className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
+                <p className="flex items-start gap-3">Governance ensures compliance and trust<Leaf className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
                   Governance ensures compliance and trust.
                 </p>
               </div>
@@ -263,29 +258,25 @@ const About = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
-                A Trusted Partner for <span className="text-plotray-gold">Landowners</span> & Investors
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">A Trusted Partner for 
+Landowners & Investors<span className="text-plotray-gold">Landowners</span> & Investors
               </h2>
               <div className="space-y-3 text-muted-foreground">
-                <p className="flex items-start gap-3">
-                  <Users className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                <p className="flex items-start gap-3">Landowners trust us for fair, direct deals<Users className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                   Landowners trust us for fair, direct deals.
                 </p>
-                <p className="flex items-start gap-3">
-                  <Users className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                <p className="flex items-start gap-3">Investors rely on our asset evaluation<Users className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                   Investors rely on our asset evaluation.
                 </p>
-                <p className="flex items-start gap-3">
-                  <Users className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                <p className="flex items-start gap-3">Clear documentation ensures peace of mind<Users className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                   Clear documentation ensures peace of mind.
                 </p>
-                <p className="flex items-start gap-3">
-                  <Users className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                <p className="flex items-start gap-3">Professional teams manage every stage<Users className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                   Professional teams manage every stage.
                 </p>
                 <p className="flex items-start gap-3">
                   <Users className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
-                  <span>Trust is the foundation of <span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span>.</span>
+                  <span>Trust is the foundation of PLOTRAY<span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span>.</span>
                 </p>
               </div>
             </div>
@@ -312,25 +303,20 @@ const About = () => {
               <div className="space-y-3 text-white/80">
                 <p className="flex items-start gap-3">
                   <ArrowRight className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
-                  <span>
-                    <span className="text-[#166534] font-semibold">PLOT</span>
+                  <span>PLOTRAY continues expanding strategic land assets<span className="text-[#166534] font-semibold">PLOT</span>
                     <span className="text-[#C2410C] font-semibold">RAY</span> continues expanding strategic land assets.
                   </span>
                 </p>
-                <p className="flex items-start gap-3">
-                  <ArrowRight className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                <p className="flex items-start gap-3">We focus on growth corridors and emerging cities<ArrowRight className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                   We focus on growth corridors and emerging cities.
                 </p>
-                <p className="flex items-start gap-3">
-                  <ArrowRight className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                <p className="flex items-start gap-3">Innovation drives smarter land decisions<ArrowRight className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                   Innovation drives smarter land decisions.
                 </p>
-                <p className="flex items-start gap-3">
-                  <ArrowRight className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                <p className="flex items-start gap-3">Sustainability guides long-term planning<ArrowRight className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                   Sustainability guides long-term planning.
                 </p>
-                <p className="flex items-start gap-3">
-                  <ArrowRight className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                <p className="flex items-start gap-3">The journey is just the beginning<ArrowRight className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                   The journey is just beginning.
                 </p>
               </div>
@@ -348,32 +334,29 @@ const About = () => {
         
         <div className="container-custom relative z-10">
           <div className="max-w-2xl">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6">
-              Be Part of the <span className="inline-flex"><span style={{
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6">Be a Part of the 
+PLOT
+RAY
+ Growth Story<span className="inline-flex"><span style={{
                 color: '#166534'
               }}>PLOT</span><span style={{
                 color: '#C2410C'
               }}>RAY</span></span> Growth Story
             </h2>
             <div className="space-y-3 text-white/80 mb-8">
-              <p className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+              <p className="flex items-start gap-3">Whether selling land or building assets, we help<CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                 Whether selling land or building assets, we help.
               </p>
-              <p className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+              <p className="flex items-start gap-3">Join a platform built on trust and intelligence<CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                 Join a platform built on trust and intelligence.
               </p>
-              <p className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+              <p className="flex items-start gap-3">Create value with responsible land ownership<CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                 Create value with responsible land ownership.
               </p>
-              <p className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+              <p className="flex items-start gap-3">Experience transparency and professionalism<CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                 Experience transparency and professionalism.
               </p>
-              <p className="flex items-start gap-3">
-                <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+              <p className="flex items-start gap-3">Welcome to the future of land<CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                 Welcome to the future of land.
               </p>
             </div>
