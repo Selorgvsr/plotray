@@ -68,7 +68,9 @@ const ExpandableSection = ({
             <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isExpanded ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"}`}>
               <div className="pt-6 mt-4 border-t border-border/30">
                 <p className="text-foreground/75 leading-loose text-base animate-fade-in">
-                  {expandedContent.join(" ")}
+                  {expandedContent.map((item, index) => (
+                    <span key={index}>{item}{index < expandedContent.length - 1 ? " " : ""}</span>
+                  ))}
                 </p>
               </div>
             </div>
