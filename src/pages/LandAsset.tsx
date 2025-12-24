@@ -180,7 +180,7 @@ const LandAsset = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center" style={{
-        backgroundImage: `url(${landassetHero})`
+        backgroundImage: "url(\"/lovable-uploads/fc3ab154-bed4-4369-88b9-cc18ea0c7b3f.jpg\")"
       }} />
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/90 via-plotray-blue/70 to-teal/60" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
