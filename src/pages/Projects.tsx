@@ -150,18 +150,18 @@ const Projects = () => {
               <h2 className="text-xl font-heading font-bold text-foreground">
                 {projectSlides[currentSlide].title}
               </h2>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-3">
                 <span className="text-sm text-muted-foreground">
                   {currentSlide + 1} / {projectSlides.length}
                 </span>
-                <Button variant="ghost" size="icon" onClick={() => setIsSheetOpen(false)}>
+                <Button variant="ghost" size="icon" onClick={() => setIsSheetOpen(false)} className="hover:bg-muted">
                   <X className="w-5 h-5" />
                 </Button>
               </div>
             </div>
 
             {/* Slide Content */}
-            <div className="flex-1 overflow-auto relative">
+            <div className="flex-1 overflow-hidden relative">
               <div className="flex transition-transform duration-500 ease-out h-full" style={{
               transform: `translateX(-${currentSlide * 100}%)`
             }}>
@@ -173,17 +173,33 @@ const Projects = () => {
 
             {/* Navigation */}
             <div className="flex items-center justify-between p-4 border-t border-border bg-background">
-              <Button variant="outline" onClick={handlePrevSlide} disabled={currentSlide === 0} className="gap-2">
+              <Button 
+                variant="outline" 
+                onClick={handlePrevSlide} 
+                disabled={currentSlide === 0} 
+                className="gap-2 min-w-[120px]"
+              >
                 <ChevronLeft className="w-4 h-4" />
                 Previous
               </Button>
               
               {/* Dots indicator */}
               <div className="flex gap-2">
-                {projectSlides.map((_, index) => <button key={index} onClick={() => setCurrentSlide(index)} className={`w-2.5 h-2.5 rounded-full transition-colors ${index === currentSlide ? 'bg-primary' : 'bg-muted-foreground/30'}`} />)}
+                {projectSlides.map((_, index) => (
+                  <button 
+                    key={index} 
+                    onClick={() => setCurrentSlide(index)} 
+                    className={`w-3 h-3 rounded-full transition-colors ${index === currentSlide ? 'bg-primary' : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'}`} 
+                  />
+                ))}
               </div>
               
-              <Button variant="outline" onClick={handleNextSlide} disabled={currentSlide === projectSlides.length - 1} className="gap-2">
+              <Button 
+                variant="outline" 
+                onClick={handleNextSlide} 
+                disabled={currentSlide === projectSlides.length - 1} 
+                className="gap-2 min-w-[120px]"
+              >
                 Next
                 <ChevronRight className="w-4 h-4" />
               </Button>
