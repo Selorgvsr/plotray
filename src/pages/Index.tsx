@@ -296,11 +296,10 @@ const Index = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
-                See the Land <span className="text-sky-600">Before You Invest</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">We Arrange Site Visits​<span className="text-sky-600">​</span>
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg">
-                <p>Free site visits for serious buyers</p>
+                <p>We arrange site visits for serious buyers</p>
                 <p>Understand location and surroundings firsthand</p>
                 <p>Expert guidance on growth potential</p>
                 <p>No pressure, complete transparency</p>
