@@ -33,19 +33,19 @@ const Index = () => {
             </h1>
             
             <div className="max-w-5xl mx-auto space-y-5 text-left md:text-center">
-              <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-emerald-300 flex items-center justify-center gap-3">
+              <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-white flex items-center justify-center gap-3">
                 <CheckCircle className="w-7 h-7 md:w-8 md:h-8 flex-shrink-0" />
                 Our Plots in Prime Locations
               </p>
-              <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-sky-300 flex items-center justify-center gap-3">
+              <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-white flex items-center justify-center gap-3">
                 <CheckCircle className="w-7 h-7 md:w-8 md:h-8 flex-shrink-0" />
                 Clear Legal Title
               </p>
-              <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-orange-300 flex items-center justify-center gap-3">
+              <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-white flex items-center justify-center gap-3">
                 <CheckCircle className="w-7 h-7 md:w-8 md:h-8 flex-shrink-0" />
                 Statutory Approval from Government
               </p>
-              <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-pink-300 flex items-center justify-center gap-3">
+              <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-white flex items-center justify-center gap-3">
                 <CheckCircle className="w-7 h-7 md:w-8 md:h-8 flex-shrink-0" />
                 Investment in our Prime Land is always Appreciating
               </p>
