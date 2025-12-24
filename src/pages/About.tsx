@@ -47,8 +47,7 @@ const About = () => {
           </h1>
           <p style={{
           animationDelay: '0.2s'
-        }} className="text-lg max-w-2xl mx-auto animate-fade-in font-serif text-primary-foreground md:text-2xl">
-            Wake up to 3X portfolio growth, financial freedom, and generational wealth from your <span className="text-[#166534] font-bold">PLOT</span><span className="text-[#C2410C] font-bold">RAY</span> land.
+        }} className="text-lg max-w-2xl mx-auto animate-fade-in font-serif text-primary-foreground md:text-2xl">Wake up to 3X portfolio growth, financial freedom, and generational wealth from your PLOTRAY land<span className="text-[#166534] font-bold">PLOT</span><span className="text-[#C2410C] font-bold">RAY</span> land.
           </p>
         </div>
         
@@ -60,28 +59,23 @@ const About = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
-                Who We <span className="text-[hsl(220,60%,40%)]">Are</span>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">Who Are We<span className="text-[hsl(220,60%,40%)]">Are </span>
               </h2>
               <div className="space-y-3 text-muted-foreground">
                 <p className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
-                  <span><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> is a modern land-focused real estate Company.</span>
+                  <span><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span>PLOTRAY is a modern land-focused real estate Company</span>
                 </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                <p className="flex items-start gap-3">We specialize in buying, managing, and developing land assets<CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                   We specialize in buying, managing, and developing land assets.
                 </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                <p className="flex items-start gap-3">Our approach combines market intelligence with transparency<CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                   Our approach combines market intelligence with transparency.
                 </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                <p className="flex items-start gap-3">We work directly with landowners and investors<CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                   We work directly with landowners and investors.
                 </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                <p className="flex items-start gap-3">Every decision is driven by long-term value creation<CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                   Every decision is driven by long-term value creation.
                 </p>
               </div>
@@ -107,25 +101,21 @@ const About = () => {
                 Our Vision for the <span className="text-plotray-gold">Future</span> of Land
               </h2>
               <div className="space-y-3 text-muted-foreground">
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-[hsl(220,60%,40%)] mt-1 shrink-0" />
+                <p className="flex items-start gap-3">We envision land as a powerful long-term asset<CheckCircle className="w-5 h-5 text-[hsl(220,60%,40%)] mt-1 shrink-0" />
                   We envision land as a powerful long-term asset.
                 </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-[hsl(220,60%,40%)] mt-1 shrink-0" />
+                <p className="flex items-start gap-3">Our goal is to create organized, valuable land ecosystems<CheckCircle className="w-5 h-5 text-[hsl(220,60%,40%)] mt-1 shrink-0" />
                   Our goal is to create organized, valuable land ecosystems.
                 </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-[hsl(220,60%,40%)] mt-1 shrink-0" />
+                <p className="flex items-start gap-3">We focus on sustainable growth over speculation<CheckCircle className="w-5 h-5 text-[hsl(220,60%,40%)] mt-1 shrink-0" />
                   We focus on sustainable growth over speculation.
                 </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-[hsl(220,60%,40%)] mt-1 shrink-0" />
+                <p className="flex items-start gap-3">Future-ready planning guides every acquisition<CheckCircle className="w-5 h-5 text-[hsl(220,60%,40%)] mt-1 shrink-0" />
                   Future-ready planning guides every acquisition.
                 </p>
                 <p className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-[hsl(220,60%,40%)] mt-1 shrink-0" />
-                  <span><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> builds land value responsibly.</span>
+                  <span><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span>PLOTRAY builds land value responsibly</span>
                 </p>
               </div>
             </div>
@@ -142,24 +132,19 @@ const About = () => {
                 Our <span className="text-plotray-gold">Mission</span>
               </h2>
               <div className="space-y-3 text-white/80">
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                <p className="flex items-start gap-3">To simplify land transactions for owners<CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                   To simplify land transactions for owners.
                 </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                <p className="flex items-start gap-3">To create strong land assets for investors<CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                   To create strong land assets for investors.
                 </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                <p className="flex items-start gap-3">To remove middlemen and inefficiencies<CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                   To remove middlemen and inefficiencies.
                 </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                <p className="flex items-start gap-3">To ensure transparency and legal clarity<CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                   To ensure transparency and legal clarity.
                 </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
+                <p className="flex items-start gap-3">To build trust through responsible development<CheckCircle className="w-5 h-5 text-plotray-gold mt-1 shrink-0" />
                   To build trust through responsible development.
                 </p>
               </div>
@@ -208,25 +193,21 @@ const About = () => {
                 We Treat Land as a <span className="text-[hsl(220,60%,40%)]">Long-Term Asset</span>
               </h2>
               <div className="space-y-3 text-muted-foreground">
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
+                <p className="flex items-start gap-3">Land appreciates with urban expansion<CheckCircle className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
                   Land appreciates with urban expansion.
                 </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
+                <p className="flex items-start gap-3">Scarcity increases its future value<CheckCircle className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
                   Scarcity increases its future value.
                 </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
+                <p className="flex items-start gap-3">Unlike buildings, land never depreciates<CheckCircle className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
                   Unlike buildings, land never depreciates.
                 </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
+                <p className="flex items-start gap-3">Strategic locations drive wealth creation<CheckCircle className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
                   Strategic locations drive wealth creation.
                 </p>
                 <p className="flex items-start gap-3">
                   <CheckCircle className="w-5 h-5 text-plotray-emerald mt-1 shrink-0" />
-                  <span><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> unlocks land's true potential.</span>
+                  <span><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span>PLOTRAY unlocks land's true potential</span>
                 </p>
               </div>
             </div>
