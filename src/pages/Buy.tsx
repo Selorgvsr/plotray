@@ -147,7 +147,7 @@ const Buy = () => {
                 <span className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
                   <CheckCircle className="w-5 h-5 text-white" />
                 </span>
-                <span className="bg-[#1E52F1] text-white font-semibold text-lg md:text-xl px-6 py-3 rounded-full">
+                <span className="text-white font-semibold text-2xl md:text-3xl">
                   We support 'Financial Peace' on Land Investment
                 </span>
               </p>
