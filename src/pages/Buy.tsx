@@ -135,11 +135,30 @@ const Buy = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
         
         <div className="container-custom relative z-10 text-center pt-20">
-          <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-6 animate-fade-in leading-tight lg:text-5xl">Investment in Land Asset  
-Land Asset always gives High Returns 
-          <br />
-            <span className="text-gold">Cities Expand</span>
-          </h1>
+          <div className="space-y-4 animate-fade-in text-left max-w-2xl mx-auto">
+            <p className="text-xl md:text-2xl font-heading font-bold text-white">
+              Investment in Land Asset
+            </p>
+            <p className="text-xl md:text-2xl font-heading font-bold text-white">
+              Land Asset always gives High Returns
+            </p>
+            
+            <p className="text-xl md:text-2xl font-heading font-bold text-white pt-4">
+              We support 'Financial Peace' on Land Investment
+            </p>
+            <p className="text-xl md:text-2xl font-heading font-bold text-white">
+              Our Plots in Prime Locations
+            </p>
+            <p className="text-xl md:text-2xl font-heading font-bold text-white">
+              Clear Legal Title
+            </p>
+            <p className="text-xl md:text-2xl font-heading font-bold text-white">
+              Statutory Approval from Government
+            </p>
+            <p className="text-xl md:text-2xl font-heading font-bold text-white">
+              Investment in our Prime Land is always Appreciating
+            </p>
+          </div>
           
         </div>
         
