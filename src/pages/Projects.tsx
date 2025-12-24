@@ -81,6 +81,41 @@ const Projects = () => {
           animationDelay: '0.2s'
         }} className="text-lg max-w-2xl mx-auto mb-8 animate-fade-in text-primary-foreground md:text-4xl font-bold">Investing in land brings financial peace and lasting growth</p>
           
+          <div className="flex flex-col items-center gap-4 mt-8 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            <div className="flex items-center gap-3 ml-24">
+              <div className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center">
+                <CheckCircle className="w-6 h-6 text-white" />
+              </div>
+              <span className="bg-[#1E52F1] text-white text-lg md:text-2xl font-semibold px-6 py-2 rounded-full">
+                Our Plots in Prime Locations
+              </span>
+            </div>
+            <div className="flex items-center gap-3 ml-12">
+              <div className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center">
+                <CheckCircle className="w-6 h-6 text-white" />
+              </div>
+              <span className="bg-[#1E52F1] text-white text-lg md:text-2xl font-semibold px-6 py-2 rounded-full">
+                Clear Legal Title
+              </span>
+            </div>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center">
+                <CheckCircle className="w-6 h-6 text-white" />
+              </div>
+              <span className="bg-[#1E52F1] text-white text-lg md:text-2xl font-semibold px-6 py-2 rounded-full">
+                Statutory Approval from Government
+              </span>
+            </div>
+            <div className="flex items-center gap-3 mr-12">
+              <div className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center">
+                <CheckCircle className="w-6 h-6 text-white" />
+              </div>
+              <span className="bg-[#1E52F1] text-white text-lg md:text-2xl font-semibold px-6 py-2 rounded-full">
+                Investment in our Prime Land is always Appreciating
+              </span>
+            </div>
+          </div>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 animate-fade-in" style={{
           animationDelay: '0.3s'
         }}>
