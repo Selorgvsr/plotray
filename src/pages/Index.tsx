@@ -107,20 +107,25 @@ const Index = () => {
                 Land Is a <span className="text-gold">High-Appreciating</span> Asset
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg">
-                <p className="flex items-start gap-3">Land consistently grows in value over time<TrendingUp className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
-                  Land consistently grows in value over time.
+                <p className="flex items-start gap-3">
+                  <TrendingUp className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+                  Land consistently grows in value over time
                 </p>
-                <p className="flex items-start gap-3">Location drives appreciation more than any other factor<CheckCircle className="w-6 h-6 text-gold flex-shrink-0 mt-1 text-plotray-indigo" />
-                  Location drives appreciation more than any other factor.
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-plotray-indigo flex-shrink-0 mt-1" />
+                  Location drives appreciation more than any other factor
                 </p>
-                <p className="flex items-start gap-3">Unlike buildings, land does not depreciate<Shield className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
-                  Unlike buildings, land does not depreciate.
+                <p className="flex items-start gap-3">
+                  <Shield className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+                  Unlike buildings, land does not depreciate
                 </p>
-                <p className="flex items-start gap-3">Urban expansion fuels long-term returns<BarChart3 className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
-                  Urban expansion fuels long-term returns.
+                <p className="flex items-start gap-3">
+                  <BarChart3 className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+                  Urban expansion fuels long-term returns
                 </p>
-                <p className="flex items-start gap-3">Smart investors choose land for stability and growth<Zap className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
-                  Smart investors choose land for stability and growth.
+                <p className="flex items-start gap-3">
+                  <Zap className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+                  Smart investors choose land for stability and growth
                 </p>
               </div>
             </div>
@@ -170,17 +175,21 @@ const Index = () => {
                 Sell Your Land <span className="text-orange-500">Directly</span> to <span className="text-[#166534]">PLOT</span><span className="text-[#C2410C]">RAY</span>
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg">
-                <p className="flex items-start gap-3">We buy land directly from owners<Handshake className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
-                  We buy land directly from owners.
+                <p className="flex items-start gap-3">
+                  <Handshake className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
+                  We buy land directly from owners
                 </p>
-                <p className="flex items-start gap-3">No brokers, no middlemen, no confusion<CheckCircle className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
-                  No brokers, no middlemen, no confusion.
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
+                  No brokers, no middlemen, no confusion
                 </p>
-                <p className="flex items-start gap-3">Fair market-based pricing<TrendingUp className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
-                  Fair market-based pricing.
+                <p className="flex items-start gap-3">
+                  <TrendingUp className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
+                  Fair market-based pricing
                 </p>
-                <p className="flex items-start gap-3">Fast decision-making and a clear process<Zap className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
-                  Fast decision-making and a clear process.
+                <p className="flex items-start gap-3">
+                  <Zap className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
+                  Fast decision-making and a clear process
                 </p>
                 <p className="font-semibold text-foreground">Sell with confidence and clarity</p>
               </div>
@@ -207,21 +216,25 @@ const Index = () => {
               <img alt="Land connected to infrastructure" className="rounded-2xl shadow-2xl" src="/lovable-uploads/5159954e-3411-468a-9b8f-2611fd1480c0.jpg" />
             </div>
             <div className="order-1 lg:order-2 text-white">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6 text-card-foreground">Strong Infrastructure  
-Strong Returns<span className="text-green-500">Strong Returns</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6 text-card-foreground">
+                Strong Infrastructure <span className="text-green-500">Strong Returns</span>
               </h2>
               <div className="space-y-4 text-lg text-popover-foreground">
-                <p className="flex items-start gap-3">Road connectivity boosts accessibility<Route className="w-6 h-6 flex-shrink-0 mt-1 text-green-500" />
-                  Road connectivity boosts accessibility.
+                <p className="flex items-start gap-3">
+                  <Route className="w-6 h-6 flex-shrink-0 mt-1 text-green-500" />
+                  Road connectivity boosts accessibility
                 </p>
-                <p className="flex items-start gap-3">Airport and rail access increase demand<CheckCircle className="w-6 h-6 flex-shrink-0 mt-1 text-green-500" />
-                  Airport and rail access increase demand.
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1 text-green-500" />
+                  Airport and rail access increase demand
                 </p>
-                <p className="flex items-start gap-3">Metro expansion fuels appreciation<TrendingUp className="w-6 h-6 flex-shrink-0 mt-1 text-green-500" />
-                  Metro expansion fuels appreciation.
+                <p className="flex items-start gap-3">
+                  <TrendingUp className="w-6 h-6 flex-shrink-0 mt-1 text-green-500" />
+                  Metro expansion fuels appreciation
                 </p>
-                <p className="flex items-start gap-3">Infrastructure-backed land grows faster<BarChart3 className="w-6 h-6 flex-shrink-0 mt-1 text-green-500" />
-                  Infrastructure-backed land grows faster.
+                <p className="flex items-start gap-3">
+                  <BarChart3 className="w-6 h-6 flex-shrink-0 mt-1 text-green-500" />
+                  Infrastructure-backed land grows faster
                 </p>
                 <p className="font-semibold">Connectivity defines success</p>
               </div>
@@ -319,17 +332,21 @@ Strong Returns<span className="text-green-500">Strong Returns</span>
                 Sustainable Land for <span className="text-emerald">Future Cities</span>
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg">
-                <p className="flex items-start gap-3">Eco-friendly layout planning<Leaf className="w-6 h-6 text-emerald flex-shrink-0 mt-1" />
-                  Eco-friendly layout planning.
+                <p className="flex items-start gap-3">
+                  <Leaf className="w-6 h-6 text-emerald flex-shrink-0 mt-1" />
+                  Eco-friendly layout planning
                 </p>
-                <p className="flex items-start gap-3">Stormwater and green spaces included<Droplets className="w-6 h-6 text-emerald flex-shrink-0 mt-1" />
-                  Stormwater and green spaces included.
+                <p className="flex items-start gap-3">
+                  <Droplets className="w-6 h-6 text-emerald flex-shrink-0 mt-1" />
+                  Stormwater and green spaces included
                 </p>
-                <p className="flex items-start gap-3">Responsible urban expansion<CheckCircle className="w-6 h-6 text-emerald flex-shrink-0 mt-1" />
-                  Responsible urban expansion.
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-emerald flex-shrink-0 mt-1" />
+                  Responsible urban expansion
                 </p>
-                <p className="flex items-start gap-3">Community-focused development<Users className="w-6 h-6 text-emerald flex-shrink-0 mt-1" />
-                  Community-focused development.
+                <p className="flex items-start gap-3">
+                  <Users className="w-6 h-6 text-emerald flex-shrink-0 mt-1" />
+                  Community-focused development
                 </p>
                 <p className="font-semibold text-foreground">Growth that respects the future</p>
               </div>
@@ -347,17 +364,21 @@ Strong Returns<span className="text-green-500">Strong Returns</span>
                 Trusted by <span className="text-gold">Smart Investors</span>
               </h2>
               <div className="space-y-4 text-white/80 text-lg">
-                <p className="flex items-start gap-3">Market insights backed by data<BarChart3 className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
-                  Market insights backed by data.
+                <p className="flex items-start gap-3">
+                  <BarChart3 className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+                  Market insights backed by data
                 </p>
-                <p className="flex items-start gap-3">Verified land opportunities<Shield className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
-                  Verified land opportunities.
+                <p className="flex items-start gap-3">
+                  <Shield className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+                  Verified land opportunities
                 </p>
-                <p className="flex items-start gap-3">Transparent processes<CheckCircle className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
-                  Transparent processes.
+                <p className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+                  Transparent processes
                 </p>
-                <p className="flex items-start gap-3">Long-term value focus<TrendingUp className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
-                  Long-term value focus.
+                <p className="flex items-start gap-3">
+                  <TrendingUp className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+                  Long-term value focus
                 </p>
                 <p className="font-semibold text-white">Built for serious investors</p>
               </div>
