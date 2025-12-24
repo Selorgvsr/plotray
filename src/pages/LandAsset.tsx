@@ -188,7 +188,7 @@ const LandAsset = () => {
         <div className="container-custom relative z-10 text-center pt-20">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 animate-fade-in leading-tight">Your Land Is More Than Property,
 It's a Growing Asset<br />
-            <span className="text-gold">It's a Growing Asset</span>
+            
           </h1>
           <p className="text-xl md:text-2xl lg:text-3xl text-white/90 font-semibold tracking-wide">3X PORTFOLIO, FINANCIAL FREEDOM, KID'S FUTURE SECURED</p>
         </div>
