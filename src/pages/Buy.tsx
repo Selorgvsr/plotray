@@ -327,7 +327,7 @@ const Buy = () => {
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                    <span><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span>PLOTRAY focuses on land with high commercial influence</span>
+                    <span><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span>PLOTRAY focuses on land with high commercial influence</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-6 h-6 text-emerald shrink-0 mt-1" />
@@ -364,7 +364,7 @@ const Buy = () => {
               <div className="space-y-4 text-lg text-gray-600">
                 <p className="flex items-start gap-3">
                   <TrendingUp className="w-6 h-6 shrink-0 mt-1" />
-                  <span><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span>PLOTRAY identifies locations before major price appreciation</span>
+                  <span><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span>PLOTRAY identifies locations before major price appreciation</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <TrendingUp className="w-6 h-6 shrink-0 mt-1" />
@@ -400,7 +400,7 @@ const Buy = () => {
               <div className="space-y-4 text-lg text-foreground/80">
                 <div className="flex items-start gap-4 p-4 bg-primary/5 rounded-xl">
                   <Shield className="w-8 h-8 text-primary shrink-0" />
-                  <span>All PLOTRAY listings are carefully verified<span style={{
+                  <span>All PLOTRAY listings are carefully verified.<span style={{
                     color: '#166534'
                   }}>PLOT</span><span style={{
                     color: '#C2410C'
