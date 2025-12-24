@@ -161,7 +161,7 @@ const LandAsset = () => {
     bgClass: "bg-white"
   }, {
     heading: "One Platform for All Your Land Assets",
-    content: ["Manage multiple land holdings in one place", "Track location, value, and growth together", "A simplified asset overview saves time", "Organized data improves planning", "A smart way to manage land portfolios"],
+    content: ["Manage multiple land holdings in one place", "Track location, value, and growth together", "A simplified asset overview saves time", "Organized data improves planning", "A smart way to manage land portfolio"],
     expandedContent: "Managing multiple land assets becomes easier with structure Centralized visibility reduces confusion All asset details are accessible in one view Performance tracking supports long-term planning Organized portfolios improve decision-making Time is saved through simplification Planning becomes more strategic One platform brings complete clarity",
     image: landassetPortfolio,
     imageAlt: "Portfolio management dashboard",
