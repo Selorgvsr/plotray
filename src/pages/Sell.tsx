@@ -87,7 +87,7 @@ const ExpandableSection = ({
 };
 const CTAExpandable = () => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const expandedContent = ["Submitting land details initiates a quick evaluation process.", "Priority locations receive faster responses from the team.", "The submission process is simple and digital-friendly.", "No complex forms or lengthy documentation is required initially.", <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> reviews each submission professionally.</>, "Sellers receive timely updates without delays.", "Early submission improves acquisition speed.", "Opportunities are assessed efficiently."];
+  const expandedContent = ["Submitting land details initiates a quick evaluation process", "Priority locations receive faster responses from the team", "The submission process is simple and digital-friendly", "No complex forms or lengthy documentation is required initially", <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> reviews each submission professionally</>, "Sellers receive timely updates without delays", "Early submission improves acquisition speed", "Opportunities are assessed efficiently"];
   return <div className="space-y-4">
       <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isExpanded ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"}`}>
         <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
@@ -112,48 +112,48 @@ const Sell = () => {
   const navigate = useNavigate();
   const sections = [{
     heading: <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> Buys Land—No Middlemen</>,
-    content: [<><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> purchases land directly from property owners.</>, "There are no brokers, agents, or third-party delays.", "You deal directly with a professional buying team.", "This ensures faster decisions and clear communication.", "A simple and transparent selling experience."],
-    expandedContent: [<><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> operates on a direct land acquisition model designed to eliminate complexity.</>, "By removing brokers and intermediaries, sellers experience faster communication.", "Every discussion happens directly with a professional acquisition team.", "This approach avoids commission deductions and unnecessary negotiations.", "Sellers receive clear responses without repeated follow-ups.", "The process is structured for speed and transparency.", "Direct buying ensures smoother decision-making and trust.", "Efficiency and clarity define every interaction."],
+    content: [<><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> purchases land directly from property owners</>, "There are no brokers, agents, or third-party delays", "You deal directly with a professional buying team", "This ensures faster decisions and clear communication", "A simple and transparent selling experience"],
+    expandedContent: [<><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> operates on a direct land acquisition model designed to eliminate complexity</>, "By removing brokers and intermediaries, sellers experience faster communication", "Every discussion happens directly with a professional acquisition team", "This approach avoids commission deductions and unnecessary negotiations", "Sellers receive clear responses without repeated follow-ups", "The process is structured for speed and transparency", "Direct buying ensures smoother decision-making and trust", "Efficiency and clarity define every interaction"],
     image: sellDirect,
     imageAlt: "Direct land transaction",
     icon: <Handshake className="h-6 w-6" />,
     bgClass: "bg-gradient-to-br from-orange-50 to-amber-50"
   }, {
     heading: "We Buy Land in High-Growth Locations",
-    content: [<><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> focuses on land near cities, malls, and highways.</>, "Urban expansion increases strategic value.", "We actively acquire land in developing zones.", "Well-connected locations receive faster approvals.", "If your land is near growth areas, we are interested."],
-    expandedContent: ["Land located near expanding cities gains strategic importance over time.", "Infrastructure growth naturally increases demand in surrounding areas.", <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> prioritizes locations close to highways, malls, and urban development.</>, "These zones attract long-term planning and commercial interest.", "Connectivity plays a key role in faster acquisition decisions.", "Growth corridors align with future expansion strategies.", "Well-positioned land receives priority evaluation.", "Location-driven demand ensures stronger value."],
+    content: [<><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> focuses on land near cities, malls, and highways</>, "Urban expansion increases strategic value", "We actively acquire land in developing zones", "Well-connected locations receive faster approvals", "If your land is near growth areas, we are interested"],
+    expandedContent: ["Land located near expanding cities gains strategic importance over time", "Infrastructure growth naturally increases demand in surrounding areas", <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> prioritizes locations close to highways, malls, and urban development</>, "These zones attract long-term planning and commercial interest", "Connectivity plays a key role in faster acquisition decisions", "Growth corridors align with future expansion strategies", "Well-positioned land receives priority evaluation", "Location-driven demand ensures stronger value"],
     image: sellGrowth,
     imageAlt: "High-growth urban location",
     icon: <MapPin className="h-6 w-6" />,
     bgClass: "bg-gradient-to-br from-teal-50 to-emerald-50"
   }, {
     heading: "Sell Your Land in a Few Simple Steps",
-    content: ["Submit basic land details through our platform.", "Our team reviews location and documentation.", "We assess land potential and market value.", "A clear offer is shared with you.", "No complex procedures or long waiting periods."],
-    expandedContent: ["The selling journey begins with minimal information from the landowner.", "PLOTRAY's team carefully reviews location and documentation details.", "Each property is evaluated using clear and consistent criteria.", "Market potential is assessed without unnecessary delays.", "Offers are communicated transparently and professionally.", "There are no complicated procedures or repeated verifications.", "The process remains smooth from start to finish.", "Simplicity saves time and effort."],
+    content: ["Submit basic land details through our platform", "Our team reviews location and documentation", "We assess land potential and market value", "A clear offer is shared with you", "No complex procedures or long waiting periods"],
+    expandedContent: ["The selling journey begins with minimal information from the landowner", "PLOTRAY's team carefully reviews location and documentation details", "Each property is evaluated using clear and consistent criteria", "Market potential is assessed without unnecessary delays", "Offers are communicated transparently and professionally", "There are no complicated procedures or repeated verifications", "The process remains smooth from start to finish", "Simplicity saves time and effort"],
     image: sellProcess,
     imageAlt: "Simple selling process",
     icon: <ClipboardList className="h-6 w-6" />,
     bgClass: "bg-white"
   }, {
     heading: "Get a Fair Value for Your Land",
-    content: [<><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> offers pricing based on real market data.</>, "We consider location, connectivity, and future growth.", "No undervaluation or hidden deductions.", "Transparent evaluation builds seller confidence.", "You receive a fair and realistic offer."],
-    expandedContent: ["Pricing is determined using real market indicators and location strength.", <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> evaluates accessibility, infrastructure, and growth potential.</>, "This ensures sellers receive realistic and balanced offers.", "There are no hidden deductions or last-minute changes.", "Every valuation is explained clearly to the seller.", "Fair pricing builds long-term confidence and trust.", "The goal is mutual value, not pressure.", "Transparency defines the offer process."],
+    content: [<><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> offers pricing based on real market data</>, "We consider location, connectivity, and future growth", "No undervaluation or hidden deductions", "Transparent evaluation builds seller confidence", "You receive a fair and realistic offer"],
+    expandedContent: ["Pricing is determined using real market indicators and location strength", <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> evaluates accessibility, infrastructure, and growth potential</>, "This ensures sellers receive realistic and balanced offers", "There are no hidden deductions or last-minute changes", "Every valuation is explained clearly to the seller", "Fair pricing builds long-term confidence and trust", "The goal is mutual value, not pressure", "Transparency defines the offer process"],
     image: sellPricing,
     imageAlt: "Fair land valuation",
     icon: <Scale className="h-6 w-6" />,
     bgClass: "bg-gradient-to-br from-amber-50 to-yellow-50"
   }, {
     heading: "A Trusted & Transparent Buyer",
-    content: [<><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> follows clear legal and documentation processes.</>, "All terms are explained upfront.", "No last-minute changes or confusion.", "Professional handling ensures peace of mind.", "Trust and clarity are our foundation."],
-    expandedContent: [<><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> follows a clear and professional documentation framework.</>, "All legal steps are explained before moving forward.", "There are no unclear clauses or unexpected conditions.", "Every agreement is handled with proper compliance.", "Sellers are informed at each stage of the transaction.", "Professional coordination ensures smooth execution.", "Trust is built through clarity and consistency.", "Peace of mind is always prioritized."],
+    content: [<><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> follows clear legal and documentation processes</>, "All terms are explained upfront", "No last-minute changes or confusion", "Professional handling ensures peace of mind", "Trust and clarity are our foundation"],
+    expandedContent: [<><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> follows a clear and professional documentation framework</>, "All legal steps are explained before moving forward", "There are no unclear clauses or unexpected conditions", "Every agreement is handled with proper compliance", "Sellers are informed at each stage of the transaction", "Professional coordination ensures smooth execution", "Trust is built through clarity and consistency", "Peace of mind is always prioritized"],
     image: sellTrust,
     imageAlt: "Trusted documentation",
     icon: <Shield className="h-6 w-6" />,
     bgClass: "bg-gradient-to-br from-blue-50 to-sky-50"
   }, {
     heading: "Sell Without Pressure or Uncertainty",
-    content: ["No repeated buyer calls or negotiations.", "One clear discussion with PLOTRAY's team.", "Quick decisions reduce waiting stress.", "You stay informed at every stage.", "A smooth and worry-free selling journey."],
-    expandedContent: ["Selling land often comes with stress and uncertainty.", <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> removes this by offering a single clear discussion.</>, "There are no repeated calls or forced negotiations.", "Decisions are made efficiently without prolonged waiting.", "Sellers remain informed throughout the process.", "Clear timelines reduce mental pressure.", "The experience stays calm and professional.", "Confidence replaces confusion."],
+    content: ["No repeated buyer calls or negotiations", "One clear discussion with PLOTRAY's team", "Quick decisions reduce waiting stress", "You stay informed at every stage", "A smooth and worry-free selling journey"],
+    expandedContent: ["Selling land often comes with stress and uncertainty", <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> removes this by offering a single clear discussion</>, "There are no repeated calls or forced negotiations", "Decisions are made efficiently without prolonged waiting", "Sellers remain informed throughout the process", "Clear timelines reduce mental pressure", "The experience stays calm and professional", "Confidence replaces confusion"],
     image: sellStressfree,
     imageAlt: "Stress-free selling",
     icon: <Heart className="h-6 w-6" />,
@@ -200,11 +200,11 @@ const Sell = () => {
             </h2>
             
             <div className="space-y-3 text-white/90 text-lg max-w-2xl mx-auto">
-              <p><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> is actively acquiring land assets.</p>
-              <p>Early submissions receive quicker evaluations.</p>
-              <p>If your land is near a growing city, we want it.</p>
-              <p>The process takes only a few minutes.</p>
-              <p>Turn your land into immediate value today.</p>
+              <p><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> is actively acquiring land assets</p>
+              <p>Early submissions receive quicker evaluations</p>
+              <p>If your land is near a growing city, we want it</p>
+              <p>The process takes only a few minutes</p>
+              <p>Turn your land into immediate value today</p>
             </div>
 
             <CTAExpandable />
