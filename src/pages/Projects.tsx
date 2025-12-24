@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Building2, MapPin, TrendingUp, ArrowRight, CheckCircle, Shield, Route, Layers, ChevronLeft, ChevronRight } from "lucide-react";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Building2, MapPin, TrendingUp, ArrowRight, CheckCircle, Shield, Route, Layers, ChevronLeft, ChevronRight, X } from "lucide-react";
+import { Sheet, SheetContent } from "@/components/ui/sheet";
 import projectsHeroImg from "@/assets/projects-hero.jpg";
 import projectSlide1 from "@/assets/project-slide-1.png";
 import projectSlide2 from "@/assets/project-slide-2.png";
@@ -141,25 +141,30 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* Project Details Dialog */}
-      <Dialog open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-        <DialogContent className="w-full max-w-4xl max-h-[90vh] p-0 overflow-hidden">
+      {/* Project Details Sheet */}
+      <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
+        <SheetContent side="right" className="w-full sm:max-w-2xl lg:max-w-4xl p-0 overflow-hidden">
           <div className="relative h-full flex flex-col">
             {/* Header */}
             <div className="flex items-center justify-between p-4 border-b border-border bg-background">
               <h2 className="text-xl font-heading font-bold text-foreground">
                 {projectSlides[currentSlide].title}
               </h2>
-              <span className="text-sm text-muted-foreground">
-                {currentSlide + 1} / {projectSlides.length}
-              </span>
+              <div className="flex items-center gap-2">
+                <span className="text-sm text-muted-foreground">
+                  {currentSlide + 1} / {projectSlides.length}
+                </span>
+                <Button variant="ghost" size="icon" onClick={() => setIsSheetOpen(false)}>
+                  <X className="w-5 h-5" />
+                </Button>
+              </div>
             </div>
 
             {/* Slide Content */}
             <div className="flex-1 overflow-auto relative">
               <div className="flex transition-transform duration-500 ease-out h-full" style={{
-                transform: `translateX(-${currentSlide * 100}%)`
-              }}>
+              transform: `translateX(-${currentSlide * 100}%)`
+            }}>
                 {projectSlides.map((slide, index) => <div key={index} className="min-w-full h-full flex items-center justify-center p-4">
                     <img src={slide.image} alt={slide.title} className="max-w-full max-h-full object-contain rounded-lg shadow-lg" />
                   </div>)}
@@ -184,8 +189,8 @@ const Projects = () => {
               </Button>
             </div>
           </div>
-        </DialogContent>
-      </Dialog>
+        </SheetContent>
+      </Sheet>
     </Layout>;
 };
 export default Projects;
