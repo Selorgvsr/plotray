@@ -135,15 +135,9 @@ const Buy = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
         
         <div className="container-custom relative z-10 text-center pt-20">
-          <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-6 animate-fade-in leading-tight lg:text-5xl">Investment in Land Asset
-Land Asset always gives High Returns
-
-
- Investment in our Prime Land is always Appreciate
-
-Our Plots in Prime Locations 
-Clear Legal Title 
-Statutory Approval from Government <br />
+          <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-6 animate-fade-in leading-tight lg:text-5xl">Investment in Land Asset 
+Land Asset always gives High Returns 
+ Investment in our Prime Land is always Appreciating Our Plots in Prime Locations  Clear Legal Title  Statutory Approval from Government <br />
             <span className="text-gold">Cities Expand</span>
           </h1>
           
