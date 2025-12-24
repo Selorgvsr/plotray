@@ -92,7 +92,12 @@ const CTAExpandable = () => {
       <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isExpanded ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"}`}>
         <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
           <p className="text-white/90 leading-relaxed animate-fade-in">
-            {expandedContent.join(" ")}
+            {expandedContent.map((item, index) => (
+              <span key={index}>
+                {item}
+                {index < expandedContent.length - 1 ? " " : ""}
+              </span>
+            ))}
           </p>
         </div>
       </div>
