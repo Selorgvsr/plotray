@@ -43,7 +43,7 @@ const Index = () => {
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-white flex items-center justify-center gap-3">
                 <CheckCircle className="w-7 h-7 md:w-8 md:h-8 flex-shrink-0" />
-                <span className="bg-[#1E52F1] px-4 py-2 rounded-lg">Statutory Approval from Government</span>
+                <span className="bg-[#1E52F1] px-4 py-2 rounded-lg">Statutory Approvals from Government</span>
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-white flex items-center justify-center gap-3">
                 <CheckCircle className="w-7 h-7 md:w-8 md:h-8 flex-shrink-0" />
