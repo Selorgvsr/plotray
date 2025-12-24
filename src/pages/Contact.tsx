@@ -77,22 +77,22 @@ const Contact = () => {
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">First Name</label>
-                    <input type="text" placeholder="John" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" />
+                    <input type="text" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" placeholder="" />
                   </div>
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">Last Name</label>
-                    <input type="text" placeholder="Doe" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" />
+                    <input type="text" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" placeholder="" />
                   </div>
                 </div>
                 
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">Email</label>
-                  <input type="email" placeholder="john@example.com" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" />
+                  <input type="email" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" placeholder="" />
                 </div>
                 
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">Phone</label>
-                  <input type="tel" placeholder="+91 98765 43210" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" />
+                  <input type="tel" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" placeholder="" />
                 </div>
                 
                 <div>
@@ -109,7 +109,7 @@ const Contact = () => {
                 
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">Message</label>
-                  <textarea rows={4} placeholder="How can we help you?" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all resize-none" />
+                  <textarea rows={4} className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all resize-none" placeholder="Type Here..." />
                 </div>
                 
                 <Button variant="hero" size="lg" className="w-full">
