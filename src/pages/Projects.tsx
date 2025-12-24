@@ -103,7 +103,7 @@ const Projects = () => {
                 <CheckCircle className="w-6 h-6 text-white" />
               </div>
               <span className="bg-[#1E52F1] text-white text-lg md:text-2xl font-semibold px-6 py-2 rounded-full">
-                Statutory Approval from Government
+                Statutory Approvals from Government
               </span>
             </div>
             <div className="flex items-center gap-3 mr-12">
