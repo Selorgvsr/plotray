@@ -143,7 +143,15 @@ const Buy = () => {
             </h1>
             
             <div className="space-y-4 flex flex-col items-center">
-              <p className="flex items-center gap-3 ml-12">
+              <p className="flex items-center gap-3 ml-16">
+                <span className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
+                  <CheckCircle className="w-5 h-5 text-white" />
+                </span>
+                <span className="bg-[#1E52F1] text-white font-semibold text-lg md:text-xl px-6 py-3 rounded-full">
+                  We support 'Financial Peace' on Land Investment
+                </span>
+              </p>
+              <p className="flex items-center gap-3 ml-8">
                 <span className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
                   <CheckCircle className="w-5 h-5 text-white" />
                 </span>
@@ -151,7 +159,7 @@ const Buy = () => {
                   Our Plots in Prime Locations
                 </span>
               </p>
-              <p className="flex items-center gap-3 ml-24">
+              <p className="flex items-center gap-3 ml-20">
                 <span className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
                   <CheckCircle className="w-5 h-5 text-white" />
                 </span>
@@ -159,7 +167,7 @@ const Buy = () => {
                   Clear Legal Title
                 </span>
               </p>
-              <p className="flex items-center gap-3 ml-6">
+              <p className="flex items-center gap-3 ml-4">
                 <span className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
                   <CheckCircle className="w-5 h-5 text-white" />
                 </span>
