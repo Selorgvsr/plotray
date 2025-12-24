@@ -79,9 +79,7 @@ const Index = () => {
                     <h3 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-3 leading-tight">
                       Villa Plots in Kilambakkam
                     </h3>
-                    <p className="text-white/80 text-sm md:text-lg mb-6 max-w-md">
-                      Premium plots near Kilambakkam Bus Terminus. Excellent connectivity & appreciation potential.
-                    </p>
+                    <p className="text-white/80 text-sm md:text-lg mb-6 max-w-md">Premium plots near Kilambakkam Bus Terminus Excellent connectivity & appreciation potential</p>
                     <Link to="/contact">
                       <Button size="lg" className="bg-gold hover:bg-gold/90 text-plotray-blue font-bold text-base md:text-lg px-6 md:px-10 py-3 md:py-6 shadow-2xl hover:shadow-gold/40 transition-all duration-300 hover:scale-105">
                         Book Now
@@ -109,24 +107,19 @@ const Index = () => {
                 Land Is a <span className="text-gold">High-Appreciating</span> Asset
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg">
-                <p className="flex items-start gap-3">
-                  <TrendingUp className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+                <p className="flex items-start gap-3">Land consistently grows in value over time<TrendingUp className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
                   Land consistently grows in value over time.
                 </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-gold flex-shrink-0 mt-1 text-plotray-indigo" />
+                <p className="flex items-start gap-3">Location drives appreciation more than any other factor<CheckCircle className="w-6 h-6 text-gold flex-shrink-0 mt-1 text-plotray-indigo" />
                   Location drives appreciation more than any other factor.
                 </p>
-                <p className="flex items-start gap-3">
-                  <Shield className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+                <p className="flex items-start gap-3">Unlike buildings, land does not depreciate<Shield className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
                   Unlike buildings, land does not depreciate.
                 </p>
-                <p className="flex items-start gap-3">
-                  <BarChart3 className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+                <p className="flex items-start gap-3">Urban expansion fuels long-term returns<BarChart3 className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
                   Urban expansion fuels long-term returns.
                 </p>
-                <p className="flex items-start gap-3">
-                  <Zap className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+                <p className="flex items-start gap-3">Smart investors choose land for stability and growth<Zap className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
                   Smart investors choose land for stability and growth.
                 </p>
               </div>
@@ -151,11 +144,11 @@ const Index = () => {
                 Buy Land Where <span className="text-teal-300">Cities Are Growing</span>
               </h2>
               <div className="space-y-4 text-white/80 text-lg">
-                <p><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> curates land near malls, highways, and business hubs.</p>
-                <p>City-adjacent locations ensure strong future demand.</p>
-                <p>Infrastructure-backed land delivers higher ROI.</p>
-                <p>Verified listings reduce investment risk.</p>
-                <p className="font-semibold text-white">Buy where growth is guaranteed.</p>
+                <p><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span>PLOTRAY curates land near malls, highways, and business hubs</p>
+                <p>City-adjacent locations ensure strong future demand</p>
+                <p>Infrastructure-backed land delivers higher ROI</p>
+                <p>Verified listings reduce investment risk</p>
+                <p className="font-semibold text-white">Buy where growth is guaranteed</p>
               </div>
               <Link to="/buy">
                 <Button variant="hero" size="lg" className="mt-8">
@@ -177,23 +170,19 @@ const Index = () => {
                 Sell Your Land <span className="text-orange-500">Directly</span> to <span className="text-[#166534]">PLOT</span><span className="text-[#C2410C]">RAY</span>
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg">
-                <p className="flex items-start gap-3">
-                  <Handshake className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
+                <p className="flex items-start gap-3">We buy land directly from owners<Handshake className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
                   We buy land directly from owners.
                 </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
+                <p className="flex items-start gap-3">No brokers, no middlemen, no confusion<CheckCircle className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
                   No brokers, no middlemen, no confusion.
                 </p>
-                <p className="flex items-start gap-3">
-                  <TrendingUp className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
+                <p className="flex items-start gap-3">Fair market-based pricing<TrendingUp className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
                   Fair market-based pricing.
                 </p>
-                <p className="flex items-start gap-3">
-                  <Zap className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
+                <p className="flex items-start gap-3">Fast decision-making and a clear process<Zap className="w-6 h-6 text-orange-500 flex-shrink-0 mt-1" />
                   Fast decision-making and a clear process.
                 </p>
-                <p className="font-semibold text-foreground">Sell with confidence and clarity.</p>
+                <p className="font-semibold text-foreground">Sell with confidence and clarity</p>
               </div>
               <Link to="/sell">
                 <Button size="lg" className="mt-8 bg-orange-500 hover:bg-orange-600 text-white">
@@ -218,27 +207,23 @@ const Index = () => {
               <img alt="Land connected to infrastructure" className="rounded-2xl shadow-2xl" src="/lovable-uploads/5159954e-3411-468a-9b8f-2611fd1480c0.jpg" />
             </div>
             <div className="order-1 lg:order-2 text-white">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6 text-card-foreground">Strong Infrastructure 
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6 text-card-foreground">Strong Infrastructure  
 Strong Returns<span className="text-green-500">Strong Returns</span>
               </h2>
               <div className="space-y-4 text-lg text-popover-foreground">
-                <p className="flex items-start gap-3">
-                  <Route className="w-6 h-6 flex-shrink-0 mt-1 text-green-500" />
+                <p className="flex items-start gap-3">Road connectivity boosts accessibility<Route className="w-6 h-6 flex-shrink-0 mt-1 text-green-500" />
                   Road connectivity boosts accessibility.
                 </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 flex-shrink-0 mt-1 text-green-500" />
+                <p className="flex items-start gap-3">Airport and rail access increase demand<CheckCircle className="w-6 h-6 flex-shrink-0 mt-1 text-green-500" />
                   Airport and rail access increase demand.
                 </p>
-                <p className="flex items-start gap-3">
-                  <TrendingUp className="w-6 h-6 flex-shrink-0 mt-1 text-green-500" />
+                <p className="flex items-start gap-3">Metro expansion fuels appreciation<TrendingUp className="w-6 h-6 flex-shrink-0 mt-1 text-green-500" />
                   Metro expansion fuels appreciation.
                 </p>
-                <p className="flex items-start gap-3">
-                  <BarChart3 className="w-6 h-6 flex-shrink-0 mt-1 text-green-500" />
+                <p className="flex items-start gap-3">Infrastructure-backed land grows faster<BarChart3 className="w-6 h-6 flex-shrink-0 mt-1 text-green-500" />
                   Infrastructure-backed land grows faster.
                 </p>
-                <p className="font-semibold">Connectivity defines success.</p>
+                <p className="font-semibold">Connectivity defines success</p>
               </div>
             </div>
           </div>
@@ -302,11 +287,11 @@ Strong Returns<span className="text-green-500">Strong Returns</span>
                 See the Land <span className="text-sky-600">Before You Invest</span>
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg">
-                <p>Free site visits for serious buyers.</p>
-                <p>Understand location and surroundings firsthand.</p>
-                <p>Expert guidance on growth potential.</p>
-                <p>No pressure, complete transparency.</p>
-                <p className="font-semibold text-foreground">Invest with clarity.</p>
+                <p>Free site visits for serious buyers</p>
+                <p>Understand location and surroundings firsthand</p>
+                <p>Expert guidance on growth potential</p>
+                <p>No pressure, complete transparency</p>
+                <p className="font-semibold text-foreground">Invest with clarity</p>
               </div>
               <Link to="/contact">
                 <Button size="lg" className="mt-8 bg-sky-600 hover:bg-sky-700 text-white">
@@ -334,23 +319,19 @@ Strong Returns<span className="text-green-500">Strong Returns</span>
                 Sustainable Land for <span className="text-emerald">Future Cities</span>
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg">
-                <p className="flex items-start gap-3">
-                  <Leaf className="w-6 h-6 text-emerald flex-shrink-0 mt-1" />
+                <p className="flex items-start gap-3">Eco-friendly layout planning<Leaf className="w-6 h-6 text-emerald flex-shrink-0 mt-1" />
                   Eco-friendly layout planning.
                 </p>
-                <p className="flex items-start gap-3">
-                  <Droplets className="w-6 h-6 text-emerald flex-shrink-0 mt-1" />
+                <p className="flex items-start gap-3">Stormwater and green spaces included<Droplets className="w-6 h-6 text-emerald flex-shrink-0 mt-1" />
                   Stormwater and green spaces included.
                 </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-emerald flex-shrink-0 mt-1" />
+                <p className="flex items-start gap-3">Responsible urban expansion<CheckCircle className="w-6 h-6 text-emerald flex-shrink-0 mt-1" />
                   Responsible urban expansion.
                 </p>
-                <p className="flex items-start gap-3">
-                  <Users className="w-6 h-6 text-emerald flex-shrink-0 mt-1" />
+                <p className="flex items-start gap-3">Community-focused development<Users className="w-6 h-6 text-emerald flex-shrink-0 mt-1" />
                   Community-focused development.
                 </p>
-                <p className="font-semibold text-foreground">Growth that respects the future.</p>
+                <p className="font-semibold text-foreground">Growth that respects the future</p>
               </div>
             </div>
           </div>
@@ -366,23 +347,19 @@ Strong Returns<span className="text-green-500">Strong Returns</span>
                 Trusted by <span className="text-gold">Smart Investors</span>
               </h2>
               <div className="space-y-4 text-white/80 text-lg">
-                <p className="flex items-start gap-3">
-                  <BarChart3 className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+                <p className="flex items-start gap-3">Market insights backed by data<BarChart3 className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
                   Market insights backed by data.
                 </p>
-                <p className="flex items-start gap-3">
-                  <Shield className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+                <p className="flex items-start gap-3">Verified land opportunities<Shield className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
                   Verified land opportunities.
                 </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+                <p className="flex items-start gap-3">Transparent processes<CheckCircle className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
                   Transparent processes.
                 </p>
-                <p className="flex items-start gap-3">
-                  <TrendingUp className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
+                <p className="flex items-start gap-3">Long-term value focus<TrendingUp className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
                   Long-term value focus.
                 </p>
-                <p className="font-semibold text-white">Built for serious investors.</p>
+                <p className="font-semibold text-white">Built for serious investors</p>
               </div>
               
               {/* Trust badges */}
@@ -411,23 +388,19 @@ Strong Returns<span className="text-green-500">Strong Returns</span>
                 A Scalable <span className="text-plotray-blue">Land Investment</span> Platform
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg">
-                <p className="flex items-start gap-3">
-                  <ShoppingBag className="w-6 h-6 text-plotray-blue flex-shrink-0 mt-1" />
+                <p className="flex items-start gap-3">Direct land acquisition and resale<ShoppingBag className="w-6 h-6 text-plotray-blue flex-shrink-0 mt-1" />
                   Direct land acquisition and resale.
                 </p>
-                <p className="flex items-start gap-3">
-                  <Handshake className="w-6 h-6 text-plotray-blue flex-shrink-0 mt-1" />
+                <p className="flex items-start gap-3">Project partnerships and advisory<Handshake className="w-6 h-6 text-plotray-blue flex-shrink-0 mt-1" />
                   Project partnerships and advisory.
                 </p>
-                <p className="flex items-start gap-3">
-                  <Zap className="w-6 h-6 text-plotray-blue flex-shrink-0 mt-1" />
+                <p className="flex items-start gap-3">Technology-driven scalability<Zap className="w-6 h-6 text-plotray-blue flex-shrink-0 mt-1" />
                   Technology-driven scalability.
                 </p>
-                <p className="flex items-start gap-3">
-                  <BarChart3 className="w-6 h-6 text-plotray-blue flex-shrink-0 mt-1" />
+                <p className="flex items-start gap-3">Sustainable revenue streams<BarChart3 className="w-6 h-6 text-plotray-blue flex-shrink-0 mt-1" />
                   Sustainable revenue streams.
                 </p>
-                <p className="font-semibold text-foreground">Designed for long-term growth.</p>
+                <p className="font-semibold text-foreground">Designed for long-term growth</p>
               </div>
               <Link to="/business-model">
                 <Button variant="outline" size="lg" className="mt-8">
@@ -452,9 +425,7 @@ Strong Returns<span className="text-green-500">Strong Returns</span>
             Build Wealth with Land That<br />
             <span className="text-gold">Grows with Cities</span>
           </h2>
-          <p className="text-white/80 text-lg max-w-2xl mx-auto mb-8">
-            Struggling with low-ROI investments? Buy/sell land with PLOTRAY today.
-          </p>
+          <p className="text-white/80 text-lg max-w-2xl mx-auto mb-8">Struggling with low-ROI investments? Buy/sell land with PLOTRAY today</p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/buy">
