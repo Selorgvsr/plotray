@@ -172,7 +172,7 @@ const Buy = () => {
                   <CheckCircle className="w-5 h-5 text-white" />
                 </span>
                 <span className="bg-[#1E52F1] text-white font-semibold text-lg md:text-xl px-6 py-3 rounded-full">
-                  Statutory Approval from Government
+                  Statutory Approvals from Government
                 </span>
               </p>
               <p className="flex items-center gap-3">
