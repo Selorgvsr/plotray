@@ -204,7 +204,25 @@ const Projects = () => {
             </div>
 
             {/* Slide Content */}
-            <div className="flex-1 overflow-hidden relative">
+            <div className="flex-1 overflow-hidden relative group">
+              {/* Left Arrow Button */}
+              <button 
+                onClick={handlePrevSlide} 
+                disabled={currentSlide === 0}
+                className={`absolute left-2 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-primary/90 hover:bg-primary text-primary-foreground flex items-center justify-center shadow-lg transition-all duration-300 ${currentSlide === 0 ? 'opacity-30 cursor-not-allowed' : 'opacity-70 hover:opacity-100 hover:scale-110'}`}
+              >
+                <ChevronLeft className="w-6 h-6" />
+              </button>
+
+              {/* Right Arrow Button */}
+              <button 
+                onClick={handleNextSlide} 
+                disabled={currentSlide === projectSlides.length - 1}
+                className={`absolute right-2 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-primary/90 hover:bg-primary text-primary-foreground flex items-center justify-center shadow-lg transition-all duration-300 ${currentSlide === projectSlides.length - 1 ? 'opacity-30 cursor-not-allowed' : 'opacity-70 hover:opacity-100 hover:scale-110'}`}
+              >
+                <ChevronRight className="w-6 h-6" />
+              </button>
+
               <div className="flex transition-transform duration-500 ease-out h-full" style={{
               transform: `translateX(-${currentSlide * 100}%)`
             }}>
