@@ -79,7 +79,7 @@ const Projects = () => {
           
           <p style={{
           animationDelay: '0.2s'
-        }} className="text-lg max-w-2xl mx-auto mb-8 animate-fade-in text-primary-foreground md:text-4xl">Investing in land brings financial peace and lasting growth</p>
+        }} className="text-lg max-w-2xl mx-auto mb-8 animate-fade-in text-primary-foreground md:text-4xl font-bold">Investing in land brings financial peace and lasting growth</p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 animate-fade-in" style={{
           animationDelay: '0.3s'
@@ -173,33 +173,17 @@ const Projects = () => {
 
             {/* Navigation */}
             <div className="flex items-center justify-between p-4 border-t border-border bg-background">
-              <Button 
-                variant="outline" 
-                onClick={handlePrevSlide} 
-                disabled={currentSlide === 0} 
-                className="gap-2 min-w-[120px]"
-              >
+              <Button variant="outline" onClick={handlePrevSlide} disabled={currentSlide === 0} className="gap-2 min-w-[120px]">
                 <ChevronLeft className="w-4 h-4" />
                 Previous
               </Button>
               
               {/* Dots indicator */}
               <div className="flex gap-2">
-                {projectSlides.map((_, index) => (
-                  <button 
-                    key={index} 
-                    onClick={() => setCurrentSlide(index)} 
-                    className={`w-3 h-3 rounded-full transition-colors ${index === currentSlide ? 'bg-primary' : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'}`} 
-                  />
-                ))}
+                {projectSlides.map((_, index) => <button key={index} onClick={() => setCurrentSlide(index)} className={`w-3 h-3 rounded-full transition-colors ${index === currentSlide ? 'bg-primary' : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'}`} />)}
               </div>
               
-              <Button 
-                variant="outline" 
-                onClick={handleNextSlide} 
-                disabled={currentSlide === projectSlides.length - 1} 
-                className="gap-2 min-w-[120px]"
-              >
+              <Button variant="outline" onClick={handleNextSlide} disabled={currentSlide === projectSlides.length - 1} className="gap-2 min-w-[120px]">
                 Next
                 <ChevronRight className="w-4 h-4" />
               </Button>
