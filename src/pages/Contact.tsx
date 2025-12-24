@@ -48,11 +48,11 @@ const Contact = () => {
               color: '#C2410C'
             }}>RAY</span></span>
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto animate-fade-in">Struggling with low-ROI investments? Buy/sell land with PLOTRAY today<span style={{
+          <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto animate-fade-in">Struggling with low return on investment? Buy/sell land with <span style={{
             color: '#166534'
           }}>PLOT</span><span style={{
             color: '#C2410C'
-          }}>RAY</span> today.
+          }}>RAY</span> ​today
           </p>
         </div>
         
