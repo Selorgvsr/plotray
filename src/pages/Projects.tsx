@@ -101,8 +101,8 @@ const Projects = () => {
         <div className="container-custom">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">Projects</h2>
-            <p className="text-muted-foreground">
-              ​Land Always Appreciate  
+            <p className="text-foreground">
+              ​Highway Land = 25% Faster Gains than your Flat, Data Proven                     
             </p>
           </div>
           
