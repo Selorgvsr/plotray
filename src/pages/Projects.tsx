@@ -69,7 +69,7 @@ const Projects = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={projectsHeroImg} alt="PLOTRAY Projects" className="w-full h-full object-cover" />
+          <img alt="PLOTRAY Projects" className="w-full h-full object-cover" src="/lovable-uploads/31908a63-895a-4563-8bd5-cce9536ccc3a.jpg" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/80 via-plotray-blue/60 to-teal/50" />
         <div className="container-custom relative z-10 text-center pt-20">
@@ -146,7 +146,7 @@ const Projects = () => {
         <SheetContent side="right" className="w-full sm:max-w-2xl lg:max-w-4xl p-0 overflow-hidden">
           <div className="relative h-full flex flex-col">
             {/* Header */}
-            <div className="flex items-center justify-between p-4 border-b border-border bg-background">
+            <div className="p-4 border-b border-border bg-background flex items-center justify-between">
               <h2 className="text-xl font-heading font-bold text-foreground">
                 {projectSlides[currentSlide].title}
               </h2>
@@ -165,14 +165,14 @@ const Projects = () => {
               <div className="flex transition-transform duration-500 ease-out h-full" style={{
               transform: `translateX(-${currentSlide * 100}%)`
             }}>
-                {projectSlides.map((slide, index) => <div key={index} className="min-w-full h-full flex items-center justify-center p-4">
+                {projectSlides.map((slide, index) => <div key={index} className="min-w-full h-full p-4 flex items-center justify-center">
                     <img src={slide.image} alt={slide.title} className="max-w-full max-h-full object-contain rounded-lg shadow-lg" />
                   </div>)}
               </div>
             </div>
 
             {/* Navigation */}
-            <div className="flex items-center justify-between p-4 border-t border-border bg-background">
+            <div className="items-center justify-between p-4 border-t border-border bg-background flex flex-row mx-0">
               <Button variant="outline" onClick={handlePrevSlide} disabled={currentSlide === 0} className="gap-2">
                 <ChevronLeft className="w-4 h-4" />
                 Previous
