@@ -136,11 +136,14 @@ const Buy = () => {
         
         <div className="container-custom relative z-10 text-center pt-20">
           <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-6 animate-fade-in leading-tight lg:text-5xl">Investment in Land Asset
+Land Asset always gives High Returns
+
+
+ Investment in our Prime Land is always Appreciate
 
 Our Plots in Prime Locations 
 Clear Legal Title 
-Statutory Approval from Government 
-Investment in our Prime Land is always Appreciated<br />
+Statutory Approval from Government <br />
             <span className="text-gold">Cities Expand</span>
           </h1>
           
