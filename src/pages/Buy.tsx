@@ -443,9 +443,7 @@ const Buy = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
-              <h2 className="font-heading text-4xl md:text-5xl font-bold text-primary mb-8">
-                Free Site Visit with Expert Guidance
-              </h2>
+              <h2 className="font-heading text-4xl md:text-5xl font-bold text-primary mb-8">Site Visit with Expert Guidance</h2>
               <div className="space-y-4 text-lg text-foreground/80 mb-8">
                 <p className="flex items-start gap-3">
                   <Users className="w-6 h-6 text-primary shrink-0 mt-1" />
