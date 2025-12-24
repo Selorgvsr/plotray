@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 import { Building2, MapPin, TrendingUp, ArrowRight, CheckCircle, Shield, Route, Layers, ChevronLeft, ChevronRight, X } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import projectsHeroImg from "@/assets/projects-hero.jpg";
-import projectSlide1 from "@/assets/project-slide-1.png";
-import projectSlide2 from "@/assets/project-slide-2.png";
-import projectSlide3 from "@/assets/project-slide-3.png";
-import projectSlide4 from "@/assets/project-slide-4.png";
+import projectSlide1 from "@/assets/project-slide-intro.png";
+import projectSlide2 from "@/assets/project-slide-amenities.png";
+import projectSlide3 from "@/assets/project-slide-advantages.png";
+import projectSlide4 from "@/assets/project-slide-map.png";
 import projectCardImage from "@/assets/kilambakkam-aerial.png";
 const projects = [{
   name: "Green Valley Township",
