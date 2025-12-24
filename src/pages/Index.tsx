@@ -384,9 +384,7 @@ const Index = () => {
               
               {/* Trust badges */}
               <div className="flex flex-wrap gap-4 mt-8">
-                {["100+ Properties", "500+ Investors", "10+ Cities"].map((badge, idx) => (
-                  <span key={idx} className="px-4 py-2 bg-muted rounded-full text-sm font-medium">{badge}</span>
-                ))}
+                {["100+ Properties", "500+ Investors", "10+ Cities"].map((badge, idx) => {})}
               </div>
             </div>
             <div>
