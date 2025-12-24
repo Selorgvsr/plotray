@@ -308,46 +308,7 @@ const Buy = () => {
       </section>
 
       {/* Section 6: Prime Land Near Malls */}
-      <section className="py-20 bg-sky-100">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="animate-fade-in">
-              <h2 className="font-heading text-4xl md:text-5xl font-bold text-primary mb-8">
-                Prime Land Near Malls & Commercial Centers
-              </h2>
-              <div className="bg-white rounded-2xl p-8 border-2 border-gold/30 shadow-xl">
-                <ul className="space-y-4 text-lg text-foreground/80">
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                    <span>Land near malls and commercial hubs attracts continuous demand</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                    <span>These locations benefit from strong footfall and retail growth</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                    <span><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> focuses on land with high commercial influence</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                    <span>Such areas offer better resale and rental potential</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-emerald shrink-0 mt-1" />
-                    <span>Proximity to commerce drives long-term value</span>
-                  </li>
-                </ul>
-              </div>
-              <ExpandableSection items={expandableContent.section5} />
-            </div>
-            <div className="relative">
-              <img alt="Mall with surrounding land plots" className="rounded-2xl shadow-2xl w-full" src="/lovable-uploads/fd2a5ec7-7b3b-43e6-b5a0-11c4c2b338d8.jpg" />
-              <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-gold/20 rounded-full blur-3xl" />
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Section 7: High-Growth Urban Investment Zones */}
       <section className="py-20 bg-gradient-to-br from-teal to-emerald text-white">
