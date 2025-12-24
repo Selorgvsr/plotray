@@ -27,7 +27,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
         
         <div className="container-custom relative z-10 text-center pt-20">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-8 animate-fade-in leading-tight">We support 'Financial Peace' on Land Investment 
+          <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-8 animate-fade-in leading-tight lg:text-4xl">We support 'Financial Peace' on Land Investment 
 
 
 Our Plots in Prime Locations 
