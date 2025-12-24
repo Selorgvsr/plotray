@@ -379,14 +379,12 @@ const Index = () => {
                   <TrendingUp className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
                   Long-term value focus
                 </p>
-                <p className="font-semibold text-white">Built for serious investors</p>
+                
               </div>
               
               {/* Trust badges */}
               <div className="flex flex-wrap gap-4 mt-8">
-                {["100+ Properties", "500+ Investors", "10+ Cities"].map((badge, idx) => <div key={idx} className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-gold/30">
-                    <span className="text-gold font-semibold">{badge}</span>
-                  </div>)}
+                {["100+ Properties", "500+ Investors", "10+ Cities"].map((badge, idx) => {})}
               </div>
             </div>
             <div>
