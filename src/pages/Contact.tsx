@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, MapPin, Clock, Send, MessageSquare, Users, Headphones } from "lucide-react";
+import { Phone, Mail, MapPin, Send, MessageSquare, Users, Headphones } from "lucide-react";
 import contactHeroImg from "@/assets/contact-hero.jpg";
 const contactInfo = [{
   icon: Phone,
@@ -12,11 +12,6 @@ const contactInfo = [{
   label: "Email",
   value: "shekar@plotray.com",
   href: "mailto:shekar@plotray.com"
-}, {
-  icon: Clock,
-  label: "Working Hours",
-  value: "Mon - Sat: 9AM - 6PM",
-  href: "#"
 }];
 const supportOptions = [{
   icon: MessageSquare,
