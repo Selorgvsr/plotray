@@ -79,9 +79,7 @@ const Projects = () => {
           
           <p style={{
           animationDelay: '0.2s'
-        }} className="text-lg max-w-2xl mx-auto mb-8 animate-fade-in text-primary-foreground md:text-2xl">
-            Investing in land brings financial peace and lasting growth.
-          </p>
+        }} className="text-lg max-w-2xl mx-auto mb-8 animate-fade-in text-primary-foreground md:text-2xl">Investing in land brings financial peace and lasting growth</p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 animate-fade-in" style={{
           animationDelay: '0.3s'
