@@ -137,7 +137,9 @@ const Buy = () => {
         <div className="container-custom relative z-10 text-center pt-20">
           <div className="space-y-6 animate-fade-in text-center max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-5xl font-heading font-bold text-white mb-8 leading-tight">
-              We support &apos;Financial Peace&apos; on Land Investment
+              Investment in Land Asset
+              <br /><br />
+              Land Asset always give high returns.
             </h1>
             
             <div className="space-y-4 flex flex-col items-center">
