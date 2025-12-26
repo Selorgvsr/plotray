@@ -176,7 +176,7 @@ const Sell = () => {
         color: '#166534'
       }}>PLOT</span><span style={{
         color: '#C2410C'
-      }}>RAY</span> follows clear legal and documentation processes</>, "All terms are explained upfront", "No last-minute changes or confusion", "Professional handling ensures peace of mind", "Trust and clarity are our foundation"],
+      }} className="text-orange-500">RAY</span> follows clear legal and documentation processes</>, "All terms are explained upfront", "No last-minute changes or confusion", "Professional handling ensures peace of mind", "Trust and clarity are our foundation"],
     expandedContent: [<><span style={{
         color: '#166534'
       }}>PLOT</span><span style={{
