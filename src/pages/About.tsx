@@ -182,7 +182,7 @@ const About = () => {
             
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
-                What Makes <span className="text-orange-500">PLOT</span><span className="text-[#C2410C]">RAY</span> <span className="text-plotray-gold">Different</span>
+                What Makes <span className="text-green-800">PLOT</span><span className="text-[#C2410C]">RAY</span> <span className="text-plotray-gold">Different</span>
               </h2>
               <div className="space-y-4">
                 {differentiators.map((item, index) => <div key={index} className="flex items-center gap-4 p-4 rounded-xl bg-[hsl(220,60%,97%)] hover:bg-[hsl(220,60%,95%)] transition-colors" style={{
