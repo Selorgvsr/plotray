@@ -369,7 +369,7 @@ const Buy = () => {
               <div className="space-y-4 text-lg text-gray-600">
                 <p className="flex items-start gap-3">
                   <TrendingUp className="w-6 h-6 shrink-0 mt-1" />
-                  <span><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> identifies locations before major price appreciation</span>
+                  <span className="text-plotray-orange"><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> identifies locations before major price appreciation</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <TrendingUp className="w-6 h-6 shrink-0 mt-1" />
@@ -537,7 +537,7 @@ const Buy = () => {
           </h2>
           <div className="max-w-3xl mx-auto space-y-4 text-xl text-white/90 mb-10">
             <p>Infrastructure-backed land delivers returns</p>
-            <p><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> curates future-ready locations</p>
+            <p className="text-plotray-orange"><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> curates future-ready locations</p>
             <p>Make informed, confident investments</p>
             <p className="font-semibold text-gold">Your asset starts here</p>
           </div>
