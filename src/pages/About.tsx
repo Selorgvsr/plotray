@@ -14,7 +14,6 @@ import aboutEsg from "@/assets/about-esg.jpg";
 import aboutTrust from "@/assets/about-trust.jpg";
 import aboutJourney from "@/assets/about-journey.jpg";
 import aboutCta from "@/assets/about-cta-new.jpg";
-
 const differentiators = [{
   icon: Building2,
   text: "Direct land buying without brokers"
@@ -31,15 +30,13 @@ const differentiators = [{
   icon: Shield,
   text: "Professional, transparent execution"
 }];
-
 const About = () => {
-  return (
-    <Layout>
+  return <Layout>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center" style={{
-          backgroundImage: `url(${aboutHero})`
-        }} />
+        backgroundImage: `url(${aboutHero})`
+      }} />
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/90 via-plotray-blue/70 to-teal/60" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
         
@@ -48,7 +45,9 @@ const About = () => {
             Redefining Land Ownership,<br />
             <span className="text-gold">Growth & Opportunity</span>
           </h1>
-          <p style={{ animationDelay: '0.2s' }} className="text-lg max-w-2xl mx-auto animate-fade-in font-serif text-primary-foreground md:text-2xl">
+          <p style={{
+          animationDelay: '0.2s'
+        }} className="text-lg max-w-2xl mx-auto animate-fade-in font-serif text-primary-foreground md:text-2xl">
             Wake up to 3X portfolio growth, financial freedom, and generational wealth from your <span className="text-[#166534] font-bold">PLOT</span><span className="text-[#C2410C] font-bold">RAY</span> land.
           </p>
         </div>
@@ -183,17 +182,17 @@ const About = () => {
             
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
-                What Makes <span className="text-[#166534]">PLOT</span><span className="text-[#C2410C]">RAY</span> <span className="text-plotray-gold">Different</span>
+                What Makes <span className="text-orange-500">PLOT</span><span className="text-[#C2410C]">RAY</span> <span className="text-plotray-gold">Different</span>
               </h2>
               <div className="space-y-4">
-                {differentiators.map((item, index) => (
-                  <div key={index} className="flex items-center gap-4 p-4 rounded-xl bg-[hsl(220,60%,97%)] hover:bg-[hsl(220,60%,95%)] transition-colors" style={{ animationDelay: `${index * 0.1}s` }}>
+                {differentiators.map((item, index) => <div key={index} className="flex items-center gap-4 p-4 rounded-xl bg-[hsl(220,60%,97%)] hover:bg-[hsl(220,60%,95%)] transition-colors" style={{
+                animationDelay: `${index * 0.1}s`
+              }}>
                     <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[hsl(220,60%,40%)] to-[hsl(220,60%,25%)] flex items-center justify-center shrink-0">
                       <item.icon className="w-6 h-6 text-white" />
                     </div>
                     <span className="text-foreground font-medium">{item.text}</span>
-                  </div>
-                ))}
+                  </div>)}
               </div>
             </div>
           </div>
@@ -366,7 +365,11 @@ const About = () => {
         <div className="container-custom relative z-10">
           <div className="max-w-2xl">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6">
-              Be a Part of the <span className="inline-flex"><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span></span> Growth Story
+              Be a Part of the <span className="inline-flex"><span style={{
+                color: '#166534'
+              }}>PLOT</span><span style={{
+                color: '#C2410C'
+              }}>RAY</span></span> Growth Story
             </h2>
             <div className="space-y-3 text-white/80 mb-8">
               <p className="flex items-start gap-3">
@@ -406,8 +409,6 @@ const About = () => {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
-
 export default About;
