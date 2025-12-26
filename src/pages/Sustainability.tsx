@@ -17,7 +17,9 @@ const Sustainability = () => {
   return <Layout>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${heroImage})` }} />
+        <div className="absolute inset-0 bg-cover bg-center" style={{
+        backgroundImage: `url(${heroImage})`
+      }} />
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/90 via-plotray-blue/70 to-teal/60" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
         
@@ -179,7 +181,7 @@ const Sustainability = () => {
             </h2>
             
             <p className="text-lg text-white/90 mb-8 leading-relaxed">
-              Sustainability protects long-term investments. Eco-planned land holds value over decades. <span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> combines growth with responsibility. Choose land that aligns with future needs. Build wealth the sustainable way.
+              Sustainability protects long-term investments. Eco-planned land holds value over decades. <span className="font-semibold text-orange-500">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> combines growth with responsibility. Choose land that aligns with future needs. Build wealth the sustainable way.
             </p>
             
             <Button size="lg" className="bg-gradient-to-r from-plotray-gold to-yellow-500 hover:from-yellow-500 hover:to-plotray-gold text-plotray-navy font-semibold rounded-full px-8 shadow-lg hover:shadow-xl transition-all duration-300" asChild>
