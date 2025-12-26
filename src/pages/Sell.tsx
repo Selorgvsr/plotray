@@ -215,7 +215,7 @@ const Sell = () => {
               color: '#166534'
             }}>PLOT</span><span style={{
               color: '#C2410C'
-            }}>RAY</span>—Fast & Fair</span>
+            }} className="text-orange-500">RAY</span>—Fast & Fair</span>
           </h1>
         </div>
         
