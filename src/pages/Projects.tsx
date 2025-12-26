@@ -81,12 +81,14 @@ const Projects = () => {
           animationDelay: '0.2s'
         }} className="text-lg max-w-2xl mx-auto mb-8 animate-fade-in text-primary-foreground md:text-4xl font-bold">Investing in land brings financial peace and lasting growth</p>
           
-          <div className="flex flex-col items-center gap-4 mt-8 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          <div className="flex flex-col items-center gap-4 mt-8 animate-fade-in" style={{
+          animationDelay: '0.3s'
+        }}>
             <div className="flex items-center gap-3 ml-24">
               <div className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center">
                 <CheckCircle className="w-6 h-6 text-white" />
               </div>
-              <span className="bg-[#1E52F1] text-white text-lg md:text-2xl font-semibold px-6 py-2 rounded-full">
+              <span className="text-white text-lg md:text-2xl font-semibold px-6 py-2 rounded-full bg-fuchsia-600">
                 Our Plots in Prime Locations
               </span>
             </div>
@@ -94,7 +96,7 @@ const Projects = () => {
               <div className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center">
                 <CheckCircle className="w-6 h-6 text-white" />
               </div>
-              <span className="bg-[#1E52F1] text-white text-lg md:text-2xl font-semibold px-6 py-2 rounded-full">
+              <span className="text-white text-lg md:text-2xl font-semibold px-6 py-2 rounded-full bg-fuchsia-600">
                 Clear Legal Title
               </span>
             </div>
@@ -102,7 +104,7 @@ const Projects = () => {
               <div className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center">
                 <CheckCircle className="w-6 h-6 text-white" />
               </div>
-              <span className="bg-[#1E52F1] text-white text-lg md:text-2xl font-semibold px-6 py-2 rounded-full">
+              <span className="text-white text-lg md:text-2xl font-semibold px-6 py-2 rounded-full bg-fuchsia-600">
                 Statutory Approvals from Government
               </span>
             </div>
@@ -110,7 +112,7 @@ const Projects = () => {
               <div className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center">
                 <CheckCircle className="w-6 h-6 text-white" />
               </div>
-              <span className="bg-[#1E52F1] text-white text-lg md:text-2xl font-semibold px-6 py-2 rounded-full">
+              <span className="text-white text-lg md:text-2xl font-semibold px-6 py-2 rounded-full bg-fuchsia-600">
                 Investment in our Prime Land is always Appreciating
               </span>
             </div>
@@ -198,20 +200,12 @@ const Projects = () => {
             {/* Slide Content */}
             <div className="flex-1 overflow-hidden relative group">
               {/* Left Arrow Button */}
-              <button 
-                onClick={handlePrevSlide} 
-                disabled={currentSlide === 0}
-                className={`absolute left-2 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-primary/90 hover:bg-primary text-primary-foreground flex items-center justify-center shadow-lg transition-all duration-300 ${currentSlide === 0 ? 'opacity-30 cursor-not-allowed' : 'opacity-70 hover:opacity-100 hover:scale-110'}`}
-              >
+              <button onClick={handlePrevSlide} disabled={currentSlide === 0} className={`absolute left-2 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-primary/90 hover:bg-primary text-primary-foreground flex items-center justify-center shadow-lg transition-all duration-300 ${currentSlide === 0 ? 'opacity-30 cursor-not-allowed' : 'opacity-70 hover:opacity-100 hover:scale-110'}`}>
                 <ChevronLeft className="w-6 h-6" />
               </button>
 
               {/* Right Arrow Button */}
-              <button 
-                onClick={handleNextSlide} 
-                disabled={currentSlide === projectSlides.length - 1}
-                className={`absolute right-2 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-primary/90 hover:bg-primary text-primary-foreground flex items-center justify-center shadow-lg transition-all duration-300 ${currentSlide === projectSlides.length - 1 ? 'opacity-30 cursor-not-allowed' : 'opacity-70 hover:opacity-100 hover:scale-110'}`}
-              >
+              <button onClick={handleNextSlide} disabled={currentSlide === projectSlides.length - 1} className={`absolute right-2 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-primary/90 hover:bg-primary text-primary-foreground flex items-center justify-center shadow-lg transition-all duration-300 ${currentSlide === projectSlides.length - 1 ? 'opacity-30 cursor-not-allowed' : 'opacity-70 hover:opacity-100 hover:scale-110'}`}>
                 <ChevronRight className="w-6 h-6" />
               </button>
 
