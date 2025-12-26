@@ -64,7 +64,7 @@ export const Footer = () => {
               </span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6 max-w-sm">
-              <span className="text-[#166534] font-bold">PLOT</span><span className="text-[#C2410C] font-bold">RAY</span> is your trusted partner for strategic land investments near growing cities. We connect buyers with premium land opportunities.
+              <span className="font-bold text-plotray-orange">PLOT</span><span className="text-[#C2410C] font-bold">RAY</span> is your trusted partner for strategic land investments near growing cities. We connect buyers with premium land opportunities.
             </p>
             <div className="flex items-center gap-3">
               {socialLinks.map((social, index) => <a key={index} href={social.href} className="w-10 h-10 rounded-lg bg-muted flex items-center justify-center hover:bg-muted/80 transition-colors">
@@ -122,7 +122,7 @@ export const Footer = () => {
               </a>
             </div>
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} <span className="text-[#166534] font-bold">PLOT</span><span className="text-[#C2410C] font-bold">RAY</span>. All rights reserved.
+              © {new Date().getFullYear()} <span className="font-bold text-plotray-orange">PLOT</span><span className="text-[#C2410C] font-bold">RAY</span>. All rights reserved.
             </p>
           </div>
         </div>
