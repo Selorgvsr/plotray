@@ -160,7 +160,7 @@ const Sell = () => {
         color: '#166534'
       }}>PLOT</span><span style={{
         color: '#C2410C'
-      }}>RAY</span> offers pricing based on real market data</>, "We consider location, connectivity, and future growth", "No undervaluation or hidden deductions", "Transparent evaluation builds seller confidence", "You receive a fair and realistic offer"],
+      }} className="text-orange-500">RAY</span> offers pricing based on real market data</>, "We consider location, connectivity, and future growth", "No undervaluation or hidden deductions", "Transparent evaluation builds seller confidence", "You receive a fair and realistic offer"],
     expandedContent: ["Pricing is determined using real market indicators and location strength", <><span style={{
         color: '#166534'
       }}>PLOT</span><span style={{
