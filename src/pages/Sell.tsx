@@ -120,7 +120,7 @@ const Sell = () => {
         color: '#166534'
       }}>PLOT</span><span style={{
         color: '#C2410C'
-      }}>RAY</span> purchases land directly from property owners</>, "There are no brokers, agents, or third-party delays", "You deal directly with a professional buying team", "This ensures faster decisions and clear communication", "A simple and transparent selling experience"],
+      }} className="text-orange-500">RAY</span> purchases land directly from property owners</>, "There are no brokers, agents, or third-party delays", "You deal directly with a professional buying team", "This ensures faster decisions and clear communication", "A simple and transparent selling experience"],
     expandedContent: [<><span style={{
         color: '#166534'
       }}>PLOT</span><span style={{
