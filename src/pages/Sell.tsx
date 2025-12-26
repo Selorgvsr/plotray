@@ -136,7 +136,7 @@ const Sell = () => {
         color: '#166534'
       }}>PLOT</span><span style={{
         color: '#C2410C'
-      }}>RAY</span> focuses on land near cities, malls, and highways</>, "Urban expansion increases strategic value", "We actively acquire land in developing zones", "Well-connected locations receive faster approvals", "If your land is near growth areas, we are interested"],
+      }} className="text-orange-500">RAY</span> focuses on land near cities, malls, and highways</>, "Urban expansion increases strategic value", "We actively acquire land in developing zones", "Well-connected locations receive faster approvals", "If your land is near growth areas, we are interested"],
     expandedContent: ["Land located near expanding cities gains strategic importance over time", "Infrastructure growth naturally increases demand in surrounding areas", <><span style={{
         color: '#166534'
       }}>PLOT</span><span style={{
