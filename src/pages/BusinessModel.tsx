@@ -162,7 +162,7 @@ const BusinessModel = () => {
                     color: '#166534'
                   }}>PLOT</span><span style={{
                     color: '#C2410C'
-                  }}>RAY</span> acquires land in high-growth zones.</>,
+                  }} className="text-orange-500">RAY</span> acquires land in high-growth zones.</>,
                 color: "hsl(45,90%,45%)"
               }, {
                 icon: Target,
