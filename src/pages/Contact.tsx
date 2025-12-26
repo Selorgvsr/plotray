@@ -46,7 +46,7 @@ const Contact = () => {
               color: '#166534'
             }}>PLOT</span><span style={{
               color: '#C2410C'
-            }}>RAY</span></span>
+            }} className="text-orange-500">RAY</span></span>
           </h1>
           
         </div>
