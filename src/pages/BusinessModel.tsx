@@ -220,7 +220,7 @@ const BusinessModel = () => {
                     color: '#166534'
                   }}>PLOT</span><span style={{
                     color: '#C2410C'
-                  }}>RAY</span> partners with developers and landowners.</>,
+                  }} className="text-orange-500">RAY</span> partners with developers and landowners.</>,
                 color: "hsl(175,70%,40%)"
               }, {
                 icon: Users,
