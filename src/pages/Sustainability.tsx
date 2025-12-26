@@ -42,7 +42,7 @@ const Sustainability = () => {
                 Responsible Land Development Practices
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                <span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> believes in responsible and planned land development. We focus on organized layouts instead of unplanned expansion. Sustainable planning protects land value and the environment. Balanced growth ensures long-term usability. Responsible development benefits both investors and communities.
+                <span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#F97316] font-semibold">RAY</span> believes in responsible and planned land development. We focus on organized layouts instead of unplanned expansion. Sustainable planning protects land value and the environment. Balanced growth ensures long-term usability. Responsible development benefits both investors and communities.
               </p>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl">
@@ -79,7 +79,7 @@ const Sustainability = () => {
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
                 Smart Water & Resource Management
               </h2>
-              <p className="text-muted-foreground leading-relaxed"><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> promotes efficient water usage in layouts. Stormwater systems support groundwater recharge. Planned drainage prevents soil erosion. Resource management improves long-term land value. Sustainable land lasts longer.</p>
+              <p className="text-muted-foreground leading-relaxed"><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#F97316] font-semibold">RAY</span> promotes efficient water usage in layouts. Stormwater systems support groundwater recharge. Planned drainage prevents soil erosion. Resource management improves long-term land value. Sustainable land lasts longer.</p>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl">
               <img src={waterImage} alt="Water and resource management" className="w-full h-[350px] object-cover" />
@@ -137,7 +137,7 @@ const Sustainability = () => {
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
                 Built on Strong ESG Principles
               </h2>
-              <p className="text-muted-foreground leading-relaxed"><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> aligns projects with ESG standards. Environmental care protects land ecosystems. Social planning supports future communities. Governance ensures transparency and compliance. Strong ESG builds investor and buyer confidence.</p>
+              <p className="text-muted-foreground leading-relaxed"><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#F97316] font-semibold">RAY</span> aligns projects with ESG standards. Environmental care protects land ecosystems. Social planning supports future communities. Governance ensures transparency and compliance. Strong ESG builds investor and buyer confidence.</p>
             </div>
           </div>
         </div>
@@ -152,7 +152,7 @@ const Sustainability = () => {
                 Supporting Sustainable Urban Expansion
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                <span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> aligns with responsible city growth. We focus on expansion that supports infrastructure. Avoiding overcrowding preserves land quality. Planned growth increases long-term appreciation. Sustainable cities create sustainable assets.
+                <span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#F97316] font-semibold">RAY</span> aligns with responsible city growth. We focus on expansion that supports infrastructure. Avoiding overcrowding preserves land quality. Planned growth increases long-term appreciation. Sustainable cities create sustainable assets.
               </p>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-xl">
@@ -181,7 +181,7 @@ const Sustainability = () => {
             </h2>
             
             <p className="text-lg text-white/90 mb-8 leading-relaxed">
-              Sustainability protects long-term investments. Eco-planned land holds value over decades. <span className="font-semibold text-green-800">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> combines growth with responsibility. Choose land that aligns with future needs. Build wealth the sustainable way.
+              Sustainability protects long-term investments. Eco-planned land holds value over decades. <span className="font-semibold text-green-800">PLOT</span><span className="text-[#F97316] font-semibold">RAY</span> combines growth with responsibility. Choose land that aligns with future needs. Build wealth the sustainable way.
             </p>
             
             <Button size="lg" className="bg-gradient-to-r from-plotray-gold to-yellow-500 hover:from-yellow-500 hover:to-plotray-gold text-plotray-navy font-semibold rounded-full px-8 shadow-lg hover:shadow-xl transition-all duration-300" asChild>

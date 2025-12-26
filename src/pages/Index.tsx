@@ -63,7 +63,7 @@ const Index = () => {
             </Link>
             <Link to="/sell">
             <Button variant="outline" size="lg" className="bg-plotray-blue/80 border-white/30 text-white hover:bg-plotray-blue/90 text-lg px-8">
-              Sell Land to <span className="inline-flex"><span className="text-[#166534] font-bold">PLOT</span><span className="text-[#C2410C] font-bold">RAY</span></span>
+              Sell Land to <span className="inline-flex"><span className="text-[#166534] font-bold">PLOT</span><span className="text-[#F97316] font-bold">RAY</span></span>
             </Button>
             </Link>
           </div>
@@ -169,7 +169,7 @@ const Index = () => {
                 Buy Land Where <span className="text-teal-300">Cities Are Growing</span>
               </h2>
               <div className="space-y-4 text-white/80 text-lg">
-                <p><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> curates land near malls, highways, and business hubs</p>
+                <p><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#F97316] font-semibold">RAY</span> curates land near malls, highways, and business hubs</p>
                 <p>City-adjacent locations ensure strong future demand</p>
                 <p>Infrastructure-backed land delivers higher ROI</p>
                 <p>Verified listings reduce investment risk</p>
@@ -192,7 +192,7 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
-                Sell Your Land <span className="text-cyan-400">Directly</span> to <span className="text-[#166534]">PLOT</span><span className="text-[#C2410C]">RAY</span>
+                Sell Your Land <span className="text-cyan-400">Directly</span> to <span className="text-[#166534]">PLOT</span><span className="text-[#F97316]">RAY</span>
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg">
                 <p className="flex items-start gap-3">
@@ -333,117 +333,44 @@ const Index = () => {
               </Link>
             </div>
             <div>
-              <img alt="Expert guiding investors" className="rounded-2xl shadow-2xl" src="/lovable-uploads/f36cdbc6-7b3e-4bec-ac5d-1a6f61f7293a.jpg" />
+              <img src={homeSitevisit} alt="Expert showing land" className="rounded-2xl shadow-2xl" />
             </div>
           </div>
         </div>
       </section>
 
       {/* Section 8: Sustainable Growth */}
-      <section className="py-20 bg-gradient-to-br from-emerald/10 via-emerald/5 to-background">
+      <section className="py-20 bg-gradient-to-br from-plotray-emerald/10 to-plotray-teal/10">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <img alt="Green urban development" className="rounded-2xl shadow-2xl" src="/lovable-uploads/31398182-9b4b-405b-9322-999e14f38c20.jpg" />
+              <img src={homeSustainable} alt="Sustainable land development" className="rounded-2xl shadow-2xl" />
             </div>
             <div className="order-1 lg:order-2">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
-                Sustainable Land for <span className="text-emerald">Future Cities</span>
+                Sustainable Development for <span className="text-plotray-emerald">Long-Term Value</span>
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg">
                 <p className="flex items-start gap-3">
-                  <Leaf className="w-6 h-6 text-emerald flex-shrink-0 mt-1" />
-                  Eco-friendly layout planning
+                  <Leaf className="w-6 h-6 text-plotray-emerald flex-shrink-0 mt-1" />
+                  Eco-friendly layouts with green planning
                 </p>
                 <p className="flex items-start gap-3">
-                  <Droplets className="w-6 h-6 text-emerald flex-shrink-0 mt-1" />
-                  Stormwater and green spaces included
+                  <Droplets className="w-6 h-6 text-plotray-teal flex-shrink-0 mt-1" />
+                  Stormwater drainage and resource management
                 </p>
                 <p className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-emerald flex-shrink-0 mt-1" />
-                  Responsible urban expansion
+                  <Zap className="w-6 h-6 text-plotray-emerald flex-shrink-0 mt-1" />
+                  Solar-ready infrastructure
                 </p>
                 <p className="flex items-start gap-3">
-                  <Users className="w-6 h-6 text-emerald flex-shrink-0 mt-1" />
-                  Community-focused development
+                  <Shield className="w-6 h-6 text-plotray-teal flex-shrink-0 mt-1" />
+                  Aligned with ESG values
                 </p>
-                <p className="font-semibold text-foreground">Growth that respects the future</p>
+                <p className="font-semibold text-foreground">Invest in a sustainable future</p>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 9: Trusted Platform */}
-      <section className="py-20 bg-plotray-blue bg-plotray-orange">
-        <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="text-white">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6">
-                Trusted by <span className="text-gold">Smart Investors</span>
-              </h2>
-              <div className="space-y-4 text-white/80 text-lg">
-                <p className="flex items-start gap-3">
-                  <BarChart3 className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
-                  Market insights backed by data
-                </p>
-                <p className="flex items-start gap-3">
-                  <Shield className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
-                  Verified land opportunities
-                </p>
-                <p className="flex items-start gap-3">
-                  <CheckCircle className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
-                  Transparent processes
-                </p>
-                <p className="flex items-start gap-3">
-                  <TrendingUp className="w-6 h-6 text-gold flex-shrink-0 mt-1" />
-                  Long-term value focus
-                </p>
-                
-              </div>
-              
-              {/* Trust badges */}
-              
-            </div>
-            <div>
-              <img src={homeInvestors} alt="Professional investors analyzing data" className="rounded-2xl shadow-2xl" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 10: Business Model */}
-      <section className="py-20 bg-background">
-        <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
-              <img alt="Business dashboard" className="rounded-2xl shadow-2xl" src="/lovable-uploads/b16deb1c-1552-4c78-8314-8738e1eb80d7.jpg" />
-            </div>
-            <div className="order-1 lg:order-2">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
-                A Scalable <span className="text-plotray-blue">Land Investment</span> Platform
-              </h2>
-              <div className="space-y-4 text-muted-foreground text-lg">
-                <p className="flex items-start gap-3">
-                  <ShoppingBag className="w-6 h-6 text-plotray-blue flex-shrink-0 mt-1" />
-                  Direct land acquisition and resale
-                </p>
-                <p className="flex items-start gap-3">
-                  <Handshake className="w-6 h-6 text-plotray-blue flex-shrink-0 mt-1" />
-                  Project partnerships and advisory
-                </p>
-                <p className="flex items-start gap-3">
-                  <Zap className="w-6 h-6 text-plotray-blue flex-shrink-0 mt-1" />
-                  Technology-driven scalability
-                </p>
-                <p className="flex items-start gap-3">
-                  <BarChart3 className="w-6 h-6 text-plotray-blue flex-shrink-0 mt-1" />
-                  Sustainable revenue streams
-                </p>
-                <p className="font-semibold text-foreground">Designed for long-term growth</p>
-              </div>
-              <Link to="/business-model">
-                <Button variant="outline" size="lg" className="mt-8">
+              <Link to="/sustainability">
+                <Button variant="outline" size="lg" className="mt-8 border-plotray-emerald text-plotray-emerald hover:bg-plotray-emerald hover:text-white">
                   Learn More
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
@@ -453,32 +380,105 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Section 9: Trusted Platform for Investors */}
+      <section className="py-20 bg-background">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
+              A Platform <span className="text-plotray-gold">Trusted by Investors</span>
+            </h2>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="space-y-6">
+                <div className="flex items-start gap-4 p-6 bg-card rounded-xl shadow-lg border border-border">
+                  <Shield className="w-10 h-10 text-plotray-gold flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-2">Verified Listings</h3>
+                    <p className="text-muted-foreground">Every land listing is validated before being shared</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4 p-6 bg-card rounded-xl shadow-lg border border-border">
+                  <BarChart3 className="w-10 h-10 text-plotray-gold flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-2">Data-Backed Decisions</h3>
+                    <p className="text-muted-foreground">Access market insights and location intelligence</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4 p-6 bg-card rounded-xl shadow-lg border border-border">
+                  <Handshake className="w-10 h-10 text-plotray-gold flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-foreground mb-2">Transparent Process</h3>
+                    <p className="text-muted-foreground">Clear documentation, no hidden terms</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <img src={homeInvestors} alt="Happy investors reviewing land documents" className="rounded-2xl shadow-2xl" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 10: Business Model Teaser */}
+      <section className="py-20 bg-gradient-to-br from-plotray-blue via-plotray-blue/90 to-teal/80">
+        <div className="container-custom">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="order-2 lg:order-1">
+              <img src={homeBusiness} alt="Business growth visualization" className="rounded-2xl shadow-2xl" />
+            </div>
+            <div className="order-1 lg:order-2 text-white">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6">
+                Our <span className="text-gold">Revenue Model</span> Supports Scalable Growth
+              </h2>
+              <div className="space-y-4 text-white/80 text-lg">
+                <p>Built on technology-driven land acquisition</p>
+                <p>Strategic partnerships with developers</p>
+                <p>Long-term asset holding for appreciation</p>
+                <p>Sustainable and compliant growth practices</p>
+                <p className="font-semibold text-white">Explore how we grow with you</p>
+              </div>
+              <Link to="/business-model">
+                <Button variant="hero" size="lg" className="mt-8">
+                  View Business Model
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Section 11: Final CTA */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative py-20 md:py-28 overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center" style={{
         backgroundImage: `url(${homeCta})`
       }} />
-        <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/90 via-plotray-blue/80 to-teal/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-plotray-blue/90 to-plotray-blue/70" />
         
-        <div className="container-custom relative z-10 text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6">
-            Build Wealth with Land That<br />
-            <span className="text-gold">Grows with Cities</span>
-          </h2>
-          
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/buy">
-              <Button variant="hero" size="lg" className="bg-gold hover:bg-gold/90 text-plotray-blue font-semibold text-lg px-8 animate-pulse">
-                Explore Land Opportunities
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-            </Link>
-            <Link to="/sell">
-              <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 text-lg px-8">
-                Sell Your Land to <span className="inline-flex"><span className="text-[#166534] font-bold">PLOT</span><span className="text-[#C2410C] font-bold">RAY</span></span>
-              </Button>
-            </Link>
+        <div className="container-custom relative z-10">
+          <div className="max-w-2xl">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-6">
+              Start Your Land Investment Journey Today
+            </h2>
+            <p className="text-lg text-white/90 mb-8">
+              Whether you're buying or selling, we make land transactions simple, transparent, and rewarding.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link to="/buy">
+                <Button variant="hero" size="lg" className="bg-gold hover:bg-gold/90 text-plotray-blue font-semibold text-lg px-8">
+                  Buy Land
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+              </Link>
+              <Link to="/sell">
+                <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/10 text-lg px-8">
+                  Sell Your Land to <span className="inline-flex"><span className="text-[#166534] font-bold">PLOT</span><span className="text-[#F97316] font-bold">RAY</span></span>
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
