@@ -192,7 +192,7 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
-                Sell Your Land <span className="text-orange-500">Directly</span> to <span className="text-[#166534]">PLOT</span><span className="text-[#C2410C]">RAY</span>
+                Sell Your Land <span className="text-cyan-400">Directly</span> to <span className="text-[#166534]">PLOT</span><span className="text-[#C2410C]">RAY</span>
               </h2>
               <div className="space-y-4 text-muted-foreground text-lg">
                 <p className="flex items-start gap-3">
