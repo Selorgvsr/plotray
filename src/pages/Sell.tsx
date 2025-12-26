@@ -248,7 +248,7 @@ const Sell = () => {
                 color: '#166534'
               }}>PLOT</span><span style={{
                 color: '#C2410C'
-              }}>RAY</span> is actively acquiring land assets</p>
+              }} className="text-orange-500">RAY</span> is actively acquiring land assets</p>
               <p>Early submissions receive quicker evaluations</p>
               <p>If your land is near a growing city, we want it</p>
               <p>The process takes only a few minutes</p>
