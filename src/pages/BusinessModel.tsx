@@ -15,7 +15,9 @@ const BusinessModel = () => {
   return <Layout>
       {/* Section 1: Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${businessHero})` }} />
+        <div className="absolute inset-0 bg-cover bg-center" style={{
+        backgroundImage: `url(${businessHero})`
+      }} />
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/90 via-plotray-blue/70 to-teal/60" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
         
@@ -49,7 +51,11 @@ const BusinessModel = () => {
               <div className="space-y-4">
                 {[{
                 icon: Globe,
-                text: <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> operates as a technology-driven land platform.</>,
+                text: <><span style={{
+                    color: '#166534'
+                  }} className="text-orange-500">PLOT</span><span style={{
+                    color: '#C2410C'
+                  }}>RAY</span> operates as a technology-driven land platform.</>,
                 color: "hsl(220,80%,50%)"
               }, {
                 icon: Users,
@@ -152,7 +158,11 @@ const BusinessModel = () => {
               <div className="space-y-4">
                 {[{
                 icon: MapPin,
-                text: <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> acquires land in high-growth zones.</>,
+                text: <><span style={{
+                    color: '#166534'
+                  }}>PLOT</span><span style={{
+                    color: '#C2410C'
+                  }}>RAY</span> acquires land in high-growth zones.</>,
                 color: "hsl(45,90%,45%)"
               }, {
                 icon: Target,
@@ -206,7 +216,11 @@ const BusinessModel = () => {
               <div className="space-y-4">
                 {[{
                 icon: Handshake,
-                text: <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span> partners with developers and landowners.</>,
+                text: <><span style={{
+                    color: '#166534'
+                  }}>PLOT</span><span style={{
+                    color: '#C2410C'
+                  }}>RAY</span> partners with developers and landowners.</>,
                 color: "hsl(175,70%,40%)"
               }, {
                 icon: Users,
@@ -363,7 +377,11 @@ const BusinessModel = () => {
               <div className="space-y-4">
                 {[{
                 icon: Rocket,
-                text: <><span style={{ color: '#166534' }}>PLOT</span><span style={{ color: '#C2410C' }}>RAY</span>'s model supports scalable expansion.</>,
+                text: <><span style={{
+                    color: '#166534'
+                  }}>PLOT</span><span style={{
+                    color: '#C2410C'
+                  }}>RAY</span>'s model supports scalable expansion.</>,
                 color: "hsl(220,80%,50%)"
               }, {
                 icon: MapPinned,
