@@ -87,7 +87,7 @@ const CTAExpandable = () => {
   const expandedContent = <>Building a land portfolio requires strategic planning Early entry increases appreciation potential Asset-worthy land grows with infrastructure Expert insights reduce investment risk Clear data supports confident decisions Long-term focus ensures stability <span style={{
       color: '#166534'
     }}>PLOT</span><span style={{
-      color: '#C2410C'
+      color: '#F97316'
     }}>RAY</span> supports asset planning Wealth begins with the right land</>;
   return <div className="space-y-4">
       <div className={`overflow-hidden transition-all duration-500 ease-in-out ${isExpanded ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"}`}>
@@ -120,12 +120,12 @@ const LandAsset = () => {
       }}><span style={{
           color: '#166534'
         }}>PLOT</span><span style={{
-          color: '#C2410C'
+          color: '#F97316'
         }} className="text-orange-500">RAY</span></span>{" "}helps track land value changes over time</>, "See nearby developments influencing growth", "Understand price movement clearly", "Better insights support smarter decisions", "Stay informed about your asset's performance"],
     expandedContent: <>Tracking land performance helps investors plan strategically Market movements become easier to understand with clear data Nearby infrastructure directly impacts appreciation rates <span style={{
         color: '#166534'
       }}>PLOT</span><span style={{
-        color: '#C2410C'
+        color: '#F97316'
       }}>RAY</span> visualizes these changes in a simple format Historical trends support future planning decisions Data-driven insights reduce uncertainty Clear analytics strengthen asset confidence Informed investors make stronger choices</>,
     image: landassetAnalytics,
     imageAlt: "Land analytics dashboard",
@@ -138,7 +138,7 @@ const LandAsset = () => {
       }}><span style={{
           color: '#166534'
         }}>PLOT</span><span style={{
-          color: '#C2410C'
+          color: '#F97316'
         }} className="text-orange-500">RAY</span></span>{" "}evaluates access to highways, malls, and cities</>, "Higher location scores attract buyers and investors", "Future infrastructure boosts asset value", "Make location-based decisions with confidence"],
     expandedContent: "Location is the strongest factor in land appreciation Connectivity improves usability and future demand Highways, rail access, and city proximity add strength Commercial activity increases investor interest Infrastructure projects raise long-term value potential Location scoring simplifies complex comparisons Better locations mean faster growth Strong connectivity secures asset performance",
     image: landassetLocation,
@@ -152,7 +152,7 @@ const LandAsset = () => {
       }}><span style={{
           color: '#166534'
         }}>PLOT</span><span style={{
-          color: '#C2410C'
+          color: '#F97316'
         }} className="text-orange-500">RAY</span></span> emphasizes transparency and clarity</>],
     expandedContent: "Legal clarity forms the foundation of a strong land asset Clear titles reduce future disputes and uncertainty Proper zoning ensures planned usability Verified documentation improves resale confidence Transparent records attract serious buyers Legal security protects long-term wealth Confidence begins with clarity Strong documentation strengthens asset value",
     image: landassetLegal,
@@ -223,7 +223,7 @@ It's a Growing Asset<br />
               <p><span style={{
                 color: '#166534'
               }}>PLOT</span><span style={{
-                color: '#C2410C'
+                color: '#F97316'
               }} className="text-orange-500">RAY</span> helps identify asset-worthy land</p>
               <p>Make informed decisions with expert insights</p>
               <p>Turn land into long-term wealth today</p>

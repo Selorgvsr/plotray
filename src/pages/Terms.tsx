@@ -110,7 +110,7 @@ const Terms = () => {
 
           {/* Footer Note */}
           <div className="text-center mt-8 text-sm text-muted-foreground">
-            © 2025 <span className="text-[#166534] font-bold">PLOT</span><span className="text-[#C2410C] font-bold">RAY</span>. Chennai, India. RERA Registered.
+            © 2025 <span className="text-[#166534] font-bold">PLOT</span><span className="text-[#F97316] font-bold">RAY</span>. Chennai, India. RERA Registered.
           </div>
         </div>
       </section>

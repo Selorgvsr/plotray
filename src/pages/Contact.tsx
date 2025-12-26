@@ -23,7 +23,7 @@ const supportOptions = [{
   desc: <>Explore business partnership opportunities with <span style={{
       color: '#166534'
     }}>PLOT</span><span style={{
-      color: '#C2410C'
+      color: '#F97316'
     }}>RAY</span>.</>
 }, {
   icon: Headphones,
@@ -45,7 +45,7 @@ const Contact = () => {
             <span className="text-gold"><span style={{
               color: '#166534'
             }}>PLOT</span><span style={{
-              color: '#C2410C'
+              color: '#F97316'
             }} className="text-orange-500">RAY</span></span>
           </h1>
           
