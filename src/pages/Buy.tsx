@@ -369,7 +369,7 @@ const Buy = () => {
               <div className="space-y-4 text-lg text-gray-600">
                 <p className="flex items-start gap-3">
                   <TrendingUp className="w-6 h-6 shrink-0 mt-1" />
-                  <span className="text-plotray-orange"><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> identifies locations before major price appreciation</span>
+                  <span className="text-popover-foreground"><span className="text-[#166534] font-semibold">PLOT</span><span className="text-[#C2410C] font-semibold">RAY</span> identifies locations before major price appreciation</span>
                 </p>
                 <p className="flex items-start gap-3">
                   <TrendingUp className="w-6 h-6 shrink-0 mt-1" />
