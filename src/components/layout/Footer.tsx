@@ -122,7 +122,7 @@ export const Footer = () => {
               </a>
             </div>
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} <span className="font-bold text-green-800">PLOT</span><span className="text-[#C2410C] font-bold">RAY</span>. All rights reserved.
+              © {new Date().getFullYear()} <span className="font-bold text-orange-500">PLOT</span><span className="text-[#C2410C] font-bold">RAY</span>. All rights reserved.
             </p>
           </div>
         </div>
