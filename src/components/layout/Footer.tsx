@@ -60,7 +60,7 @@ export const Footer = () => {
               <img alt="PLOTRAY - Land Investment Platform" className="h-24 md:h-32 w-auto object-contain" src="/lovable-uploads/Gemini_Generated_Image_694q4y694q4y694q-removebg-preview.png" />
               <span className="text-2xl md:text-3xl font-heading font-bold">
                 <span className="text-[#166534] text-4xl font-extrabold">PLOT</span>
-                <span className="text-[#C2410C] text-4xl font-extrabold">RAY</span>
+                <span className="text-4xl font-extrabold text-orange-500">RAY</span>
               </span>
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6 max-w-sm">
