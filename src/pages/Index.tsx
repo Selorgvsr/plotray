@@ -385,7 +385,7 @@ const Index = () => {
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
-              A Platform <span className="text-plotray-gold">Trusted by Investors</span>
+              A Company  <span className="text-plotray-gold">Trusted by Investors</span>
             </h2>
           </div>
           
@@ -423,7 +423,7 @@ const Index = () => {
       </section>
 
       {/* Section 10: Business Model Teaser */}
-      <section className="py-20 bg-gradient-to-br from-plotray-blue via-plotray-blue/90 to-teal/80 bg-accent">
+      <section className="py-20 bg-gradient-to-br from-plotray-blue via-plotray-blue/90 to-teal/80">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
