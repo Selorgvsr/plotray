@@ -423,7 +423,7 @@ const Index = () => {
       </section>
 
       {/* Section 10: Business Model Teaser */}
-      <section className="py-20 bg-gradient-to-br from-plotray-blue via-plotray-blue/90 to-teal/80">
+      <section className="py-20 bg-gradient-to-br from-plotray-blue via-plotray-blue/90 to-teal/80 bg-accent">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
