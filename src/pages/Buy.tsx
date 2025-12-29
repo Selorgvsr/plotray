@@ -19,131 +19,95 @@ import ctaImage from "@/assets/buy-cta.jpg";
 
 // Expandable content for each section
 const expandableContent = {
-  section1: [{
-    text: "Land value increases as cities expand outward."
-  }, {
-    text: "Limited supply makes land a scarce asset."
-  }, {
-    text: "Strategic locations outperform traditional investments."
-  }, {
-    text: "Land requires minimal maintenance over time."
-  }, {
-    text: "Appreciation is driven by demand, not depreciation."
-  }, {
-    text: "Location-led growth creates lasting wealth."
-  }],
-  section2: [{
-    text: "Strong road networks improve daily accessibility."
-  }, {
-    text: "Air connectivity attracts commercial development."
-  }, {
-    text: "Rail and metro reduce commute dependency."
-  }, {
-    text: "Infrastructure projects accelerate land value growth."
-  }, {
-    text: "Connected land attracts investors and end users."
-  }, {
-    text: "Connectivity strengthens long-term demand."
-  }],
-  section3: [{
-    text: "Planned layouts reduce future development issues."
-  }, {
-    text: "Utility planning avoids costly modifications."
-  }, {
-    text: "Drainage systems protect land integrity."
-  }, {
-    text: "Green landscaping improves visual appeal."
-  }, {
-    text: "Infrastructure readiness boosts buyer confidence."
-  }, {
-    text: "Well-planned land attracts premium demand."
-  }],
-  section4: [{
-    text: "Gated access enhances resident confidence."
-  }, {
-    text: "Security features attract family buyers."
-  }, {
-    text: "Organized layouts improve lifestyle appeal."
-  }, {
-    text: "Premium communities retain value longer."
-  }, {
-    text: "Future development aligns with modern living."
-  }, {
-    text: "Security-driven planning increases resale value."
-  }],
-  section5: [{
-    text: "Commercial zones create constant activity."
-  }, {
-    text: "Retail growth improves surrounding land value."
-  }, {
-    text: "Rental demand increases near malls."
-  }, {
-    text: "Commercial proximity attracts investors quickly."
-  }, {
-    text: "Footfall-driven areas appreciate faster."
-  }, {
-    text: "Commerce-backed land remains in demand."
-  }],
-  section6: [{
-    text: "Early identification delivers a pricing advantage."
-  }, {
-    text: "Government projects accelerate appreciation."
-  }, {
-    text: "Urban planning attracts future population growth."
-  }, {
-    text: "Infrastructure readiness boosts ROI potential."
-  }, {
-    text: "Growth zones evolve into prime zones."
-  }, {
-    text: "Timing defines investment success."
-  }],
-  section7: [{
-    text: "Verification removes legal uncertainty."
-  }, {
-    text: "Clear titles protect long-term ownership."
-  }, {
-    text: "Access routes are validated in advance."
-  }, {
-    text: "Buyers avoid hidden complications."
-  }, {
-    text: "Transparency builds lasting trust."
-  }, {
-    text: "Clarity improves confident decision-making."
-  }],
-  section8: [{
-    text: "Interactive maps reduce location confusion."
-  }, {
-    text: "Filters save time during comparison."
-  }, {
-    text: "Nearby infrastructure is clearly visible."
-  }, {
-    text: "Visual tools improve evaluation accuracy."
-  }, {
-    text: "Buyers shortlist faster and smarter."
-  }, {
-    text: "Technology enhances land discovery."
-  }]
+  section1: [
+    { text: "Land value increases as cities expand outward." },
+    { text: "Limited supply makes land a scarce asset." },
+    { text: "Strategic locations outperform traditional investments." },
+    { text: "Land requires minimal maintenance over time." },
+    { text: "Appreciation is driven by demand, not depreciation." },
+    { text: "Location-led growth creates lasting wealth." },
+  ],
+  section2: [
+    { text: "Strong road networks improve daily accessibility." },
+    { text: "Air connectivity attracts commercial development." },
+    { text: "Rail and metro reduce commute dependency." },
+    { text: "Infrastructure projects accelerate land value growth." },
+    { text: "Connected land attracts investors and end users." },
+    { text: "Connectivity strengthens long-term demand." },
+  ],
+  section3: [
+    { text: "Planned layouts reduce future development issues." },
+    { text: "Utility planning avoids costly modifications." },
+    { text: "Drainage systems protect land integrity." },
+    { text: "Green landscaping improves visual appeal." },
+    { text: "Infrastructure readiness boosts buyer confidence." },
+    { text: "Well-planned land attracts premium demand." },
+  ],
+  section4: [
+    { text: "Gated access enhances resident confidence." },
+    { text: "Security features attract family buyers." },
+    { text: "Organized layouts improve lifestyle appeal." },
+    { text: "Premium communities retain value longer." },
+    { text: "Future development aligns with modern living." },
+    { text: "Security-driven planning increases resale value." },
+  ],
+  section5: [
+    { text: "Commercial zones create constant activity." },
+    { text: "Retail growth improves surrounding land value." },
+    { text: "Rental demand increases near malls." },
+    { text: "Commercial proximity attracts investors quickly." },
+    { text: "Footfall-driven areas appreciate faster." },
+    { text: "Commerce-backed land remains in demand." },
+  ],
+  section6: [
+    { text: "Early identification delivers a pricing advantage." },
+    { text: "Government projects accelerate appreciation." },
+    { text: "Urban planning attracts future population growth." },
+    { text: "Infrastructure readiness boosts ROI potential." },
+    { text: "Growth zones evolve into prime zones." },
+    { text: "Timing defines investment success." },
+  ],
+  section7: [
+    { text: "Verification removes legal uncertainty." },
+    { text: "Clear titles protect long-term ownership." },
+    { text: "Access routes are validated in advance." },
+    { text: "Buyers avoid hidden complications." },
+    { text: "Transparency builds lasting trust." },
+    { text: "Clarity improves confident decision-making." },
+  ],
+  section8: [
+    { text: "Interactive maps reduce location confusion." },
+    { text: "Filters save time during comparison." },
+    { text: "Nearby infrastructure is clearly visible." },
+    { text: "Visual tools improve evaluation accuracy." },
+    { text: "Buyers shortlist faster and smarter." },
+    { text: "Technology enhances land discovery." },
+  ],
 };
+
 const Buy = () => {
-  return <Layout>
+  return (
+    <Layout>
       {/* Section 1: Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{
-        backgroundImage: `url(${heroImage})`
-      }} />
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        />
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/90 via-plotray-blue/70 to-teal/60" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
-        
+
         <div className="container-custom relative z-10 text-center pt-20">
           <div className="space-y-6 animate-fade-in text-center max-w-4xl mx-auto">
             <h1 className="text-3xl md:text-5xl font-heading font-bold text-white mb-8 leading-tight">
               Investment in Land Asset
-              <br /><br />
+              <br />
+              <br />
               Land Asset always give high returns.
             </h1>
-            
-            <div className="space-y-4 flex flex-col items-center">
-              <p className="flex items-center gap-3 ml-16">
+
+            <div className="space-y-4 flex flex-col items-start sm:items-center">
+              <p className="flex items-center gap-3 ml-0 sm:ml-16 justify-start sm:justify-center">
                 <span className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
                   <CheckCircle className="w-5 h-5 text-white" />
                 </span>
@@ -151,7 +115,7 @@ const Buy = () => {
                   We support 'Financial Peace' on Land Investment
                 </span>
               </p>
-              <p className="flex items-center gap-3 ml-8">
+              <p className="flex items-center gap-3 ml-0 sm:ml-8 justify-start sm:justify-center">
                 <span className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
                   <CheckCircle className="w-5 h-5 text-white" />
                 </span>
@@ -159,7 +123,7 @@ const Buy = () => {
                   Our Plots in Prime Locations
                 </span>
               </p>
-              <p className="flex items-center gap-3 ml-20">
+              <p className="flex items-center gap-3 ml-0 sm:ml-20 justify-start sm:justify-center">
                 <span className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
                   <CheckCircle className="w-5 h-5 text-white" />
                 </span>
@@ -167,7 +131,7 @@ const Buy = () => {
                   Clear Legal Title
                 </span>
               </p>
-              <p className="flex items-center gap-3 ml-4">
+              <p className="flex items-center gap-3 ml-0 sm:ml-4 justify-start sm:justify-center">
                 <span className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
                   <CheckCircle className="w-5 h-5 text-white" />
                 </span>
@@ -175,7 +139,7 @@ const Buy = () => {
                   Statutory Approvals from Government
                 </span>
               </p>
-              <p className="flex items-center gap-3">
+              <p className="flex items-center gap-3 ml-0 justify-start sm:justify-center">
                 <span className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
                   <CheckCircle className="w-5 h-5 text-white" />
                 </span>
@@ -185,9 +149,8 @@ const Buy = () => {
               </p>
             </div>
           </div>
-          
         </div>
-        
+
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
       </section>
 
