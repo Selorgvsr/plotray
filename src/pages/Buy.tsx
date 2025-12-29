@@ -1,19 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import {
-  ShoppingBag,
-  TrendingUp,
-  Shield,
-  Map,
-  BarChart3,
-  Route,
-  Grid3X3,
-  Lock,
-  Users,
-  ArrowRight,
-  CheckCircle,
-} from "lucide-react";
+import { ShoppingBag, TrendingUp, Shield, Map, BarChart3, Route, Grid3X3, Lock, Users, ArrowRight, CheckCircle } from "lucide-react";
 import { ExpandableSection } from "@/components/ExpandableSection";
 
 // Import all section images
@@ -31,178 +19,118 @@ import ctaImage from "@/assets/buy-cta.jpg";
 
 // Expandable content for each section
 const expandableContent = {
-  section1: [
-    {
-      text: "Land value increases as cities expand outward.",
-    },
-    {
-      text: "Limited supply makes land a scarce asset.",
-    },
-    {
-      text: "Strategic locations outperform traditional investments.",
-    },
-    {
-      text: "Land requires minimal maintenance over time.",
-    },
-    {
-      text: "Appreciation is driven by demand, not depreciation.",
-    },
-    {
-      text: "Location-led growth creates lasting wealth.",
-    },
-  ],
-  section2: [
-    {
-      text: "Strong road networks improve daily accessibility.",
-    },
-    {
-      text: "Air connectivity attracts commercial development.",
-    },
-    {
-      text: "Rail and metro reduce commute dependency.",
-    },
-    {
-      text: "Infrastructure projects accelerate land value growth.",
-    },
-    {
-      text: "Connected land attracts investors and end users.",
-    },
-    {
-      text: "Connectivity strengthens long-term demand.",
-    },
-  ],
-  section3: [
-    {
-      text: "Planned layouts reduce future development issues.",
-    },
-    {
-      text: "Utility planning avoids costly modifications.",
-    },
-    {
-      text: "Drainage systems protect land integrity.",
-    },
-    {
-      text: "Green landscaping improves visual appeal.",
-    },
-    {
-      text: "Infrastructure readiness boosts buyer confidence.",
-    },
-    {
-      text: "Well-planned land attracts premium demand.",
-    },
-  ],
-  section4: [
-    {
-      text: "Gated access enhances resident confidence.",
-    },
-    {
-      text: "Security features attract family buyers.",
-    },
-    {
-      text: "Organized layouts improve lifestyle appeal.",
-    },
-    {
-      text: "Premium communities retain value longer.",
-    },
-    {
-      text: "Future development aligns with modern living.",
-    },
-    {
-      text: "Security-driven planning increases resale value.",
-    },
-  ],
-  section5: [
-    {
-      text: "Commercial zones create constant activity.",
-    },
-    {
-      text: "Retail growth improves surrounding land value.",
-    },
-    {
-      text: "Rental demand increases near malls.",
-    },
-    {
-      text: "Commercial proximity attracts investors quickly.",
-    },
-    {
-      text: "Footfall-driven areas appreciate faster.",
-    },
-    {
-      text: "Commerce-backed land remains in demand.",
-    },
-  ],
-  section6: [
-    {
-      text: "Early identification delivers a pricing advantage.",
-    },
-    {
-      text: "Government projects accelerate appreciation.",
-    },
-    {
-      text: "Urban planning attracts future population growth.",
-    },
-    {
-      text: "Infrastructure readiness boosts ROI potential.",
-    },
-    {
-      text: "Growth zones evolve into prime zones.",
-    },
-    {
-      text: "Timing defines investment success.",
-    },
-  ],
-  section7: [
-    {
-      text: "Verification removes legal uncertainty.",
-    },
-    {
-      text: "Clear titles protect long-term ownership.",
-    },
-    {
-      text: "Access routes are validated in advance.",
-    },
-    {
-      text: "Buyers avoid hidden complications.",
-    },
-    {
-      text: "Transparency builds lasting trust.",
-    },
-    {
-      text: "Clarity improves confident decision-making.",
-    },
-  ],
-  section8: [
-    {
-      text: "Interactive maps reduce location confusion.",
-    },
-    {
-      text: "Filters save time during comparison.",
-    },
-    {
-      text: "Nearby infrastructure is clearly visible.",
-    },
-    {
-      text: "Visual tools improve evaluation accuracy.",
-    },
-    {
-      text: "Buyers shortlist faster and smarter.",
-    },
-    {
-      text: "Technology enhances land discovery.",
-    },
-  ],
+  section1: [{
+    text: "Land value increases as cities expand outward."
+  }, {
+    text: "Limited supply makes land a scarce asset."
+  }, {
+    text: "Strategic locations outperform traditional investments."
+  }, {
+    text: "Land requires minimal maintenance over time."
+  }, {
+    text: "Appreciation is driven by demand, not depreciation."
+  }, {
+    text: "Location-led growth creates lasting wealth."
+  }],
+  section2: [{
+    text: "Strong road networks improve daily accessibility."
+  }, {
+    text: "Air connectivity attracts commercial development."
+  }, {
+    text: "Rail and metro reduce commute dependency."
+  }, {
+    text: "Infrastructure projects accelerate land value growth."
+  }, {
+    text: "Connected land attracts investors and end users."
+  }, {
+    text: "Connectivity strengthens long-term demand."
+  }],
+  section3: [{
+    text: "Planned layouts reduce future development issues."
+  }, {
+    text: "Utility planning avoids costly modifications."
+  }, {
+    text: "Drainage systems protect land integrity."
+  }, {
+    text: "Green landscaping improves visual appeal."
+  }, {
+    text: "Infrastructure readiness boosts buyer confidence."
+  }, {
+    text: "Well-planned land attracts premium demand."
+  }],
+  section4: [{
+    text: "Gated access enhances resident confidence."
+  }, {
+    text: "Security features attract family buyers."
+  }, {
+    text: "Organized layouts improve lifestyle appeal."
+  }, {
+    text: "Premium communities retain value longer."
+  }, {
+    text: "Future development aligns with modern living."
+  }, {
+    text: "Security-driven planning increases resale value."
+  }],
+  section5: [{
+    text: "Commercial zones create constant activity."
+  }, {
+    text: "Retail growth improves surrounding land value."
+  }, {
+    text: "Rental demand increases near malls."
+  }, {
+    text: "Commercial proximity attracts investors quickly."
+  }, {
+    text: "Footfall-driven areas appreciate faster."
+  }, {
+    text: "Commerce-backed land remains in demand."
+  }],
+  section6: [{
+    text: "Early identification delivers a pricing advantage."
+  }, {
+    text: "Government projects accelerate appreciation."
+  }, {
+    text: "Urban planning attracts future population growth."
+  }, {
+    text: "Infrastructure readiness boosts ROI potential."
+  }, {
+    text: "Growth zones evolve into prime zones."
+  }, {
+    text: "Timing defines investment success."
+  }],
+  section7: [{
+    text: "Verification removes legal uncertainty."
+  }, {
+    text: "Clear titles protect long-term ownership."
+  }, {
+    text: "Access routes are validated in advance."
+  }, {
+    text: "Buyers avoid hidden complications."
+  }, {
+    text: "Transparency builds lasting trust."
+  }, {
+    text: "Clarity improves confident decision-making."
+  }],
+  section8: [{
+    text: "Interactive maps reduce location confusion."
+  }, {
+    text: "Filters save time during comparison."
+  }, {
+    text: "Nearby infrastructure is clearly visible."
+  }, {
+    text: "Visual tools improve evaluation accuracy."
+  }, {
+    text: "Buyers shortlist faster and smarter."
+  }, {
+    text: "Technology enhances land discovery."
+  }]
 };
 const Buy = () => {
-  return (
-    <Layout>
+  return <Layout>
       {/* Section 1: Hero */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url(${heroImage})`,
-          }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center" style={{
+        backgroundImage: `url(${heroImage})`
+      }} />
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/90 via-plotray-blue/70 to-teal/60" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
 
@@ -296,11 +224,7 @@ const Buy = () => {
               <ExpandableSection items={expandableContent.section1} />
             </div>
             <div className="relative">
-              <img
-                src={appreciationImage}
-                alt="Land appreciation visualization"
-                className="rounded-2xl shadow-2xl w-full"
-              />
+              <img src={appreciationImage} alt="Land appreciation visualization" className="rounded-2xl shadow-2xl w-full" />
               <div className="absolute -bottom-4 -right-4 w-40 h-40 bg-gold/30 rounded-full blur-3xl" />
             </div>
           </div>
@@ -312,11 +236,7 @@ const Buy = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 relative">
-              <img
-                src={connectivityImage}
-                alt="Infrastructure connectivity"
-                className="rounded-2xl shadow-2xl w-full"
-              />
+              <img src={connectivityImage} alt="Infrastructure connectivity" className="rounded-2xl shadow-2xl w-full" />
             </div>
             <div className="order-1 lg:order-2 animate-fade-in">
               <h2 className="font-heading text-4xl md:text-5xl font-bold mb-8 text-card-foreground">
@@ -383,11 +303,7 @@ const Buy = () => {
               <ExpandableSection items={expandableContent.section3} />
             </div>
             <div className="relative">
-              <img
-                alt="Community layout plan"
-                className="rounded-2xl shadow-2xl w-full bg-white"
-                src="/lovable-uploads/0f771d53-07fa-4b1c-8e47-479da1e9ea3b.jpg"
-              />
+              <img alt="Community layout plan" className="rounded-2xl shadow-2xl w-full bg-white" src="/lovable-uploads/0f771d53-07fa-4b1c-8e47-479da1e9ea3b.jpg" />
             </div>
           </div>
         </div>
@@ -398,11 +314,7 @@ const Buy = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 relative">
-              <img
-                alt="Gated community entrance"
-                className="rounded-2xl shadow-2xl w-full"
-                src="/lovable-uploads/75069692-4b85-4e68-a094-bb54435cd167.jpg"
-              />
+              <img alt="Gated community entrance" className="rounded-2xl shadow-2xl w-full" src="/lovable-uploads/75069692-4b85-4e68-a094-bb54435cd167.jpg" />
               <div className="absolute top-4 left-4 bg-gold text-primary-foreground px-4 py-2 rounded-full text-sm font-semibold">
                 Premium Living
               </div>
@@ -521,11 +433,7 @@ const Buy = () => {
               <ExpandableSection items={expandableContent.section7} />
             </div>
             <div className="relative">
-              <img
-                alt="Verified listings dashboard"
-                className="rounded-2xl shadow-2xl w-full"
-                src="/lovable-uploads/ad6711f3-56ad-4f81-a739-e76a174e32b3.jpg"
-              />
+              <img alt="Verified listings dashboard" className="rounded-2xl shadow-2xl w-full" src="/lovable-uploads/ad6711f3-56ad-4f81-a739-e76a174e32b3.jpg" />
             </div>
           </div>
         </div>
@@ -626,12 +534,9 @@ const Buy = () => {
 
       {/* Section 11: Final CTA */}
       <section className="relative py-24 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url(${ctaImage})`,
-          }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center" style={{
+        backgroundImage: `url(${ctaImage})`
+      }} />
         <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/80 to-teal/70" />
 
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
@@ -640,7 +545,7 @@ const Buy = () => {
           </h2>
           <div className="max-w-3xl mx-auto space-y-4 text-xl text-white/90 mb-10">
             <p>Infrastructure-backed land delivers returns</p>
-            <p className="text-plotray-orange">
+            <p className="text-primary-foreground">
               <span className="text-[#166534] font-semibold">PLOT</span>
               <span className="text-[#C2410C] font-semibold">RAY</span> curates future-ready locations
             </p>
@@ -654,12 +559,7 @@ const Buy = () => {
                 Explore Projects
               </Link>
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 bg-white/10 border-white text-white hover:bg-white hover:text-primary"
-              asChild
-            >
+            <Button size="lg" variant="outline" className="text-lg px-8 bg-white/10 border-white text-white hover:bg-white hover:text-primary" asChild>
               <Link to="/contact">
                 Contact Us
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -668,7 +568,6 @@ const Buy = () => {
           </div>
         </div>
       </section>
-    </Layout>
-  );
+    </Layout>;
 };
 export default Buy;
