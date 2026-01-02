@@ -198,15 +198,29 @@ const Projects = () => {
               </div>
             </div>
 
-            {/* Desktop: Grid of all images */}
-            <div className="hidden lg:block flex-1 overflow-auto p-6">
-              <div className="grid grid-cols-2 gap-6">
-                {projectSlides.map((slide, index) => (
-                  <div key={index} className="flex flex-col gap-2">
-                    <h3 className="text-lg font-heading font-semibold text-foreground">{slide.title}</h3>
-                    <img src={slide.image} alt={slide.title} className="w-full h-auto object-contain rounded-lg shadow-lg" />
-                  </div>
-                ))}
+            {/* Desktop: Single slide with navigation */}
+            <div className="hidden lg:flex flex-1 overflow-hidden relative items-center justify-center p-6">
+              {/* Left Arrow Button */}
+              <button onClick={handlePrevSlide} disabled={currentSlide === 0} className={`absolute left-6 top-1/2 -translate-y-1/2 z-10 w-14 h-14 rounded-full bg-primary/90 hover:bg-primary text-primary-foreground flex items-center justify-center shadow-lg transition-all duration-300 ${currentSlide === 0 ? 'opacity-30 cursor-not-allowed' : 'opacity-70 hover:opacity-100 hover:scale-110'}`}>
+                <ChevronLeft className="w-7 h-7" />
+              </button>
+
+              {/* Right Arrow Button */}
+              <button onClick={handleNextSlide} disabled={currentSlide === projectSlides.length - 1} className={`absolute right-6 top-1/2 -translate-y-1/2 z-10 w-14 h-14 rounded-full bg-primary/90 hover:bg-primary text-primary-foreground flex items-center justify-center shadow-lg transition-all duration-300 ${currentSlide === projectSlides.length - 1 ? 'opacity-30 cursor-not-allowed' : 'opacity-70 hover:opacity-100 hover:scale-110'}`}>
+                <ChevronRight className="w-7 h-7" />
+              </button>
+
+              {/* Slide Content */}
+              <div className="flex flex-col items-center gap-4 max-w-4xl w-full">
+                <h3 className="text-2xl font-heading font-bold text-foreground">{projectSlides[currentSlide].title}</h3>
+                <img src={projectSlides[currentSlide].image} alt={projectSlides[currentSlide].title} className="max-w-full max-h-[60vh] object-contain rounded-lg shadow-xl" />
+                
+                {/* Dots indicator */}
+                <div className="flex gap-3 mt-4">
+                  {projectSlides.map((_, index) => (
+                    <button key={index} onClick={() => setCurrentSlide(index)} className={`w-4 h-4 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-primary scale-125' : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'}`} />
+                  ))}
+                </div>
               </div>
             </div>
 
