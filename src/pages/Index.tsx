@@ -26,43 +26,43 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/90 via-plotray-blue/70 to-teal/60" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
         
-        <div className="container-custom relative z-10 text-center pt-20">
+        <div className="container-custom relative z-10 text-center pt-16 md:pt-20 px-4">
           <div className="animate-fade-in">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-8 leading-tight">
-              We support '<span className="text-gold bg-gold/20 px-2 py-1 rounded">Financial Peace</span>' on Land Investment
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-white mb-6 md:mb-8 leading-tight">
+              We support '<span className="text-gold bg-gold/20 px-1 sm:px-2 py-1 rounded">Financial Peace</span>' on Land Investment
             </h1>
             
-            <div className="max-w-5xl mx-auto space-y-5 text-left md:text-center">
-              <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-white flex items-center justify-center gap-3">
-                <CheckCircle className="w-7 h-7 md:w-8 md:h-8 flex-shrink-0" />
-                <span className="bg-[#1E52F1] px-4 py-2 rounded-lg">Our Plots in Prime Locations</span>
+            <div className="max-w-5xl mx-auto space-y-3 sm:space-y-5 text-left md:text-center">
+              <p className="text-base sm:text-xl md:text-3xl lg:text-4xl font-medium text-white flex items-center gap-2 sm:gap-3 md:justify-center">
+                <CheckCircle className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 flex-shrink-0" />
+                <span className="bg-[#1E52F1] px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg text-sm sm:text-base md:text-xl lg:text-2xl">Our Plots in Prime Locations</span>
               </p>
-              <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-white flex items-center justify-center gap-3">
-                <CheckCircle className="w-7 h-7 md:w-8 md:h-8 flex-shrink-0" />
-                <span className="bg-[#1E52F1] px-4 py-2 rounded-lg">Clear Legal Title</span>
+              <p className="text-base sm:text-xl md:text-3xl lg:text-4xl font-medium text-white flex items-center gap-2 sm:gap-3 md:justify-center">
+                <CheckCircle className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 flex-shrink-0" />
+                <span className="bg-[#1E52F1] px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg text-sm sm:text-base md:text-xl lg:text-2xl">Clear Legal Title</span>
               </p>
-              <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-white flex items-center justify-center gap-3">
-                <CheckCircle className="w-7 h-7 md:w-8 md:h-8 flex-shrink-0" />
-                <span className="bg-[#1E52F1] px-4 py-2 rounded-lg">Statutory Approvals from Government</span>
+              <p className="text-base sm:text-xl md:text-3xl lg:text-4xl font-medium text-white flex items-center gap-2 sm:gap-3 md:justify-center">
+                <CheckCircle className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 flex-shrink-0" />
+                <span className="bg-[#1E52F1] px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg text-sm sm:text-base md:text-xl lg:text-2xl">Statutory Approvals from Government</span>
               </p>
-              <p className="text-2xl md:text-3xl lg:text-4xl font-medium text-white flex items-center justify-center gap-3">
-                <CheckCircle className="w-7 h-7 md:w-8 md:h-8 flex-shrink-0" />
-                <span className="bg-[#1E52F1] px-4 py-2 rounded-lg">Investment in our Prime Land is always Appreciating</span>
+              <p className="text-base sm:text-xl md:text-3xl lg:text-4xl font-medium text-white flex items-center gap-2 sm:gap-3 md:justify-center">
+                <CheckCircle className="w-5 h-5 sm:w-7 sm:h-7 md:w-8 md:h-8 flex-shrink-0" />
+                <span className="bg-[#1E52F1] px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg text-sm sm:text-base md:text-xl lg:text-2xl">Investment in our Prime Land is always Appreciating</span>
               </p>
             </div>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12 animate-fade-in" style={{
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mt-8 md:mt-12 animate-fade-in" style={{
           animationDelay: '0.3s'
         }}>
             <Link to="/buy">
-              <Button variant="hero" size="lg" className="bg-gold hover:bg-gold/90 text-plotray-blue font-semibold text-lg px-8">
+              <Button variant="hero" size="lg" className="bg-gold hover:bg-gold/90 text-plotray-blue font-semibold text-base sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
                 Buy Land
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>
             <Link to="/sell">
-            <Button variant="outline" size="lg" className="bg-plotray-blue/80 border-white/30 text-white hover:bg-plotray-blue/90 text-lg px-8">
+            <Button variant="outline" size="lg" className="bg-plotray-blue/80 border-white/30 text-white hover:bg-plotray-blue/90 text-base sm:text-lg px-6 sm:px-8 w-full sm:w-auto">
               Sell Land to <span className="inline-flex"><span className="text-[#166534] font-bold">PLOT</span><span className="text-[#F97316] font-bold">RAY</span></span>
             </Button>
             </Link>
@@ -74,44 +74,44 @@ const Index = () => {
       </section>
 
       {/* Ad Banner Card Sliding Section */}
-      <section className="relative w-full py-12 md:py-16 bg-gradient-to-br from-muted/50 via-background to-muted/30 overflow-hidden">
-        <div className="container-custom">
+      <section className="relative w-full py-8 sm:py-12 md:py-16 bg-gradient-to-br from-muted/50 via-background to-muted/30 overflow-hidden">
+        <div className="container-custom px-4">
           <div className="relative">
             {/* Animated Sliding Banner Card */}
             <div className="animate-[slideInFromRight_1s_ease-out_forwards] opacity-0" style={{
             animationFillMode: 'forwards'
           }}>
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 group cursor-pointer transform hover:scale-[1.02]">
+              <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 group cursor-pointer transform hover:scale-[1.02]">
                 {/* Banner Image */}
-                <div className="relative aspect-[21/9] md:aspect-[3/1]">
+                <div className="relative aspect-[16/10] sm:aspect-[21/9] md:aspect-[3/1]">
                   <img src={kilambakkamBanner} alt="Book Your Villa Plot in Kilambakkam - Near to Kilambakkam Bus Terminus" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                   {/* Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent sm:from-black/60 sm:via-black/30" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent sm:from-black/50" />
                 </div>
                 
                 {/* Card Content Overlay */}
-                <div className="absolute inset-0 flex flex-col justify-center p-6 md:p-12">
+                <div className="absolute inset-0 flex flex-col justify-end sm:justify-center p-4 sm:p-6 md:p-12">
                   <div className="max-w-xl">
-                    <span className="inline-block px-3 py-1 bg-gold/90 text-plotray-blue text-xs md:text-sm font-semibold rounded-full mb-4 animate-pulse text-[#166434] bg-lime-400">
+                    <span className="inline-block px-2 sm:px-3 py-0.5 sm:py-1 bg-lime-400 text-[#166434] text-[10px] sm:text-xs md:text-sm font-semibold rounded-full mb-2 sm:mb-4 animate-pulse">
                       Featured Project
                     </span>
-                    <h3 className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-3 leading-tight">
+                    <h3 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-white mb-1.5 sm:mb-3 leading-tight">
                       Villa Plots in Kilambakkam
                     </h3>
-                    <p className="text-white/80 text-sm md:text-lg mb-6 max-w-md">Premium plots near Kilambakkam Bus Terminus Excellent connectivity & appreciation potential</p>
+                    <p className="text-white/80 text-xs sm:text-sm md:text-lg mb-3 sm:mb-6 max-w-md line-clamp-2 sm:line-clamp-none">Premium plots near Kilambakkam Bus Terminus Excellent connectivity & appreciation potential</p>
                     <Link to="/contact">
-                      <Button size="lg" className="bg-[#f97316] hover:bg-[#f97316]/90 text-[#ffffff] font-bold text-base md:text-lg px-6 md:px-10 py-3 md:py-6 shadow-2xl hover:shadow-[#f97316]/40 transition-all duration-300 hover:scale-105">
+                      <Button size="default" className="bg-[#f97316] hover:bg-[#f97316]/90 text-white font-bold text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-10 py-2 sm:py-3 md:py-6 shadow-2xl hover:shadow-[#f97316]/40 transition-all duration-300 hover:scale-105">
                         Book Now
-                        <ArrowRight className="ml-2 w-5 h-5" />
+                        <ArrowRight className="ml-1.5 sm:ml-2 w-4 h-4 sm:w-5 sm:h-5" />
                       </Button>
                     </Link>
                   </div>
                 </div>
 
-                {/* Decorative Elements */}
-                <div className="absolute top-4 right-4 w-20 h-20 border-2 border-gold/30 rounded-full animate-ping opacity-20" />
-                <div className="absolute bottom-4 right-8 w-12 h-12 bg-gold/20 rounded-full blur-xl" />
+                {/* Decorative Elements - Hidden on mobile */}
+                <div className="hidden sm:block absolute top-4 right-4 w-20 h-20 border-2 border-gold/30 rounded-full animate-ping opacity-20" />
+                <div className="hidden sm:block absolute bottom-4 right-8 w-12 h-12 bg-gold/20 rounded-full blur-xl" />
               </div>
             </div>
           </div>
