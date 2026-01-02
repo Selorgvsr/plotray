@@ -72,65 +72,65 @@ const Projects = () => {
           <img alt="PLOTRAY Projects" className="w-full h-full object-cover" src="/lovable-uploads/f5b07c18-af7b-460b-988e-ae4512daee05.jpg" />
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/80 via-plotray-blue/60 to-teal/50" />
-        <div className="container-custom relative z-10 text-center pt-20">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 animate-fade-in leading-tight">
-            ​Invest in Villa Plot <br />
+        <div className="container-custom relative z-10 text-center pt-16 md:pt-20 px-4">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-4 md:mb-6 animate-fade-in leading-tight">
+            ​Invest in Villa Plot
           </h1>
           
           <p style={{
           animationDelay: '0.2s'
-        }} className="text-lg max-w-2xl mx-auto mb-8 animate-fade-in text-primary-foreground md:text-4xl font-bold">Investing in land brings financial peace and lasting growth</p>
+        }} className="text-base sm:text-lg md:text-4xl max-w-2xl mx-auto mb-6 md:mb-8 animate-fade-in text-primary-foreground font-bold px-2">Investing in land brings financial peace and lasting growth</p>
           
-          <div className="flex flex-col items-center gap-4 mt-8 animate-fade-in" style={{
+          <div className="flex flex-col items-center gap-2 sm:gap-3 md:gap-4 mt-6 md:mt-8 animate-fade-in px-2" style={{
           animationDelay: '0.3s'
         }}>
-            <div className="flex items-center gap-3 ml-24">
-              <div className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center">
-                <CheckCircle className="w-6 h-6 text-white" />
+            <div className="flex items-center gap-2 md:gap-3 md:ml-24">
+              <div className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white flex items-center justify-center shrink-0">
+                <CheckCircle className="w-4 h-4 md:w-6 md:h-6 text-white" />
               </div>
-              <span className="text-white text-lg md:text-2xl font-semibold px-6 py-2 rounded-full bg-fuchsia-600">
+              <span className="text-white text-sm sm:text-base md:text-2xl font-semibold px-3 sm:px-4 md:px-6 py-1.5 md:py-2 rounded-full bg-fuchsia-600">
                 Our Plots in Prime Locations
               </span>
             </div>
-            <div className="flex items-center gap-3 ml-12">
-              <div className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center">
-                <CheckCircle className="w-6 h-6 text-white" />
+            <div className="flex items-center gap-2 md:gap-3 md:ml-12">
+              <div className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white flex items-center justify-center shrink-0">
+                <CheckCircle className="w-4 h-4 md:w-6 md:h-6 text-white" />
               </div>
-              <span className="text-white text-lg md:text-2xl font-semibold px-6 py-2 rounded-full bg-fuchsia-600">
+              <span className="text-white text-sm sm:text-base md:text-2xl font-semibold px-3 sm:px-4 md:px-6 py-1.5 md:py-2 rounded-full bg-fuchsia-600">
                 Clear Legal Title
               </span>
             </div>
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center">
-                <CheckCircle className="w-6 h-6 text-white" />
+            <div className="flex items-center gap-2 md:gap-3">
+              <div className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white flex items-center justify-center shrink-0">
+                <CheckCircle className="w-4 h-4 md:w-6 md:h-6 text-white" />
               </div>
-              <span className="text-white text-lg md:text-2xl font-semibold px-6 py-2 rounded-full bg-fuchsia-600">
+              <span className="text-white text-sm sm:text-base md:text-2xl font-semibold px-3 sm:px-4 md:px-6 py-1.5 md:py-2 rounded-full bg-fuchsia-600 text-center">
                 Statutory Approvals from Government
               </span>
             </div>
-            <div className="flex items-center gap-3 mr-12">
-              <div className="w-10 h-10 rounded-full border-2 border-white flex items-center justify-center">
-                <CheckCircle className="w-6 h-6 text-white" />
+            <div className="flex items-center gap-2 md:gap-3 md:mr-12">
+              <div className="w-8 h-8 md:w-10 md:h-10 rounded-full border-2 border-white flex items-center justify-center shrink-0">
+                <CheckCircle className="w-4 h-4 md:w-6 md:h-6 text-white" />
               </div>
-              <span className="text-white text-lg md:text-2xl font-semibold px-6 py-2 rounded-full bg-fuchsia-600">
+              <span className="text-white text-sm sm:text-base md:text-2xl font-semibold px-3 sm:px-4 md:px-6 py-1.5 md:py-2 rounded-full bg-fuchsia-600 text-center">
                 Investment in our Prime Land is always Appreciating
               </span>
             </div>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8 animate-fade-in" style={{
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mt-6 md:mt-8 animate-fade-in" style={{
           animationDelay: '0.3s'
         }}>
-            <Button variant="hero" size="lg" className="bg-gold hover:bg-gold/90 text-plotray-blue font-semibold text-lg px-8" onClick={() => document.getElementById('projects-section')?.scrollIntoView({
+            <Button variant="hero" size="lg" className="bg-gold hover:bg-gold/90 text-plotray-blue font-semibold text-base md:text-lg px-6 md:px-8" onClick={() => document.getElementById('projects-section')?.scrollIntoView({
             behavior: 'smooth'
           })}>
-              <Building2 className="w-5 h-5 mr-2" />
+              <Building2 className="w-4 h-4 md:w-5 md:h-5 mr-2" />
               Explore Projects
             </Button>
           </div>
         </div>
         
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-24 md:h-32 bg-gradient-to-t from-background to-transparent" />
       </section>
 
       {/* Featured Projects */}

@@ -134,53 +134,52 @@ const Buy = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/90 via-plotray-blue/70 to-teal/60" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(45,212,191,0.2),transparent_50%)]" />
 
-        <div className="container-custom relative z-10 text-center pt-20">
-          <div className="space-y-6 animate-fade-in text-center max-w-4xl mx-auto">
-            <h1 className="text-3xl md:text-5xl font-heading font-bold text-white mb-8 leading-tight">
+        <div className="container-custom relative z-10 text-center pt-16 md:pt-20 px-4">
+          <div className="space-y-4 md:space-y-6 animate-fade-in text-center max-w-4xl mx-auto">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl font-heading font-bold text-white mb-4 md:mb-8 leading-tight">
               Investment in Land Asset
-              <br />
-              <br />
-              Land Asset always give high returns.
+              <br className="hidden sm:block" />
+              <span className="block mt-2 md:mt-4">Land Asset always give high returns.</span>
             </h1>
 
-            <div className="space-y-4 flex flex-col items-center">
-              <p className="flex items-center gap-3 ml-16">
-                <span className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
-                  <CheckCircle className="w-5 h-5 text-white" />
+            <div className="space-y-2 sm:space-y-3 md:space-y-4 flex flex-col items-center px-2">
+              <p className="flex items-center gap-2 md:gap-3 md:ml-16">
+                <span className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
+                  <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white" />
                 </span>
-                <span className="text-[#166534] font-semibold text-2xl md:text-3xl">
+                <span className="text-[#166534] font-semibold text-base sm:text-xl md:text-2xl lg:text-3xl text-left">
                   We support 'Financial Peace' on Land Investment
                 </span>
               </p>
-              <p className="flex items-center gap-3 ml-8">
-                <span className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
-                  <CheckCircle className="w-5 h-5 text-white" />
+              <p className="flex items-center gap-2 md:gap-3 md:ml-8">
+                <span className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
+                  <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white" />
                 </span>
-                <span className="text-white font-semibold text-lg md:text-xl px-6 py-3 rounded-full bg-orange-600">
+                <span className="text-white font-semibold text-sm sm:text-base md:text-lg lg:text-xl px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-3 rounded-full bg-orange-600">
                   Our Plots in Prime Locations
                 </span>
               </p>
-              <p className="flex items-center gap-3 ml-20">
-                <span className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
-                  <CheckCircle className="w-5 h-5 text-white" />
+              <p className="flex items-center gap-2 md:gap-3 md:ml-20">
+                <span className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
+                  <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white" />
                 </span>
-                <span className="text-white font-semibold text-lg md:text-xl px-6 py-3 rounded-full bg-orange-600">
+                <span className="text-white font-semibold text-sm sm:text-base md:text-lg lg:text-xl px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-3 rounded-full bg-orange-600">
                   Clear Legal Title
                 </span>
               </p>
-              <p className="flex items-center gap-3 ml-4">
-                <span className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
-                  <CheckCircle className="w-5 h-5 text-white" />
+              <p className="flex items-center gap-2 md:gap-3 md:ml-4">
+                <span className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
+                  <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white" />
                 </span>
-                <span className="text-white font-semibold text-lg md:text-xl px-6 py-3 rounded-full bg-orange-600">
+                <span className="text-white font-semibold text-sm sm:text-base md:text-lg lg:text-xl px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-3 rounded-full bg-orange-600 text-center">
                   Statutory Approvals from Government
                 </span>
               </p>
-              <p className="flex items-center gap-3">
-                <span className="w-8 h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
-                  <CheckCircle className="w-5 h-5 text-white" />
+              <p className="flex items-center gap-2 md:gap-3">
+                <span className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 rounded-full border-2 border-white flex items-center justify-center shrink-0">
+                  <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5 text-white" />
                 </span>
-                <span className="text-white font-semibold text-lg md:text-xl px-6 py-3 rounded-full bg-orange-600">
+                <span className="text-white font-semibold text-sm sm:text-base md:text-lg lg:text-xl px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-3 rounded-full bg-orange-600 text-center">
                   Investment in our Prime Land is always Appreciating
                 </span>
               </p>
@@ -188,7 +187,7 @@ const Buy = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-24 md:h-32 bg-gradient-to-t from-background to-transparent" />
       </section>
 
       {/* Section 2: Land as High-Appreciating Asset */}
