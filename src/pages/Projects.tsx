@@ -180,15 +180,16 @@ const Projects = () => {
 
       {/* Project Details Dialog */}
       <Dialog open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-        <DialogContent className="w-full max-w-2xl lg:max-w-4xl p-0 overflow-hidden max-h-[90vh]">
+        <DialogContent className="w-full max-w-2xl lg:max-w-6xl p-0 overflow-hidden max-h-[90vh]">
           <div className="relative h-full flex flex-col">
             {/* Header */}
             <div className="flex items-center justify-between p-4 border-b border-border bg-background">
               <h2 className="text-xl font-heading font-bold text-foreground">
-                {projectSlides[currentSlide].title}
+                <span className="hidden lg:inline">Project Gallery</span>
+                <span className="lg:hidden">{projectSlides[currentSlide].title}</span>
               </h2>
               <div className="flex items-center gap-3">
-                <span className="text-sm text-muted-foreground">
+                <span className="text-sm text-muted-foreground lg:hidden">
                   {currentSlide + 1} / {projectSlides.length}
                 </span>
                 <Button variant="ghost" size="icon" onClick={() => setIsSheetOpen(false)} className="hover:bg-muted">
@@ -197,8 +198,20 @@ const Projects = () => {
               </div>
             </div>
 
-            {/* Slide Content */}
-            <div className="flex-1 overflow-hidden relative group">
+            {/* Desktop: Grid of all images */}
+            <div className="hidden lg:block flex-1 overflow-auto p-6">
+              <div className="grid grid-cols-2 gap-6">
+                {projectSlides.map((slide, index) => (
+                  <div key={index} className="flex flex-col gap-2">
+                    <h3 className="text-lg font-heading font-semibold text-foreground">{slide.title}</h3>
+                    <img src={slide.image} alt={slide.title} className="w-full h-auto object-contain rounded-lg shadow-lg" />
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Mobile: Slider */}
+            <div className="lg:hidden flex-1 overflow-hidden relative group">
               {/* Left Arrow Button */}
               <button onClick={handlePrevSlide} disabled={currentSlide === 0} className={`absolute left-2 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-primary/90 hover:bg-primary text-primary-foreground flex items-center justify-center shadow-lg transition-all duration-300 ${currentSlide === 0 ? 'opacity-30 cursor-not-allowed' : 'opacity-70 hover:opacity-100 hover:scale-110'}`}>
                 <ChevronLeft className="w-6 h-6" />
@@ -218,8 +231,8 @@ const Projects = () => {
               </div>
             </div>
 
-            {/* Navigation */}
-            <div className="flex items-center justify-between p-4 border-t border-border bg-background">
+            {/* Mobile Navigation */}
+            <div className="lg:hidden flex items-center justify-between p-4 border-t border-border bg-background">
               <Button variant="outline" onClick={handlePrevSlide} disabled={currentSlide === 0} className="gap-2 min-w-[120px]">
                 <ChevronLeft className="w-4 h-4" />
                 Previous
