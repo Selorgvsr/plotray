@@ -211,9 +211,9 @@ const Projects = () => {
               </button>
 
               {/* Slide Content */}
-              <div className="flex flex-col items-center gap-4 max-w-4xl w-full">
+              <div className="flex flex-col items-center gap-4 w-full h-full px-16">
                 <h3 className="text-2xl font-heading font-bold text-foreground">{projectSlides[currentSlide].title}</h3>
-                <img src={projectSlides[currentSlide].image} alt={projectSlides[currentSlide].title} className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-xl" />
+                <img src={projectSlides[currentSlide].image} alt={projectSlides[currentSlide].title} className="w-full h-full object-contain rounded-lg shadow-xl" />
                 
                 {/* Dots indicator */}
                 <div className="flex gap-3 mt-4">
