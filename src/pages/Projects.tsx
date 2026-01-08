@@ -180,7 +180,7 @@ const Projects = () => {
 
       {/* Project Details Dialog */}
       <Dialog open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-        <DialogContent className="w-full max-w-2xl lg:max-w-6xl p-0 overflow-hidden max-h-[90vh]">
+        <DialogContent className="w-[95vw] h-[95vh] max-w-none p-0 overflow-hidden">
           <div className="relative h-full flex flex-col">
             {/* Header */}
             <div className="flex items-center justify-between p-4 border-b border-border bg-background">
@@ -213,7 +213,7 @@ const Projects = () => {
               {/* Slide Content */}
               <div className="flex flex-col items-center gap-4 max-w-4xl w-full">
                 <h3 className="text-2xl font-heading font-bold text-foreground">{projectSlides[currentSlide].title}</h3>
-                <img src={projectSlides[currentSlide].image} alt={projectSlides[currentSlide].title} className="w-full max-h-[75vh] object-contain rounded-lg shadow-xl" />
+                <img src={projectSlides[currentSlide].image} alt={projectSlides[currentSlide].title} className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-xl" />
                 
                 {/* Dots indicator */}
                 <div className="flex gap-3 mt-4">
