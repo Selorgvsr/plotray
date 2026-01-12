@@ -443,7 +443,7 @@ const Buy = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 relative">
-              <img src={mapImage} alt="Interactive map interface" className="rounded-2xl shadow-2xl w-full" />
+              <img alt="Interactive map interface" className="rounded-2xl shadow-2xl w-full" src="/lovable-uploads/44fb5be7-cfc3-432f-9ab1-c037a73294ea.jpg" />
             </div>
             <div className="order-1 lg:order-2 animate-fade-in">
               <h2 className="font-heading text-4xl md:text-5xl font-bold text-primary mb-8">
