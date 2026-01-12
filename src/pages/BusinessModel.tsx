@@ -259,24 +259,7 @@ const BusinessModel = () => {
                   <img src={businessPartnership} alt="Project Partnerships" className="w-full h-auto" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220,70%,15%)]/30 via-transparent to-transparent" />
                   
-                  <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-white/90 backdrop-blur-md shadow-lg border border-white/50">
-                    <div className="flex items-center justify-between">
-                      <div className="text-center">
-                        <p className="text-xs text-muted-foreground">Partners</p>
-                        <p className="text-xl font-bold text-[hsl(175,70%,40%)]">100+</p>
-                      </div>
-                      <div className="h-10 w-px bg-border" />
-                      <div className="text-center">
-                        <p className="text-xs text-muted-foreground">Projects</p>
-                        <p className="text-xl font-bold text-[hsl(220,80%,50%)]">50+</p>
-                      </div>
-                      <div className="h-10 w-px bg-border" />
-                      <div className="text-center">
-                        <p className="text-xs text-muted-foreground">Value</p>
-                        <p className="text-xl font-bold text-[hsl(45,90%,45%)]">₹500Cr+</p>
-                      </div>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>
