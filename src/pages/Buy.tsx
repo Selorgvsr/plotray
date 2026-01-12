@@ -235,7 +235,7 @@ const Buy = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 relative">
-              <img src={connectivityImage} alt="Infrastructure connectivity" className="rounded-2xl shadow-2xl w-full" />
+              <img alt="Infrastructure connectivity" className="rounded-2xl shadow-2xl w-full" src="/lovable-uploads/11f789de-7618-48ef-a968-7d392a3a06af.jpg" />
             </div>
             <div className="order-1 lg:order-2 animate-fade-in">
               <h2 className="font-heading text-4xl md:text-5xl font-bold mb-8 text-card-foreground">
