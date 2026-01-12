@@ -42,9 +42,7 @@ const ExpandableSection = ({
             <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
               <img src={image} alt={imageAlt} className="w-full h-[400px] object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-              <div className="absolute top-4 left-4 bg-gradient-to-r from-plotray-emerald to-plotray-teal text-white p-3 rounded-full shadow-lg">
-                {icon}
-              </div>
+              
             </div>
           </div>
 
