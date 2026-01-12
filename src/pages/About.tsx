@@ -173,31 +173,7 @@ const About = () => {
       </section>
 
       {/* Section 5: What Makes PLOTRAY Different */}
-      <section className="section-padding bg-background">
-        <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-2xl">
-              <img src={aboutDifferent} alt="What Makes PLOTRAY Different" className="w-full h-auto object-cover" />
-            </div>
-            
-            <div className="order-1 lg:order-2">
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
-                What Makes <span className="text-green-800">PLOT</span><span className="text-[#C2410C]">RAY</span> <span className="text-plotray-gold">Different</span>
-              </h2>
-              <div className="space-y-4">
-                {differentiators.map((item, index) => <div key={index} className="flex items-center gap-4 p-4 rounded-xl bg-[hsl(220,60%,97%)] hover:bg-[hsl(220,60%,95%)] transition-colors" style={{
-                animationDelay: `${index * 0.1}s`
-              }}>
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[hsl(220,60%,40%)] to-[hsl(220,60%,25%)] flex items-center justify-center shrink-0">
-                      <item.icon className="w-6 h-6 text-white" />
-                    </div>
-                    <span className="text-foreground font-medium">{item.text}</span>
-                  </div>)}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Section 6: Land as Asset Philosophy */}
       <section className="section-padding bg-[hsl(220,60%,97%)]">
