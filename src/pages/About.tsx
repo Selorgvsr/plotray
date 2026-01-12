@@ -219,7 +219,7 @@ const About = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 rounded-2xl overflow-hidden shadow-2xl">
-              <img src={aboutEsg} alt="Sustainability & ESG" className="w-full h-auto object-cover" />
+              <img alt="Sustainability & ESG" className="w-full h-auto object-cover" src="/lovable-uploads/0bcff4c1-f72a-42a9-bd90-ed3c8957ac91.jpg" />
             </div>
             
             <div className="order-1 lg:order-2">
