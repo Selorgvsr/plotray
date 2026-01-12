@@ -94,24 +94,7 @@ const BusinessModel = () => {
                   <img src={businessPlatform} alt="Digital Platform Dashboard" className="w-full h-auto" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[hsl(220,70%,15%)]/30 via-transparent to-transparent" />
                   
-                  <div className="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-white/90 backdrop-blur-md shadow-lg border border-white/50">
-                    <div className="flex items-center justify-between">
-                      <div className="text-center">
-                        <p className="text-xs text-muted-foreground">Efficiency</p>
-                        <p className="text-xl font-bold text-[hsl(220,80%,50%)]">98.5%</p>
-                      </div>
-                      <div className="h-10 w-px bg-border" />
-                      <div className="text-center">
-                        <p className="text-xs text-muted-foreground">Users</p>
-                        <p className="text-xl font-bold text-[hsl(145,60%,40%)]">10K+</p>
-                      </div>
-                      <div className="h-10 w-px bg-border" />
-                      <div className="text-center">
-                        <p className="text-xs text-muted-foreground">Data</p>
-                        <p className="text-xl font-bold text-[hsl(45,90%,45%)]">5M+</p>
-                      </div>
-                    </div>
-                  </div>
+                  
                 </div>
               </div>
             </div>
