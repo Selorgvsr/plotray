@@ -427,7 +427,7 @@ const Index = () => {
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <img src={homeBusiness} alt="Business growth visualization" className="rounded-2xl shadow-2xl" />
+              <img alt="Business growth visualization" className="rounded-2xl shadow-2xl" src="/lovable-uploads/9197b540-04e4-4a38-907d-33cae0d13d5d.jpg" />
             </div>
             <div className="order-1 lg:order-2 text-white">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6">
