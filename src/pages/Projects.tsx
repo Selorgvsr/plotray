@@ -1,16 +1,11 @@
-import { useState } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import { Building2, MapPin, TrendingUp, ArrowRight, CheckCircle, Shield, Route, Layers, ChevronLeft, ChevronRight, X } from "lucide-react";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Link, useNavigate } from "react-router-dom";
+import { Building2, MapPin, TrendingUp, ArrowRight, CheckCircle, Shield, Route, Layers } from "lucide-react";
 import projectsHeroImg from "@/assets/projects-hero.jpg";
-import projectSlide1 from "@/assets/project-slide-intro.png";
-import projectSlide2 from "@/assets/project-slide-amenities.png";
-import projectSlide3 from "@/assets/project-slide-advantages.png";
-import projectSlide4 from "@/assets/project-slide-map.png";
-import projectCardImage from "@/assets/kilambakkam-aerial.png";
+
 const projects = [{
+  id: "green-valley-kilambakkam",
   name: "Green Valley Township",
   location: "Near Kilambakkam Bus Terminus",
   plots: 120,
@@ -18,19 +13,7 @@ const projects = [{
   growth: "+22%",
   status: "Active"
 }];
-const projectSlides = [{
-  image: projectSlide1,
-  title: "Premium Villa Plots"
-}, {
-  image: projectSlide2,
-  title: "Amenities"
-}, {
-  image: projectSlide3,
-  title: "Location Advantages"
-}, {
-  image: projectSlide4,
-  title: "Location Map"
-}];
+
 const highlights = [{
   icon: Route,
   title: "Road Access",
@@ -48,23 +31,14 @@ const highlights = [{
   title: "Transparency",
   desc: "Transparency in every detail"
 }];
+
 const Projects = () => {
-  const [isSheetOpen, setIsSheetOpen] = useState(false);
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const handleOpenSheet = () => {
-    setCurrentSlide(0);
-    setIsSheetOpen(true);
+  const navigate = useNavigate();
+
+  const handleViewDetails = (projectId: string) => {
+    navigate(`/projects/${projectId}`);
   };
-  const handleNextSlide = () => {
-    if (currentSlide < projectSlides.length - 1) {
-      setCurrentSlide(currentSlide + 1);
-    }
-  };
-  const handlePrevSlide = () => {
-    if (currentSlide > 0) {
-      setCurrentSlide(currentSlide - 1);
-    }
-  };
+
   return <Layout>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -167,7 +141,7 @@ const Projects = () => {
                       <TrendingUp className="w-4 h-4" />
                       <span className="font-semibold">{project.growth} YoY</span>
                     </div>
-                    <Button variant="ghost" size="sm" className="group-hover:bg-muted" onClick={handleOpenSheet}>
+                    <Button variant="ghost" size="sm" className="group-hover:bg-muted" onClick={() => handleViewDetails(project.id)}>
                       View Details
                       <ArrowRight className="w-4 h-4" />
                     </Button>
@@ -177,94 +151,7 @@ const Projects = () => {
           </div>
         </div>
       </section>
-
-      {/* Project Details Dialog */}
-      <Dialog open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-        <DialogContent className="w-[95vw] h-[95vh] max-w-none p-0 overflow-hidden">
-          <div className="relative h-full flex flex-col">
-            {/* Header */}
-            <div className="flex items-center justify-between p-4 border-b border-border bg-background">
-              <h2 className="text-xl font-heading font-bold text-foreground">
-                <span className="hidden lg:inline">Project Gallery</span>
-                <span className="lg:hidden">{projectSlides[currentSlide].title}</span>
-              </h2>
-              <div className="flex items-center gap-3">
-                <span className="text-sm text-muted-foreground lg:hidden">
-                  {currentSlide + 1} / {projectSlides.length}
-                </span>
-                <Button variant="ghost" size="icon" onClick={() => setIsSheetOpen(false)} className="hover:bg-muted">
-                  <X className="w-5 h-5" />
-                </Button>
-              </div>
-            </div>
-
-            {/* Desktop: Single slide with navigation */}
-            <div className="hidden lg:flex flex-1 overflow-hidden relative items-center justify-center p-6">
-              {/* Left Arrow Button */}
-              <button onClick={handlePrevSlide} disabled={currentSlide === 0} className={`absolute left-6 top-1/2 -translate-y-1/2 z-10 w-14 h-14 rounded-full bg-primary/90 hover:bg-primary text-primary-foreground flex items-center justify-center shadow-lg transition-all duration-300 ${currentSlide === 0 ? 'opacity-30 cursor-not-allowed' : 'opacity-70 hover:opacity-100 hover:scale-110'}`}>
-                <ChevronLeft className="w-7 h-7" />
-              </button>
-
-              {/* Right Arrow Button */}
-              <button onClick={handleNextSlide} disabled={currentSlide === projectSlides.length - 1} className={`absolute right-6 top-1/2 -translate-y-1/2 z-10 w-14 h-14 rounded-full bg-primary/90 hover:bg-primary text-primary-foreground flex items-center justify-center shadow-lg transition-all duration-300 ${currentSlide === projectSlides.length - 1 ? 'opacity-30 cursor-not-allowed' : 'opacity-70 hover:opacity-100 hover:scale-110'}`}>
-                <ChevronRight className="w-7 h-7" />
-              </button>
-
-              {/* Slide Content */}
-              <div className="flex flex-col items-center gap-4 w-full h-full px-16">
-                <h3 className="text-2xl font-heading font-bold text-foreground">{projectSlides[currentSlide].title}</h3>
-                <img src={projectSlides[currentSlide].image} alt={projectSlides[currentSlide].title} className="w-full h-full object-contain rounded-lg shadow-xl" />
-                
-                {/* Dots indicator */}
-                <div className="flex gap-3 mt-4">
-                  {projectSlides.map((_, index) => (
-                    <button key={index} onClick={() => setCurrentSlide(index)} className={`w-4 h-4 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-primary scale-125' : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'}`} />
-                  ))}
-                </div>
-              </div>
-            </div>
-
-            {/* Mobile: Slider */}
-            <div className="lg:hidden flex-1 overflow-hidden relative group">
-              {/* Left Arrow Button */}
-              <button onClick={handlePrevSlide} disabled={currentSlide === 0} className={`absolute left-2 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-primary/90 hover:bg-primary text-primary-foreground flex items-center justify-center shadow-lg transition-all duration-300 ${currentSlide === 0 ? 'opacity-30 cursor-not-allowed' : 'opacity-70 hover:opacity-100 hover:scale-110'}`}>
-                <ChevronLeft className="w-6 h-6" />
-              </button>
-
-              {/* Right Arrow Button */}
-              <button onClick={handleNextSlide} disabled={currentSlide === projectSlides.length - 1} className={`absolute right-2 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-primary/90 hover:bg-primary text-primary-foreground flex items-center justify-center shadow-lg transition-all duration-300 ${currentSlide === projectSlides.length - 1 ? 'opacity-30 cursor-not-allowed' : 'opacity-70 hover:opacity-100 hover:scale-110'}`}>
-                <ChevronRight className="w-6 h-6" />
-              </button>
-
-              <div className="flex transition-transform duration-500 ease-out h-full" style={{
-              transform: `translateX(-${currentSlide * 100}%)`
-            }}>
-                {projectSlides.map((slide, index) => <div key={index} className="min-w-full h-full flex items-center justify-center p-4">
-                    <img src={slide.image} alt={slide.title} className="max-w-full max-h-full object-contain rounded-lg shadow-lg" />
-                  </div>)}
-              </div>
-            </div>
-
-            {/* Mobile Navigation */}
-            <div className="lg:hidden flex items-center justify-between p-4 border-t border-border bg-background">
-              <Button variant="outline" onClick={handlePrevSlide} disabled={currentSlide === 0} className="gap-2 min-w-[120px]">
-                <ChevronLeft className="w-4 h-4" />
-                Previous
-              </Button>
-              
-              {/* Dots indicator */}
-              <div className="flex gap-2">
-                {projectSlides.map((_, index) => <button key={index} onClick={() => setCurrentSlide(index)} className={`w-3 h-3 rounded-full transition-colors ${index === currentSlide ? 'bg-primary' : 'bg-muted-foreground/30 hover:bg-muted-foreground/50'}`} />)}
-              </div>
-              
-              <Button variant="outline" onClick={handleNextSlide} disabled={currentSlide === projectSlides.length - 1} className="gap-2 min-w-[120px]">
-                Next
-                <ChevronRight className="w-4 h-4" />
-              </Button>
-            </div>
-          </div>
-        </DialogContent>
-      </Dialog>
     </Layout>;
 };
+
 export default Projects;
