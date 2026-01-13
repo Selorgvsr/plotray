@@ -180,7 +180,7 @@ const ProjectDetail = () => {
       </section>
 
       {/* Page 3 - Location Advantages & Specifications */}
-      <section ref={advantagesRef} className="py-20 md:py-32 bg-gradient-to-b from-white to-rose-50/50">
+      <section ref={advantagesRef} className="py-20 md:py-32 bg-gradient-to-b from-white to-rose-50/50 bg-accent">
         <div className="container-custom px-4">
           <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20 transition-all duration-1000 ${visibleAdvantages ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             {/* Left Column - Kilambakkam Location Advantages */}
