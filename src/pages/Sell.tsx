@@ -10,7 +10,7 @@ import sellDirect from "@/assets/sell-direct.jpg";
 import sellGrowth from "@/assets/sell-growth.jpg";
 import sellProcess from "@/assets/sell-process.jpg";
 import sellPricing from "@/assets/sell-pricing.jpg";
-import sellTrust from "@/assets/sell-trust.jpg";
+import sellTrust from "@/assets/sell-trust-new.jpg";
 import sellStressfree from "@/assets/sell-stressfree.jpg";
 import sellCta from "@/assets/sell-cta.jpg";
 interface ExpandableSectionProps {
