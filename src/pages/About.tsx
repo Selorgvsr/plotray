@@ -88,7 +88,7 @@ const About = () => {
             </div>
             
             <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img src={aboutTeam} alt="PLOTRAY Team" className="w-full h-auto object-cover" />
+              <img alt="PLOTRAY Team" className="w-full h-auto object-cover" src="/lovable-uploads/3ff8a269-bbc6-4df6-a269-d55700379a66.jpg" />
             </div>
           </div>
         </div>
