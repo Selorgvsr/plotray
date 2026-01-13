@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Link, useNavigate } from "react-router-dom";
 import { Building2, MapPin, TrendingUp, ArrowRight, CheckCircle, Shield, Route, Layers } from "lucide-react";
 import projectsHeroImg from "@/assets/projects-hero.jpg";
-
 const projects = [{
   id: "green-valley-kilambakkam",
   name: "Green Valley Township",
@@ -13,7 +12,6 @@ const projects = [{
   growth: "+22%",
   status: "Active"
 }];
-
 const highlights = [{
   icon: Route,
   title: "Road Access",
@@ -31,14 +29,11 @@ const highlights = [{
   title: "Transparency",
   desc: "Transparency in every detail"
 }];
-
 const Projects = () => {
   const navigate = useNavigate();
-
   const handleViewDetails = (projectId: string) => {
     navigate(`/projects/${projectId}`);
   };
-
   return <Layout>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -108,7 +103,7 @@ const Projects = () => {
       </section>
 
       {/* Featured Projects */}
-      <section id="projects-section" className="section-padding bg-background">
+      <section id="projects-section" className="section-padding bg-plotray-orange">
         <div className="container-custom">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">Projects</h2>
@@ -123,7 +118,9 @@ const Projects = () => {
                   <img alt={project.name} className="w-full h-full object-cover" src="/lovable-uploads/5629dd19-e44d-43f7-b5a1-7d905e28bef5.png" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                   <div className="absolute top-4 left-4 right-4 flex justify-between items-start">
-                    <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-heading font-extrabold text-white drop-shadow-lg tracking-tight bg-gradient-to-r from-white via-gold to-white bg-clip-text" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.7), 0 0 20px rgba(255,215,0,0.3)' }}>
+                    <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-heading font-extrabold text-white drop-shadow-lg tracking-tight bg-gradient-to-r from-white via-gold to-white bg-clip-text" style={{
+                  textShadow: '2px 2px 8px rgba(0,0,0,0.7), 0 0 20px rgba(255,215,0,0.3)'
+                }}>
                       Near Kilambakkam Bus Terminus
                     </h3>
                     <span className="px-3 py-1 rounded-full bg-primary-foreground/20 backdrop-blur-sm text-primary-foreground text-sm font-medium shrink-0">
@@ -158,5 +155,4 @@ const Projects = () => {
       </section>
     </Layout>;
 };
-
 export default Projects;
