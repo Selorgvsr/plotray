@@ -112,9 +112,37 @@ const Projects = () => {
             </p>
           </div>
           
+          {/* Walkable Distance Points */}
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 mb-8">
+            <div className="flex items-center gap-3 bg-gradient-to-r from-plotray-blue to-teal px-5 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+              <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                <MapPin className="w-5 h-5 text-white" />
+              </div>
+              <span className="text-white font-bold text-sm md:text-base lg:text-lg tracking-wide">
+                Walkable Distance from Kilambakkam Bus Terminus
+              </span>
+            </div>
+            <div className="flex items-center gap-3 bg-gradient-to-r from-fuchsia-600 to-purple-600 px-5 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+              <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                <Route className="w-5 h-5 text-white" />
+              </div>
+              <span className="text-white font-bold text-sm md:text-base lg:text-lg tracking-wide">
+                Walkable Distance from Urappakkam Railway Station
+              </span>
+            </div>
+            <div className="flex items-center gap-3 bg-gradient-to-r from-gold to-amber-500 px-5 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+              <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                <Building2 className="w-5 h-5 text-white" />
+              </div>
+              <span className="text-white font-bold text-sm md:text-base lg:text-lg tracking-wide">
+                Walkable Distance from the Upcoming Metro Station
+              </span>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 gap-6">
             {projects.map((project, index) => <div key={index} className="glass-card rounded-2xl overflow-hidden hover-lift group">
-                <div className="aspect-[16/9] md:aspect-[21/9] relative overflow-hidden bg-card-foreground">
+                <div className="aspect-[16/9] md:aspect-[21/9] relative overflow-hidden">
                   <img alt={project.name} className="w-full h-full object-cover" src="/lovable-uploads/5629dd19-e44d-43f7-b5a1-7d905e28bef5.png" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                   <div className="absolute top-4 left-4 right-4 flex justify-between items-start">
@@ -130,7 +158,7 @@ const Projects = () => {
                   <Building2 className="absolute bottom-4 left-4 w-10 h-10 text-primary-foreground opacity-80" />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-heading font-bold text-foreground mb-2 text-2xl bg-card-foreground">{project.name}</h3>
+                  <h3 className="font-heading font-bold text-foreground mb-2 text-2xl">{project.name}</h3>
                   <div className="flex items-center gap-2 mb-4 text-[plotray-deep-blue] text-sidebar-primary">
                     <MapPin className="w-4 h-4" />
                     {project.location}
