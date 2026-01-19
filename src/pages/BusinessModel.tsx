@@ -7,7 +7,7 @@ import { ArrowRight, Globe, Users, Zap, BarChart3, TrendingUp, MapPin, Target, D
 import businessHero from "@/assets/business-hero.jpg";
 import businessPlatform from "@/assets/business-platform.jpg";
 import businessAcquisition from "@/assets/business-acquisition.jpg";
-import businessPartnership from "@/assets/business-partnership.jpg";
+import businessPartnership from "@/assets/business-partnership-new.jpg";
 import businessGrowth from "@/assets/business-growth.jpg";
 import businessScalable from "@/assets/business-scalable.jpg";
 import businessCta from "@/assets/business-cta.jpg";
