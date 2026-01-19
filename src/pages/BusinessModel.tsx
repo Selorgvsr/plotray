@@ -476,9 +476,6 @@ const BusinessModel = () => {
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 backdrop-blur-sm px-8">
-                Download Investor Deck
-              </Button>
             </div>
           </div>
         </div>
