@@ -112,6 +112,34 @@ const Projects = () => {
             </p>
           </div>
           
+          {/* Walkable Distance Points */}
+          <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 mb-8">
+            <div className="flex items-center gap-3 bg-gradient-to-r from-plotray-blue to-teal px-5 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+              <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                <MapPin className="w-5 h-5 text-white" />
+              </div>
+              <span className="text-white font-bold text-sm md:text-base lg:text-lg tracking-wide">
+                Walkable Distance from Kilambakkam Bus Terminus
+              </span>
+            </div>
+            <div className="flex items-center gap-3 bg-gradient-to-r from-fuchsia-600 to-purple-600 px-5 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+              <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                <Route className="w-5 h-5 text-white" />
+              </div>
+              <span className="text-white font-bold text-sm md:text-base lg:text-lg tracking-wide">
+                Walkable Distance from Urappakkam Railway Station
+              </span>
+            </div>
+            <div className="flex items-center gap-3 bg-gradient-to-r from-gold to-amber-500 px-5 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+              <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+                <Building2 className="w-5 h-5 text-white" />
+              </div>
+              <span className="text-white font-bold text-sm md:text-base lg:text-lg tracking-wide">
+                Walkable Distance from the Upcoming Metro Station
+              </span>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 gap-6">
             {projects.map((project, index) => <div key={index} className="glass-card rounded-2xl overflow-hidden hover-lift group">
                 <div className="aspect-[16/9] md:aspect-[21/9] relative overflow-hidden">
