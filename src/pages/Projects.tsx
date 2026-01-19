@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
-import { Building2, MapPin, TrendingUp, ArrowRight, CheckCircle, Shield, Route, Layers, Train, Bus, Plane, Clock, Trophy, Flower2, Users, Zap, Footprints, ChevronUp } from "lucide-react";
-import projectsHeroImg from "@/assets/projects-hero.jpg";
+import { Building2, MapPin, CheckCircle, Shield, Route, Layers, Train, Bus, Plane, Clock, Trophy, Flower2, Users, Zap, Footprints } from "lucide-react";
+
+// Import amenity images
 
 // Import amenity images
 import amenitySports from "@/assets/amenity-sports.jpg";
@@ -88,27 +88,12 @@ const highlights = [{
 }];
 
 const Projects = () => {
-  const [selectedProject, setSelectedProject] = useState<string | null>(null);
   const [visibleAmenities, setVisibleAmenities] = useState<number[]>([]);
   const [visibleAdvantages, setVisibleAdvantages] = useState(false);
   const amenityRefs = useRef<(HTMLDivElement | null)[]>([]);
   const advantagesRef = useRef<HTMLDivElement | null>(null);
-  const detailsRef = useRef<HTMLDivElement | null>(null);
-
-  const handleViewDetails = (projectId: string) => {
-    if (selectedProject === projectId) {
-      setSelectedProject(null);
-    } else {
-      setSelectedProject(projectId);
-      setTimeout(() => {
-        detailsRef.current?.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    }
-  };
 
   useEffect(() => {
-    if (!selectedProject) return;
-    
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -125,11 +110,9 @@ const Projects = () => {
       if (ref) observer.observe(ref);
     });
     return () => observer.disconnect();
-  }, [visibleAmenities, selectedProject]);
+  }, [visibleAmenities]);
 
   useEffect(() => {
-    if (!selectedProject) return;
-    
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -143,7 +126,7 @@ const Projects = () => {
       observer.observe(advantagesRef.current);
     }
     return () => observer.disconnect();
-  }, [selectedProject]);
+  }, []);
 
   return <Layout>
       {/* Hero Section */}
@@ -274,36 +257,14 @@ const Projects = () => {
                     <MapPin className="w-4 h-4" />
                     {project.location}
                   </div>
-                  
-                  
-                  
-                  <div className="flex items-center justify-center pt-6 border-t border-border">
-                    <Button variant="hero" size="lg" className="w-full text-lg font-bold py-6 px-10" onClick={() => handleViewDetails(project.id)}>
-                      View Details
-                      <ArrowRight className="w-6 h-6" />
-                    </Button>
-                  </div>
                 </div>
               </div>)}
           </div>
 
-          {/* Inline Project Details */}
-          {selectedProject && (
-            <div ref={detailsRef} className="mt-12 animate-fade-in">
-              {/* Collapse Button */}
-              <div className="flex justify-center mb-8">
-                <Button 
-                  variant="outline" 
-                  onClick={() => setSelectedProject(null)}
-                  className="flex items-center gap-2"
-                >
-                  <ChevronUp className="w-5 h-5" />
-                  Collapse Details
-                </Button>
-              </div>
-
-              {/* Hero Section */}
-              <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-rose-50 via-amber-50/50 to-rose-100 p-8 md:p-16 mb-12">
+          {/* Project Details - Always Visible */}
+          <div className="mt-12">
+            {/* Hero Section */}
+            <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-rose-50 via-amber-50/50 to-rose-100 p-8 md:p-16 mb-12">
                 {/* Decorative floral elements */}
                 <div className="absolute top-0 left-0 w-64 h-64 opacity-20">
                   <svg viewBox="0 0 200 200" className="w-full h-full text-rose-300">
@@ -500,20 +461,7 @@ const Projects = () => {
                   </div>
                 </div>
               </div>
-
-              {/* Collapse Button at Bottom */}
-              <div className="flex justify-center mt-8">
-                <Button 
-                  variant="outline" 
-                  onClick={() => setSelectedProject(null)}
-                  className="flex items-center gap-2"
-                >
-                  <ChevronUp className="w-5 h-5" />
-                  Collapse Details
-                </Button>
-              </div>
-            </div>
-          )}
+          </div>
         </div>
       </section>
     </Layout>;
