@@ -285,31 +285,7 @@ const ProjectDetail = () => {
 
       {/* Fixed Contact Bar */}
       <div className="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-rose-100 shadow-2xl z-50">
-        <div className="container-custom px-4 py-4">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-2">
-              <Building2 className="w-6 h-6 text-primary" />
-              <span className="font-heading font-bold text-foreground">Contact Us Today</span>
-            </div>
-            
-            <div className="flex items-center gap-4">
-              <a href="https://wa.me/919841257372" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-full transition-colors">
-                <MessageCircle className="w-5 h-5" />
-                <span className="hidden sm:inline">WhatsApp</span>
-              </a>
-              
-              <a href="tel:+919841257372" className="flex items-center gap-2 px-4 py-2 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full transition-colors">
-                <Phone className="w-5 h-5" />
-                <span>+91 98412 57372</span>
-              </a>
-              
-              <a href="tel:+917824013494" className="hidden md:flex items-center gap-2 px-4 py-2 bg-primary hover:bg-primary/90 text-primary-foreground rounded-full transition-colors">
-                <Phone className="w-5 h-5" />
-                <span>+91 78240 13494</span>
-              </a>
-            </div>
-          </div>
-        </div>
+        
       </div>
       
       {/* Bottom padding to account for fixed contact bar */}
