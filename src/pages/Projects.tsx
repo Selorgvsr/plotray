@@ -1,8 +1,65 @@
+import { useEffect, useRef, useState } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { Link, useNavigate } from "react-router-dom";
-import { Building2, MapPin, TrendingUp, ArrowRight, CheckCircle, Shield, Route, Layers } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Building2, MapPin, TrendingUp, ArrowRight, CheckCircle, Shield, Route, Layers, Train, Bus, Plane, Clock, Trophy, Flower2, Users, Zap, Footprints, ChevronUp } from "lucide-react";
 import projectsHeroImg from "@/assets/projects-hero.jpg";
+
+// Import amenity images
+import amenitySports from "@/assets/amenity-sports.jpg";
+import amenityCricket from "@/assets/amenity-cricket.jpg";
+import amenityGarden from "@/assets/amenity-garden.jpg";
+import amenityKids from "@/assets/amenity-kids.jpg";
+import amenityRoads from "@/assets/amenity-roads.jpg";
+import amenityJogging from "@/assets/amenity-jogging.jpg";
+
+const amenities = [{
+  title: "Multi-Sports Play Area",
+  image: amenitySports,
+  icon: Trophy
+}, {
+  title: "Cricket Nets",
+  image: amenityCricket,
+  icon: Trophy
+}, {
+  title: "Landscaped Garden",
+  image: amenityGarden,
+  icon: Flower2
+}, {
+  title: "Kids Play Area",
+  image: amenityKids,
+  icon: Users
+}, {
+  title: "Concrete Roads with Solar Lights",
+  image: amenityRoads,
+  icon: Zap
+}, {
+  title: "Paved Walkways & Jogging Track",
+  image: amenityJogging,
+  icon: Footprints
+}];
+
+const kilambakkamAdvantages = ["Centrally Located With Excellent Connectivity", "Gateway to Southern Districts", "Rapid Infrastructure Development", "Commercial, IT, and Industrial Growth", "Recreational Amenities", "Affordable Real Estate Price at Present", "Future Real Estate Growth and Investment Potential"];
+
+const projectAdvantages = [{
+  text: "2 Minutes from Urapakkam Railway Station",
+  icon: Train
+}, {
+  text: "3 Minutes from Kilambakkam Bus Terminus & upcoming Metro Rail Station",
+  icon: Bus
+}, {
+  text: "2 Minutes from GST Road",
+  icon: MapPin
+}, {
+  text: "10 Minutes from Tambaram",
+  icon: Clock
+}, {
+  text: "15 Minutes from Airport",
+  icon: Plane
+}];
+
+const specifications = ["High-Strength Concrete Roads", "Solar-Powered Street Lights", "Paved Walkways", "Underground Stormwater Drains", "Underground Pipelines for Electric Cables", "Underground Pipelines for Water Supply", "Kids Play Area", "Multi-Sport Play Area", "Cricket Nets", "Jogging Track", "Landscaped Garden"];
+
 const projects = [{
   id: "green-valley-kilambakkam",
   name: "Green Valley Township",
@@ -29,11 +86,65 @@ const highlights = [{
   title: "Transparency",
   desc: "Transparency in every detail"
 }];
+
 const Projects = () => {
-  const navigate = useNavigate();
+  const [selectedProject, setSelectedProject] = useState<string | null>(null);
+  const [visibleAmenities, setVisibleAmenities] = useState<number[]>([]);
+  const [visibleAdvantages, setVisibleAdvantages] = useState(false);
+  const amenityRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const advantagesRef = useRef<HTMLDivElement | null>(null);
+  const detailsRef = useRef<HTMLDivElement | null>(null);
+
   const handleViewDetails = (projectId: string) => {
-    navigate(`/projects/${projectId}`);
+    if (selectedProject === projectId) {
+      setSelectedProject(null);
+    } else {
+      setSelectedProject(projectId);
+      setTimeout(() => {
+        detailsRef.current?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    }
   };
+
+  useEffect(() => {
+    if (!selectedProject) return;
+    
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const index = amenityRefs.current.findIndex(ref => ref === entry.target);
+          if (index !== -1 && !visibleAmenities.includes(index)) {
+            setVisibleAmenities(prev => [...prev, index]);
+          }
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+    amenityRefs.current.forEach(ref => {
+      if (ref) observer.observe(ref);
+    });
+    return () => observer.disconnect();
+  }, [visibleAmenities, selectedProject]);
+
+  useEffect(() => {
+    if (!selectedProject) return;
+    
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setVisibleAdvantages(true);
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+    if (advantagesRef.current) {
+      observer.observe(advantagesRef.current);
+    }
+    return () => observer.disconnect();
+  }, [selectedProject]);
+
   return <Layout>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -175,6 +286,234 @@ const Projects = () => {
                 </div>
               </div>)}
           </div>
+
+          {/* Inline Project Details */}
+          {selectedProject && (
+            <div ref={detailsRef} className="mt-12 animate-fade-in">
+              {/* Collapse Button */}
+              <div className="flex justify-center mb-8">
+                <Button 
+                  variant="outline" 
+                  onClick={() => setSelectedProject(null)}
+                  className="flex items-center gap-2"
+                >
+                  <ChevronUp className="w-5 h-5" />
+                  Collapse Details
+                </Button>
+              </div>
+
+              {/* Hero Section */}
+              <div className="relative rounded-3xl overflow-hidden bg-gradient-to-br from-rose-50 via-amber-50/50 to-rose-100 p-8 md:p-16 mb-12">
+                {/* Decorative floral elements */}
+                <div className="absolute top-0 left-0 w-64 h-64 opacity-20">
+                  <svg viewBox="0 0 200 200" className="w-full h-full text-rose-300">
+                    <path fill="currentColor" d="M30,100 Q50,50 100,30 Q150,50 170,100 Q150,150 100,170 Q50,150 30,100" />
+                    <circle cx="100" cy="100" r="20" fill="currentColor" />
+                  </svg>
+                </div>
+                <div className="absolute bottom-0 right-0 w-64 h-64 opacity-20 transform rotate-180">
+                  <svg viewBox="0 0 200 200" className="w-full h-full text-rose-300">
+                    <path fill="currentColor" d="M30,100 Q50,50 100,30 Q150,50 170,100 Q150,150 100,170 Q50,150 30,100" />
+                    <circle cx="100" cy="100" r="20" fill="currentColor" />
+                  </svg>
+                </div>
+                
+                <div className="relative z-10 text-center">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6 leading-tight">
+                    Premium Villa Plots at <br />
+                    <span className="text-primary">Kilambakkam / Urapakkam</span>
+                    <br />
+                    <span className="text-xl sm:text-2xl md:text-3xl">(GST Road), Chennai</span>
+                  </h2>
+                  
+                  <div className="mt-6 inline-block">
+                    <div className="px-6 py-3 bg-primary/10 border-2 border-primary/20 rounded-2xl backdrop-blur-sm">
+                      <p className="text-lg sm:text-xl md:text-2xl font-semibold text-primary">
+                        Opposite to Asia's Largest Bus Terminus
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Amenities Section */}
+              <div className="py-12 md:py-16 bg-gradient-to-b from-slate-50 to-white rounded-3xl mb-12">
+                <div className="px-4 md:px-8">
+                  <div className="text-center max-w-2xl mx-auto mb-12">
+                    <h3 className="text-2xl md:text-4xl font-heading font-bold text-foreground mb-4">
+                      Amenities
+                    </h3>
+                    <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
+                  </div>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {amenities.map((amenity, index) => (
+                      <div 
+                        key={index} 
+                        ref={el => amenityRefs.current[index] = el} 
+                        className={`group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-700 ${visibleAmenities.includes(index) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} 
+                        style={{ transitionDelay: `${index * 100}ms` }}
+                      >
+                        <div className="aspect-[4/3] overflow-hidden">
+                          <img src={amenity.image} alt={amenity.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                        </div>
+                        
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6">
+                          <div className="flex items-center gap-3">
+                            <div className="w-10 h-10 rounded-full bg-primary/20 backdrop-blur-sm flex items-center justify-center">
+                              <amenity.icon className="w-5 h-5 text-white" />
+                            </div>
+                            <h4 className="text-lg md:text-xl font-semibold text-white">
+                              {amenity.title}
+                            </h4>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Location Advantages & Specifications */}
+              <div ref={advantagesRef} className="py-12 md:py-16 bg-gradient-to-b from-white to-rose-50/50 rounded-3xl mb-12">
+                <div className="px-4 md:px-8">
+                  <div className={`grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12 transition-all duration-1000 ${visibleAdvantages ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                    {/* Left Column - Kilambakkam Location Advantages */}
+                    <div className="bg-white rounded-3xl p-6 md:p-8 shadow-xl border border-rose-100">
+                      <h4 className="text-xl md:text-2xl font-heading font-bold text-primary mb-6">
+                        Kilambakkam Location Advantages
+                      </h4>
+                      <ul className="space-y-3">
+                        {kilambakkamAdvantages.map((advantage, index) => (
+                          <li 
+                            key={index} 
+                            className="flex items-start gap-3" 
+                            style={{
+                              opacity: visibleAdvantages ? 1 : 0,
+                              transform: visibleAdvantages ? 'translateX(0)' : 'translateX(-20px)',
+                              transition: `all 0.5s ease ${index * 100}ms`
+                            }}
+                          >
+                            <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                            <span className="text-foreground">{advantage}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    
+                    {/* Right Column - Our Project Location Advantages */}
+                    <div className="bg-white rounded-3xl p-6 md:p-8 shadow-xl border border-rose-100">
+                      <h4 className="text-xl md:text-2xl font-heading font-bold text-primary mb-6">
+                        Our Project Location Advantages
+                      </h4>
+                      <ul className="space-y-3">
+                        {projectAdvantages.map((advantage, index) => (
+                          <li 
+                            key={index} 
+                            className="flex items-start gap-3" 
+                            style={{
+                              opacity: visibleAdvantages ? 1 : 0,
+                              transform: visibleAdvantages ? 'translateX(0)' : 'translateX(20px)',
+                              transition: `all 0.5s ease ${index * 100}ms`
+                            }}
+                          >
+                            <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                              <advantage.icon className="w-5 h-5 text-primary" />
+                            </div>
+                            <span className="text-foreground mt-2">{advantage.text}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                  
+                  {/* Specifications Section */}
+                  <div className={`bg-gradient-to-br from-primary/5 to-primary/10 rounded-3xl p-6 md:p-10 transition-all duration-1000 delay-300 ${visibleAdvantages ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+                    <h4 className="text-xl md:text-2xl font-heading font-bold text-foreground mb-6 text-center">
+                      Specifications
+                    </h4>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                      {specifications.map((spec, index) => (
+                        <div 
+                          key={index} 
+                          className="flex items-center gap-3 bg-white rounded-xl p-3 shadow-sm border border-rose-100/50" 
+                          style={{
+                            opacity: visibleAdvantages ? 1 : 0,
+                            transform: visibleAdvantages ? 'scale(1)' : 'scale(0.95)',
+                            transition: `all 0.4s ease ${300 + index * 50}ms`
+                          }}
+                        >
+                          <div className="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                            <CheckCircle className="w-4 h-4 text-primary" />
+                          </div>
+                          <span className="text-foreground font-medium text-sm">{spec}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Location Map */}
+              <div className="py-12 md:py-16 bg-gradient-to-b from-rose-50/50 to-white rounded-3xl">
+                <div className="px-4 md:px-8">
+                  <div className="text-center max-w-2xl mx-auto mb-8">
+                    <h3 className="text-2xl md:text-4xl font-heading font-bold text-foreground mb-4">
+                      Location Map
+                    </h3>
+                    <div className="w-24 h-1 bg-primary mx-auto rounded-full" />
+                  </div>
+                  
+                  <div className="bg-white rounded-3xl p-4 md:p-6 shadow-xl border border-rose-100">
+                    <div className="aspect-[16/9] md:aspect-[21/9] rounded-2xl overflow-hidden border-4 border-rose-100">
+                      <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.1234567890123!2d80.0892!3d12.8756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525b0b0b0b0b0b%3A0x0b0b0b0b0b0b0b0b!2sKilambakkam%20Bus%20Terminus!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="100%" 
+                        style={{ border: 0 }} 
+                        allowFullScreen 
+                        loading="lazy" 
+                        referrerPolicy="no-referrer-when-downgrade" 
+                        title="Project Location Map" 
+                        className="w-full h-full" 
+                      />
+                    </div>
+                    
+                    <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3">
+                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                        <div className="w-3 h-3 rounded-full bg-primary" />
+                        <span>GST Road</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                        <div className="w-3 h-3 rounded-full bg-blue-500" />
+                        <span>Urapakkam Railway Station</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                        <div className="w-3 h-3 rounded-full bg-green-500" />
+                        <span>Kilambakkam Bus Terminus</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                        <div className="w-3 h-3 rounded-full bg-amber-500" />
+                        <span>Our Project Site</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Collapse Button at Bottom */}
+              <div className="flex justify-center mt-8">
+                <Button 
+                  variant="outline" 
+                  onClick={() => setSelectedProject(null)}
+                  className="flex items-center gap-2"
+                >
+                  <ChevronUp className="w-5 h-5" />
+                  Collapse Details
+                </Button>
+              </div>
+            </div>
+          )}
         </div>
       </section>
     </Layout>;
