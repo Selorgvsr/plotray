@@ -166,11 +166,10 @@ const Projects = () => {
                   
                   
                   
-                  <div className="flex items-center justify-between pt-4 border-t border-border">
-                    
-                    <Button variant="ghost" size="sm" className="group-hover:bg-muted" onClick={() => handleViewDetails(project.id)}>
+                  <div className="flex items-center justify-center pt-6 border-t border-border">
+                    <Button variant="hero" size="lg" className="w-full text-lg font-bold py-6 px-10" onClick={() => handleViewDetails(project.id)}>
                       View Details
-                      <ArrowRight className="w-4 h-4" />
+                      <ArrowRight className="w-6 h-6" />
                     </Button>
                   </div>
                 </div>
