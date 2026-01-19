@@ -167,10 +167,7 @@ const Projects = () => {
                   
                   
                   <div className="flex items-center justify-between pt-4 border-t border-border">
-                    <div className="flex items-center gap-1 text-plotray-emerald">
-                      <TrendingUp className="w-4 h-4" />
-                      <span className="font-semibold">{project.growth} YoY</span>
-                    </div>
+                    
                     <Button variant="ghost" size="sm" className="group-hover:bg-muted" onClick={() => handleViewDetails(project.id)}>
                       View Details
                       <ArrowRight className="w-4 h-4" />
