@@ -12,7 +12,6 @@ import amenityGarden from "@/assets/amenity-garden.jpg";
 import amenityKids from "@/assets/amenity-kids.jpg";
 import amenityRoads from "@/assets/amenity-roads.jpg";
 import amenityJogging from "@/assets/amenity-jogging.jpg";
-
 const amenities = [{
   title: "Multi-Sports Play Area",
   image: amenitySports,
@@ -38,9 +37,7 @@ const amenities = [{
   image: amenityJogging,
   icon: Footprints
 }];
-
 const kilambakkamAdvantages = ["Centrally Located With Excellent Connectivity", "Gateway to Southern Districts", "Rapid Infrastructure Development", "Commercial, IT, and Industrial Growth", "Recreational Amenities", "Affordable Real Estate Price at Present", "Future Real Estate Growth and Investment Potential"];
-
 const projectAdvantages = [{
   text: "2 Minutes from Urapakkam Railway Station",
   icon: Train
@@ -57,9 +54,7 @@ const projectAdvantages = [{
   text: "15 Minutes from Airport",
   icon: Plane
 }];
-
 const specifications = ["High-Strength Concrete Roads", "Solar-Powered Street Lights", "Paved Walkways", "Underground Stormwater Drains", "Underground Pipelines for Electric Cables", "Underground Pipelines for Water Supply", "Kids Play Area", "Multi-Sport Play Area", "Cricket Nets", "Jogging Track", "Landscaped Garden"];
-
 const projects = [{
   id: "green-valley-kilambakkam",
   name: "Green Valley Township",
@@ -86,13 +81,11 @@ const highlights = [{
   title: "Transparency",
   desc: "Transparency in every detail"
 }];
-
 const Projects = () => {
   const [visibleAmenities, setVisibleAmenities] = useState<number[]>([]);
   const [visibleAdvantages, setVisibleAdvantages] = useState(false);
   const amenityRefs = useRef<(HTMLDivElement | null)[]>([]);
   const advantagesRef = useRef<HTMLDivElement | null>(null);
-
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -111,7 +104,6 @@ const Projects = () => {
     });
     return () => observer.disconnect();
   }, [visibleAmenities]);
-
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -127,7 +119,6 @@ const Projects = () => {
     }
     return () => observer.disconnect();
   }, []);
-
   return <Layout>
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -200,7 +191,7 @@ const Projects = () => {
       <section id="projects-section" className="section-padding bg-plotray-orange">
         <div className="container-custom">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">Projects</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-4">Project</h2>
             <p className="text-foreground">
               ​Highway Land = 25% Faster Gains than your Flat, Data Proven                     
             </p>
@@ -308,13 +299,9 @@ const Projects = () => {
                   </div>
                   
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {amenities.map((amenity, index) => (
-                      <div 
-                        key={index} 
-                        ref={el => amenityRefs.current[index] = el} 
-                        className={`group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-700 ${visibleAmenities.includes(index) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} 
-                        style={{ transitionDelay: `${index * 100}ms` }}
-                      >
+                    {amenities.map((amenity, index) => <div key={index} ref={el => amenityRefs.current[index] = el} className={`group relative overflow-hidden rounded-2xl shadow-lg transition-all duration-700 ${visibleAmenities.includes(index) ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{
+                  transitionDelay: `${index * 100}ms`
+                }}>
                         <div className="aspect-[4/3] overflow-hidden">
                           <img src={amenity.image} alt={amenity.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                         </div>
@@ -329,8 +316,7 @@ const Projects = () => {
                             </h4>
                           </div>
                         </div>
-                      </div>
-                    ))}
+                      </div>)}
                   </div>
                 </div>
               </div>
@@ -345,20 +331,14 @@ const Projects = () => {
                         Kilambakkam Location Advantages
                       </h4>
                       <ul className="space-y-3">
-                        {kilambakkamAdvantages.map((advantage, index) => (
-                          <li 
-                            key={index} 
-                            className="flex items-start gap-3" 
-                            style={{
-                              opacity: visibleAdvantages ? 1 : 0,
-                              transform: visibleAdvantages ? 'translateX(0)' : 'translateX(-20px)',
-                              transition: `all 0.5s ease ${index * 100}ms`
-                            }}
-                          >
+                        {kilambakkamAdvantages.map((advantage, index) => <li key={index} className="flex items-start gap-3" style={{
+                      opacity: visibleAdvantages ? 1 : 0,
+                      transform: visibleAdvantages ? 'translateX(0)' : 'translateX(-20px)',
+                      transition: `all 0.5s ease ${index * 100}ms`
+                    }}>
                             <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                             <span className="text-foreground">{advantage}</span>
-                          </li>
-                        ))}
+                          </li>)}
                       </ul>
                     </div>
                     
@@ -368,22 +348,16 @@ const Projects = () => {
                         Our Project Location Advantages
                       </h4>
                       <ul className="space-y-3">
-                        {projectAdvantages.map((advantage, index) => (
-                          <li 
-                            key={index} 
-                            className="flex items-start gap-3" 
-                            style={{
-                              opacity: visibleAdvantages ? 1 : 0,
-                              transform: visibleAdvantages ? 'translateX(0)' : 'translateX(20px)',
-                              transition: `all 0.5s ease ${index * 100}ms`
-                            }}
-                          >
+                        {projectAdvantages.map((advantage, index) => <li key={index} className="flex items-start gap-3" style={{
+                      opacity: visibleAdvantages ? 1 : 0,
+                      transform: visibleAdvantages ? 'translateX(0)' : 'translateX(20px)',
+                      transition: `all 0.5s ease ${index * 100}ms`
+                    }}>
                             <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                               <advantage.icon className="w-5 h-5 text-primary" />
                             </div>
                             <span className="text-foreground mt-2">{advantage.text}</span>
-                          </li>
-                        ))}
+                          </li>)}
                       </ul>
                     </div>
                   </div>
@@ -394,22 +368,16 @@ const Projects = () => {
                       Specifications
                     </h4>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                      {specifications.map((spec, index) => (
-                        <div 
-                          key={index} 
-                          className="flex items-center gap-3 bg-white rounded-xl p-3 shadow-sm border border-rose-100/50" 
-                          style={{
-                            opacity: visibleAdvantages ? 1 : 0,
-                            transform: visibleAdvantages ? 'scale(1)' : 'scale(0.95)',
-                            transition: `all 0.4s ease ${300 + index * 50}ms`
-                          }}
-                        >
+                      {specifications.map((spec, index) => <div key={index} className="flex items-center gap-3 bg-white rounded-xl p-3 shadow-sm border border-rose-100/50" style={{
+                    opacity: visibleAdvantages ? 1 : 0,
+                    transform: visibleAdvantages ? 'scale(1)' : 'scale(0.95)',
+                    transition: `all 0.4s ease ${300 + index * 50}ms`
+                  }}>
                           <div className="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
                             <CheckCircle className="w-4 h-4 text-primary" />
                           </div>
                           <span className="text-foreground font-medium text-sm">{spec}</span>
-                        </div>
-                      ))}
+                        </div>)}
                     </div>
                   </div>
                 </div>
@@ -427,17 +395,9 @@ const Projects = () => {
                   
                   <div className="bg-white rounded-3xl p-4 md:p-6 shadow-xl border border-rose-100">
                     <div className="aspect-[16/9] md:aspect-[21/9] rounded-2xl overflow-hidden border-4 border-rose-100">
-                      <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.1234567890123!2d80.0892!3d12.8756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525b0b0b0b0b0b%3A0x0b0b0b0b0b0b0b0b!2sKilambakkam%20Bus%20Terminus!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
-                        width="100%" 
-                        height="100%" 
-                        style={{ border: 0 }} 
-                        allowFullScreen 
-                        loading="lazy" 
-                        referrerPolicy="no-referrer-when-downgrade" 
-                        title="Project Location Map" 
-                        className="w-full h-full" 
-                      />
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.1234567890123!2d80.0892!3d12.8756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525b0b0b0b0b0b%3A0x0b0b0b0b0b0b0b0b!2sKilambakkam%20Bus%20Terminus!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" width="100%" height="100%" style={{
+                    border: 0
+                  }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Project Location Map" className="w-full h-full" />
                     </div>
                     
                     <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3">
