@@ -231,7 +231,7 @@ const Projects = () => {
                   <img alt={project.name} className="w-full h-full object-cover" src="/lovable-uploads/5629dd19-e44d-43f7-b5a1-7d905e28bef5.png" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                   <div className="absolute top-4 left-4 right-4 flex justify-between items-start">
-                    <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-heading font-extrabold text-white drop-shadow-lg tracking-tight bg-gradient-to-r from-white via-gold to-white bg-clip-text" style={{
+                    <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-heading font-extrabold drop-shadow-lg tracking-tight bg-gradient-to-r from-white via-gold to-white bg-clip-text text-yellow-400" style={{
                   textShadow: '2px 2px 8px rgba(0,0,0,0.7), 0 0 20px rgba(255,215,0,0.3)'
                 }}> Kilambakkam Bus Terminus</h3>
                     <span className="px-3 py-1 rounded-full bg-primary-foreground/20 backdrop-blur-sm text-primary-foreground text-sm font-medium shrink-0">
