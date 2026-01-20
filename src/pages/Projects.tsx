@@ -233,9 +233,7 @@ const Projects = () => {
                   <div className="absolute top-4 left-4 right-4 flex justify-between items-start">
                     <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-heading font-extrabold text-white drop-shadow-lg tracking-tight bg-gradient-to-r from-white via-gold to-white bg-clip-text" style={{
                   textShadow: '2px 2px 8px rgba(0,0,0,0.7), 0 0 20px rgba(255,215,0,0.3)'
-                }}>
-                      Near Kilambakkam Bus Terminus
-                    </h3>
+                }}> Kilambakkam Bus Terminus</h3>
                     <span className="px-3 py-1 rounded-full bg-primary-foreground/20 backdrop-blur-sm text-primary-foreground text-sm font-medium shrink-0">
                       {project.status}
                     </span>
