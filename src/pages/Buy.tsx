@@ -519,7 +519,7 @@ const Buy = () => {
               </div>
               <Button size="lg" variant="premium" asChild>
                 <Link to="/contact">
-                  Schedule Free Visit
+                  Schedule Visit
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
