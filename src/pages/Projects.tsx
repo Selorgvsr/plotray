@@ -244,7 +244,7 @@ const Projects = () => {
                   <h3 className="font-heading font-bold text-foreground mb-2 text-5xl">{project.name}</h3>
                   
                   <p className="text-xl md:text-2xl lg:text-3xl font-bold text-primary mb-4">
-                    Plots Area Ranging From 560 Sq. Ft to 3602 Sq. Ft.
+                    Plots Area Ranging From 560 Sq. Ft to 3602 Sq. Ft
                   </p>
                 </div>
               </div>)}
