@@ -242,10 +242,13 @@ const Projects = () => {
                 </div>
                 <div className="p-6">
                   <h3 className="font-heading font-bold text-foreground mb-2 text-5xl">{project.name}</h3>
-                  <div className="flex items-center gap-2 mb-4 text-[plotray-deep-blue] text-sidebar-primary border-0">
+                  <div className="flex items-center gap-2 mb-2 text-[plotray-deep-blue] text-sidebar-primary border-0">
                     <MapPin className="w-4 h-4" />
                     {project.location}
                   </div>
+                  <p className="text-xl md:text-2xl lg:text-3xl font-bold text-primary mb-4">
+                    Plots Area Ranging From 560 Sq. Ft to 3602 Sq. Ft.
+                  </p>
                 </div>
               </div>)}
           </div>
