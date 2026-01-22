@@ -48,7 +48,7 @@ const Contact = () => {
             </p>
           </div>
           
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
             {contactInfo.map((info, index) => <a key={index} href={info.href} className="glass-card rounded-2xl p-6 hover-lift group text-center">
                 <div className="w-16 h-16 rounded-xl gradient-hero flex items-center justify-center mx-auto mb-4">
                   <info.icon className="w-8 h-8 text-primary-foreground" />
