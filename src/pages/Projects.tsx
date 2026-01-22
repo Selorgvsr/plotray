@@ -416,6 +416,17 @@ const Projects = () => {
                         <span>Our Project Site</span>
                       </div>
                     </div>
+                    
+                    <div className="mt-6 text-center">
+                      <Button 
+                        variant="hero" 
+                        size="lg" 
+                        className="text-lg px-8"
+                        onClick={() => window.location.href = '/contact'}
+                      >
+                        Contact Us
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </div>
