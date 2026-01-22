@@ -40,7 +40,7 @@ const Contact = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/80 via-plotray-blue/60 to-teal/50" />
         
         <div className="container-custom relative z-10 text-center pt-20">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold mb-6 animate-fade-in leading-tight text-card-foreground">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold mb-6 animate-fade-in leading-tight text-card-foreground text-center">
             Get in Touch with<br />
             <span className="text-gold"><span style={{
               color: '#166534'
@@ -67,12 +67,7 @@ const Contact = () => {
           </div>
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            {contactInfo.map((info, index) => (
-              <a 
-                key={index} 
-                href={info.href} 
-                className="glass-card rounded-2xl p-6 hover-lift group text-center"
-              >
+            {contactInfo.map((info, index) => <a key={index} href={info.href} className="glass-card rounded-2xl p-6 hover-lift group text-center">
                 <div className="w-16 h-16 rounded-xl gradient-hero flex items-center justify-center mx-auto mb-4">
                   <info.icon className="w-8 h-8 text-primary-foreground" />
                 </div>
@@ -80,21 +75,18 @@ const Contact = () => {
                 <p className="font-semibold text-lg text-foreground group-hover:text-plotray-teal transition-colors">
                   {info.value}
                 </p>
-              </a>
-            ))}
+              </a>)}
           </div>
           
           {/* Support Options */}
           <div className="grid sm:grid-cols-3 gap-6 mt-12 max-w-5xl mx-auto">
-            {supportOptions.map((option, index) => (
-              <div key={index} className="glass-card rounded-2xl p-6 text-center hover-lift">
+            {supportOptions.map((option, index) => <div key={index} className="glass-card rounded-2xl p-6 text-center hover-lift">
                 <div className="w-14 h-14 rounded-xl bg-plotray-teal/10 flex items-center justify-center mx-auto mb-4">
                   <option.icon className="w-7 h-7 text-plotray-teal" />
                 </div>
                 <h3 className="font-heading font-semibold text-foreground mb-2">{option.title}</h3>
                 <p className="text-sm text-muted-foreground">{option.desc}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -117,38 +109,22 @@ const Contact = () => {
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">First Name</label>
-                    <input 
-                      type="text" 
-                      className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" 
-                      placeholder="" 
-                    />
+                    <input type="text" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" placeholder="" />
                   </div>
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">Last Name</label>
-                    <input 
-                      type="text" 
-                      className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" 
-                      placeholder="" 
-                    />
+                    <input type="text" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" placeholder="" />
                   </div>
                 </div>
                 
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">Email</label>
-                  <input 
-                    type="email" 
-                    className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" 
-                    placeholder="" 
-                  />
+                  <input type="email" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" placeholder="" />
                 </div>
                 
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">Phone</label>
-                  <input 
-                    type="tel" 
-                    className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" 
-                    placeholder="" 
-                  />
+                  <input type="tel" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" placeholder="" />
                 </div>
                 
                 <div>
@@ -165,11 +141,7 @@ const Contact = () => {
                 
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">Message</label>
-                  <textarea 
-                    rows={4} 
-                    className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all resize-none" 
-                    placeholder="Type Here..." 
-                  />
+                  <textarea rows={4} className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all resize-none" placeholder="Type Here..." />
                 </div>
                 
                 <Button variant="hero" size="lg" className="w-full">
