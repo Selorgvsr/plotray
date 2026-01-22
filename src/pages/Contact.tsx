@@ -1,6 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, MapPin, Send, MessageSquare, Users, Headphones } from "lucide-react";
+import { Phone, Mail, Send } from "lucide-react";
 import contactHeroImg from "@/assets/contact-hero.jpg";
 const contactInfo = [{
   icon: Phone,
@@ -12,23 +12,6 @@ const contactInfo = [{
   label: "Email",
   value: "shekar@plotray.com",
   href: "mailto:shekar@plotray.com"
-}];
-const supportOptions = [{
-  icon: MessageSquare,
-  title: "Sales Inquiry",
-  desc: "Talk to our sales team about properties and investments."
-}, {
-  icon: Users,
-  title: "Partnership",
-  desc: <>Explore business partnership opportunities with <span style={{
-      color: '#166534'
-    }}>PLOT</span><span style={{
-      color: '#F97316'
-    }}>RAY</span>.</>
-}, {
-  icon: Headphones,
-  title: "Customer Support",
-  desc: "Get help with your existing account or transactions."
 }];
 const Contact = () => {
   return <Layout>
@@ -77,16 +60,6 @@ const Contact = () => {
               </a>)}
           </div>
           
-          {/* Support Options */}
-          <div className="grid sm:grid-cols-3 gap-6 mt-12 max-w-5xl mx-auto">
-            {supportOptions.map((option, index) => <div key={index} className="glass-card rounded-2xl p-6 text-center hover-lift">
-                <div className="w-14 h-14 rounded-xl bg-plotray-teal/10 flex items-center justify-center mx-auto mb-4">
-                  <option.icon className="w-7 h-7 text-plotray-teal" />
-                </div>
-                <h3 className="font-heading font-semibold text-foreground mb-2">{option.title}</h3>
-                <p className="text-sm text-muted-foreground">{option.desc}</p>
-              </div>)}
-          </div>
         </div>
       </section>
 
