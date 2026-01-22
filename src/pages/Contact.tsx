@@ -49,7 +49,7 @@ const Contact = () => {
           </div>
           
           <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
-            {contactInfo.map((info, index) => <a key={index} href={info.href} className="glass-card rounded-2xl p-6 hover-lift group text-center">
+            {contactInfo.map((info, index) => <a key={index} href={info.href} className="glass-card rounded-2xl p-6 hover-lift group text-center w-64">
                 <div className="w-16 h-16 rounded-xl gradient-hero flex items-center justify-center mx-auto mb-4">
                   <info.icon className="w-8 h-8 text-primary-foreground" />
                 </div>
