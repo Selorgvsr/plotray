@@ -54,35 +54,101 @@ const Contact = () => {
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
       </section>
 
-      {/* Contact Form & Info */}
+      {/* Talk to Our Experts Section */}
+      <section className="section-padding bg-muted/30">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
+              Talk to Our Experts
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Get personalized guidance from experts. Discuss your requirements in detail and make informed decisions with support at every step
+            </p>
+          </div>
+          
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            {contactInfo.map((info, index) => (
+              <a 
+                key={index} 
+                href={info.href} 
+                className="glass-card rounded-2xl p-6 hover-lift group text-center"
+              >
+                <div className="w-16 h-16 rounded-xl gradient-hero flex items-center justify-center mx-auto mb-4">
+                  <info.icon className="w-8 h-8 text-primary-foreground" />
+                </div>
+                <p className="text-sm text-muted-foreground mb-1">{info.label}</p>
+                <p className="font-semibold text-lg text-foreground group-hover:text-plotray-teal transition-colors">
+                  {info.value}
+                </p>
+              </a>
+            ))}
+          </div>
+          
+          {/* Support Options */}
+          <div className="grid sm:grid-cols-3 gap-6 mt-12 max-w-5xl mx-auto">
+            {supportOptions.map((option, index) => (
+              <div key={index} className="glass-card rounded-2xl p-6 text-center hover-lift">
+                <div className="w-14 h-14 rounded-xl bg-plotray-teal/10 flex items-center justify-center mx-auto mb-4">
+                  <option.icon className="w-7 h-7 text-plotray-teal" />
+                </div>
+                <h3 className="font-heading font-semibold text-foreground mb-2">{option.title}</h3>
+                <p className="text-sm text-muted-foreground">{option.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Send Us a Message Section */}
       <section className="section-padding bg-background">
         <div className="container-custom">
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Contact Form */}
-            <div className="glass-card rounded-2xl p-8">
-              <h2 className="text-2xl font-heading font-bold text-foreground mb-2">Send Us a Message</h2>
-              <p className="text-muted-foreground mb-6">Submit your inquiry and we'll respond promptly.</p>
-              
+          <div className="max-w-2xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-4">
+                Send Us a Message
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                Submit your inquiry and we'll respond promptly.
+              </p>
+            </div>
+            
+            <div className="glass-card rounded-2xl p-8 md:p-10">
               <form className="space-y-6">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">First Name</label>
-                    <input type="text" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" placeholder="" />
+                    <input 
+                      type="text" 
+                      className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" 
+                      placeholder="" 
+                    />
                   </div>
                   <div>
                     <label className="text-sm font-medium text-foreground mb-2 block">Last Name</label>
-                    <input type="text" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" placeholder="" />
+                    <input 
+                      type="text" 
+                      className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" 
+                      placeholder="" 
+                    />
                   </div>
                 </div>
                 
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">Email</label>
-                  <input type="email" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" placeholder="" />
+                  <input 
+                    type="email" 
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" 
+                    placeholder="" 
+                  />
                 </div>
                 
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">Phone</label>
-                  <input type="tel" className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" placeholder="" />
+                  <input 
+                    type="tel" 
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all" 
+                    placeholder="" 
+                  />
                 </div>
                 
                 <div>
@@ -99,7 +165,11 @@ const Contact = () => {
                 
                 <div>
                   <label className="text-sm font-medium text-foreground mb-2 block">Message</label>
-                  <textarea rows={4} className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all resize-none" placeholder="Type Here..." />
+                  <textarea 
+                    rows={4} 
+                    className="w-full px-4 py-3 rounded-xl border border-border bg-background focus:outline-none focus:ring-2 focus:ring-plotray-teal transition-all resize-none" 
+                    placeholder="Type Here..." 
+                  />
                 </div>
                 
                 <Button variant="hero" size="lg" className="w-full">
@@ -107,34 +177,6 @@ const Contact = () => {
                   Send Message
                 </Button>
               </form>
-            </div>
-            
-            {/* Contact Info */}
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-2xl font-heading font-bold text-foreground mb-2">Talk to Our Experts</h2>
-                <p className="text-muted-foreground">Get personalized guidance from experts. Discuss your requirements in detail and make informed decisions with support at every step</p>
-              </div>
-              
-              <div className="grid sm:grid-cols-2 gap-4">
-                {contactInfo.map((info, index) => <a key={index} href={info.href} className="glass-card rounded-xl p-4 hover-lift group">
-                    <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 rounded-lg gradient-hero flex items-center justify-center flex-shrink-0">
-                        <info.icon className="w-6 h-6 text-primary-foreground" />
-                      </div>
-                      <div>
-                        <p className="text-sm text-muted-foreground">{info.label}</p>
-                        <p className="font-medium text-foreground group-hover:text-plotray-teal transition-colors">{info.value}</p>
-                      </div>
-                    </div>
-                  </a>)}
-              </div>
-              
-              {/* Support Options */}
-              
-              
-              {/* Map Placeholder */}
-              
             </div>
           </div>
         </div>
