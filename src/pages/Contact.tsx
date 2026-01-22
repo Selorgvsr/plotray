@@ -39,8 +39,8 @@ const Contact = () => {
         </div>
         <div className="absolute inset-0 bg-gradient-to-br from-plotray-blue/80 via-plotray-blue/60 to-teal/50" />
         
-        <div className="container-custom relative z-10 text-center pt-20 py-[8px]">
-          <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6 animate-fade-in leading-tight text-card-foreground lg:text-6xl mx-0 text-right">                 Get in Touch with
+        <div className="container-custom relative z-10 text-center pt-20 py-0">
+          <h1 className="text-4xl md:text-6xl font-heading font-bold mb-6 animate-fade-in leading-tight text-card-foreground lg:text-6xl mx-0 text-right">                 Get in Touch with 
 PLOTRAY<br />
             <span className="text-gold"><span style={{
               color: '#166534'
