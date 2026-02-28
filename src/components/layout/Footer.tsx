@@ -112,9 +112,9 @@ export const Footer = () => {
         <div className="mt-12 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex flex-col sm:flex-row items-center gap-6 text-sm text-muted-foreground">
-              <a href="mailto:contact@plotray.com" className="flex items-center gap-2 hover:text-foreground transition-colors">
+              <a href="mailto:deep@plotray.com" className="flex items-center gap-2 hover:text-foreground transition-colors">
                 <Mail className="w-4 h-4" />
-                shekar@plotray.com
+                deep@plotray.com
               </a>
               <a href="tel:+911234567890" className="flex items-center gap-2 hover:text-foreground transition-colors">
                 <Phone className="w-4 h-4" />
