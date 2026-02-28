@@ -10,8 +10,8 @@ const contactInfo = [{
 }, {
   icon: Mail,
   label: "Email",
-  value: "shekar@plotray.com",
-  href: "mailto:shekar@plotray.com"
+  value: "deep@plotray.com",
+  href: "mailto:deep@plotray.com"
 }];
 const Contact = () => {
   return <Layout>
